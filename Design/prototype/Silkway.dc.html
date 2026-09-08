@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="design_doc_mode" content="canvas">
+<style>
+  body { margin:0; background:#0d0d0f; }
+  @keyframes sbRing { 0%{transform:scale(1);opacity:.45} 100%{transform:scale(1.75);opacity:0} }
+  @keyframes sbBlink { 0%,100%{opacity:1} 50%{opacity:.25} }
+  a { color:#0A84FF; text-decoration:none; }
+  a:hover { color:#409CFF; }
+</style>
+</helmet>
+
+<section style="display:flex;flex-direction:column;gap:28px;padding:56px 64px 24px;font-family:-apple-system,'SF Pro Text','Helvetica Neue',Helvetica,Arial,sans-serif;">
+  <div style="display:flex;align-items:baseline;gap:14px;">
+    <span style="font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:11px;letter-spacing:.08em;color:#0A84FF;border:1px solid rgba(10,132,255,.45);border-radius:5px;padding:3px 7px;">1a</span>
+    <h2 style="margin:0;font-size:20px;font-weight:600;color:#f2f2f7;letter-spacing:-.01em;">深色模式 · 菜单栏弹窗 + 设置面板</h2>
+    <span style="font-size:13px;color:rgba(235,235,245,.45);">P0 · 可交互：连接开关 / 模式切换 / 节点选择 / 侧栏导航 / 批量测速</span>
+  </div>
+
+  <div style="display:flex;gap:40px;align-items:flex-start;width:max-content;">
+
+    <div style="display:flex;flex-direction:column;gap:10px;">
+     <div style="width:620px;border-radius:12px;overflow:hidden;border:1px solid rgba(255,255,255,.08);background:linear-gradient(160deg,#171a20 0%,#101216 55%,#0c0d10 100%);box-shadow:0 30px 80px rgba(0,0,0,.6);">
+      <div style="height:28px;display:flex;align-items:center;justify-content:space-between;padding:0 12px;background:rgba(28,28,30,.86);border-bottom:1px solid rgba(255,255,255,.06);backdrop-filter:blur(20px);">
+        <div style="display:flex;align-items:center;gap:14px;">
+          <div style="width:11px;height:11px;border-radius:3px;background:rgba(235,235,245,.75);"></div>
+          <span style="font-size:11.5px;font-weight:600;color:#f2f2f7;">Silkway</span>
+          <span style="font-size:11.5px;color:rgba(235,235,245,.75);">文件</span>
+          <span style="font-size:11.5px;color:rgba(235,235,245,.75);">编辑</span>
+          <span style="font-size:11.5px;color:rgba(235,235,245,.75);">窗口</span>
+          <span style="font-size:11.5px;color:rgba(235,235,245,.75);">帮助</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:11px;">
+          <div style="width:11px;height:11px;border-radius:50%;border:1.4px solid rgba(235,235,245,.55);"></div>
+          <div style="width:11px;height:11px;border-radius:2.5px;border:1.4px solid rgba(235,235,245,.55);"></div>
+          <div style="display:flex;align-items:center;gap:5px;height:22px;padding:0 6px;border-radius:6px;background:rgba(255,255,255,.16);">
+            <svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="#32D74B" stroke-width="1.5"><path d="M8 1.8 L13.4 4 V8 C13.4 11 11 13.4 8 14.2 C5 13.4 2.6 11 2.6 8 V4 Z"/></svg>
+            <div style="display:flex;flex-direction:column;line-height:1.05;">
+              <span style="font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:8px;color:rgba(235,235,245,.9);">↑ 1.24 MB/s</span>
+              <span style="font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:8px;color:rgba(235,235,245,.9);">↓ 8.61 MB/s</span>
+            </div>
+          </div>
+          <div style="width:11px;height:11px;border-radius:2.5px;border:1.4px solid rgba(235,235,245,.55);"></div>
+          <span style="font-size:11.5px;color:rgba(235,235,245,.85);">9月2日 周三 00:49</span>
+        </div>
+      </div>
+      <div style="display:flex;justify-content:flex-end;padding:6px 10px 18px;">
+      <div style="width:344px;border-radius:20px;background:rgba(32,32,35,.78);backdrop-filter:blur(40px) saturate(180%);-webkit-backdrop-filter:blur(40px) saturate(180%);border:1px solid rgba(255,255,255,.13);box-shadow:0 28px 70px rgba(0,0,0,.62), inset 0 1px 0 rgba(255,255,255,.12);overflow:hidden;">
+        <div style="display:flex;align-items:center;justify-content:space-between;padding:12px 14px 10px;">
+          <div style="display:flex;align-items:center;gap:8px;">
+            <div style="width:20px;height:20px;border-radius:6px;background:linear-gradient(160deg,#3AA0FF,#0B62D6);box-shadow:0 1px 3px rgba(0,60,150,.45),inset 0 1px 0 rgba(255,255,255,.35);display:grid;place-items:center;">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="display:block;overflow:visible;"><circle cx="12" cy="12" r="5.7"/><path d="M6.3 12h11.4"/><g transform="rotate(-24 12 12)"><path d="M22.1 12A10.1 4.6 0 0 1 1.9 12"/><path d="M19.9 9.6L22.1 12L24.3 9.6"/></g></svg>
+            </div>
+            <span style="font-size:13px;font-weight:600;color:#f2f2f7;letter-spacing:-.01em;">Silkway</span>
+          </div>
+          <div style="display:flex;gap:4px;">
+            <div style="width:24px;height:24px;border-radius:6px;display:grid;place-items:center;" style-hover="background:rgba(255,255,255,.08)">
+              <svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="rgba(235,235,245,.65)" stroke-width="1.4"><circle cx="8" cy="8" r="2.4"/><circle cx="8" cy="8" r="6"/></svg>
+            </div>
+          </div>
+        </div>
+
+        <div style="display:flex;flex-direction:column;align-items:center;gap:10px;padding:6px 14px 16px;">
+          <div style="position:relative;width:88px;height:88px;display:grid;place-items:center;">
+            <div style="position:absolute;inset:0;border-radius:50%;border:2px solid {{ ring.color }};animation:{{ ring.anim }};"></div>
+            <div onClick="{{ toggle }}" style="width:76px;height:76px;border-radius:50%;display:grid;place-items:center;cursor:pointer;background:{{ power.bg }};border:1px solid {{ power.border }};transition:background .25s ease;">
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="{{ power.icon }}" stroke-width="2" stroke-linecap="round"><path d="M12 3.5 L12 12"/><path d="M6.2 6.6 A8 8 0 1 0 17.8 6.6"/></svg>
+            </div>
+          </div>
+          <div style="display:flex;flex-direction:column;align-items:center;gap:3px;">
+            <span style="font-size:15px;font-weight:600;color:{{ power.icon }};letter-spacing:-.01em;">{{ statusTitle }}</span>
+            <span style="font-size:11px;color:rgba(235,235,245,.5);font-family:ui-monospace,'SF Mono',Menlo,monospace;">{{ statusSub }}</span>
+          </div>
+        </div>
+
+        <div style="padding:0 12px 12px;">
+          <div style="display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:10px;background:rgba(255,255,255,.055);">
+            <span style="font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:10px;font-weight:600;color:#f2f2f7;background:rgba(255,255,255,.12);border-radius:4px;padding:2px 5px;">{{ current.region }}</span>
+            <div style="display:flex;flex-direction:column;gap:2px;flex:1;min-width:0;">
+              <span style="font-size:12.5px;font-weight:500;color:#f2f2f7;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">{{ current.name }}</span>
+              <span style="font-size:10.5px;color:rgba(235,235,245,.45);font-family:ui-monospace,'SF Mono',Menlo,monospace;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">{{ current.proto }} · ↑{{ up }} ↓{{ down }}</span>
+            </div>
+            <span style="font-size:12px;font-weight:600;font-family:ui-monospace,'SF Mono',Menlo,monospace;color:{{ current.color }};">{{ current.latencyText }}</span>
+          </div>
+        </div>
+
+        <div style="padding:0 12px 12px;">
+          <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:2px;padding:2px;border-radius:8px;background:rgba(255,255,255,.07);">
+            <div onClick="{{ modes.global.go }}" style="text-align:center;font-size:11.5px;font-weight:500;padding:5px 0;border-radius:6px;cursor:pointer;background:{{ modes.global.bg }};color:{{ modes.global.fg }};">全局</div>
+            <div onClick="{{ modes.rule.go }}" style="text-align:center;font-size:11.5px;font-weight:500;padding:5px 0;border-radius:6px;cursor:pointer;background:{{ modes.rule.bg }};color:{{ modes.rule.fg }};">规则</div>
+            <div onClick="{{ modes.direct.go }}" style="text-align:center;font-size:11.5px;font-weight:500;padding:5px 0;border-radius:6px;cursor:pointer;background:{{ modes.direct.bg }};color:{{ modes.direct.fg }};">直连</div>
+          </div>
+        </div>
+
+        <div style="border-top:1px solid rgba(255,255,255,.07);display:flex;flex-direction:column;gap:1px;padding:6px 8px;">
+          <div style="display:flex;align-items:center;justify-content:space-between;padding:5px 8px;border-radius:7px;" style-hover="background:rgba(255,255,255,.05)">
+            <span style="font-size:12.5px;color:#f2f2f7;">系统代理</span>
+            <div onClick="{{ sw.sysproxy.go }}" style="width:40px;height:24px;border-radius:12px;padding:2px;cursor:pointer;background:{{ sw.sysproxy.bg }};transition:background .2s;">
+              <div style="width:20px;height:20px;border-radius:50%;background:#fff;box-shadow:0 1px 2.5px rgba(0,0,0,.28),0 0 0 .5px rgba(0,0,0,.05);transform:translateX({{ sw.sysproxy.x }});transition:transform .2s;"></div>
+            </div>
+          </div>
+          <div style="display:flex;align-items:center;justify-content:space-between;padding:5px 8px;border-radius:7px;" style-hover="background:rgba(255,255,255,.05)">
+            <span style="font-size:12.5px;color:#f2f2f7;">增强模式（TUN）</span>
+            <div onClick="{{ sw.tun.go }}" style="width:40px;height:24px;border-radius:12px;padding:2px;cursor:pointer;background:{{ sw.tun.bg }};transition:background .2s;">
+              <div style="width:20px;height:20px;border-radius:50%;background:#fff;box-shadow:0 1px 2.5px rgba(0,0,0,.28),0 0 0 .5px rgba(0,0,0,.05);transform:translateX({{ sw.tun.x }});transition:transform .2s;"></div>
+            </div>
+          </div>
+        </div>
+
+        <div style="border-top:1px solid rgba(255,255,255,.07);display:flex;flex-direction:column;gap:1px;padding:6px 8px;">
+          <div style="display:flex;align-items:center;justify-content:space-between;padding:5px 8px;border-radius:7px;">
+            <span style="font-size:12.5px;color:#f2f2f7;">核心 <span style="color:rgba(235,235,245,.45);">运行中</span></span>
+            <span style="font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:11px;color:rgba(235,235,245,.45);">1.10.3</span>
+          </div>
+          <div style="display:flex;align-items:center;justify-content:space-between;padding:5px 8px;border-radius:7px;cursor:pointer;" style-hover="background:rgba(255,255,255,.05)">
+            <span style="font-size:12.5px;color:#f2f2f7;">出站模式</span>
+            <div style="display:flex;align-items:center;gap:5px;">
+              <span style="font-size:12px;color:rgba(235,235,245,.5);">{{ modeLabel }}</span>
+              <svg width="8" height="8" viewBox="0 0 12 12" fill="none" stroke="rgba(235,235,245,.35)" stroke-width="1.8" stroke-linecap="round"><path d="M4 2 L8 6 L4 10"/></svg>
+            </div>
+          </div>
+          <div style="display:flex;align-items:center;justify-content:space-between;padding:5px 8px;border-radius:7px;cursor:pointer;" style-hover="background:rgba(255,255,255,.05)">
+            <span style="font-size:12.5px;color:#f2f2f7;">指纹浏览器</span>
+            <svg width="8" height="8" viewBox="0 0 12 12" fill="none" stroke="rgba(235,235,245,.35)" stroke-width="1.8" stroke-linecap="round"><path d="M4 2 L8 6 L4 10"/></svg>
+          </div>
+        </div>
+
+        <div style="border-top:1px solid rgba(255,255,255,.07);padding:6px 8px;max-height:288px;overflow:auto;">
+          <div style="display:flex;align-items:center;justify-content:space-between;padding:3px 8px 5px;">
+            <span style="font-size:10.5px;font-weight:600;color:rgba(235,235,245,.4);letter-spacing:.03em;">策略组</span>
+            <span onClick="{{ runTest }}" style="font-size:11px;color:#0A84FF;cursor:pointer;">{{ testLabel }}</span>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:1px;">
+            <sc-for list="{{ groups }}" as="g" hint-placeholder-count="8">
+              <div style="display:flex;flex-direction:column;">
+                <div onClick="{{ g.go }}" style="display:flex;align-items:center;gap:8px;padding:6px 8px;border-radius:7px;cursor:pointer;background:{{ g.rowBg }};" style-hover="background:rgba(255,255,255,.06)">
+                  <span style="width:20px;height:20px;border-radius:6px;background:rgba(255,255,255,.09);color:rgba(235,235,245,.65);font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:9px;font-weight:600;display:grid;place-items:center;">{{ g.tag }}</span>
+                  <span style="flex:1;font-size:12.5px;color:#f2f2f7;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">{{ g.name }}</span>
+                  <span style="font-size:11.5px;color:{{ g.valueColor }};max-width:132px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">{{ g.value }}</span>
+                  <svg width="8" height="8" viewBox="0 0 12 12" fill="none" stroke="rgba(235,235,245,.35)" stroke-width="1.8" stroke-linecap="round" style="transform:{{ g.chev }};transition:transform .18s;"><path d="M4 2 L8 6 L4 10"/></svg>
+                </div>
+                <sc-if value="{{ g.open }}" hint-placeholder-val="{{ false }}">
+                  <div style="display:flex;flex-direction:column;gap:1px;padding:2px 0 4px 8px;margin-left:18px;border-left:1px solid rgba(255,255,255,.08);">
+                    <sc-for list="{{ g.nodes }}" as="n" hint-placeholder-count="4">
+                      <div onClick="{{ n.select }}" style="display:flex;align-items:center;gap:8px;padding:6px 8px;border-radius:7px;cursor:pointer;background:{{ n.rowBg }};" style-hover="background:rgba(255,255,255,.06)">
+                        <div style="width:5px;height:5px;border-radius:50%;background:{{ n.dot }};"></div>
+                        <span style="font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:9.5px;font-weight:600;color:rgba(235,235,245,.5);">{{ n.region }}</span>
+                        <span style="flex:1;font-size:12px;color:#f2f2f7;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">{{ n.name }}</span>
+                        <span style="font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:10.5px;color:{{ n.color }};">{{ n.latencyText }}</span>
+                      </div>
+                    </sc-for>
+                  </div>
+                </sc-if>
+              </div>
+            </sc-for>
+          </div>
+        </div>
+
+        <div style="border-top:1px solid rgba(255,255,255,.07);display:flex;flex-direction:column;gap:1px;padding:6px 8px;background:rgba(255,255,255,.02);">
+          <div style="display:flex;align-items:center;justify-content:space-between;padding:5px 8px;border-radius:7px;cursor:pointer;" style-hover="background:rgba(255,255,255,.05)">
+            <span style="font-size:12.5px;color:#f2f2f7;">切换配置</span>
+            <div style="display:flex;align-items:center;gap:5px;">
+              <span style="font-size:12px;color:rgba(235,235,245,.5);">Aurora 机场</span>
+              <svg width="8" height="8" viewBox="0 0 12 12" fill="none" stroke="rgba(235,235,245,.35)" stroke-width="1.8" stroke-linecap="round"><path d="M4 2 L8 6 L4 10"/></svg>
+            </div>
+          </div>
+          <div style="display:flex;align-items:center;justify-content:space-between;padding:5px 8px;border-radius:7px;cursor:pointer;" style-hover="background:rgba(255,255,255,.05)">
+            <span style="font-size:12.5px;color:#f2f2f7;">重载配置</span>
+            <span style="font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:11px;color:rgba(235,235,245,.32);">⌘R</span>
+          </div>
+          <div style="display:flex;align-items:center;justify-content:space-between;padding:5px 8px;border-radius:7px;cursor:pointer;" style-hover="background:rgba(255,255,255,.05)">
+            <span style="font-size:12.5px;color:#f2f2f7;">设置…</span>
+            <span style="font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:11px;color:rgba(235,235,245,.32);">⌘,</span>
+          </div>
+          <div style="display:flex;align-items:center;justify-content:space-between;padding:5px 8px;border-radius:7px;cursor:pointer;" style-hover="background:rgba(255,255,255,.05)">
+            <span style="font-size:12.5px;color:#f2f2f7;">检查更新…</span>
+            <span style="font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:11px;color:rgba(235,235,245,.32);">⌘U</span>
+          </div>
+          <div style="height:1px;background:rgba(255,255,255,.07);margin:3px 8px;"></div>
+          <div style="display:flex;align-items:center;justify-content:space-between;padding:5px 8px;border-radius:7px;cursor:pointer;" style-hover="background:rgba(255,255,255,.05)">
+            <span style="font-size:12.5px;color:#f2f2f7;">退出</span>
+            <span style="font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:11px;color:rgba(235,235,245,.32);">⌘Q</span>
+          </div>
+        </div>
+      </div>
+      </div>
+     </div>
+      <span style="font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:10.5px;color:rgba(235,235,245,.32);">Menu Bar Extra · 状态栏常驻图标（实时速率）+ 344pt 弹窗</span>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:10px;">
+      <div style="width:860px;flex:0 0 860px;height:640px;display:flex;border-radius:22px;overflow:hidden;background:linear-gradient(165deg,#24242a 0%,#1a1a1e 48%,#161619 100%);border:1px solid rgba(255,255,255,.12);box-shadow:0 40px 100px rgba(0,0,0,.7), inset 0 1px 0 rgba(255,255,255,.1);">
+
+        <div style="width:214px;display:flex;flex-direction:column;background:rgba(255,255,255,.045);backdrop-filter:blur(30px) saturate(160%);-webkit-backdrop-filter:blur(30px) saturate(160%);border-right:1px solid rgba(255,255,255,.06);">
+          <div style="display:flex;align-items:center;gap:8px;padding:14px 14px 12px;">
+            <div style="width:12px;height:12px;border-radius:50%;background:#FF5F57;"></div>
+            <div style="width:12px;height:12px;border-radius:50%;background:#FEBC2E;"></div>
+            <div style="width:12px;height:12px;border-radius:50%;background:#28C840;"></div>
+          </div>
+          <div style="padding:0 12px 10px;">
+            <div style="display:flex;align-items:center;gap:6px;height:26px;padding:0 8px;border-radius:7px;background:rgba(255,255,255,.07);">
+              <svg width="11" height="11" viewBox="0 0 16 16" fill="none" stroke="rgba(235,235,245,.4)" stroke-width="1.6"><circle cx="7" cy="7" r="4.6"/><path d="M10.6 10.6 L14 14"/></svg>
+              <span style="font-size:12px;color:rgba(235,235,245,.35);">搜索</span>
+            </div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:2px;padding:2px 8px;">
+            <div onClick="{{ tabs.general.go }}" style="display:flex;align-items:center;gap:9px;padding:6px 8px;border-radius:10px;cursor:pointer;background:{{ tabs.general.bg }};">
+              <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="{{ tabs.general.ic }}" stroke-width="1.4"><circle cx="8" cy="8" r="2.2"/><circle cx="8" cy="8" r="5.8"/></svg>
+              <span style="font-size:13px;color:{{ tabs.general.fg }};">通用</span>
+            </div>
+            <div onClick="{{ tabs.subs.go }}" style="display:flex;align-items:center;gap:9px;padding:6px 8px;border-radius:10px;cursor:pointer;background:{{ tabs.subs.bg }};">
+              <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="{{ tabs.subs.ic }}" stroke-width="1.4"><rect x="2.5" y="3" width="11" height="10" rx="2"/><path d="M2.5 6.5 H13.5"/></svg>
+              <span style="font-size:13px;color:{{ tabs.subs.fg }};">订阅</span>
+            </div>
+            <div onClick="{{ tabs.proxies.go }}" style="display:flex;align-items:center;gap:9px;padding:6px 8px;border-radius:10px;cursor:pointer;background:{{ tabs.proxies.bg }};">
+              <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="{{ tabs.proxies.ic }}" stroke-width="1.4"><circle cx="8" cy="8" r="5.8"/><path d="M2.2 8 H13.8"/><path d="M8 2.2 A8 8 0 0 1 8 13.8 A8 8 0 0 1 8 2.2"/></svg>
+              <span style="font-size:13px;color:{{ tabs.proxies.fg }};">代理节点</span>
+            </div>
+            <div onClick="{{ tabs.rules.go }}" style="display:flex;align-items:center;gap:9px;padding:6px 8px;border-radius:10px;cursor:pointer;background:{{ tabs.rules.bg }};">
+              <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="{{ tabs.rules.ic }}" stroke-width="1.4" stroke-linecap="round"><path d="M3 4.5 H13"/><path d="M3 8 H13"/><path d="M3 11.5 H9"/></svg>
+              <span style="font-size:13px;color:{{ tabs.rules.fg }};">路由规则</span>
+            </div>
+            <div onClick="{{ tabs.dns.go }}" style="display:flex;align-items:center;gap:9px;padding:6px 8px;border-radius:10px;cursor:pointer;background:{{ tabs.dns.bg }};">
+              <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="{{ tabs.dns.ic }}" stroke-width="1.4"><rect x="4" y="1.9" width="8" height="8" rx="1.6" transform="rotate(45 8 5.9)"/></svg>
+              <span style="font-size:13px;color:{{ tabs.dns.fg }};">DNS</span>
+            </div>
+            <div onClick="{{ tabs.conns.go }}" style="display:flex;align-items:center;gap:9px;padding:6px 8px;border-radius:10px;cursor:pointer;background:{{ tabs.conns.bg }};">
+              <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="{{ tabs.conns.ic }}" stroke-width="1.4" stroke-linecap="round"><path d="M2.5 5.5 H12"/><path d="M9.5 3 L12 5.5 L9.5 8"/><path d="M13.5 10.5 H4"/><path d="M6.5 8 L4 10.5 L6.5 13"/></svg>
+              <span style="font-size:13px;color:{{ tabs.conns.fg }};">连接日志</span>
+            </div>
+            <div onClick="{{ tabs.about.go }}" style="display:flex;align-items:center;gap:9px;padding:6px 8px;border-radius:10px;cursor:pointer;background:{{ tabs.about.bg }};">
+              <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="{{ tabs.about.ic }}" stroke-width="1.4" stroke-linecap="round"><circle cx="8" cy="8" r="5.8"/><path d="M8 7 V11"/><path d="M8 5.1 V5.2"/></svg>
+              <span style="font-size:13px;color:{{ tabs.about.fg }};">关于</span>
+            </div>
+          </div>
+          <div style="margin:auto 10px 12px;display:flex;align-items:center;gap:8px;padding:8px 12px;border-radius:999px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.09);box-shadow:inset 0 1px 0 rgba(255,255,255,.08);">
+            <div style="width:6px;height:6px;border-radius:50%;background:{{ power.icon }};"></div>
+            <span style="font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:10.5px;color:rgba(235,235,245,.4);">{{ statusSub }}</span>
+          </div>
+        </div>
+
+        <div style="flex:1;display:flex;flex-direction:column;min-width:0;">
+          <div style="height:52px;display:flex;align-items:center;justify-content:space-between;padding:0 22px;border-bottom:1px solid rgba(255,255,255,.06);">
+            <span style="font-size:14px;font-weight:600;color:#f2f2f7;letter-spacing:-.01em;">{{ tabTitle }}</span>
+            <span style="font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:10.5px;color:rgba(235,235,245,.3);">sing-box 1.10.3</span>
+          </div>
+
+          <div style="flex:1;overflow:auto;padding:22px;">
+
+            <sc-if value="{{ tabs.general.on }}" hint-placeholder-val="{{ true }}">
+              <div style="display:flex;flex-direction:column;gap:22px;">
+                <div style="display:flex;flex-direction:column;gap:8px;">
+                  <span style="font-size:11px;font-weight:600;letter-spacing:.04em;color:rgba(235,235,245,.4);">启动</span>
+                  <div style="border-radius:14px;background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.08);box-shadow:inset 0 1px 0 rgba(255,255,255,.05);overflow:hidden;">
+                    <div style="display:flex;align-items:center;justify-content:space-between;padding:11px 14px;">
+                      <div style="display:flex;flex-direction:column;gap:2px;">
+                        <span style="font-size:13px;color:#f2f2f7;">开机自动启动</span>
+                        <span style="font-size:11px;color:rgba(235,235,245,.45);">登录后以后台服务方式运行</span>
+                      </div>
+                      <div onClick="{{ sw.launch.go }}" style="width:44px;height:26px;border-radius:13px;padding:2px;cursor:pointer;background:{{ sw.launch.bg }};transition:background .2s;">
+                        <div style="width:22px;height:22px;border-radius:50%;background:#fff;box-shadow:0 1px 2.5px rgba(0,0,0,.28),0 0 0 .5px rgba(0,0,0,.05);transform:translateX({{ sw.launch.x }});transition:transform .2s;"></div>
+                      </div>
+                    </div>
+                    <div style="height:1px;background:rgba(255,255,255,.06);margin-left:14px;"></div>
+                    <div style="display:flex;align-items:center;justify-content:space-between;padding:11px 14px;">
+                      <span style="font-size:13px;color:#f2f2f7;">启动时自动连接</span>
+                      <div onClick="{{ sw.auto.go }}" style="width:44px;height:26px;border-radius:13px;padding:2px;cursor:pointer;background:{{ sw.auto.bg }};transition:background .2s;">
+                        <div style="width:22px;height:22px;border-radius:50%;background:#fff;box-shadow:0 1px 2.5px rgba(0,0,0,.28),0 0 0 .5px rgba(0,0,0,.05);transform:translateX({{ sw.auto.x }});transition:transform .2s;"></div>
+                      </div>
+                    </div>
+                    <div style="height:1px;background:rgba(255,255,255,.06);margin-left:14px;"></div>
+                    <div style="display:flex;align-items:center;justify-content:space-between;padding:11px 14px;">
+                      <span style="font-size:13px;color:#f2f2f7;">静默启动（不显示窗口）</span>
+                      <div onClick="{{ sw.silent.go }}" style="width:44px;height:26px;border-radius:13px;padding:2px;cursor:pointer;background:{{ sw.silent.bg }};transition:background .2s;">
+                        <div style="width:22px;height:22px;border-radius:50%;background:#fff;box-shadow:0 1px 2.5px rgba(0,0,0,.28),0 0 0 .5px rgba(0,0,0,.05);transform:translateX({{ sw.silent.x }});transition:transform .2s;"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div style="display:flex;flex-direction:column;gap:8px;">
+                  <span style="font-size:11px;font-weight:600;letter-spacing:.04em;color:rgba(235,235,245,.4);">系统与外观</span>
+                  <div style="border-radius:14px;background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.08);box-shadow:inset 0 1px 0 rgba(255,255,255,.05);overflow:hidden;">
+                    <div style="display:flex;align-items:center;justify-content:space-between;padding:11px 14px;">
+                      <span style="font-size:13px;color:#f2f2f7;">设置为系统代理</span>
+                      <div onClick="{{ sw.sysproxy.go }}" style="width:44px;height:26px;border-radius:13px;padding:2px;cursor:pointer;background:{{ sw.sysproxy.bg }};transition:background .2s;">
+                        <div style="width:22px;height:22px;border-radius:50%;background:#fff;box-shadow:0 1px 2.5px rgba(0,0,0,.28),0 0 0 .5px rgba(0,0,0,.05);transform:translateX({{ sw.sysproxy.x }});transition:transform .2s;"></div>
+                      </div>
+                    </div>
+                    <div style="height:1px;background:rgba(255,255,255,.06);margin-left:14px;"></div>
+                    <div style="display:flex;align-items:center;justify-content:space-between;padding:11px 14px;">
+                      <span style="font-size:13px;color:#f2f2f7;">菜单栏显示实时速率</span>
+                      <div onClick="{{ sw.speed.go }}" style="width:44px;height:26px;border-radius:13px;padding:2px;cursor:pointer;background:{{ sw.speed.bg }};transition:background .2s;">
+                        <div style="width:22px;height:22px;border-radius:50%;background:#fff;box-shadow:0 1px 2.5px rgba(0,0,0,.28),0 0 0 .5px rgba(0,0,0,.05);transform:translateX({{ sw.speed.x }});transition:transform .2s;"></div>
+                      </div>
+                    </div>
+                    <div style="height:1px;background:rgba(255,255,255,.06);margin-left:14px;"></div>
+                    <div style="display:flex;align-items:center;justify-content:space-between;padding:11px 14px;">
+                      <span style="font-size:13px;color:#f2f2f7;">语言</span>
+                      <div style="display:flex;align-items:center;gap:7px;height:24px;padding:0 8px;border-radius:6px;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.07);cursor:pointer;">
+                        <span style="font-size:12.5px;color:#f2f2f7;">简体中文</span>
+                        <svg width="9" height="9" viewBox="0 0 12 12" fill="none" stroke="rgba(235,235,245,.5)" stroke-width="1.6" stroke-linecap="round"><path d="M3 4.5 L6 1.8 L9 4.5"/><path d="M3 7.5 L6 10.2 L9 7.5"/></svg>
+                      </div>
+                    </div>
+                    <div style="height:1px;background:rgba(255,255,255,.06);margin-left:14px;"></div>
+                    <div style="display:flex;align-items:center;justify-content:space-between;padding:11px 14px;">
+                      <span style="font-size:13px;color:#f2f2f7;">外观</span>
+                      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:2px;padding:2px;border-radius:7px;background:rgba(255,255,255,.08);">
+                        <span style="font-size:12px;padding:3px 12px;border-radius:5px;color:rgba(235,235,245,.6);">浅色</span>
+                        <span style="font-size:12px;padding:3px 12px;border-radius:5px;background:rgba(255,255,255,.16);color:#f2f2f7;">深色</span>
+                        <span style="font-size:12px;padding:3px 12px;border-radius:5px;color:rgba(235,235,245,.6);">自动</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div style="display:flex;flex-direction:column;gap:8px;">
+                  <span style="font-size:11px;font-weight:600;letter-spacing:.04em;color:rgba(235,235,245,.4);">快捷键</span>
+                  <div style="border-radius:14px;background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.08);box-shadow:inset 0 1px 0 rgba(255,255,255,.05);overflow:hidden;">
+                    <div style="display:flex;align-items:center;justify-content:space-between;padding:11px 14px;">
+                      <span style="font-size:13px;color:#f2f2f7;">呼出菜单栏面板</span>
+                      <span style="font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:12px;color:#f2f2f7;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.08);border-radius:6px;padding:3px 9px;">⌥⌘S</span>
+                    </div>
+                    <div style="height:1px;background:rgba(255,255,255,.06);margin-left:14px;"></div>
+                    <div style="display:flex;align-items:center;justify-content:space-between;padding:11px 14px;">
+                      <span style="font-size:13px;color:#f2f2f7;">切换连接状态</span>
+                      <span style="font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:12px;color:#f2f2f7;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.08);border-radius:6px;padding:3px 9px;">⌥⌘C</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </sc-if>
+
+            <sc-if value="{{ tabs.subs.on }}" hint-placeholder-val="{{ false }}">
+              <div style="display:flex;flex-direction:column;gap:14px;">
+                <div style="display:flex;align-items:center;justify-content:space-between;">
+                  <span style="font-size:12px;color:rgba(235,235,245,.5);">3 个订阅 · 共 84 个节点</span>
+                  <div style="display:flex;gap:8px;">
+                    <span style="font-size:12.5px;color:#f2f2f7;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.08);border-radius:7px;padding:5px 11px;cursor:pointer;">全部更新</span>
+                    <span style="font-size:12.5px;color:#fff;background:#0A84FF;border-radius:7px;padding:5px 11px;cursor:pointer;">添加订阅</span>
+                  </div>
+                </div>
+                <div style="border-radius:14px;background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.08);box-shadow:inset 0 1px 0 rgba(255,255,255,.05);overflow:hidden;">
+                  <div style="display:grid;grid-template-columns:1.4fr 2fr .9fr .6fr;gap:12px;padding:9px 14px;background:rgba(255,255,255,.04);">
+                    <span style="font-size:11px;color:rgba(235,235,245,.45);">名称</span>
+                    <span style="font-size:11px;color:rgba(235,235,245,.45);">地址</span>
+                    <span style="font-size:11px;color:rgba(235,235,245,.45);">更新时间</span>
+                    <span style="font-size:11px;color:rgba(235,235,245,.45);text-align:right;">节点</span>
+                  </div>
+                  <sc-for list="{{ subs }}" as="s" hint-placeholder-count="3">
+                    <div style="display:grid;grid-template-columns:1.4fr 2fr .9fr .6fr;gap:12px;padding:11px 14px;border-top:1px solid rgba(255,255,255,.05);align-items:center;">
+                      <span style="font-size:13px;color:#f2f2f7;">{{ s.name }}</span>
+                      <span style="font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:11px;color:rgba(235,235,245,.5);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">{{ s.url }}</span>
+                      <span style="font-size:12px;color:rgba(235,235,245,.5);">{{ s.updated }}</span>
+                      <span style="font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:12px;color:#f2f2f7;text-align:right;">{{ s.count }}</span>
+                    </div>
+                  </sc-for>
+                </div>
+                <div style="display:flex;align-items:center;justify-content:space-between;padding:11px 14px;border-radius:14px;background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.08);box-shadow:inset 0 1px 0 rgba(255,255,255,.05);">
+                  <span style="font-size:13px;color:#f2f2f7;">自动更新间隔</span>
+                  <div style="display:flex;align-items:center;gap:7px;height:24px;padding:0 8px;border-radius:6px;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.07);cursor:pointer;">
+                    <span style="font-size:12.5px;color:#f2f2f7;">每 6 小时</span>
+                    <svg width="9" height="9" viewBox="0 0 12 12" fill="none" stroke="rgba(235,235,245,.5)" stroke-width="1.6" stroke-linecap="round"><path d="M3 4.5 L6 1.8 L9 4.5"/><path d="M3 7.5 L6 10.2 L9 7.5"/></svg>
+                  </div>
+                </div>
+              </div>
+            </sc-if>
+
+            <sc-if value="{{ tabs.proxies.on }}" hint-placeholder-val="{{ false }}">
+              <div style="display:flex;flex-direction:column;gap:14px;">
+                <div style="display:flex;align-items:center;gap:10px;">
+                  <div style="display:flex;align-items:center;gap:6px;flex:1;height:28px;padding:0 10px;border-radius:7px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.06);">
+                    <svg width="11" height="11" viewBox="0 0 16 16" fill="none" stroke="rgba(235,235,245,.4)" stroke-width="1.6"><circle cx="7" cy="7" r="4.6"/><path d="M10.6 10.6 L14 14"/></svg>
+                    <span style="font-size:12.5px;color:rgba(235,235,245,.35);">搜索节点名称或地区</span>
+                  </div>
+                  <div style="display:flex;align-items:center;gap:7px;height:28px;padding:0 10px;border-radius:7px;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.07);cursor:pointer;">
+                    <span style="font-size:12.5px;color:#f2f2f7;">自动选择</span>
+                    <svg width="9" height="9" viewBox="0 0 12 12" fill="none" stroke="rgba(235,235,245,.5)" stroke-width="1.6" stroke-linecap="round"><path d="M3 4.5 L6 1.8 L9 4.5"/><path d="M3 7.5 L6 10.2 L9 7.5"/></svg>
+                  </div>
+                  <div onClick="{{ runTest }}" style="display:flex;align-items:center;gap:6px;height:28px;padding:0 12px;border-radius:7px;background:#0A84FF;cursor:pointer;">
+                    <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round"><path d="M8 3.2 V8 L11 10"/><circle cx="8" cy="8" r="5.8"/></svg>
+                    <span style="font-size:12.5px;color:#fff;font-weight:500;">{{ testLabel }}</span>
+                  </div>
+                </div>
+
+                <sc-if value="{{ testing }}" hint-placeholder-val="{{ false }}">
+                  <div style="display:flex;align-items:center;gap:10px;padding:10px 14px;border-radius:10px;background:rgba(10,132,255,.12);border:1px solid rgba(10,132,255,.3);">
+                    <div style="flex:1;height:4px;border-radius:2px;background:rgba(255,255,255,.12);overflow:hidden;">
+                      <div style="height:100%;background:#0A84FF;border-radius:2px;width:{{ progress }};transition:width .18s linear;"></div>
+                    </div>
+                    <span style="font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:11px;color:#4DA3FF;">{{ progress }}</span>
+                  </div>
+                </sc-if>
+
+                <div style="border-radius:14px;background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.08);box-shadow:inset 0 1px 0 rgba(255,255,255,.05);overflow:hidden;">
+                  <div style="display:flex;align-items:center;justify-content:space-between;padding:9px 14px;background:rgba(255,255,255,.04);">
+                    <span style="font-size:11.5px;font-weight:600;color:rgba(235,235,245,.55);">Proxy · 手动选择</span>
+                    <span style="font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:10.5px;color:rgba(235,235,245,.35);">{{ nodeCount }} nodes</span>
+                  </div>
+                  <sc-for list="{{ nodes }}" as="n" hint-placeholder-count="6">
+                    <div onClick="{{ n.select }}" style="display:grid;grid-template-columns:20px 34px 1fr 110px 70px;gap:12px;align-items:center;padding:10px 14px;border-top:1px solid rgba(255,255,255,.05);cursor:pointer;background:{{ n.rowBg }};" style-hover="background:rgba(255,255,255,.05)">
+                      <span style="color:{{ n.checkColor }};font-size:12px;">✓</span>
+                      <span style="font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:10px;font-weight:600;color:rgba(235,235,245,.6);background:rgba(255,255,255,.08);border-radius:4px;padding:2px 0;text-align:center;">{{ n.region }}</span>
+                      <span style="font-size:13px;color:#f2f2f7;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">{{ n.name }}</span>
+                      <span style="font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:11px;color:rgba(235,235,245,.45);">{{ n.proto }}</span>
+                      <span style="font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:12px;color:{{ n.color }};text-align:right;">{{ n.latencyText }}</span>
+                    </div>
+                  </sc-for>
+                </div>
+              </div>
+            </sc-if>
+
+            <sc-if value="{{ tabs.rules.on }}" hint-placeholder-val="{{ false }}">
+              <div style="display:flex;flex-direction:column;gap:14px;">
+                <div style="display:flex;align-items:center;justify-content:space-between;">
+                  <span style="font-size:12px;color:rgba(235,235,245,.5);">拖拽调整优先级 · 自上而下匹配</span>
+                  <span style="font-size:12.5px;color:#fff;background:#0A84FF;border-radius:7px;padding:5px 11px;cursor:pointer;">添加规则</span>
+                </div>
+                <div style="border-radius:14px;background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.08);box-shadow:inset 0 1px 0 rgba(255,255,255,.05);overflow:hidden;">
+                  <sc-for list="{{ rules }}" as="r" hint-placeholder-count="6">
+                    <div style="display:grid;grid-template-columns:18px 120px 1fr 90px 70px;gap:12px;align-items:center;padding:10px 14px;border-bottom:1px solid rgba(255,255,255,.05);" style-hover="background:rgba(255,255,255,.04)">
+                      <svg width="10" height="10" viewBox="0 0 12 12" fill="none" stroke="rgba(235,235,245,.3)" stroke-width="1.5" stroke-linecap="round"><path d="M2 3.5 H10"/><path d="M2 6 H10"/><path d="M2 8.5 H10"/></svg>
+                      <span style="font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:10px;color:{{ r.tagFg }};background:{{ r.tagBg }};border-radius:4px;padding:3px 6px;text-align:center;">{{ r.type }}</span>
+                      <span style="font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:12px;color:#f2f2f7;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">{{ r.value }}</span>
+                      <span style="font-size:12px;color:rgba(235,235,245,.6);">{{ r.target }}</span>
+                      <span style="font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:11px;color:rgba(235,235,245,.35);text-align:right;">{{ r.hits }}</span>
+                    </div>
+                  </sc-for>
+                </div>
+              </div>
+            </sc-if>
+
+            <sc-if value="{{ tabs.dns.on }}" hint-placeholder-val="{{ false }}">
+              <div style="display:flex;flex-direction:column;gap:22px;">
+                <div style="display:flex;flex-direction:column;gap:8px;">
+                  <span style="font-size:11px;font-weight:600;letter-spacing:.04em;color:rgba(235,235,245,.4);">解析模式</span>
+                  <div style="display:flex;flex-direction:column;gap:10px;padding:14px;border-radius:14px;background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.08);box-shadow:inset 0 1px 0 rgba(255,255,255,.05);">
+                    <div style="display:grid;grid-template-columns:1fr 1fr;gap:2px;padding:2px;border-radius:8px;background:rgba(255,255,255,.08);">
+                      <span style="text-align:center;font-size:12.5px;padding:5px 0;border-radius:6px;background:rgba(255,255,255,.16);color:#f2f2f7;">fake-ip</span>
+                      <span style="text-align:center;font-size:12.5px;padding:5px 0;border-radius:6px;color:rgba(235,235,245,.6);">redir-host</span>
+                    </div>
+                    <span style="font-size:11.5px;color:rgba(235,235,245,.45);line-height:1.5;">fake-ip 为域名分配虚拟地址，避免 DNS 泄漏并提升首包速度；redir-host 更兼容部分局域网服务。</span>
+                  </div>
+                </div>
+                <div style="display:flex;flex-direction:column;gap:8px;">
+                  <span style="font-size:11px;font-weight:600;letter-spacing:.04em;color:rgba(235,235,245,.4);">DNS 服务器</span>
+                  <div style="border-radius:14px;background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.08);box-shadow:inset 0 1px 0 rgba(255,255,255,.05);overflow:hidden;">
+                    <sc-for list="{{ dns }}" as="d" hint-placeholder-count="4">
+                      <div style="display:grid;grid-template-columns:90px 1fr 96px;gap:12px;align-items:center;padding:11px 14px;border-bottom:1px solid rgba(255,255,255,.05);">
+                        <span style="font-size:12.5px;color:rgba(235,235,245,.6);">{{ d.role }}</span>
+                        <span style="font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:12px;color:#f2f2f7;">{{ d.addr }}</span>
+                        <span style="font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:10px;color:rgba(235,235,245,.5);background:rgba(255,255,255,.08);border-radius:4px;padding:3px 0;text-align:center;">{{ d.via }}</span>
+                      </div>
+                    </sc-for>
+                  </div>
+                </div>
+              </div>
+            </sc-if>
+
+            <sc-if value="{{ tabs.conns.on }}" hint-placeholder-val="{{ false }}">
+              <div style="display:flex;flex-direction:column;gap:14px;">
+                <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;">
+                  <div style="display:flex;flex-direction:column;gap:4px;padding:12px 14px;border-radius:14px;background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.08);box-shadow:inset 0 1px 0 rgba(255,255,255,.05);">
+                    <span style="font-size:11px;color:rgba(235,235,245,.45);">上传</span>
+                    <span style="font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:17px;font-weight:600;color:#f2f2f7;">{{ up }}</span>
+                  </div>
+                  <div style="display:flex;flex-direction:column;gap:4px;padding:12px 14px;border-radius:14px;background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.08);box-shadow:inset 0 1px 0 rgba(255,255,255,.05);">
+                    <span style="font-size:11px;color:rgba(235,235,245,.45);">下载</span>
+                    <span style="font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:17px;font-weight:600;color:#f2f2f7;">{{ down }}</span>
+                  </div>
+                  <div style="display:flex;flex-direction:column;gap:4px;padding:12px 14px;border-radius:14px;background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.08);box-shadow:inset 0 1px 0 rgba(255,255,255,.05);">
+                    <span style="font-size:11px;color:rgba(235,235,245,.45);">活动连接</span>
+                    <span style="font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:17px;font-weight:600;color:#f2f2f7;">{{ connCount }}</span>
+                  </div>
+                </div>
+
+                <div style="display:flex;align-items:flex-end;gap:3px;height:56px;padding:12px 14px;border-radius:14px;background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.08);box-shadow:inset 0 1px 0 rgba(255,255,255,.05);">
+                  <sc-for list="{{ chart }}" as="b" hint-placeholder-count="40">
+                    <div style="flex:1;border-radius:1.5px;background:#0A84FF;opacity:.85;height:{{ b.h }};"></div>
+                  </sc-for>
+                </div>
+
+                <div style="border-radius:14px;background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.08);box-shadow:inset 0 1px 0 rgba(255,255,255,.05);overflow:hidden;">
+                  <div style="display:grid;grid-template-columns:1.5fr .8fr 1fr .7fr .6fr;gap:12px;padding:9px 14px;background:rgba(255,255,255,.04);">
+                    <span style="font-size:11px;color:rgba(235,235,245,.45);">目标</span>
+                    <span style="font-size:11px;color:rgba(235,235,245,.45);">协议</span>
+                    <span style="font-size:11px;color:rgba(235,235,245,.45);">命中规则</span>
+                    <span style="font-size:11px;color:rgba(235,235,245,.45);text-align:right;">流量</span>
+                    <span style="font-size:11px;color:rgba(235,235,245,.45);text-align:right;">时长</span>
+                  </div>
+                  <sc-for list="{{ conns }}" as="c" hint-placeholder-count="7">
+                    <div style="display:grid;grid-template-columns:1.5fr .8fr 1fr .7fr .6fr;gap:12px;align-items:center;padding:10px 14px;border-top:1px solid rgba(255,255,255,.05);" style-hover="background:rgba(255,255,255,.045)">
+                      <span style="font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:12px;color:#f2f2f7;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">{{ c.host }}</span>
+                      <span style="font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:11px;color:rgba(235,235,245,.5);">{{ c.proto }}</span>
+                      <span style="font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:10.5px;color:#FFD60A;background:rgba(255,214,10,.12);border-radius:4px;padding:3px 6px;justify-self:start;">{{ c.rule }}</span>
+                      <span style="font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:11.5px;color:rgba(235,235,245,.7);text-align:right;">{{ c.bytes }}</span>
+                      <span style="font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:11.5px;color:rgba(235,235,245,.45);text-align:right;">{{ c.dur }}</span>
+                    </div>
+                  </sc-for>
+                </div>
+              </div>
+            </sc-if>
+
+            <sc-if value="{{ tabs.about.on }}" hint-placeholder-val="{{ false }}">
+              <div style="display:flex;flex-direction:column;align-items:center;gap:16px;padding:40px 0;">
+                <div style="width:88px;height:88px;border-radius:22px;background:linear-gradient(160deg,#4AA8FF 0%,#0B6FE0 52%,#0A4FB0 100%);box-shadow:0 14px 40px rgba(10,110,230,.38),inset 0 1.5px 0 rgba(255,255,255,.4);display:grid;place-items:center;">
+                  <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="display:block;overflow:visible;"><g transform="rotate(-24 12 12)"><path d="M1.9 12A10.1 4.6 0 0 1 22.1 12" opacity=".38"/></g><circle cx="12" cy="12" r="5.7"/><path d="M6.3 12h11.4"/><ellipse cx="12" cy="12" rx="2.5" ry="5.7"/><g transform="rotate(-24 12 12)"><path d="M22.1 12A10.1 4.6 0 0 1 1.9 12"/><path d="M19.9 9.6L22.1 12L24.3 9.6"/></g></svg>
+                </div>
+                <div style="display:flex;flex-direction:column;align-items:center;gap:4px;">
+                  <span style="font-size:19px;font-weight:600;color:#f2f2f7;letter-spacing:-.01em;">Silkway <span style="color:rgba(235,235,245,.5);font-weight:500;">丝路</span></span>
+                  <span style="font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:12px;color:rgba(235,235,245,.45);">版本 1.2.0 (build 340) · sing-box 1.10.3</span>
+                </div>
+                <div style="display:flex;gap:8px;">
+                  <span style="font-size:12.5px;color:#f2f2f7;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.08);border-radius:7px;padding:5px 11px;cursor:pointer;white-space:nowrap;">检查更新</span>
+                  <span style="font-size:12.5px;color:#f2f2f7;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.08);border-radius:7px;padding:5px 11px;cursor:pointer;white-space:nowrap;">开源许可</span>
+                </div>
+              </div>
+            </sc-if>
+
+          </div>
+        </div>
+      </div>
+      <span style="font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:10.5px;color:rgba(235,235,245,.32);">Settings Window · 860×640pt · Sidebar 214pt</span>
+    </div>
+  </div>
+</section>
+
+<section style="display:flex;flex-direction:column;gap:28px;padding:24px 64px;font-family:-apple-system,'SF Pro Text','Helvetica Neue',Helvetica,Arial,sans-serif;">
+  <div style="display:flex;align-items:baseline;gap:14px;">
+    <span style="font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:11px;letter-spacing:.08em;color:#0A84FF;border:1px solid rgba(10,132,255,.45);border-radius:5px;padding:3px 7px;">1b</span>
+    <h2 style="margin:0;font-size:20px;font-weight:600;color:#f2f2f7;letter-spacing:-.01em;">浅色模式 · 同版式适配</h2>
+  </div>
+
+  <div style="display:flex;gap:40px;align-items:flex-start;width:max-content;">
+    <div style="width:344px;flex:0 0 344px;border-radius:20px;background:rgba(250,250,252,.82);backdrop-filter:blur(40px) saturate(180%);-webkit-backdrop-filter:blur(40px) saturate(180%);border:1px solid rgba(255,255,255,.7);box-shadow:0 28px 70px rgba(0,0,0,.26), inset 0 1px 0 rgba(255,255,255,.9);overflow:hidden;">
+      <div style="display:flex;align-items:center;justify-content:space-between;padding:12px 14px 10px;">
+        <div style="display:flex;align-items:center;gap:8px;">
+          <div style="width:20px;height:20px;border-radius:6px;background:linear-gradient(160deg,#3AA0FF,#0B62D6);box-shadow:0 1px 3px rgba(0,60,150,.35),inset 0 1px 0 rgba(255,255,255,.4);display:grid;place-items:center;">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="display:block;overflow:visible;"><circle cx="12" cy="12" r="5.7"/><path d="M6.3 12h11.4"/><g transform="rotate(-24 12 12)"><path d="M22.1 12A10.1 4.6 0 0 1 1.9 12"/><path d="M19.9 9.6L22.1 12L24.3 9.6"/></g></svg>
+          </div>
+          <span style="font-size:13px;font-weight:600;color:#1c1c1e;letter-spacing:-.01em;">Silkway</span>
+        </div>
+        <svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="rgba(60,60,67,.6)" stroke-width="1.4"><circle cx="8" cy="8" r="2.4"/><circle cx="8" cy="8" r="6"/></svg>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:10px;padding:6px 14px 16px;">
+        <div style="position:relative;width:88px;height:88px;display:grid;place-items:center;">
+          <div style="position:absolute;inset:0;border-radius:50%;border:2px solid #32D74B;animation:sbRing 2.2s ease-out infinite;"></div>
+          <div style="width:76px;height:76px;border-radius:50%;display:grid;place-items:center;background:rgba(52,199,89,.16);border:1px solid rgba(52,199,89,.4);">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#248A3D" stroke-width="2" stroke-linecap="round"><path d="M12 3.5 L12 12"/><path d="M6.2 6.6 A8 8 0 1 0 17.8 6.6"/></svg>
+          </div>
+        </div>
+        <span style="font-size:15px;font-weight:600;color:#248A3D;">已连接</span>
+        <span style="font-size:11px;color:rgba(60,60,67,.55);font-family:ui-monospace,'SF Mono',Menlo,monospace;margin-top:-7px;">规则模式 · 02:14:33</span>
+      </div>
+      <div style="padding:0 12px 12px;">
+        <div style="display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:10px;background:#fff;border:1px solid rgba(0,0,0,.06);">
+          <span style="font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:10px;font-weight:600;color:#1c1c1e;background:rgba(0,0,0,.06);border-radius:4px;padding:2px 5px;">HK</span>
+          <div style="display:flex;flex-direction:column;gap:2px;flex:1;min-width:0;">
+            <span style="font-size:12.5px;font-weight:500;color:#1c1c1e;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">香港 IEPL 01 · 专线</span>
+            <span style="font-size:10.5px;color:rgba(60,60,67,.5);font-family:ui-monospace,'SF Mono',Menlo,monospace;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Hysteria2 · ↑1.24 ↓8.61 MB/s</span>
+          </div>
+          <span style="font-size:12px;font-weight:600;font-family:ui-monospace,'SF Mono',Menlo,monospace;color:#248A3D;">42 ms</span>
+        </div>
+      </div>
+      <div style="padding:0 12px 12px;">
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:2px;padding:2px;border-radius:8px;background:rgba(0,0,0,.06);">
+          <div style="text-align:center;font-size:11.5px;padding:5px 0;border-radius:6px;color:rgba(60,60,67,.65);">全局</div>
+          <div style="text-align:center;font-size:11.5px;font-weight:500;padding:5px 0;border-radius:6px;background:#fff;color:#1c1c1e;box-shadow:0 1px 2px rgba(0,0,0,.14);">规则</div>
+          <div style="text-align:center;font-size:11.5px;padding:5px 0;border-radius:6px;color:rgba(60,60,67,.65);">直连</div>
+        </div>
+      </div>
+      <div style="border-top:1px solid rgba(0,0,0,.07);padding:8px;">
+        <div style="display:flex;align-items:center;justify-content:space-between;padding:4px 8px 6px;">
+          <span style="font-size:11px;font-weight:600;color:rgba(60,60,67,.5);">香港 · 自动选择</span>
+          <span style="font-size:11px;color:#007AFF;">测速</span>
+        </div>
+        <sc-for list="{{ lightNodes }}" as="n" hint-placeholder-count="4">
+          <div style="display:flex;align-items:center;gap:9px;padding:7px 8px;border-radius:7px;background:{{ n.rowBg }};">
+            <div style="width:5px;height:5px;border-radius:50%;background:{{ n.dot }};"></div>
+            <span style="font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:9.5px;font-weight:600;color:rgba(60,60,67,.55);">{{ n.region }}</span>
+            <span style="flex:1;min-width:0;font-size:12.5px;color:#1c1c1e;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">{{ n.name }}</span>
+            <span style="font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:11px;color:{{ n.lightColor }};">{{ n.latencyText }}</span>
+          </div>
+        </sc-for>
+      </div>
+      <div style="border-top:1px solid rgba(0,0,0,.07);display:flex;align-items:center;justify-content:space-between;padding:9px 14px;background:rgba(0,0,0,.02);">
+        <span style="font-size:12px;color:rgba(60,60,67,.75);">设置…</span>
+        <span style="font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:10.5px;color:rgba(60,60,67,.35);">⌥⌘S</span>
+        <span style="font-size:12px;color:rgba(60,60,67,.75);">退出</span>
+      </div>
+    </div>
+
+    <div style="width:860px;flex:0 0 860px;height:520px;display:flex;border-radius:22px;overflow:hidden;background:linear-gradient(165deg,#ffffff 0%,#f6f6f8 100%);border:1px solid rgba(0,0,0,.09);box-shadow:0 40px 100px rgba(0,0,0,.26), inset 0 1px 0 rgba(255,255,255,.9);">
+      <div style="width:214px;display:flex;flex-direction:column;background:rgba(0,0,0,.035);backdrop-filter:blur(30px) saturate(160%);-webkit-backdrop-filter:blur(30px) saturate(160%);border-right:1px solid rgba(0,0,0,.06);">
+        <div style="display:flex;align-items:center;gap:8px;padding:14px 14px 12px;">
+          <div style="width:12px;height:12px;border-radius:50%;background:#FF5F57;"></div>
+          <div style="width:12px;height:12px;border-radius:50%;background:#FEBC2E;"></div>
+          <div style="width:12px;height:12px;border-radius:50%;background:#28C840;"></div>
+        </div>
+        <div style="padding:0 12px 10px;">
+          <div style="display:flex;align-items:center;gap:6px;height:26px;padding:0 8px;border-radius:7px;background:rgba(0,0,0,.06);">
+            <svg width="11" height="11" viewBox="0 0 16 16" fill="none" stroke="rgba(60,60,67,.4)" stroke-width="1.6"><circle cx="7" cy="7" r="4.6"/><path d="M10.6 10.6 L14 14"/></svg>
+            <span style="font-size:12px;color:rgba(60,60,67,.4);">搜索</span>
+          </div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:2px;padding:2px 8px;">
+          <div style="display:flex;align-items:center;gap:9px;padding:6px 8px;border-radius:10px;background:linear-gradient(180deg,rgba(20,140,255,.98),rgba(0,110,235,.98));box-shadow:0 1px 3px rgba(0,90,200,.35);">
+            <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="#fff" stroke-width="1.4"><circle cx="8" cy="8" r="2.2"/><circle cx="8" cy="8" r="5.8"/></svg>
+            <span style="font-size:13px;color:#fff;">通用</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:9px;padding:6px 8px;border-radius:7px;">
+            <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="rgba(60,60,67,.7)" stroke-width="1.4"><rect x="2.5" y="3" width="11" height="10" rx="2"/><path d="M2.5 6.5 H13.5"/></svg>
+            <span style="font-size:13px;color:#1c1c1e;">订阅</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:9px;padding:6px 8px;border-radius:7px;">
+            <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="rgba(60,60,67,.7)" stroke-width="1.4"><circle cx="8" cy="8" r="5.8"/><path d="M2.2 8 H13.8"/></svg>
+            <span style="font-size:13px;color:#1c1c1e;">代理节点</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:9px;padding:6px 8px;border-radius:7px;">
+            <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="rgba(60,60,67,.7)" stroke-width="1.4" stroke-linecap="round"><path d="M3 4.5 H13"/><path d="M3 8 H13"/><path d="M3 11.5 H9"/></svg>
+            <span style="font-size:13px;color:#1c1c1e;">路由规则</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:9px;padding:6px 8px;border-radius:7px;">
+            <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="rgba(60,60,67,.7)" stroke-width="1.4"><rect x="4" y="1.9" width="8" height="8" rx="1.6" transform="rotate(45 8 5.9)"/></svg>
+            <span style="font-size:13px;color:#1c1c1e;">DNS</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:9px;padding:6px 8px;border-radius:7px;">
+            <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="rgba(60,60,67,.7)" stroke-width="1.4" stroke-linecap="round"><path d="M2.5 5.5 H12"/><path d="M9.5 3 L12 5.5 L9.5 8"/><path d="M13.5 10.5 H4"/><path d="M6.5 8 L4 10.5 L6.5 13"/></svg>
+            <span style="font-size:13px;color:#1c1c1e;">连接日志</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:9px;padding:6px 8px;border-radius:7px;">
+            <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="rgba(60,60,67,.7)" stroke-width="1.4" stroke-linecap="round"><circle cx="8" cy="8" r="5.8"/><path d="M8 7 V11"/></svg>
+            <span style="font-size:13px;color:#1c1c1e;">关于</span>
+          </div>
+        </div>
+      </div>
+      <div style="flex:1;display:flex;flex-direction:column;">
+        <div style="height:52px;display:flex;align-items:center;justify-content:space-between;padding:0 22px;border-bottom:1px solid rgba(0,0,0,.07);">
+          <span style="font-size:14px;font-weight:600;color:#1c1c1e;">通用</span>
+          <span style="font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:10.5px;color:rgba(60,60,67,.35);">sing-box 1.10.3</span>
+        </div>
+        <div style="flex:1;padding:22px;display:flex;flex-direction:column;gap:22px;">
+          <div style="display:flex;flex-direction:column;gap:8px;">
+            <span style="font-size:11px;font-weight:600;letter-spacing:.04em;color:rgba(60,60,67,.45);">启动</span>
+            <div style="border-radius:14px;background:rgba(120,120,128,.07);border:1px solid rgba(0,0,0,.05);box-shadow:inset 0 1px 0 rgba(255,255,255,.8);overflow:hidden;">
+              <div style="display:flex;align-items:center;justify-content:space-between;padding:11px 14px;">
+                <div style="display:flex;flex-direction:column;gap:2px;">
+                  <span style="font-size:13px;color:#1c1c1e;">开机自动启动</span>
+                  <span style="font-size:11px;color:rgba(60,60,67,.5);">登录后以后台服务方式运行</span>
+                </div>
+                <div style="width:44px;height:26px;border-radius:13px;padding:2px;background:#007AFF;">
+                  <div style="width:22px;height:22px;border-radius:50%;background:#fff;box-shadow:0 1px 2.5px rgba(0,0,0,.22),0 0 0 .5px rgba(0,0,0,.04);transform:translateX(18px);"></div>
+                </div>
+              </div>
+              <div style="height:1px;background:rgba(0,0,0,.06);margin-left:14px;"></div>
+              <div style="display:flex;align-items:center;justify-content:space-between;padding:11px 14px;">
+                <span style="font-size:13px;color:#1c1c1e;">启动时自动连接</span>
+                <div style="width:44px;height:26px;border-radius:13px;padding:2px;background:#007AFF;">
+                  <div style="width:22px;height:22px;border-radius:50%;background:#fff;box-shadow:0 1px 2.5px rgba(0,0,0,.22),0 0 0 .5px rgba(0,0,0,.04);transform:translateX(18px);"></div>
+                </div>
+              </div>
+              <div style="height:1px;background:rgba(0,0,0,.06);margin-left:14px;"></div>
+              <div style="display:flex;align-items:center;justify-content:space-between;padding:11px 14px;">
+                <span style="font-size:13px;color:#1c1c1e;">静默启动（不显示窗口）</span>
+                <div style="width:44px;height:26px;border-radius:13px;padding:2px;background:rgba(120,120,128,.26);">
+                  <div style="width:22px;height:22px;border-radius:50%;background:#fff;box-shadow:0 1px 2.5px rgba(0,0,0,.22),0 0 0 .5px rgba(0,0,0,.04);"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:8px;">
+            <span style="font-size:11px;font-weight:600;letter-spacing:.04em;color:rgba(60,60,67,.45);">系统与外观</span>
+            <div style="border-radius:14px;background:rgba(120,120,128,.07);border:1px solid rgba(0,0,0,.05);box-shadow:inset 0 1px 0 rgba(255,255,255,.8);overflow:hidden;">
+              <div style="display:flex;align-items:center;justify-content:space-between;padding:11px 14px;">
+                <span style="font-size:13px;color:#1c1c1e;">设置为系统代理</span>
+                <div style="width:44px;height:26px;border-radius:13px;padding:2px;background:#007AFF;">
+                  <div style="width:22px;height:22px;border-radius:50%;background:#fff;box-shadow:0 1px 2.5px rgba(0,0,0,.22),0 0 0 .5px rgba(0,0,0,.04);transform:translateX(18px);"></div>
+                </div>
+              </div>
+              <div style="height:1px;background:rgba(0,0,0,.06);margin-left:14px;"></div>
+              <div style="display:flex;align-items:center;justify-content:space-between;padding:11px 14px;">
+                <span style="font-size:13px;color:#1c1c1e;">外观</span>
+                <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:2px;padding:2px;border-radius:7px;background:rgba(0,0,0,.06);">
+                  <span style="font-size:12px;padding:3px 12px;border-radius:5px;background:#fff;color:#1c1c1e;box-shadow:0 1px 2px rgba(0,0,0,.14);">浅色</span>
+                  <span style="font-size:12px;padding:3px 12px;border-radius:5px;color:rgba(60,60,67,.65);">深色</span>
+                  <span style="font-size:12px;padding:3px 12px;border-radius:5px;color:rgba(60,60,67,.65);">自动</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="display:flex;flex-direction:column;gap:24px;padding:24px 64px 80px;font-family:-apple-system,'SF Pro Text','Helvetica Neue',Helvetica,Arial,sans-serif;">
+  <div style="display:flex;align-items:baseline;gap:14px;">
+    <span style="font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:11px;letter-spacing:.08em;color:#0A84FF;border:1px solid rgba(10,132,255,.45);border-radius:5px;padding:3px 7px;">1c</span>
+    <h2 style="margin:0;font-size:20px;font-weight:600;color:#f2f2f7;letter-spacing:-.01em;">品牌标识 · 配色 Token 与 SF Symbols</h2>
+  </div>
+
+  <div style="display:flex;gap:24px;flex-wrap:wrap;align-items:flex-start;">
+    <div style="width:520px;display:flex;flex-direction:column;gap:16px;padding:18px;border-radius:16px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.09);box-shadow:inset 0 1px 0 rgba(255,255,255,.06);">
+      <span style="font-size:11px;font-weight:600;letter-spacing:.04em;color:rgba(235,235,245,.4);">APP ICON · Silkway 丝路</span>
+      <div style="display:flex;align-items:flex-end;gap:20px;">
+        <div style="display:flex;flex-direction:column;align-items:center;gap:7px;">
+          <div style="width:112px;height:112px;border-radius:27px;background:linear-gradient(160deg,#4AA8FF 0%,#0B6FE0 52%,#0A4FB0 100%);box-shadow:0 16px 44px rgba(10,110,230,.4),inset 0 2px 0 rgba(255,255,255,.42);display:grid;place-items:center;">
+            <svg width="66" height="66" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" style="display:block;overflow:visible;"><g transform="rotate(-24 12 12)"><path d="M1.9 12A10.1 4.6 0 0 1 22.1 12" opacity=".38"/></g><circle cx="12" cy="12" r="5.7"/><path d="M6.3 12h11.4"/><ellipse cx="12" cy="12" rx="2.5" ry="5.7"/><g transform="rotate(-24 12 12)"><path d="M22.1 12A10.1 4.6 0 0 1 1.9 12"/><path d="M19.9 9.6L22.1 12L24.3 9.6"/></g></svg>
+          </div>
+          <span style="font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:10px;color:rgba(235,235,245,.35);">1024 / 512 / 256</span>
+        </div>
+        <div style="display:flex;flex-direction:column;align-items:center;gap:7px;">
+          <div style="width:52px;height:52px;border-radius:13px;background:linear-gradient(160deg,#4AA8FF,#0B62D6);box-shadow:inset 0 1px 0 rgba(255,255,255,.4);display:grid;place-items:center;">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" style="display:block;overflow:visible;"><g transform="rotate(-24 12 12)"><path d="M1.9 12A10.1 4.6 0 0 1 22.1 12" opacity=".38"/></g><circle cx="12" cy="12" r="5.7"/><path d="M6.3 12h11.4"/><ellipse cx="12" cy="12" rx="2.5" ry="5.7"/><g transform="rotate(-24 12 12)"><path d="M22.1 12A10.1 4.6 0 0 1 1.9 12"/><path d="M19.9 9.6L22.1 12L24.3 9.6"/></g></svg>
+          </div>
+          <span style="font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:10px;color:rgba(235,235,245,.35);">64 / 32</span>
+        </div>
+        <div style="display:flex;flex-direction:column;align-items:center;gap:7px;">
+          <div style="width:34px;height:34px;border-radius:9px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.1);display:grid;place-items:center;">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="rgba(235,235,245,.9)" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" style="display:block;overflow:visible;"><circle cx="12" cy="12" r="5.7"/><path d="M6.3 12h11.4"/><g transform="rotate(-24 12 12)"><path d="M22.1 12A10.1 4.6 0 0 1 1.9 12"/><path d="M19.9 9.6L22.1 12L24.3 9.6"/></g></svg>
+          </div>
+          <span style="font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:10px;color:rgba(235,235,245,.35);">菜单栏单色</span>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:6px;flex:1;min-width:0;">
+          <span style="font-size:11.5px;color:rgba(235,235,245,.6);line-height:1.55;">标识为环绕地球的轨道箭头 — 一条线路连通世界各地。大尺寸保留经线与轨道后段（半透明表示穿行球体背面）；32pt 以下只留赤道线并加粗描边保证辨识度；菜单栏用单色 template image，随系统自动反色。</span>
+          <span style="font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:10.5px;color:rgba(235,235,245,.35);">squircle R 24% · 底色渐变 160° #4AA8FF → #0A4FB0 · 图形留白 6%</span>
+        </div>
+      </div>
+      <div style="height:1px;background:rgba(255,255,255,.07);"></div>
+      <span style="font-size:11px;font-weight:600;letter-spacing:.04em;color:rgba(235,235,245,.4);">COLOR TOKENS</span>
+      <sc-for list="{{ tokens }}" as="t" hint-placeholder-count="10">
+        <div style="display:grid;grid-template-columns:26px 1.1fr 1fr 1fr;gap:12px;align-items:center;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.05);">
+          <div style="width:22px;height:22px;border-radius:6px;border:1px solid rgba(255,255,255,.14);background:{{ t.hex }};"></div>
+          <span style="font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:11px;color:#f2f2f7;">{{ t.name }}</span>
+          <span style="font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:11px;color:rgba(235,235,245,.5);">{{ t.hex }}</span>
+          <span style="font-size:11.5px;color:rgba(235,235,245,.45);">{{ t.use }}</span>
+        </div>
+      </sc-for>
+    </div>
+
+    <div style="width:420px;display:flex;flex-direction:column;gap:10px;padding:18px;border-radius:12px;background:#1c1c1e;border:1px solid rgba(255,255,255,.08);">
+      <span style="font-size:11px;font-weight:600;letter-spacing:.04em;color:rgba(235,235,245,.4);">SF SYMBOLS</span>
+      <sc-for list="{{ symbols }}" as="s" hint-placeholder-count="9">
+        <div style="display:grid;grid-template-columns:1fr 1.3fr;gap:12px;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.05);">
+          <span style="font-size:12px;color:rgba(235,235,245,.6);">{{ s.where }}</span>
+          <span style="font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:11px;color:#0A84FF;">{{ s.name }}</span>
+        </div>
+      </sc-for>
+    </div>
+
+    <div style="width:340px;display:flex;flex-direction:column;gap:12px;padding:18px;border-radius:12px;background:#1c1c1e;border:1px solid rgba(255,255,255,.08);">
+      <span style="font-size:11px;font-weight:600;letter-spacing:.04em;color:rgba(235,235,245,.4);">交互流程 · 连接 → 测速 → 切换</span>
+      <div style="display:flex;flex-direction:column;gap:10px;">
+        <div style="display:flex;gap:10px;">
+          <span style="font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:11px;color:#0A84FF;">01</span>
+          <span style="font-size:12.5px;color:rgba(235,235,245,.75);line-height:1.5;">⌥⌘S 呼出面板，点击电源键 — 光环脉冲 2.2s 循环，状态文字由灰转绿。</span>
+        </div>
+        <div style="display:flex;gap:10px;">
+          <span style="font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:11px;color:#0A84FF;">02</span>
+          <span style="font-size:12.5px;color:rgba(235,235,245,.75);line-height:1.5;">点「测速」批量探测，顶部进度条推进，完成后延迟数字逐个刷新并重新着色。</span>
+        </div>
+        <div style="display:flex;gap:10px;">
+          <span style="font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:11px;color:#0A84FF;">03</span>
+          <span style="font-size:12.5px;color:rgba(235,235,245,.75);line-height:1.5;">选择节点即时切换，已有连接平滑迁移；失败时走系统通知，不弹窗打断。</span>
+        </div>
+      </div>
+      <div style="height:1px;background:rgba(255,255,255,.07);"></div>
+      <span style="font-size:11.5px;color:rgba(235,235,245,.45);line-height:1.6;">延迟色阶：&lt;200ms 绿 · 200–500ms 黄 · &gt;500ms 红 · 超时灰。流量单位保留两位小数。</span>
+    </div>
+  </div>
+</section>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1480,&quot;height&quot;:900}}">
+const G='#32D74B', Y='#FFD60A', R='#FF453A', GR='#8E8E93';
+const LG='#248A3D', LY='#B25000', LR='#D70015';
+
+class Component extends DCLogic {
+  state = {
+    connected: true, mode: 'rule', tab: 'general', sel: 'n1',
+    testing: false, prog: 0, openGroup: 'g-manual',
+    sw: { launch: true, auto: true, silent: false, sysproxy: true, speed: true, tun: true },
+    nodes: [
+      { id:'n1', name:'香港 IEPL 01 · 专线', region:'HK', proto:'Hysteria2', ms:42 },
+      { id:'n2', name:'香港 IEPL 02 · 专线', region:'HK', proto:'Hysteria2', ms:58 },
+      { id:'n3', name:'日本 东京 BGP', region:'JP', proto:'VLESS-Reality', ms:126 },
+      { id:'n4', name:'新加坡 中转 A', region:'SG', proto:'Trojan', ms:238 },
+      { id:'n5', name:'美国 洛杉矶 CN2', region:'US', proto:'VMess-WS', ms:512 },
+      { id:'n6', name:'德国 法兰克福', region:'DE', proto:'Shadowsocks', ms:null },
+    ],
+  };
+
+  componentWillUnmount() { clearInterval(this._t); }
+
+  color(ms) { return ms == null ? GR : ms < 200 ? G : ms <= 500 ? Y : R; }
+  lightColor(ms) { return ms == null ? GR : ms < 200 ? LG : ms <= 500 ? LY : LR; }
+  msText(ms) { return ms == null ? '超时' : ms + ' ms'; }
+
+  runTest = () => {
+    if (this.state.testing) return;
+    this.setState({ testing: true, prog: 0 });
+    this._t = setInterval(() => {
+      this.setState(s => {
+        const p = s.prog + 7;
+        if (p >= 100) {
+          clearInterval(this._t);
+          return { prog: 100, testing: false, nodes: s.nodes.map(n => ({
+            ...n, ms: Math.random() < 0.12 ? null : Math.max(28, Math.round((n.ms || 700) * (0.7 + Math.random() * 0.7)))
+          })) };
+        }
+        return { prog: p };
+      });
+    }, 110);
+  };
+
+  mkGroup(g) {
+    const open = this.state.openGroup === g.id;
+    return { ...g, open,
+      chev: open ? 'rotate(90deg)' : 'rotate(0deg)',
+      rowBg: open ? 'rgba(255,255,255,.05)' : 'transparent',
+      valueColor: g.value === 'REJECT-DROP' ? '#FF6961' : g.value === 'DIRECT' ? 'rgba(235,235,245,.5)' : '#4DA3FF',
+      go: () => this.setState(s => ({ openGroup: s.openGroup === g.id ? null : g.id })) };
+  }
+
+  mkSw(k) {
+    const on = this.state.sw[k];
+    return { bg: on ? '#0A84FF' : 'rgba(120,120,128,.36)', x: on ? '18px' : '0px',
+      go: () => this.setState(s => ({ sw: { ...s.sw, [k]: !s.sw[k] } })) };
+  }
+  mkTab(k) {
+    const on = this.state.tab === k;
+    return { on, bg: on ? 'linear-gradient(180deg,rgba(20,140,255,.95),rgba(0,102,222,.95))' : 'transparent', fg: on ? '#fff' : '#f2f2f7',
+      ic: on ? '#fff' : 'rgba(235,235,245,.7)', go: () => this.setState({ tab: k }) };
+  }
+  mkMode(k) {
+    const on = this.state.mode === k;
+    return { bg: on ? 'rgba(255,255,255,.18)' : 'transparent', fg: on ? '#f2f2f7' : 'rgba(235,235,245,.55)',
+      go: () => this.setState({ mode: k }) };
+  }
+
+  renderVals() {
+    const c = this.state.connected;
+    const nodes = this.state.nodes.map(n => {
+      const on = n.id === this.state.sel;
+      return { ...n, color: this.color(n.ms), lightColor: this.lightColor(n.ms), dot: this.color(n.ms),
+        latencyText: this.msText(n.ms), rowBg: on ? 'rgba(10,132,255,.16)' : 'transparent',
+        checkColor: on ? '#0A84FF' : 'transparent', select: () => this.setState({ sel: n.id }) };
+    });
+    const cur = nodes.find(n => n.id === this.state.sel) || nodes[0];
+    const modeName = { global: '全局模式', rule: '规则模式', direct: '直连模式' }[this.state.mode];
+
+    return {
+      nodes, current: cur, nodeCount: nodes.length,
+      lightNodes: nodes.slice(0, 4).map((n, i) => ({ ...n, rowBg: i === 0 ? 'rgba(0,122,255,.12)' : 'transparent' })),
+      toggle: () => this.setState(s => ({ connected: !s.connected })),
+      statusTitle: c ? '已连接' : '未连接',
+      statusSub: c ? modeName + ' · 02:14:33' : '点按连接',
+      power: { bg: c ? 'rgba(52,199,89,.16)' : 'rgba(255,255,255,.07)',
+        border: c ? 'rgba(52,199,89,.45)' : 'rgba(255,255,255,.12)',
+        icon: c ? G : 'rgba(235,235,245,.45)' },
+      ring: { color: c ? 'rgba(52,199,89,.55)' : 'transparent', anim: c ? 'sbRing 2.2s ease-out infinite' : 'none' },
+      modeLabel: { global: '全局', rule: '规则', direct: '直连' }[this.state.mode],
+      up: c ? '1.24 MB/s' : '0.00 KB/s', down: c ? '8.61 MB/s' : '0.00 KB/s',
+      connCount: c ? '37' : '0',
+      modes: { global: this.mkMode('global'), rule: this.mkMode('rule'), direct: this.mkMode('direct') },
+      sw: { launch: this.mkSw('launch'), auto: this.mkSw('auto'), silent: this.mkSw('silent'),
+        sysproxy: this.mkSw('sysproxy'), speed: this.mkSw('speed'), tun: this.mkSw('tun') },
+      groups: [
+        { id:'g-ads', tag:'AD', name:'广告拦截', value:'REJECT-DROP' },
+        { id:'g-ai', tag:'AI', name:'人工智能', value:'美国策略' },
+        { id:'g-dev', tag:'DV', name:'开发服务', value:'美国策略' },
+        { id:'g-media', tag:'MD', name:'国际媒体', value:'美国策略' },
+        { id:'g-social', tag:'SC', name:'社交平台', value:'美国策略' },
+        { id:'g-apple', tag:'AP', name:'苹果服务', value:'DIRECT' },
+        { id:'g-cn', tag:'CN', name:'国内流量', value:'DIRECT' },
+        { id:'g-fallback', tag:'FB', name:'故障转移', value:'美国策略' },
+        { id:'g-manual', tag:'MN', name:'全球手动', value:cur.name },
+        { id:'g-hk', tag:'HK', name:'香港策略', value:'香港自动' },
+        { id:'g-jp', tag:'JP', name:'日本策略', value:'日本自动' },
+        { id:'g-us', tag:'US', name:'美国策略', value:'美国自动' },
+      ].map(g => this.mkGroup({ ...g, nodes })),
+      tabs: { general: this.mkTab('general'), subs: this.mkTab('subs'), proxies: this.mkTab('proxies'),
+        rules: this.mkTab('rules'), dns: this.mkTab('dns'), conns: this.mkTab('conns'), about: this.mkTab('about') },
+      tabTitle: { general:'通用', subs:'订阅', proxies:'代理节点', rules:'路由规则', dns:'DNS', conns:'连接日志', about:'关于' }[this.state.tab],
+      testing: this.state.testing, progress: this.state.prog + '%',
+      testLabel: this.state.testing ? '测速中…' : '批量测速',
+      runTest: this.runTest,
+      subs: [
+        { name:'Aurora 机场', url:'https://sub.aurora.net/link?token=•••', updated:'12 分钟前', count:'42' },
+        { name:'Lynx Networks', url:'https://api.lynx.io/sub/v2?uid=•••', updated:'2 小时前', count:'28' },
+        { name:'自建节点', url:'file:///Users/lin/.config/sing-box/self.json', updated:'昨天 21:04', count:'14' },
+      ],
+      rules: [
+        { type:'DOMAIN-SUFFIX', value:'github.com', target:'Proxy', hits:'1,204', tagBg:'rgba(10,132,255,.15)', tagFg:'#4DA3FF' },
+        { type:'DOMAIN-KEYWORD', value:'analytics', target:'Reject', hits:'8,916', tagBg:'rgba(255,69,58,.14)', tagFg:'#FF6961' },
+        { type:'IP-CIDR', value:'192.168.0.0/16', target:'Direct', hits:'642', tagBg:'rgba(52,199,89,.14)', tagFg:'#4FE06B' },
+        { type:'GEOIP', value:'cn', target:'Direct', hits:'23,401', tagBg:'rgba(52,199,89,.14)', tagFg:'#4FE06B' },
+        { type:'RULE-SET', value:'geosite-openai', target:'Proxy', hits:'318', tagBg:'rgba(10,132,255,.15)', tagFg:'#4DA3FF' },
+        { type:'PROCESS-NAME', value:'Xcode', target:'Direct', hits:'96', tagBg:'rgba(255,214,10,.14)', tagFg:'#FFD60A' },
+        { type:'FINAL', value:'—', target:'Proxy', hits:'5,077', tagBg:'rgba(255,255,255,.09)', tagFg:'rgba(235,235,245,.6)' },
+      ],
+      dns: [
+        { role:'默认', addr:'https://1.1.1.1/dns-query', via:'Proxy' },
+        { role:'国内', addr:'https://223.5.5.5/dns-query', via:'Direct' },
+        { role:'解析器', addr:'223.5.5.5', via:'Direct' },
+        { role:'Fake-IP 段', addr:'198.18.0.0/15', via:'—' },
+      ],
+      conns: [
+        { host:'api.github.com:443', proto:'TCP/TLS', rule:'DOMAIN-SUFFIX', bytes:'2.41 MB', dur:'04:12' },
+        { host:'registry.npmjs.org:443', proto:'TCP/TLS', rule:'RULE-SET', bytes:'18.06 MB', dur:'01:47' },
+        { host:'gateway.icloud.com:443', proto:'TCP/TLS', rule:'GEOIP', bytes:'0.32 MB', dur:'12:03' },
+        { host:'chat.openai.com:443', proto:'TCP/TLS', rule:'RULE-SET', bytes:'5.88 MB', dur:'08:31' },
+        { host:'192.168.1.14:5353', proto:'UDP', rule:'IP-CIDR', bytes:'0.04 MB', dur:'22:15' },
+        { host:'cdn.jsdelivr.net:443', proto:'TCP/TLS', rule:'DOMAIN-KEYWORD', bytes:'1.12 MB', dur:'00:38' },
+        { host:'telemetry.vendor.io:443', proto:'TCP', rule:'REJECT', bytes:'0.00 MB', dur:'00:01' },
+      ],
+      chart: Array.from({ length: 44 }, (_, i) => ({ h: (12 + Math.round(Math.abs(Math.sin(i * 0.7) * 76))) + '%' })),
+      tokens: [
+        { name:'bg/window', hex:'#1C1C1E', use:'窗口背景' },
+        { name:'bg/sidebar', hex:'#252528', use:'侧栏' },
+        { name:'bg/card', hex:'#2C2C2E', use:'分组卡片' },
+        { name:'separator', hex:'#2E2E31', use:'分隔线 8%' },
+        { name:'label/primary', hex:'#F2F2F7', use:'主文字' },
+        { name:'label/secondary', hex:'#98989E', use:'次要文字' },
+        { name:'accent/blue', hex:'#0A84FF', use:'强调 / 选中' },
+        { name:'state/success', hex:'#32D74B', use:'已连接 / 低延迟' },
+        { name:'state/warning', hex:'#FFD60A', use:'中延迟 / 命中规则' },
+        { name:'state/error', hex:'#FF453A', use:'高延迟 / 拒绝' },
+        { name:'state/disabled', hex:'#8E8E93', use:'超时 / 断开' },
+      ],
+      symbols: [
+        { where:'菜单栏图标（已连接）', name:'shield.lefthalf.filled' },
+        { where:'菜单栏图标（断开）', name:'shield.slash' },
+        { where:'电源开关', name:'power' },
+        { where:'通用', name:'gearshape' },
+        { where:'订阅', name:'square.stack.3d.up' },
+        { where:'代理节点', name:'globe.asia.australia' },
+        { where:'路由规则', name:'list.bullet.indent' },
+        { where:'DNS', name:'point.3.filled.connected.trianglepath.dotted' },
+        { where:'连接日志', name:'arrow.left.arrow.right' },
+        { where:'关于', name:'info.circle' },
+        { where:'测速', name:'speedometer' },
+        { where:'搜索', name:'magnifyingglass' },
+      ],
+    };
+  }
+}
+</script>
+</body>
+</html>
