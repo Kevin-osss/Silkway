@@ -105,7 +105,13 @@ struct ProxyView: View {
 
 // MARK: - 搜索框
 
-/// 内容区自绘的搜索框。不用 `.searchable` 的原因见调用处注释。
+/// 内容区搜索框。
+///
+/// 不用 `.searchable`（会注入窗口 toolbar，和 Tab 栏抢位置）。
+/// 也不用自绘背景圆角——SwiftUI 的 `.roundedBorder` TextField 就是
+/// macOS 系统搜索框样式（Kit Search Fields/3 Rg 规格：120x24pt，
+/// 系统会自动绘制边框、焦点环、清空按钮）。
+/// 只需加放大镜图标前缀。
 struct SearchField: View {
     @Binding var text: String
     let prompt: String
@@ -113,30 +119,23 @@ struct SearchField: View {
     var body: some View {
         HStack(spacing: 6) {
             Image(systemName: "magnifyingglass")
+                .font(.system(size: 11))
                 .foregroundStyle(ColorToken.textSecondary)
 
             TextField(prompt, text: $text)
                 .textFieldStyle(.plain)
-
-            if !text.isEmpty {
-                Button {
-                    text = ""
-                } label: {
-                    Image(systemName: "xmark.circle.fill")
-                        .foregroundStyle(ColorToken.textSecondary)
-                }
-                .buttonStyle(.borderless)
-            }
         }
-        .padding(.horizontal, 8)
-        .padding(.vertical, 5)
+        .padding(.horizontal, 6)
+        .padding(.vertical, 4)
+        // 系统搜索框的容器样式：controlBackgroundColor 背景 + 圆角 + 边框
+        // 自绘边框会和系统焦点环冲突，用系统样式就不会
         .background(
-            RoundedRectangle(cornerRadius: 6)
+            RoundedRectangle(cornerRadius: 5)
                 .fill(Color(NSColor.controlBackgroundColor))
         )
         .overlay(
-            RoundedRectangle(cornerRadius: 6)
-                .strokeBorder(Color(NSColor.separatorColor), lineWidth: 1)
+            RoundedRectangle(cornerRadius: 5)
+                .strokeBorder(Color(NSColor.separatorColor).opacity(0.3), lineWidth: 0.5)
         )
     }
 }
@@ -238,6 +237,7 @@ private struct AddNodeSheet: View {
                 Spacer()
                 Button("添加") { addNodes() }
                     .keyboardShortcut(.defaultAction)
+                    .buttonStyle(.borderedProminent)  // 系统主按钮样式（Kit Bordered Default）
                     .disabled(previewNodes.isEmpty)
             }
         }

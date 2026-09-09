@@ -314,6 +314,7 @@ private struct AddSubscriptionSheet: View {
                     Task { await save() }
                 }
                 .keyboardShortcut(.defaultAction)
+                .buttonStyle(.borderedProminent)  // 系统主按钮样式（Kit Bordered Default）
                 .disabled(name.isEmpty || urlString.isEmpty || isSaving)
             }
         }
