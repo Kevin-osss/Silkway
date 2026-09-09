@@ -11,43 +11,62 @@ struct SubscriptionView: View {
     @State private var errorMessage: String?
 
     var body: some View {
-        Group {
-            if manager.subscriptions.isEmpty {
-                ContentUnavailableView {
-                    Label("还没有订阅", systemImage: "square.stack.3d.up")
-                } description: {
-                    Text("添加一个订阅链接，Silkway 会自动拉取节点列表")
-                } actions: {
-                    Button("添加订阅") { showingAddSheet = true }
-                }
-            } else {
-                List {
-                    ForEach(manager.subscriptions) { sub in
-                        SubscriptionRow(
-                            subscription: sub,
-                            nodeCount: manager.allNodes.filter { $0.subscriptionID == sub.id }.count,
-                            isUpdating: updatingID == sub.id
-                        ) {
-                            await refresh(subscription: sub)
-                        }
+        VStack(spacing: 0) {
+            Group {
+                if manager.subscriptions.isEmpty {
+                    ContentUnavailableView {
+                        Label("还没有订阅", systemImage: "square.stack.3d.up")
+                    } description: {
+                        Text("添加一个订阅链接，Silkway 会自动拉取节点列表")
+                    } actions: {
+                        Button("添加订阅") { showingAddSheet = true }
                     }
-                    .onDelete(perform: delete)
+                } else {
+                    List {
+                        ForEach(manager.subscriptions) { sub in
+                            SubscriptionRow(
+                                subscription: sub,
+                                nodeCount: manager.allNodes.filter { $0.subscriptionID == sub.id }.count,
+                                isUpdating: updatingID == sub.id
+                            ) {
+                                await refresh(subscription: sub)
+                            }
+                        }
+                        .onDelete(perform: delete)
 
-                    Section("高级") {
-                        UserAgentField()
+                        Section("高级") {
+                            UserAgentField()
+                        }
                     }
                 }
             }
-        }
-        .toolbar {
-            ToolbarItem {
+            // 空状态下 ContentUnavailableView 不一定擑满高度，
+            // 不显式擑满的话底部按钮条会贴在内容正下方而不是窗口底部
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+
+            Divider()
+
+            // 按钮放页面底部而不是窗口 toolbar：设置窗口的 Tab 栏就是 toolbar本身，
+            // 子页注册的 ToolbarItem 会被合并进去且不随 Tab 切换清除，
+            // 造成「每个 Tab 都有个 + 号，点了没反应」（2026-09-09 实测）。
+            HStack {
                 Button {
                     showingAddSheet = true
                 } label: {
-                    Image(systemName: "plus")
+                    Label("添加订阅", systemImage: "plus")
                 }
-                .help("添加订阅")
+                .help("添加机场订阅链接")
+
+                Spacer()
+
+                if !manager.subscriptions.isEmpty {
+                    Text("\(manager.subscriptions.count) 个订阅")
+                        .font(.caption)
+                        .foregroundStyle(ColorToken.textSecondary)
+                }
             }
+            .padding(.horizontal, 12)
+            .padding(.vertical, 8)
         }
         .sheet(isPresented: $showingAddSheet) {
             AddSubscriptionSheet { name, url in

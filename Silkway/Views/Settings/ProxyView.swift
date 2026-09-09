@@ -28,45 +28,116 @@ struct ProxyView: View {
     }
 
     var body: some View {
-        Group {
-            if manager.allNodes.isEmpty {
-                ContentUnavailableView {
-                    Label("还没有节点", systemImage: "globe.asia.australia")
-                } description: {
-                    Text("在「订阅」页添加订阅，或手动粘贴节点链接")
-                } actions: {
-                    Button("手动添加节点") { showingAddSheet = true }
-                }
-            } else {
-                List {
-                    if !manualNodes.isEmpty {
-                        Section("手动添加 (\(manualNodes.count))") {
-                            ForEach(manualNodes) { NodeOverviewRow(node: $0) }
-                        }
+        VStack(spacing: 0) {
+            Group {
+                if manager.allNodes.isEmpty {
+                    ContentUnavailableView {
+                        Label("还没有节点", systemImage: "globe.asia.australia")
+                    } description: {
+                        Text("在「订阅」页添加订阅，或手动粘贴节点链接")
+                    } actions: {
+                        Button("手动添加节点") { showingAddSheet = true }
                     }
-                    ForEach(manager.subscriptions) { sub in
-                        let nodes = nodes(for: sub)
-                        if !nodes.isEmpty {
-                            Section("\(sub.name) (\(nodes.count))") {
-                                ForEach(nodes) { NodeOverviewRow(node: $0) }
+                } else {
+                    VStack(spacing: 0) {
+                        // 搜索框画在内容区而不用 .searchable：
+                        // 设置窗口的 Tab 栏就是窗口 toolbar，.searchable 会把搜索框
+                        // 注入同一条 toolbar，和 Tab 图标抢位置 → 挤成「搜索框 + 下方小字」
+                        // 的畸形布局，还会顶歪 Tab 图标（2026-09-09 实测）。
+                        SearchField(text: $searchText, prompt: "搜索节点名或服务器")
+                            .padding(.horizontal, 12)
+                            .padding(.vertical, 8)
+
+                        Divider()
+
+                        List {
+                            if !manualNodes.isEmpty {
+                                Section("手动添加 (\(manualNodes.count))") {
+                                    ForEach(manualNodes) { NodeOverviewRow(node: $0) }
+                                }
+                            }
+                            ForEach(manager.subscriptions) { sub in
+                                let nodes = nodes(for: sub)
+                                if !nodes.isEmpty {
+                                    Section("\(sub.name) (\(nodes.count))") {
+                                        ForEach(nodes) { NodeOverviewRow(node: $0) }
+                                    }
+                                }
                             }
                         }
                     }
                 }
-                .searchable(text: $searchText, prompt: "搜索节点名或服务器")
             }
-        }
-        .toolbar {
-            ToolbarItem {
-                Button { showingAddSheet = true } label: {
-                    Image(systemName: "plus")
+            // 空状态下 ContentUnavailableView 不一定擑满高度，
+            // 不显式擑满的话底部按钮条会贴在内容正下方而不是窗口底部
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+
+            Divider()
+
+            // 动作按钮放页面底部而不是窗口 toolbar：
+            // 子页注册的 ToolbarItem 会被合并进唯一的窗口 toolbar，且不随 Tab 切换清除 ——
+            // 结果是每个 Tab 都看得到别的页的按钮，而它的 sheet 挂在未渲染的视图上，
+            // 点下去没任何反应。
+            HStack {
+                Button {
+                    showingAddSheet = true
+                } label: {
+                    Label("手动添加节点", systemImage: "plus")
                 }
-                .help("手动添加节点（粘贴 URI）")
+                .help("粘贴 ss:// vmess:// 等节点链接")
+
+                Spacer()
+
+                if !manager.allNodes.isEmpty {
+                    Text("共 \(manager.allNodes.count) 个节点")
+                        .font(.caption)
+                        .foregroundStyle(ColorToken.textSecondary)
+                }
             }
+            .padding(.horizontal, 12)
+            .padding(.vertical, 8)
         }
         .sheet(isPresented: $showingAddSheet) {
             AddNodeSheet()
         }
+    }
+}
+
+// MARK: - 搜索框
+
+/// 内容区自绘的搜索框。不用 `.searchable` 的原因见调用处注释。
+struct SearchField: View {
+    @Binding var text: String
+    let prompt: String
+
+    var body: some View {
+        HStack(spacing: 6) {
+            Image(systemName: "magnifyingglass")
+                .foregroundStyle(ColorToken.textSecondary)
+
+            TextField(prompt, text: $text)
+                .textFieldStyle(.plain)
+
+            if !text.isEmpty {
+                Button {
+                    text = ""
+                } label: {
+                    Image(systemName: "xmark.circle.fill")
+                        .foregroundStyle(ColorToken.textSecondary)
+                }
+                .buttonStyle(.borderless)
+            }
+        }
+        .padding(.horizontal, 8)
+        .padding(.vertical, 5)
+        .background(
+            RoundedRectangle(cornerRadius: 6)
+                .fill(Color(NSColor.controlBackgroundColor))
+        )
+        .overlay(
+            RoundedRectangle(cornerRadius: 6)
+                .strokeBorder(Color(NSColor.separatorColor), lineWidth: 1)
+        )
     }
 }
 
