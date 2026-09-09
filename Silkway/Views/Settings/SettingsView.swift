@@ -60,7 +60,9 @@ struct AboutView: View {
             Image(nsImage: appIcon)
                 .resizable()
                 .frame(width: 96, height: 96)
-                .shadow(radius: 4, y: 2)
+                // 系统 About 窗口（系统设置 → 关于本机）的图标无阴影，
+                // 只用 squircle 容器。移除自定义阴影对齐系统样式。
+                // Kit 无 About 页规格，此为系统行为观察结论。
 
             Text("Silkway")
                 .font(.title.bold())
