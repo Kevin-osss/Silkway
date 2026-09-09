@@ -4,22 +4,32 @@ import SwiftUI
 ///
 /// 当前是 P0 空壳 —— 各 Tab 只有占位内容，P1 起逐项实现。
 struct SettingsView: View {
+    /// 菜单栏「连接日志」等入口深链到指定 Tab（ActionFooter 写入 silkway.settings.tab）
+    @AppStorage("silkway.settings.tab") private var selectedTab = "general"
+
     var body: some View {
-        TabView {
+        TabView(selection: $selectedTab) {
             GeneralView()
                 .tabItem { Label("通用", systemImage: "gearshape") }
+                .tag("general")
             SubscriptionView()
                 .tabItem { Label("订阅", systemImage: "square.stack.3d.up") }
+                .tag("subscription")
             ProxyView()
                 .tabItem { Label("代理节点", systemImage: "globe.asia.australia") }
+                .tag("proxy")
             RuleView()
                 .tabItem { Label("路由规则", systemImage: "list.bullet.indent") }
+                .tag("rule")
             DNSView()
                 .tabItem { Label("DNS", systemImage: "point.3.filled.connected.trianglepath.dotted") }
+                .tag("dns")
             ConnectionView()
                 .tabItem { Label("连接日志", systemImage: "arrow.left.arrow.right") }
+                .tag("connections")
             AboutView()
                 .tabItem { Label("关于", systemImage: "info.circle") }
+                .tag("about")
         }
         // 只给 min 不给 ideal 会让窗口被内容的理想尺寸牵着走：
         // 切 Tab、流量条出现/消失、长 URL 文本……都会顶动窗口尺寸，

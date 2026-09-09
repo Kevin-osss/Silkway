@@ -70,6 +70,11 @@ struct AppConfig: Codable, Hashable, Sendable {
     /// 开放修改是因为总有机场只认特定 UA（常见：clash-verge / v2rayN）。
     var subscriptionUserAgent: String = "sing-box/1.13.19"
 
+    // MARK: 完整配置
+    /// 当前生效的完整配置。nil 表示节点模式（ConfigBuilder 生成统一 PROXY）。
+    /// 用户可在菜单栏「当前配置」处切换；切换需要重启 sing-box。
+    var activeProfileID: UUID?
+
     init() {}
 }
 
@@ -105,6 +110,7 @@ extension AppConfig {
         d.customDirectDomains = try c.decodeIfPresent([String].self, forKey: .customDirectDomains) ?? d.customDirectDomains
         d.dnsProfile = try c.decodeIfPresent(String.self, forKey: .dnsProfile) ?? d.dnsProfile
         d.subscriptionUserAgent = try c.decodeIfPresent(String.self, forKey: .subscriptionUserAgent) ?? d.subscriptionUserAgent
+        d.activeProfileID = try c.decodeIfPresent(UUID.self, forKey: .activeProfileID)
 
         self = d
     }

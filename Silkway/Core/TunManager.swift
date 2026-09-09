@@ -46,7 +46,10 @@ final class TunManager {
     /// 生成 TUN 配置并写入共享目录，返回配置里的 API 端口。
     /// - Returns: (configURL, apiPort)。daemon 启动后主 App 通过这个端口连 Clash API。
     @discardableResult
-    func writeConfig(nodes: [ProxyNode], config: AppConfig, apiPort: UInt16, mixedPort: UInt16) throws -> URL {
+    func writeConfig(
+        nodes: [ProxyNode], config: AppConfig, apiPort: UInt16, mixedPort: UInt16,
+        profile: ImportedProfile? = nil
+    ) throws -> URL {
         var tunConfig = config
         tunConfig.tunEnabled = true   // 强制 TUN inbound
 
@@ -56,6 +59,7 @@ final class TunManager {
             config: tunConfig,
             apiPort: apiPort,
             mixedPort: mixedPort,
+            profile: profile,
             ruleSets: ruleSets
         )
 

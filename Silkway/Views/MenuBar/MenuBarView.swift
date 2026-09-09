@@ -1,9 +1,17 @@
 import SwiftUI
 
-/// 菜单栏弹窗根容器（手册 5.1：固定宽 340px，高度自适应最大 ~500px）。
+/// 菜单栏弹窗根容器（手册 5.1：固定宽 340px，高度自适应）。
+///
+/// 结构（设计评审后定稿）：
+///   状态头（电源/速率/模式）→ 快捷控制（接管/出站/当前配置）→
+///   策略组列表（壳组过滤 + 高度上限）→ 底部操作。
+/// 点组进入二级选择页（GroupDetailView），节点选择不挤占首页。
 struct MenuBarView: View {
     @State private var manager = SingBoxManager.shared
     @State private var subscriptions = SubscriptionManager.shared
+
+    /// 二级页导航栈：空 = 首页；非空 = 组选择页（可嵌套子组）
+    @State private var navPath: [ProxyGroup] = []
 
     var body: some View {
         VStack(spacing: 0) {
@@ -12,20 +20,26 @@ struct MenuBarView: View {
             Divider()
                 .padding(.horizontal, 14)
 
-            ModePicker()
-                .padding(.horizontal, 14)
-                .padding(.vertical, 10)
+            QuickControls()
 
             Divider()
                 .padding(.horizontal, 14)
 
-            if manager.isRunning, !manager.groups.isEmpty {
-                // 不限高：GroupList 自己根据内容和屏幕高度决定，
-                // 写死 300pt 会让弹窗永远矮一截、只能内部滚动
-                GroupList()
+            if let group = navPath.last {
+                GroupDetailView(group: group, path: $navPath)
+            } else if manager.isRunning {
+                let groups = GroupList(onSelectGroup: { _ in }).visibleGroups
+                if !groups.isEmpty {
+                    GroupList { group in
+                        navPath.append(group)
+                    }
+                } else {
+                    emptyState
+                        .frame(minHeight: 80)
+                }
             } else {
                 emptyState
-                    .frame(minHeight: 110)
+                    .frame(minHeight: 80)
             }
 
             Divider()

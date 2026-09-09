@@ -74,6 +74,13 @@ final class SingBoxManager {
     /// 让生成的 selector 只含 direct-out，与环境里有没有真实订阅无关。
     var nodeProvider: () -> [ProxyNode] = { SubscriptionManager.shared.allNodes }
 
+    /// 当前生效的完整配置来源。默认读 AppConfig.activeProfileID → ProfileStore；
+    /// 测试注入固定 profile 或 nil（节点模式）。
+    var profileProvider: () -> ImportedProfile? = {
+        guard let id = AppConfigStore.shared.config.activeProfileID else { return nil }
+        return ProfileStore.shared.profile(id: id)
+    }
+
     /// 应用配置来源。默认从 AppConfigStore 取（持久化的用户设置）；
     /// 测试注入固定配置，避免读写真实磁盘。
     var configProvider: () -> AppConfig = { AppConfigStore.shared.config }
@@ -123,7 +130,8 @@ final class SingBoxManager {
         tunAPIPort = apiPort
         _ = try tun.writeConfig(
             nodes: nodeProvider(), config: config,
-            apiPort: apiPort, mixedPort: 0
+            apiPort: apiPort, mixedPort: 0,
+            profile: profileProvider()
         )
 
         // 注册前如果已注册，先注销确保用新配置
@@ -399,6 +407,7 @@ final class SingBoxManager {
     private func buildConfig() throws -> URL {
         let nodes = nodeProvider()
         let config = configProvider()
+        let profile = profileProvider()
         // 绕过大陆开启时注入规则集（未下载时为空数组，规则自然不生效）
         let ruleSets = config.bypassChinaMainland ? RuleSetManager.shared.ruleSetConfig() : []
         let data = try ConfigBuilder.data(
@@ -406,6 +415,7 @@ final class SingBoxManager {
             config: config,
             apiPort: currentAPIPort,
             mixedPort: currentMixedPort,
+            profile: profile,
             ruleSets: ruleSets
         )
         let url = appSupportDir.appendingPathComponent("config.json")
