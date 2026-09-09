@@ -110,6 +110,10 @@ private struct SubscriptionRow: View {
                     .foregroundStyle(ColorToken.textSecondary)
                     .lineLimit(1)
                     .truncationMode(.middle)
+                    // lineLimit 只管显示截断，不管布局诉求：
+                    // 这行的理想宽度仍是整条 URL 的长度，会向上顶宽窗口。
+                    // 显式封顶才能断开这条传播链。
+                    .frame(maxWidth: 420, alignment: .leading)
 
                 HStack(spacing: 8) {
                     Label("\(nodeCount) 个节点", systemImage: "point.3.connected.trianglepath.dotted")

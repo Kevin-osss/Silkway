@@ -21,7 +21,16 @@ struct SettingsView: View {
             AboutView()
                 .tabItem { Label("关于", systemImage: "info.circle") }
         }
-        .frame(minWidth: 700, minHeight: 500)
+        // 只给 min 不给 ideal 会让窗口被内容的理想尺寸牵着走：
+        // 切 Tab、流量条出现/消失、长 URL 文本……都会顶动窗口尺寸，
+        // 而工具栏图标是居中布局，窗口一变宽整排图标就平移 = 肉眼可见的抖动。
+        // （2026-09-08 实测：同一页面两次截图窗口为 742×552 和 736×624）
+        // 明确给出 ideal 后，窗口只认这个尺寸；maxWidth/Height 留 .infinity
+        // 是为了内容仍能填满、用户仍能手动缩放。
+        .frame(
+            minWidth: 700, idealWidth: 720, maxWidth: .infinity,
+            minHeight: 500, idealHeight: 560, maxHeight: .infinity
+        )
     }
 }
 
