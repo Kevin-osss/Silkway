@@ -55,6 +55,76 @@ final class SubscriptionManager {
         return nodes
     }
 
+    /// 从本地文件导入配置（Clash YAML / sing-box JSON）。
+    ///
+    /// 与 URL 订阅的区别：本地文件不会自动更新，是一次性导入。
+    /// 两级解析：
+    ///   1. 含策略组/规则 → 存为 ImportedProfile（出现在「当前配置」里）
+    ///   2. 纯节点 → 加为手动节点（出现在「代理节点」页的手动分组）
+    ///
+    /// - Returns: 导入结果摘要（供 UI 展示，如「已导入完整配置（3 个策略组）」）
+    @discardableResult
+    func importLocalFile(url: URL) async throws -> String {
+        guard let text = try? String(contentsOf: url, encoding: .utf8) else {
+            throw SubscriptionError.invalidURL
+        }
+
+        let name = url.deletingPathExtension().lastPathComponent
+        let subID = UUID()
+
+        // 一级：完整配置（含策略组/规则）
+        // 同名配置重复导入时复用既有 id（按名字精确查重，
+        // 因为 subscriptionID 对本地文件没有意义——每次都是新生成的）
+        let existingID = ProfileStore.shared.allProfiles
+            .first(where: { $0.name == name })?.id
+        let importResult = ProfileImporter.attemptImport(
+            text: text, subscriptionID: subID, name: name,
+            existingProfileID: existingID
+        )
+        if let profile = importResult.profile {
+            let isUpdate = existingID != nil
+            ProfileStore.shared.saveProfile(profile)
+            let verb = isUpdate ? "已更新" : "已导入"
+            return "\(verb)完整配置「\(name)」（\(profile.proxyGroups.count) 个策略组）"
+        }
+
+        // 二级：纯节点
+        let nodes = SubscriptionParser.parse(text)
+        guard !nodes.isEmpty else {
+            throw SubscriptionError.unsupportedFormat
+        }
+
+        // 手动节点（subscriptionID = nil）
+        // 如果名字和已有节点重复（订阅节点或之前导入的手动节点），
+        // 加序号后缀区分——sing-box 的 outbound tag 必须全局唯一，
+        // 重复 tag 会让配置启动直接失败（实测：duplicate outbound/endpoint tag）
+        let existingNames = Set(store.allNodes.map(\.name))
+        var nameCount: [String: Int] = [:]
+        for node in nodes {
+            let baseName = node.name
+            let count = nameCount[baseName, default: 0]
+            nameCount[baseName] = count + 1
+
+            let finalName = (existingNames.contains(baseName) || count > 0)
+                ? "\(baseName) (\(count + 1))"
+                : baseName
+
+            let manual = ProxyNode(
+                name: finalName,
+                server: node.server,
+                port: node.port,
+                proxyProtocol: node.proxyProtocol,
+                countryCode: node.countryCode,
+                latency: node.latency,
+                hasBeenTested: node.hasBeenTested,
+                outboundJSON: node.outboundJSON,
+                subscriptionID: nil
+            )
+            store.addManualNode(manual)
+        }
+        return "已导入 \(nodes.count) 个手动节点"
+    }
+
     /// 更新所有订阅（P1 后台自动检查复用这个）。
     func updateAll() async {
         for sub in store.subscriptions {

@@ -19,3 +19,6 @@ xcuserdata/
 
 # Swift 构建产物（229MB，不入库）
 .build/
+
+# 打包产物（DMG 安装包，自行构建分发）
+*.dmg

@@ -9,6 +9,7 @@ struct SubscriptionView: View {
     @State private var showingAddSheet = false
     @State private var updatingID: UUID?
     @State private var errorMessage: String?
+    @State private var importMessage: String?
 
     var body: some View {
         VStack(spacing: 0) {
@@ -57,6 +58,13 @@ struct SubscriptionView: View {
                 }
                 .help("添加机场订阅链接")
 
+                Button {
+                    importFromFile()
+                } label: {
+                    Label("从文件导入", systemImage: "doc.badge.arrow.up")
+                }
+                .help("导入本地 Clash YAML / sing-box 配置文件")
+
                 Spacer()
 
                 if !manager.subscriptions.isEmpty {
@@ -77,6 +85,11 @@ struct SubscriptionView: View {
             Button("好") { errorMessage = nil }
         } message: {
             Text(errorMessage ?? "")
+        }
+        .alert("导入成功", isPresented: .constant(importMessage != nil)) {
+            Button("好") { importMessage = nil }
+        } message: {
+            Text(importMessage ?? "")
         }
         // 打开页面时顺带刷新已过期的订阅
         .task {
@@ -107,6 +120,30 @@ struct SubscriptionView: View {
     private func delete(at offsets: IndexSet) {
         for index in offsets {
             manager.deleteSubscription(id: manager.subscriptions[index].id)
+        }
+    }
+
+    /// 打开文件选择器导入本地配置。
+    /// 沙盒下需要用户在 NSOpenPanel 里显式授权，不能程序预设路径。
+    private func importFromFile() {
+        let panel = NSOpenPanel()
+        panel.title = "导入配置文件"
+        panel.message = "选择 Clash YAML 或 sing-box JSON 配置文件"
+        panel.allowedContentTypes = [.yaml, .json]
+        panel.allowsMultipleSelection = false
+        panel.canChooseDirectories = false
+
+        guard panel.runModal() == .OK, let url = panel.url else { return }
+
+        Task {
+            do {
+                let result = try await manager.importLocalFile(url: url)
+                importMessage = result
+                // 新导入的配置可能改变了可用节点/策略组，热重载
+                await SingBoxManager.shared.reloadConfigIfRunning()
+            } catch {
+                errorMessage = error.localizedDescription
+            }
         }
     }
 }
