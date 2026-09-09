@@ -1,0 +1,130 @@
+# Disclosure Controls
+
+原页面名称：􀁰 Disclosure Controls
+Page ID：`A2D20781-0570-49BF-87E3-3B0AA2AB3C8D`
+来源：`pages/A2D20781-0570-49BF-87E3-3B0AA2AB3C8D.json`（位于 evidence/source-json.zip）
+
+下列为样本定义；使用脚本 show 查询嵌套引用、覆盖项和原始属性。
+
+| 原始 Symbol 名称 | Symbol ID | Layer ID | 样本宽 × 高 |
+|---|---|---|---|
+| Disclosure Buttons/Dark/Content Area/1 Mn/Down, 1 - Idle | `BF2A5DCA-3017-431C-A230-E9E1A1A0CF92` | `CAD1F79A-2C38-4652-9E21-863A1667CC65` | 16 × 16 |
+| Disclosure Buttons/Dark/Content Area/1 Mn/Down, 3 - Clicked | `3D6000F1-5AE9-4403-9B6A-75FD8D56F859` | `D26307EB-C1AD-475E-9F95-5436D7582C2B` | 16 × 16 |
+| Disclosure Buttons/Dark/Content Area/1 Mn/Down, 4 - Disabled | `D11AD7BF-EBD7-4000-B01A-0AB4F2091300` | `78B60CA6-AD95-49A7-A11A-0D7B400C4144` | 16 × 16 |
+| Disclosure Buttons/Dark/Content Area/1 Mn/Up, 1 - Idle | `211B5A5B-9385-48A5-ACF2-B2102A40A6D2` | `4FDC21AA-0624-46ED-BA74-37C68AF12AC3` | 16 × 16 |
+| Disclosure Buttons/Dark/Content Area/1 Mn/Up, 3 - Clicked | `D62E1017-01E1-4D93-9FBC-F9522041CCA6` | `C4110729-3FB3-4BD4-B1B8-703BA239D7CB` | 16 × 16 |
+| Disclosure Buttons/Dark/Content Area/1 Mn/Up, 4 - Disabled | `DBDBE729-2B15-433B-9C96-D749CB0397D8` | `EC5B8B52-1059-4099-9FC2-7CFEDF7A17AE` | 16 × 16 |
+| Disclosure Buttons/Dark/Content Area/2 Sm/Down, 1 - Idle | `3A5484F2-0662-4ABE-81A0-246A973937DF` | `4D69C2C5-327F-44D1-8974-BB76A4F9A0E9` | 20 × 20 |
+| Disclosure Buttons/Dark/Content Area/2 Sm/Down, 3 - Clicked | `AA930432-58E1-4F63-B14D-EBB2DA0CCAC8` | `781CAA07-3ACC-4F10-84D7-8B1B912EBB52` | 20 × 20 |
+| Disclosure Buttons/Dark/Content Area/2 Sm/Down, 4 - Disabled | `6A989B1B-172E-476B-ACB3-813E02B691CC` | `AB78D7D1-BF50-4811-8BE2-E29987D67C79` | 20 × 20 |
+| Disclosure Buttons/Dark/Content Area/2 Sm/Up, 1 - Idle | `8318720C-6E95-44E4-A6E2-E941D84948B8` | `367B9954-E823-4FFB-BD3D-8499D1B7721D` | 20 × 20 |
+| Disclosure Buttons/Dark/Content Area/2 Sm/Up, 3 - Clicked | `581B8816-BF28-47AF-8088-F807477048AB` | `D0EC441F-870E-434E-A765-FF5D68FCB6B1` | 20 × 20 |
+| Disclosure Buttons/Dark/Content Area/2 Sm/Up, 4 - Disabled | `631A2B63-89D2-48C0-B376-6B052ED991BA` | `13BE1C3A-4981-4B44-95A8-1E017FBA475E` | 20 × 20 |
+| Disclosure Buttons/Dark/Content Area/3 Rg/Down, 1 - Idle | `29DE3D04-EC59-4D39-9A11-E68C23218710` | `9AAFC0BB-A45A-44DE-AF53-5F92488940E9` | 24 × 24 |
+| Disclosure Buttons/Dark/Content Area/3 Rg/Down, 3 - Clicked | `EE08EBAF-2BB0-49E1-8F27-78C1B5461CCF` | `D1E3D328-5E24-48B1-ACD7-825F3EEE341D` | 24 × 24 |
+| Disclosure Buttons/Dark/Content Area/3 Rg/Down, 4 - Disabled | `65378D6E-250D-459A-BB30-E9C7B811A421` | `DEB753CE-3BA6-4D30-9D71-202815FA31DB` | 24 × 24 |
+| Disclosure Buttons/Dark/Content Area/3 Rg/Up, 1 - Idle | `05907FED-3D68-4149-8967-F99C016C8DAA` | `BF8704FA-82C3-47B5-927A-858A2CF732B4` | 24 × 24 |
+| Disclosure Buttons/Dark/Content Area/3 Rg/Up, 3 - Clicked | `81E022C8-A848-4E38-9646-E333895CFBB9` | `71ACB5B8-E5AB-40BE-BD7D-1DFE69C77309` | 24 × 24 |
+| Disclosure Buttons/Dark/Content Area/3 Rg/Up, 4 - Disabled | `4BD3822A-6106-45BB-9E8A-A2BEBD6CC6F3` | `3BB204AA-9B73-4309-A662-A9142F0504C5` | 24 × 24 |
+| Disclosure Buttons/Dark/Content Area/4 Lg/Down, 1 - Idle | `369B13EC-3C0F-4F5A-B4C8-ECEB9E725F9D` | `D1CF60A4-922C-4956-BF19-00096CA43CD6` | 28 × 28 |
+| Disclosure Buttons/Dark/Content Area/4 Lg/Down, 3 - Clicked | `7275A2AC-F925-499E-97B0-458C9D8D2D2E` | `15FF5CA9-23CB-49D0-9BBD-ECB9428DB74F` | 28 × 28 |
+| Disclosure Buttons/Dark/Content Area/4 Lg/Down, 4 - Disabled | `A86C165D-EB92-4CDC-A2F5-6C7D6C94FAE0` | `EB971D83-3834-4029-9FA3-9E8381F226DA` | 28 × 28 |
+| Disclosure Buttons/Dark/Content Area/4 Lg/Up, 1 - Idle | `2D6FA508-E1EE-4E78-B1C6-612764B63760` | `8693170A-A725-413D-AAF9-EABA3845273D` | 28 × 28 |
+| Disclosure Buttons/Dark/Content Area/4 Lg/Up, 3 - Clicked | `792DDEE5-C89D-4F2D-AE24-3E15BB090884` | `07EEC6CD-014D-48B7-B80F-5AA09AAF52D4` | 28 × 28 |
+| Disclosure Buttons/Dark/Content Area/4 Lg/Up, 4 - Disabled | `1653ACF1-0FBB-49B6-B50A-C618FB462ACA` | `5876C54D-6745-43B1-8B55-44573A13C40D` | 28 × 28 |
+| Disclosure Buttons/Dark/Content Area/5 XL/Down, 1 - Idle | `A3D4B1F7-28A4-4790-BBDE-921B793C10D4` | `E713AE28-8B11-4418-86AC-AE2A2DA8CD70` | 36 × 36 |
+| Disclosure Buttons/Dark/Content Area/5 XL/Down, 3 - Clicked | `4319BC31-5C6C-49DD-8728-DFFD68BDFBB9` | `02028F02-FE12-402B-9505-2177DAC604B9` | 36 × 36 |
+| Disclosure Buttons/Dark/Content Area/5 XL/Down, 4 - Disabled | `AC57C839-8B3B-412F-ADAD-D6E70154A512` | `F5F559F9-B428-44E2-8676-ABC75878B385` | 36 × 36 |
+| Disclosure Buttons/Dark/Content Area/5 XL/Up, 1 - Idle | `65EDD969-6E1E-471E-B67A-CE4606B8C66E` | `5F565873-9EDC-4DC7-8728-FE57BE47685A` | 36 × 36 |
+| Disclosure Buttons/Dark/Content Area/5 XL/Up, 3 - Clicked | `C2EF3FD4-CBE4-4787-B437-889F9B804DFD` | `3E7881BF-7978-47E9-89EF-B08A99D97AA2` | 36 × 36 |
+| Disclosure Buttons/Dark/Content Area/5 XL/Up, 4 - Disabled | `B0579775-A1F3-4CA2-8A0F-96D1C619C5DA` | `4395920B-339B-4D80-A2F4-223487104964` | 36 × 36 |
+| Disclosure Buttons/Dark/Over-glass/1 Mn/Down, 1 - Idle | `F88F7C74-50B7-4ADD-83CF-5F8587CBCF1F` | `FFB85E3B-A3D2-413C-B944-AF7FF0BE424E` | 16 × 16 |
+| Disclosure Buttons/Dark/Over-glass/1 Mn/Down, 3 - Clicked | `D414E501-F332-4565-AD7A-4F42FA6F25DA` | `E3BBEFA2-C1E9-4524-86E9-54E32A01A1FC` | 16 × 16 |
+| Disclosure Buttons/Dark/Over-glass/1 Mn/Down, 4 - Disabled | `A24126C9-E868-451C-9BA7-4415F16B9E04` | `468C8B81-B67A-4230-ABDF-E4EC23A14D3C` | 16 × 16 |
+| Disclosure Buttons/Dark/Over-glass/1 Mn/Up, 1 - Idle | `149ED1A2-7843-4FF1-B014-879126CC78CD` | `44BF1A39-024F-4068-80DD-58A0AA499FE2` | 16 × 16 |
+| Disclosure Buttons/Dark/Over-glass/1 Mn/Up, 3 - Clicked | `9A113BAD-3707-40A4-BA0D-0E3958C2B795` | `B61DB465-EEE4-456A-AD71-269EFEC52A28` | 16 × 16 |
+| Disclosure Buttons/Dark/Over-glass/1 Mn/Up, 4 - Disabled | `C32D5BB4-1B4E-4A4E-B8A4-AC11DA28988A` | `37598CEB-F0A9-4518-A16A-6547C870F495` | 16 × 16 |
+| Disclosure Buttons/Dark/Over-glass/2 Sm/Down, 1 - Idle | `89B0023A-706F-4862-88EB-8CB13FE0096C` | `0BAF14CB-1E6D-42F7-91F1-FCF7C69C76E1` | 20 × 20 |
+| Disclosure Buttons/Dark/Over-glass/2 Sm/Down, 3 - Clicked | `A79904CF-6BAC-438D-B273-98F6DB4A2DBA` | `F2B1D258-3BF2-4536-A40B-1A554837683B` | 20 × 20 |
+| Disclosure Buttons/Dark/Over-glass/2 Sm/Down, 4 - Disabled | `D7BDC42A-A37B-469C-81A7-02326EED1C61` | `79471DD3-2C49-4134-9A82-AC81325AFC18` | 20 × 20 |
+| Disclosure Buttons/Dark/Over-glass/2 Sm/Up, 1 - Idle | `118B1E65-92BF-4402-ADE0-EA39498B2A28` | `4AF9ACFD-BC7F-4396-ADAF-95B03008882B` | 20 × 20 |
+| Disclosure Buttons/Dark/Over-glass/2 Sm/Up, 3 - Clicked | `E859F57C-CC51-4E76-B8ED-909461415FFA` | `1BB2840B-D06C-47A0-93D8-8EDDB9D6EA47` | 20 × 20 |
+| Disclosure Buttons/Dark/Over-glass/2 Sm/Up, 4 - Disabled | `BCD7F200-E02C-481D-BC8F-80850E162102` | `809FEDD2-6A0F-4252-B5DA-8BD12DF4FAE1` | 20 × 20 |
+| Disclosure Buttons/Dark/Over-glass/3 Rg/Down, 1 - Idle | `26BA8EE5-ABBD-4C7F-8C1F-C3692EC52236` | `834A5011-EFED-4C0A-BAB0-62CFC201118F` | 24 × 24 |
+| Disclosure Buttons/Dark/Over-glass/3 Rg/Down, 3 - Clicked | `C1FBAB39-D5DB-40B2-AB5C-DD95F11BCE9E` | `3B157C36-1704-41EB-A07E-4CA160C8DD22` | 24 × 24 |
+| Disclosure Buttons/Dark/Over-glass/3 Rg/Down, 4 - Disabled | `9BD59A27-5054-4B1E-AFBA-F140801C52CF` | `F2299550-18C0-4D7B-A613-9F55F4766431` | 24 × 24 |
+| Disclosure Buttons/Dark/Over-glass/3 Rg/Up, 1 - Idle | `0982D9AC-7CE7-4C3E-8625-03757B7BB4DB` | `F503530B-992D-4C35-B4ED-BDE00268E69B` | 24 × 24 |
+| Disclosure Buttons/Dark/Over-glass/3 Rg/Up, 3 - Clicked | `802AD621-0909-497E-9264-A41FACC88EB2` | `60DF9364-3A40-4F7B-B87D-94A661E69938` | 24 × 24 |
+| Disclosure Buttons/Dark/Over-glass/3 Rg/Up, 4 - Disabled | `B9D10ADE-38FB-448B-8982-EF135C1B7798` | `D29942A1-FACD-4D1C-881E-E35BDC6C5B41` | 24 × 24 |
+| Disclosure Buttons/Dark/Over-glass/4 Lg/Down, 1 - Idle | `02CD7690-2B6C-4172-8085-44BF6D983F32` | `ACE0C30D-EA1F-4BE9-81D8-3B2D12060C34` | 28 × 28 |
+| Disclosure Buttons/Dark/Over-glass/4 Lg/Down, 3 - Clicked | `3D98BB52-13DE-4ED4-A299-83425873A11F` | `4F60E7B0-4D75-457B-A078-26262CFFCBEB` | 28 × 28 |
+| Disclosure Buttons/Dark/Over-glass/4 Lg/Down, 4 - Disabled | `467555AA-686D-4819-BF1C-8D9AD9C9C6AF` | `099CA568-8400-4CD1-97F8-5B64FAA4F6F1` | 28 × 28 |
+| Disclosure Buttons/Dark/Over-glass/4 Lg/Up, 1 - Idle | `7A790D8A-FD73-4795-AF8F-DF2575EFC29B` | `94D34743-1046-4A2A-AAE1-E39C77A3409D` | 28 × 28 |
+| Disclosure Buttons/Dark/Over-glass/4 Lg/Up, 3 - Clicked | `430B87CD-9EF3-421D-B88E-BFCDB0C3B073` | `025F6FFE-71D5-4DF5-A22A-CEDFB472B7FF` | 28 × 28 |
+| Disclosure Buttons/Dark/Over-glass/4 Lg/Up, 4 - Disabled | `7A5366A4-648B-4E1E-A81D-B750EC8AF95A` | `C7E8792A-4CF7-4D6D-BB1A-A89F176DC34C` | 28 × 28 |
+| Disclosure Buttons/Dark/Over-glass/5 XL/Down, 1 - Idle | `4ABABE8E-ED0D-4FD7-86F2-022ED2A41404` | `43800DB1-9FF4-411C-B290-35EE1EA8F623` | 36 × 36 |
+| Disclosure Buttons/Dark/Over-glass/5 XL/Down, 3 - Clicked | `6E0077A7-5581-4E97-802E-430447559B6C` | `FF270070-0584-45FA-A4F7-2A0BB7D9DA23` | 36 × 36 |
+| Disclosure Buttons/Dark/Over-glass/5 XL/Down, 4 - Disabled | `62B512A8-B540-45AA-9FD7-B5749A1FA95B` | `2201D9EE-F272-4902-843A-88D74E00D6E5` | 36 × 36 |
+| Disclosure Buttons/Dark/Over-glass/5 XL/Up, 1 - Idle | `780A7321-0248-4E52-98E2-EF134F8B4C65` | `6D663037-7CC0-435E-8E73-453F8C449B90` | 36 × 36 |
+| Disclosure Buttons/Dark/Over-glass/5 XL/Up, 3 - Clicked | `2CFF6038-C276-4D83-89A6-99EEDF558A81` | `CF2BA4B1-2EAD-4690-91CD-56EDBD5752B3` | 36 × 36 |
+| Disclosure Buttons/Dark/Over-glass/5 XL/Up, 4 - Disabled | `3105C3BD-840F-4EAE-9D6C-2A36F44C90ED` | `274D3E9A-B1B9-48B8-A637-0C6DA11F5A89` | 36 × 36 |
+| Disclosure Buttons/Light/Content Area/1 Mn/Down, 1 - Idle | `9A6BB7AD-A161-44D4-A7C2-80480DC61B54` | `A48CE1BB-894E-4676-85DA-D29F694DD0E7` | 16 × 16 |
+| Disclosure Buttons/Light/Content Area/1 Mn/Down, 3 - Clicked | `75843665-13DA-44AB-9EA5-55A4F3583360` | `0C7F3E60-56E5-44E4-818C-69094C00EE53` | 16 × 16 |
+| Disclosure Buttons/Light/Content Area/1 Mn/Down, 4 - Disabled | `A8B61732-DE37-4F7A-B040-D20D369EAEDB` | `8A4FD36D-64E5-49E2-B0D0-8F6A44DB6526` | 16 × 16 |
+| Disclosure Buttons/Light/Content Area/1 Mn/Up, 1 - Idle | `FA32E3DA-AF69-452E-AC90-883434289490` | `1BA7D103-369F-4ABF-82DF-8595914C398A` | 16 × 16 |
+| Disclosure Buttons/Light/Content Area/1 Mn/Up, 3 - Clicked | `12FE8D1A-E9FF-4930-A918-E2D86B75323C` | `0C310986-6927-40B6-B6B4-09C9305AC7A3` | 16 × 16 |
+| Disclosure Buttons/Light/Content Area/1 Mn/Up, 4 - Disabled | `E4089218-B2E7-470F-B2B7-891EBD78AF33` | `148A6A76-3BEC-45E3-8A48-812076E50FDE` | 16 × 16 |
+| Disclosure Buttons/Light/Content Area/2 Sm/Down, 1 - Idle | `141F45F0-CD5B-4282-8535-AC4BAC7669FD` | `D6D36084-EEDD-4261-A073-91863F1B26BB` | 20 × 20 |
+| Disclosure Buttons/Light/Content Area/2 Sm/Down, 3 - Clicked | `0EE09079-72AD-4DB7-A9A8-E40BB880F2D5` | `D032ACB5-D587-4C87-91F9-DCA3EFFDEDB6` | 20 × 20 |
+| Disclosure Buttons/Light/Content Area/2 Sm/Down, 4 - Disabled | `D6B8A95C-DFBE-4448-8CC7-995D5CB7E128` | `B095F635-1B15-4D52-B356-42C4F527522E` | 20 × 20 |
+| Disclosure Buttons/Light/Content Area/2 Sm/Up, 1 - Idle | `D085BF23-A7E7-4179-B64A-14C33AF64191` | `70BF7EAD-DE2F-4288-963B-F3DD2C346B19` | 20 × 20 |
+| Disclosure Buttons/Light/Content Area/2 Sm/Up, 3 - Clicked | `42363D17-F2BA-4C9C-BB12-26007EE8186D` | `14396F17-50CF-4BB5-B170-2DE9E9468FF0` | 20 × 20 |
+| Disclosure Buttons/Light/Content Area/2 Sm/Up, 4 - Disabled | `25CE053F-9C68-46F9-8EC3-6E05E1308D16` | `836B6BDC-F878-4F24-9A1E-7187DCAC1AF2` | 20 × 20 |
+| Disclosure Buttons/Light/Content Area/3 Rg/Down, 1 - Idle | `F2DEF65A-DC1D-4AAA-8A1C-3B6537E6B3A0` | `ACD8E32B-E58E-475E-A1A5-49879FE3B860` | 24 × 24 |
+| Disclosure Buttons/Light/Content Area/3 Rg/Down, 3 - Clicked | `97438701-FDA1-477D-91AE-7EC7E9AB6F3E` | `9FDC92EE-6EAA-4FB6-9861-A78BBB1B2FC2` | 24 × 24 |
+| Disclosure Buttons/Light/Content Area/3 Rg/Down, 4 - Disabled | `69DBF898-9963-41B1-AED7-BE5F093A8A87` | `30D5D930-2A06-494C-8D5A-CFBE98EF75EB` | 24 × 24 |
+| Disclosure Buttons/Light/Content Area/3 Rg/Up, 1 - Idle | `BBC301AB-E191-42F4-9F91-B130AE871F73` | `17E49B47-1B17-4EA8-9FA9-F08E4618FB6E` | 24 × 24 |
+| Disclosure Buttons/Light/Content Area/3 Rg/Up, 3 - Clicked | `0580D5C4-6382-4B9F-92E0-93522BC2782B` | `916A215B-2DD5-4140-A613-2786C6225C47` | 24 × 24 |
+| Disclosure Buttons/Light/Content Area/3 Rg/Up, 4 - Disabled | `44084670-DB76-4F74-BF29-1B9768CD36F8` | `612C0541-B2B9-4C2D-BB3B-288DCF10A4F7` | 24 × 24 |
+| Disclosure Buttons/Light/Content Area/4 Lg/Down, 1 - Idle | `46448C80-3898-4C8E-BB01-77569B777294` | `26F6D174-10E9-4641-B92C-69A84BA3AA60` | 28 × 28 |
+| Disclosure Buttons/Light/Content Area/4 Lg/Down, 3 - Clicked | `53745E74-BB5B-4B66-8A44-30B988F28CC6` | `4410B52D-DCEC-411C-9E8D-D02F4BB5735D` | 28 × 28 |
+| Disclosure Buttons/Light/Content Area/4 Lg/Down, 4 - Disabled | `0936EE4E-10D0-4D5A-AE93-24765CAD291C` | `0D9FFFCC-247D-4404-A303-D7AC4ABB965B` | 28 × 28 |
+| Disclosure Buttons/Light/Content Area/4 Lg/Up, 1 - Idle | `91FA0626-9BD8-4786-A169-544D45B2DD27` | `060D6756-DABB-4CFA-A08A-5B4837645A05` | 28 × 28 |
+| Disclosure Buttons/Light/Content Area/4 Lg/Up, 3 - Clicked | `7D26B164-2F62-4E11-A772-A3AD403F1C46` | `F3E67305-AD63-4705-A81D-8156CE29B95F` | 28 × 28 |
+| Disclosure Buttons/Light/Content Area/4 Lg/Up, 4 - Disabled | `735E5A34-CA16-4E4D-9B6C-76CC0B46E3B2` | `D46A80E7-3CCC-4938-A263-DB076F26A5D7` | 28 × 28 |
+| Disclosure Buttons/Light/Content Area/5 XL/Down, 1 - Idle | `8422739D-52E1-458C-BF82-F1E332E7750C` | `6BF483EB-5F25-4D2F-8097-EFED484567F6` | 36 × 36 |
+| Disclosure Buttons/Light/Content Area/5 XL/Down, 3 - Clicked | `A78F9F03-DCA2-4EAD-851F-499BD92D2C4F` | `12A44F54-4EFC-49C1-8180-57B93E062F5F` | 36 × 36 |
+| Disclosure Buttons/Light/Content Area/5 XL/Down, 4 - Disabled | `A6C7E909-B065-4B75-B81C-D4E10FC58D70` | `ECD43661-BBD0-40BE-8F3E-F3ED99193AC2` | 36 × 36 |
+| Disclosure Buttons/Light/Content Area/5 XL/Up, 1 - Idle | `3D5CE6E7-B37E-4180-9A03-DBB64184268D` | `30B4220C-02D6-4846-8798-6721218019F3` | 36 × 36 |
+| Disclosure Buttons/Light/Content Area/5 XL/Up, 3 - Clicked | `1374DCF8-0810-4D83-A338-C8E3B2D59691` | `D15DA5A0-56AB-4F7F-BCD7-E56A6D7368E7` | 36 × 36 |
+| Disclosure Buttons/Light/Content Area/5 XL/Up, 4 - Disabled | `09DCE0C6-7358-4B9B-9277-4AFDA12C01E7` | `C6EF297D-B95C-43C1-8662-2B5E9E7623B3` | 36 × 36 |
+| Disclosure Buttons/Light/Over-glass/1 Mn/Down, 1 - Idle | `E0FB97D1-3116-40A8-9D84-F223A261A73A` | `061E1D39-A519-4410-A305-C3DD817A6A13` | 16 × 16 |
+| Disclosure Buttons/Light/Over-glass/1 Mn/Down, 3 - Clicked | `B92D7E62-BCCD-4EE3-9FB2-44A71860EC7B` | `2253EBFE-29FD-43AA-8414-F5C80530ABA4` | 16 × 16 |
+| Disclosure Buttons/Light/Over-glass/1 Mn/Down, 4 - Disabled | `59EF8B4B-5889-493C-801D-5BCF199DC8B0` | `8D16BDA8-98F4-4941-B9F9-599A26A3C25E` | 16 × 16 |
+| Disclosure Buttons/Light/Over-glass/1 Mn/Up, 1 - Idle | `1613CFC0-2D4A-47E1-AD18-6AC2D60BED98` | `4BE0FA37-9A58-4E27-A2A6-9B43C73137D2` | 16 × 16 |
+| Disclosure Buttons/Light/Over-glass/1 Mn/Up, 3 - Clicked | `A1483D78-C668-4D84-A0AE-CA2CF5323A0F` | `AC10236B-2817-4BAC-9BA9-69A1CA4D21D0` | 16 × 16 |
+| Disclosure Buttons/Light/Over-glass/1 Mn/Up, 4 - Disabled | `A78D3F98-229F-4F87-8B01-02030091FF9F` | `9B7B05A7-3CAE-4491-A7BE-C1919B1C167B` | 16 × 16 |
+| Disclosure Buttons/Light/Over-glass/2 Sm/Down, 1 - Idle | `3F258E81-EFC5-4E68-A192-946CF18CFD24` | `F3AB03A0-7D9B-49AF-B372-B7D75F6BC83E` | 20 × 20 |
+| Disclosure Buttons/Light/Over-glass/2 Sm/Down, 3 - Clicked | `EFBFAC2F-7EA9-4F8B-9D26-1AB7A8C3D83A` | `C01BAF7D-9FCF-4974-8B25-782599C97F48` | 20 × 20 |
+| Disclosure Buttons/Light/Over-glass/2 Sm/Down, 4 - Disabled | `41EDF7A1-A054-4B4B-8577-9F07E2EA4958` | `438C5191-4EBB-4F3A-BA13-DA46852C5446` | 20 × 20 |
+| Disclosure Buttons/Light/Over-glass/2 Sm/Up, 1 - Idle | `076E3666-FF38-4562-BDAB-F10F54D9826F` | `192B5596-AEEE-48BC-8A4D-29752B212A28` | 20 × 20 |
+| Disclosure Buttons/Light/Over-glass/2 Sm/Up, 3 - Clicked | `CDCE838C-6708-419A-91BC-AB26C8E54185` | `B4437A98-D962-4822-AAC6-616224BE95D1` | 20 × 20 |
+| Disclosure Buttons/Light/Over-glass/2 Sm/Up, 4 - Disabled | `7B12F82A-4065-4C89-A381-7BADE2D2470E` | `E2BE74E8-D835-4C66-A27C-0B6B3131A5A9` | 20 × 20 |
+| Disclosure Buttons/Light/Over-glass/3 Rg/Down, 1 - Idle | `6F840C6A-E2F9-478B-B607-0A3E49D5B0FE` | `77B173DD-1B36-4D94-9506-EB9F258DE335` | 24 × 24 |
+| Disclosure Buttons/Light/Over-glass/3 Rg/Down, 3 - Clicked | `06E9E017-2461-408C-BA8D-2DA6205F2CA4` | `245AC630-8F39-4C02-9D7E-4582153ADB55` | 24 × 24 |
+| Disclosure Buttons/Light/Over-glass/3 Rg/Down, 4 - Disabled | `AB8995DB-9F98-425A-B34A-FE72661B4A08` | `A0530F0B-8DD9-4190-B020-CE3D20D1447B` | 24 × 24 |
+| Disclosure Buttons/Light/Over-glass/3 Rg/Up, 1 - Idle | `D00A40CB-4432-49F2-98DB-E44DBB756D6D` | `532F5CFC-1BDA-49A9-BFDA-A6DA78571C3D` | 24 × 24 |
+| Disclosure Buttons/Light/Over-glass/3 Rg/Up, 3 - Clicked | `5548CE45-6711-4DE2-B965-6841DB485D64` | `7AABEDB7-96C5-458E-A2E6-0F8A8D6E4790` | 24 × 24 |
+| Disclosure Buttons/Light/Over-glass/3 Rg/Up, 4 - Disabled | `1370123C-C288-4BBB-8A09-D5EB4AA00EA0` | `AB27CE20-1F01-45F0-886D-3F9688BC7D12` | 24 × 24 |
+| Disclosure Buttons/Light/Over-glass/4 Lg/Down, 1 - Idle | `AFF82D17-7CE2-427C-A3D1-F3DD6C37D636` | `4233C1FA-4D7C-4C5B-84D5-711DD581AEDF` | 28 × 28 |
+| Disclosure Buttons/Light/Over-glass/4 Lg/Down, 3 - Clicked | `36904BA5-F882-4C55-A899-63A6AABBAD94` | `B51D4E68-9D76-48A3-B63D-8FCCC3552A42` | 28 × 28 |
+| Disclosure Buttons/Light/Over-glass/4 Lg/Down, 4 - Disabled | `ADBEB2AF-C626-4252-B1C8-0AF69C9BDCE7` | `0214A1CB-BFA7-4290-B727-DB4B3B8BD2BD` | 28 × 28 |
+| Disclosure Buttons/Light/Over-glass/4 Lg/Up, 1 - Idle | `6D1D2CFF-61D1-4F24-AA3B-F4F8B425E505` | `137BA3CD-E559-4D08-988A-B83BB3A75B3E` | 28 × 28 |
+| Disclosure Buttons/Light/Over-glass/4 Lg/Up, 3 - Clicked | `337332B2-1956-4757-8842-6D36861B0D6A` | `C200E6AC-373E-44A2-8A78-E5C76BE2FFE5` | 28 × 28 |
+| Disclosure Buttons/Light/Over-glass/4 Lg/Up, 4 - Disabled | `88B16234-10CC-42CF-B968-4AC7314F49EB` | `FFA8F6F8-4690-44EC-9B8E-CE2CB2F75E38` | 28 × 28 |
+| Disclosure Buttons/Light/Over-glass/5 XL/Down, 1 - Idle | `C30D224A-9DAA-4EE8-B5FF-98C150736CDF` | `F61E2A73-B307-4065-BE6C-A827EEDD476C` | 36 × 36 |
+| Disclosure Buttons/Light/Over-glass/5 XL/Down, 3 - Clicked | `B62B430C-4192-42D2-8010-43C4BA64CD83` | `BD376D73-D3CD-45E2-B4EA-51BDD629878C` | 36 × 36 |
+| Disclosure Buttons/Light/Over-glass/5 XL/Down, 4 - Disabled | `42F89A5E-19A7-43D7-AC9B-36B7DCC3B815` | `125B1015-87B0-4D80-B773-1F72A9076925` | 36 × 36 |
+| Disclosure Buttons/Light/Over-glass/5 XL/Up, 1 - Idle | `A8B553A2-707F-4D98-9EFC-4CBEFD28FC1D` | `01DDDD00-912C-4D4A-814C-413A4F4C43A5` | 36 × 36 |
+| Disclosure Buttons/Light/Over-glass/5 XL/Up, 3 - Clicked | `3C36B44E-DBA9-4BB3-AB38-3CAF3954134A` | `922B6594-C8CB-4CD5-A30D-69CBF878C5EE` | 36 × 36 |
+| Disclosure Buttons/Light/Over-glass/5 XL/Up, 4 - Disabled | `65C8F54D-A7A7-461D-8EF4-921B7AA1EDC0` | `880FC054-33AE-497F-99C6-2E8A23E3AAF3` | 36 × 36 |

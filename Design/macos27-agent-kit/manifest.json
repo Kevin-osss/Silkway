@@ -1,0 +1,66 @@
+{
+  "format": "macos27-agent-kit/1",
+  "generated_at_utc": "2026-09-09T05:32:05.662062+00:00",
+  "source": {
+    "filename": "Apple macOS 27 UI Kit.sketch",
+    "original_path": "/Users/kevinwang/Downloads/Apple macOS 27 UI Kit.sketch",
+    "bytes": 110587580,
+    "sha256": "8f83805217d979dc560d008fce66c1c77014f631cccff8978f31baf1d7ef3b28",
+    "official_resource_url": "https://developer.apple.com/design/resources/",
+    "sketch_library_url": "https://www.sketch.com/s/57153a31-3379-4737-8ac6-dbfd6525f052",
+    "kit_version_observed_in_changelog": "27.0.1",
+    "kit_date_observed_in_changelog": "June 23, 2026",
+    "version_note": "Observed text in Change Log page; not inferred from filename or Sketch schema.",
+    "sketch_app_version": "2026.2",
+    "sketch_build": 231037,
+    "sketch_file_format_version": 190,
+    "document_id": "E5937708-71B4-4D44-BB64-4B0E2CF20DE0",
+    "kit_version_evidence": [
+      {
+        "text": "June 23, 2026",
+        "layer_id": "B5E80770-A39D-4E79-841B-44EFF4E06A91",
+        "source_member": "pages/3D034C55-C963-4AAA-8FB2-ECA245F42D90.json",
+        "json_pointer": "/layers/0/layers/1/layers/1/layers/0"
+      },
+      {
+        "text": "27.0.1",
+        "layer_id": "FF1D353C-23AB-4236-9339-A830BEE2FBCD",
+        "source_member": "pages/3D034C55-C963-4AAA-8FB2-ECA245F42D90.json",
+        "json_pointer": "/layers/0/layers/1/layers/1/layers/1"
+      }
+    ]
+  },
+  "counts": {
+    "pages": 37,
+    "symbol_masters": 4679,
+    "symbol_instances": 4725,
+    "text_styles": 67,
+    "layer_styles": 285,
+    "local_swatches": 110,
+    "foreign_cached_swatches": 2,
+    "page_elements_outside_symbols": 592,
+    "text_layers_outside_symbols": 251,
+    "representative_native_pngs": 18
+  },
+  "all_layer_classes": {
+    "page": 37,
+    "group": 1947,
+    "bitmap": 111,
+    "text": 3312,
+    "rectangle": 2241,
+    "symbolInstance": 4725,
+    "shapePath": 334,
+    "shapeGroup": 245,
+    "symbolMaster": 4679,
+    "oval": 542
+  },
+  "evidence_archive": "evidence/source-json.zip",
+  "evidence_archive_sha256": "df57e0036848573c1fee6421fed8948616a6a39f1f5cf3cd9ba01a74720805a3",
+  "scope": {
+    "json_evidence": "Unmodified document.json, meta.json and all referenced pages.",
+    "original_images_and_fonts": "Not copied. Full original .sketch is required for further native rendering.",
+    "preview": "Embedded document preview plus separately exported representative components only.",
+    "native_api_mapping": "Not supplied by the Sketch file; must be checked against official SDK docs.",
+    "agent_rules": "Project guidance written by the assistant, not an Apple-authored specification."
+  }
+}

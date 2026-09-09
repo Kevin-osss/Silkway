@@ -1,0 +1,6351 @@
+[
+  {
+    "id": "B8533D92-D104-483F-8F92-87513072F7A3",
+    "name": "01 LargeTitle/Emphasized",
+    "source_member": "document.json",
+    "json_pointer": "/layerTextStyles/objects/0",
+    "font_raw": {
+      "name": "SFPro-Bold",
+      "size": 26
+    },
+    "paragraph_raw": {
+      "_class": "paragraphStyle",
+      "maximumLineHeight": 32,
+      "minimumLineHeight": 32,
+      "allowsDefaultTighteningForTruncation": 0,
+      "alignment": 0
+    },
+    "color_raw": {
+      "_class": "color",
+      "alpha": 0.85,
+      "blue": 0,
+      "green": 0,
+      "red": 0
+    },
+    "raw": {
+      "_class": "sharedStyle",
+      "do_objectID": "B8533D92-D104-483F-8F92-87513072F7A3",
+      "name": "01 LargeTitle/Emphasized",
+      "value": {
+        "_class": "style",
+        "do_objectID": "8FEFACEE-8620-4634-B393-F63F643BFDC6",
+        "endMarkerType": 0,
+        "miterLimit": 10,
+        "startMarkerType": 0,
+        "windingRule": 1,
+        "skipCorners": true,
+        "blurs": [],
+        "borderOptions": {
+          "_class": "borderOptions",
+          "isEnabled": true,
+          "dashPattern": [],
+          "centerDashes": true,
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0
+        },
+        "borders": [],
+        "colorControls": {
+          "_class": "colorControls",
+          "isEnabled": true,
+          "brightness": 0,
+          "contrast": 1,
+          "hue": 0,
+          "saturation": 1
+        },
+        "contextSettings": {
+          "_class": "graphicsContextSettings",
+          "blendMode": 0,
+          "opacity": 1,
+          "isProgressive": false
+        },
+        "fills": [],
+        "shadows": [],
+        "textStyle": {
+          "_class": "textStyle",
+          "encodedAttributes": {
+            "paragraphStyle": {
+              "_class": "paragraphStyle",
+              "maximumLineHeight": 32,
+              "minimumLineHeight": 32,
+              "allowsDefaultTighteningForTruncation": 0,
+              "alignment": 0
+            },
+            "MSAttributedStringFontAttribute": {
+              "_class": "fontDescriptor",
+              "attributes": {
+                "name": "SFPro-Bold",
+                "size": 26
+              }
+            },
+            "MSAttributedStringColorAttribute": {
+              "_class": "color",
+              "alpha": 0.85,
+              "blue": 0,
+              "green": 0,
+              "red": 0
+            }
+          },
+          "verticalAlignment": 0,
+          "skipColors": true,
+          "skipAlignment": true
+        }
+      }
+    }
+  },
+  {
+    "id": "82C5E736-E108-42A1-B604-B48F9519C8C0",
+    "name": "04 Title3/Default",
+    "source_member": "document.json",
+    "json_pointer": "/layerTextStyles/objects/1",
+    "font_raw": {
+      "name": "SFPro-Regular",
+      "size": 15
+    },
+    "paragraph_raw": {
+      "_class": "paragraphStyle",
+      "maximumLineHeight": 20,
+      "minimumLineHeight": 20,
+      "allowsDefaultTighteningForTruncation": 0,
+      "alignment": 0
+    },
+    "color_raw": {
+      "_class": "color",
+      "alpha": 0.85,
+      "blue": 0,
+      "green": 0,
+      "red": 0,
+      "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+    },
+    "raw": {
+      "_class": "sharedStyle",
+      "do_objectID": "82C5E736-E108-42A1-B604-B48F9519C8C0",
+      "name": "04 Title3/Default",
+      "value": {
+        "_class": "style",
+        "do_objectID": "7D724C1B-7933-48CC-A493-F0AFF8064EC0",
+        "endMarkerType": 0,
+        "miterLimit": 10,
+        "startMarkerType": 0,
+        "windingRule": 1,
+        "skipCorners": true,
+        "blurs": [],
+        "borderOptions": {
+          "_class": "borderOptions",
+          "isEnabled": true,
+          "dashPattern": [],
+          "centerDashes": true,
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0
+        },
+        "borders": [],
+        "colorControls": {
+          "_class": "colorControls",
+          "isEnabled": true,
+          "brightness": 0,
+          "contrast": 1,
+          "hue": 0,
+          "saturation": 1
+        },
+        "contextSettings": {
+          "_class": "graphicsContextSettings",
+          "blendMode": 0,
+          "opacity": 1,
+          "isProgressive": false
+        },
+        "fills": [],
+        "shadows": [],
+        "textStyle": {
+          "_class": "textStyle",
+          "encodedAttributes": {
+            "MSAttributedStringColorAttribute": {
+              "_class": "color",
+              "alpha": 0.85,
+              "blue": 0,
+              "green": 0,
+              "red": 0,
+              "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+            },
+            "paragraphStyle": {
+              "_class": "paragraphStyle",
+              "maximumLineHeight": 20,
+              "minimumLineHeight": 20,
+              "allowsDefaultTighteningForTruncation": 0,
+              "alignment": 0
+            },
+            "MSAttributedStringFontAttribute": {
+              "_class": "fontDescriptor",
+              "attributes": {
+                "name": "SFPro-Regular",
+                "size": 15
+              }
+            }
+          },
+          "verticalAlignment": 0,
+          "skipColors": true,
+          "skipAlignment": true
+        }
+      }
+    }
+  },
+  {
+    "id": "A33797F4-2146-4735-8E65-4B138116AD54",
+    "name": "11 Caption2/Emphasized",
+    "source_member": "document.json",
+    "json_pointer": "/layerTextStyles/objects/2",
+    "font_raw": {
+      "name": "SFPro-Semibold",
+      "size": 10
+    },
+    "paragraph_raw": {
+      "_class": "paragraphStyle",
+      "maximumLineHeight": 13,
+      "minimumLineHeight": 13,
+      "allowsDefaultTighteningForTruncation": 0,
+      "alignment": 0
+    },
+    "color_raw": {
+      "_class": "color",
+      "alpha": 0.85,
+      "blue": 0,
+      "green": 0,
+      "red": 0,
+      "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+    },
+    "raw": {
+      "_class": "sharedStyle",
+      "do_objectID": "A33797F4-2146-4735-8E65-4B138116AD54",
+      "name": "11 Caption2/Emphasized",
+      "value": {
+        "_class": "style",
+        "do_objectID": "E8987621-4014-48FB-B47D-81C5372BBF28",
+        "endMarkerType": 0,
+        "miterLimit": 10,
+        "startMarkerType": 0,
+        "windingRule": 1,
+        "skipCorners": true,
+        "blurs": [],
+        "borderOptions": {
+          "_class": "borderOptions",
+          "isEnabled": true,
+          "dashPattern": [],
+          "centerDashes": true,
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0
+        },
+        "borders": [],
+        "colorControls": {
+          "_class": "colorControls",
+          "isEnabled": true,
+          "brightness": 0,
+          "contrast": 1,
+          "hue": 0,
+          "saturation": 1
+        },
+        "contextSettings": {
+          "_class": "graphicsContextSettings",
+          "blendMode": 0,
+          "opacity": 1,
+          "isProgressive": false
+        },
+        "fills": [],
+        "shadows": [],
+        "textStyle": {
+          "_class": "textStyle",
+          "encodedAttributes": {
+            "MSAttributedStringFontAttribute": {
+              "_class": "fontDescriptor",
+              "attributes": {
+                "name": "SFPro-Semibold",
+                "size": 10
+              }
+            },
+            "MSAttributedStringColorAttribute": {
+              "_class": "color",
+              "alpha": 0.85,
+              "blue": 0,
+              "green": 0,
+              "red": 0,
+              "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+            },
+            "paragraphStyle": {
+              "_class": "paragraphStyle",
+              "maximumLineHeight": 13,
+              "minimumLineHeight": 13,
+              "allowsDefaultTighteningForTruncation": 0,
+              "alignment": 0
+            }
+          },
+          "verticalAlignment": 0,
+          "skipColors": true,
+          "skipAlignment": true
+        }
+      }
+    }
+  },
+  {
+    "id": "506CEC2F-50E2-4DE9-8E4C-E0067EDFFBA0",
+    "name": "10 Caption1/Default",
+    "source_member": "document.json",
+    "json_pointer": "/layerTextStyles/objects/3",
+    "font_raw": {
+      "name": "SFPro-Regular",
+      "size": 10
+    },
+    "paragraph_raw": {
+      "_class": "paragraphStyle",
+      "maximumLineHeight": 13,
+      "minimumLineHeight": 13,
+      "allowsDefaultTighteningForTruncation": 0,
+      "alignment": 0
+    },
+    "color_raw": {
+      "_class": "color",
+      "alpha": 0.85,
+      "blue": 0,
+      "green": 0,
+      "red": 0,
+      "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+    },
+    "raw": {
+      "_class": "sharedStyle",
+      "do_objectID": "506CEC2F-50E2-4DE9-8E4C-E0067EDFFBA0",
+      "name": "10 Caption1/Default",
+      "value": {
+        "_class": "style",
+        "do_objectID": "78E7038E-5B35-4B49-B876-F7F28015C5F2",
+        "endMarkerType": 0,
+        "miterLimit": 10,
+        "startMarkerType": 0,
+        "windingRule": 1,
+        "skipCorners": true,
+        "blurs": [],
+        "borderOptions": {
+          "_class": "borderOptions",
+          "isEnabled": true,
+          "dashPattern": [],
+          "centerDashes": true,
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0
+        },
+        "borders": [],
+        "colorControls": {
+          "_class": "colorControls",
+          "isEnabled": true,
+          "brightness": 0,
+          "contrast": 1,
+          "hue": 0,
+          "saturation": 1
+        },
+        "contextSettings": {
+          "_class": "graphicsContextSettings",
+          "blendMode": 0,
+          "opacity": 1,
+          "isProgressive": false
+        },
+        "fills": [],
+        "shadows": [],
+        "textStyle": {
+          "_class": "textStyle",
+          "encodedAttributes": {
+            "paragraphStyle": {
+              "_class": "paragraphStyle",
+              "maximumLineHeight": 13,
+              "minimumLineHeight": 13,
+              "allowsDefaultTighteningForTruncation": 0,
+              "alignment": 0
+            },
+            "MSAttributedStringColorAttribute": {
+              "_class": "color",
+              "alpha": 0.85,
+              "blue": 0,
+              "green": 0,
+              "red": 0,
+              "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+            },
+            "MSAttributedStringFontAttribute": {
+              "_class": "fontDescriptor",
+              "attributes": {
+                "name": "SFPro-Regular",
+                "size": 10
+              }
+            }
+          },
+          "verticalAlignment": 0,
+          "skipColors": true,
+          "skipAlignment": true
+        }
+      }
+    }
+  },
+  {
+    "id": "D06279F8-BF0B-4B46-8076-7267B04A2D0E",
+    "name": "05 Headline/Emphasized",
+    "source_member": "document.json",
+    "json_pointer": "/layerTextStyles/objects/4",
+    "font_raw": {
+      "name": "SFPro-Heavy",
+      "size": 13
+    },
+    "paragraph_raw": {
+      "_class": "paragraphStyle",
+      "maximumLineHeight": 16,
+      "minimumLineHeight": 16,
+      "allowsDefaultTighteningForTruncation": 0,
+      "alignment": 0
+    },
+    "color_raw": {
+      "_class": "color",
+      "alpha": 0.85,
+      "blue": 0,
+      "green": 0,
+      "red": 0,
+      "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+    },
+    "raw": {
+      "_class": "sharedStyle",
+      "do_objectID": "D06279F8-BF0B-4B46-8076-7267B04A2D0E",
+      "name": "05 Headline/Emphasized",
+      "value": {
+        "_class": "style",
+        "do_objectID": "9297E75D-5799-412D-8F63-177380CB7F5D",
+        "endMarkerType": 0,
+        "miterLimit": 10,
+        "startMarkerType": 0,
+        "windingRule": 1,
+        "skipCorners": true,
+        "blurs": [],
+        "borderOptions": {
+          "_class": "borderOptions",
+          "isEnabled": true,
+          "dashPattern": [],
+          "centerDashes": true,
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0
+        },
+        "borders": [],
+        "colorControls": {
+          "_class": "colorControls",
+          "isEnabled": true,
+          "brightness": 0,
+          "contrast": 1,
+          "hue": 0,
+          "saturation": 1
+        },
+        "contextSettings": {
+          "_class": "graphicsContextSettings",
+          "blendMode": 0,
+          "opacity": 1,
+          "isProgressive": false
+        },
+        "fills": [],
+        "shadows": [],
+        "textStyle": {
+          "_class": "textStyle",
+          "encodedAttributes": {
+            "MSAttributedStringFontAttribute": {
+              "_class": "fontDescriptor",
+              "attributes": {
+                "name": "SFPro-Heavy",
+                "size": 13
+              }
+            },
+            "paragraphStyle": {
+              "_class": "paragraphStyle",
+              "maximumLineHeight": 16,
+              "minimumLineHeight": 16,
+              "allowsDefaultTighteningForTruncation": 0,
+              "alignment": 0
+            },
+            "MSAttributedStringColorAttribute": {
+              "_class": "color",
+              "alpha": 0.85,
+              "blue": 0,
+              "green": 0,
+              "red": 0,
+              "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+            }
+          },
+          "verticalAlignment": 0,
+          "skipColors": true,
+          "skipAlignment": true
+        }
+      }
+    }
+  },
+  {
+    "id": "73F0ADAC-9179-4491-977E-F37144A178AD",
+    "name": "04 Title3/Emphasized",
+    "source_member": "document.json",
+    "json_pointer": "/layerTextStyles/objects/5",
+    "font_raw": {
+      "name": "SFPro-Semibold",
+      "size": 15
+    },
+    "paragraph_raw": {
+      "_class": "paragraphStyle",
+      "maximumLineHeight": 20,
+      "minimumLineHeight": 20,
+      "allowsDefaultTighteningForTruncation": 0,
+      "alignment": 0
+    },
+    "color_raw": {
+      "_class": "color",
+      "alpha": 0.85,
+      "blue": 0,
+      "green": 0,
+      "red": 0,
+      "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+    },
+    "raw": {
+      "_class": "sharedStyle",
+      "do_objectID": "73F0ADAC-9179-4491-977E-F37144A178AD",
+      "name": "04 Title3/Emphasized",
+      "value": {
+        "_class": "style",
+        "do_objectID": "0B09C263-1B3F-4755-8D91-D86B4DC96383",
+        "endMarkerType": 0,
+        "miterLimit": 10,
+        "startMarkerType": 0,
+        "windingRule": 1,
+        "skipCorners": true,
+        "blurs": [],
+        "borderOptions": {
+          "_class": "borderOptions",
+          "isEnabled": true,
+          "dashPattern": [],
+          "centerDashes": true,
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0
+        },
+        "borders": [],
+        "colorControls": {
+          "_class": "colorControls",
+          "isEnabled": true,
+          "brightness": 0,
+          "contrast": 1,
+          "hue": 0,
+          "saturation": 1
+        },
+        "contextSettings": {
+          "_class": "graphicsContextSettings",
+          "blendMode": 0,
+          "opacity": 1,
+          "isProgressive": false
+        },
+        "fills": [],
+        "shadows": [],
+        "textStyle": {
+          "_class": "textStyle",
+          "encodedAttributes": {
+            "paragraphStyle": {
+              "_class": "paragraphStyle",
+              "maximumLineHeight": 20,
+              "minimumLineHeight": 20,
+              "allowsDefaultTighteningForTruncation": 0,
+              "alignment": 0
+            },
+            "MSAttributedStringFontAttribute": {
+              "_class": "fontDescriptor",
+              "attributes": {
+                "name": "SFPro-Semibold",
+                "size": 15
+              }
+            },
+            "MSAttributedStringColorAttribute": {
+              "_class": "color",
+              "alpha": 0.85,
+              "blue": 0,
+              "green": 0,
+              "red": 0,
+              "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+            }
+          },
+          "verticalAlignment": 0,
+          "skipColors": true,
+          "skipAlignment": true
+        }
+      }
+    }
+  },
+  {
+    "id": "F48CC60A-48B6-4AC1-A81F-81E5AE66C679",
+    "name": "01 LargeTitle/Default",
+    "source_member": "document.json",
+    "json_pointer": "/layerTextStyles/objects/6",
+    "font_raw": {
+      "name": "SFPro-Regular",
+      "size": 26
+    },
+    "paragraph_raw": {
+      "_class": "paragraphStyle",
+      "maximumLineHeight": 32,
+      "minimumLineHeight": 32,
+      "allowsDefaultTighteningForTruncation": 0,
+      "alignment": 0
+    },
+    "color_raw": {
+      "_class": "color",
+      "alpha": 0.85,
+      "blue": 0,
+      "green": 0,
+      "red": 0
+    },
+    "raw": {
+      "_class": "sharedStyle",
+      "do_objectID": "F48CC60A-48B6-4AC1-A81F-81E5AE66C679",
+      "name": "01 LargeTitle/Default",
+      "value": {
+        "_class": "style",
+        "do_objectID": "82180DDB-2A9F-4804-BC3E-7B6AF0BC252E",
+        "endMarkerType": 0,
+        "miterLimit": 10,
+        "startMarkerType": 0,
+        "windingRule": 1,
+        "skipCorners": true,
+        "blurs": [],
+        "borderOptions": {
+          "_class": "borderOptions",
+          "isEnabled": true,
+          "dashPattern": [],
+          "centerDashes": true,
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0
+        },
+        "borders": [],
+        "colorControls": {
+          "_class": "colorControls",
+          "isEnabled": true,
+          "brightness": 0,
+          "contrast": 1,
+          "hue": 0,
+          "saturation": 1
+        },
+        "contextSettings": {
+          "_class": "graphicsContextSettings",
+          "blendMode": 0,
+          "opacity": 1,
+          "isProgressive": false
+        },
+        "fills": [],
+        "shadows": [],
+        "textStyle": {
+          "_class": "textStyle",
+          "encodedAttributes": {
+            "MSAttributedStringFontAttribute": {
+              "_class": "fontDescriptor",
+              "attributes": {
+                "name": "SFPro-Regular",
+                "size": 26
+              }
+            },
+            "paragraphStyle": {
+              "_class": "paragraphStyle",
+              "maximumLineHeight": 32,
+              "minimumLineHeight": 32,
+              "allowsDefaultTighteningForTruncation": 0,
+              "alignment": 0
+            },
+            "MSAttributedStringColorAttribute": {
+              "_class": "color",
+              "alpha": 0.85,
+              "blue": 0,
+              "green": 0,
+              "red": 0
+            }
+          },
+          "verticalAlignment": 0,
+          "skipColors": true,
+          "skipAlignment": true
+        }
+      }
+    }
+  },
+  {
+    "id": "4976BBB6-6775-4CEA-9E93-7ED9FA65B738",
+    "name": "08 Subheadline/Emphasized",
+    "source_member": "document.json",
+    "json_pointer": "/layerTextStyles/objects/7",
+    "font_raw": {
+      "name": "SFPro-Semibold",
+      "size": 11
+    },
+    "paragraph_raw": {
+      "_class": "paragraphStyle",
+      "maximumLineHeight": 14,
+      "minimumLineHeight": 14,
+      "allowsDefaultTighteningForTruncation": 0,
+      "alignment": 0
+    },
+    "color_raw": {
+      "_class": "color",
+      "alpha": 0.85,
+      "blue": 0,
+      "green": 0,
+      "red": 0,
+      "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+    },
+    "raw": {
+      "_class": "sharedStyle",
+      "do_objectID": "4976BBB6-6775-4CEA-9E93-7ED9FA65B738",
+      "name": "08 Subheadline/Emphasized",
+      "value": {
+        "_class": "style",
+        "do_objectID": "C536FA89-A98E-4764-83A9-912F230DE05F",
+        "endMarkerType": 0,
+        "miterLimit": 10,
+        "startMarkerType": 0,
+        "windingRule": 1,
+        "skipCorners": true,
+        "blurs": [],
+        "borderOptions": {
+          "_class": "borderOptions",
+          "isEnabled": true,
+          "dashPattern": [],
+          "centerDashes": true,
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0
+        },
+        "borders": [],
+        "colorControls": {
+          "_class": "colorControls",
+          "isEnabled": true,
+          "brightness": 0,
+          "contrast": 1,
+          "hue": 0,
+          "saturation": 1
+        },
+        "contextSettings": {
+          "_class": "graphicsContextSettings",
+          "blendMode": 0,
+          "opacity": 1,
+          "isProgressive": false
+        },
+        "fills": [],
+        "shadows": [],
+        "textStyle": {
+          "_class": "textStyle",
+          "encodedAttributes": {
+            "MSAttributedStringFontAttribute": {
+              "_class": "fontDescriptor",
+              "attributes": {
+                "name": "SFPro-Semibold",
+                "size": 11
+              }
+            },
+            "MSAttributedStringColorAttribute": {
+              "_class": "color",
+              "alpha": 0.85,
+              "blue": 0,
+              "green": 0,
+              "red": 0,
+              "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+            },
+            "paragraphStyle": {
+              "_class": "paragraphStyle",
+              "maximumLineHeight": 14,
+              "minimumLineHeight": 14,
+              "allowsDefaultTighteningForTruncation": 0,
+              "alignment": 0
+            }
+          },
+          "verticalAlignment": 0,
+          "skipColors": true,
+          "skipAlignment": true
+        }
+      }
+    }
+  },
+  {
+    "id": "866FF651-0279-4BA2-976F-A80854E8E14A",
+    "name": "06 Body/Emphasized",
+    "source_member": "document.json",
+    "json_pointer": "/layerTextStyles/objects/8",
+    "font_raw": {
+      "name": "SFPro-Semibold",
+      "size": 13
+    },
+    "paragraph_raw": {
+      "_class": "paragraphStyle",
+      "maximumLineHeight": 16,
+      "minimumLineHeight": 16,
+      "allowsDefaultTighteningForTruncation": 0,
+      "alignment": 0
+    },
+    "color_raw": {
+      "_class": "color",
+      "alpha": 0.85,
+      "blue": 0,
+      "green": 0,
+      "red": 0,
+      "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+    },
+    "raw": {
+      "_class": "sharedStyle",
+      "do_objectID": "866FF651-0279-4BA2-976F-A80854E8E14A",
+      "name": "06 Body/Emphasized",
+      "value": {
+        "_class": "style",
+        "do_objectID": "C90B4761-22DE-499B-916C-7A9D37C1E15D",
+        "endMarkerType": 0,
+        "miterLimit": 10,
+        "startMarkerType": 0,
+        "windingRule": 1,
+        "skipCorners": true,
+        "blurs": [],
+        "borderOptions": {
+          "_class": "borderOptions",
+          "isEnabled": true,
+          "dashPattern": [],
+          "centerDashes": true,
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0
+        },
+        "borders": [],
+        "colorControls": {
+          "_class": "colorControls",
+          "isEnabled": true,
+          "brightness": 0,
+          "contrast": 1,
+          "hue": 0,
+          "saturation": 1
+        },
+        "contextSettings": {
+          "_class": "graphicsContextSettings",
+          "blendMode": 0,
+          "opacity": 1,
+          "isProgressive": false
+        },
+        "fills": [],
+        "shadows": [],
+        "textStyle": {
+          "_class": "textStyle",
+          "encodedAttributes": {
+            "MSAttributedStringFontAttribute": {
+              "_class": "fontDescriptor",
+              "attributes": {
+                "name": "SFPro-Semibold",
+                "size": 13
+              }
+            },
+            "paragraphStyle": {
+              "_class": "paragraphStyle",
+              "maximumLineHeight": 16,
+              "minimumLineHeight": 16,
+              "allowsDefaultTighteningForTruncation": 0,
+              "alignment": 0
+            },
+            "MSAttributedStringColorAttribute": {
+              "_class": "color",
+              "alpha": 0.85,
+              "blue": 0,
+              "green": 0,
+              "red": 0,
+              "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+            }
+          },
+          "verticalAlignment": 0,
+          "skipColors": true,
+          "skipAlignment": true
+        }
+      }
+    }
+  },
+  {
+    "id": "1A3E513A-80F2-4D0B-8419-1304ED0EA8D5",
+    "name": "03 Title2/Emphasized",
+    "source_member": "document.json",
+    "json_pointer": "/layerTextStyles/objects/9",
+    "font_raw": {
+      "name": "SFPro-Bold",
+      "size": 17
+    },
+    "paragraph_raw": {
+      "_class": "paragraphStyle",
+      "maximumLineHeight": 22,
+      "minimumLineHeight": 22,
+      "allowsDefaultTighteningForTruncation": 0,
+      "alignment": 0
+    },
+    "color_raw": {
+      "_class": "color",
+      "alpha": 0.85,
+      "blue": 0,
+      "green": 0,
+      "red": 0,
+      "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+    },
+    "raw": {
+      "_class": "sharedStyle",
+      "do_objectID": "1A3E513A-80F2-4D0B-8419-1304ED0EA8D5",
+      "name": "03 Title2/Emphasized",
+      "value": {
+        "_class": "style",
+        "do_objectID": "6726C128-AB25-4CA7-9EDB-E657D0979FC8",
+        "endMarkerType": 0,
+        "miterLimit": 10,
+        "startMarkerType": 0,
+        "windingRule": 1,
+        "skipCorners": true,
+        "blurs": [],
+        "borderOptions": {
+          "_class": "borderOptions",
+          "isEnabled": true,
+          "dashPattern": [],
+          "centerDashes": true,
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0
+        },
+        "borders": [],
+        "colorControls": {
+          "_class": "colorControls",
+          "isEnabled": true,
+          "brightness": 0,
+          "contrast": 1,
+          "hue": 0,
+          "saturation": 1
+        },
+        "contextSettings": {
+          "_class": "graphicsContextSettings",
+          "blendMode": 0,
+          "opacity": 1,
+          "isProgressive": false
+        },
+        "fills": [],
+        "shadows": [],
+        "textStyle": {
+          "_class": "textStyle",
+          "encodedAttributes": {
+            "paragraphStyle": {
+              "_class": "paragraphStyle",
+              "maximumLineHeight": 22,
+              "minimumLineHeight": 22,
+              "allowsDefaultTighteningForTruncation": 0,
+              "alignment": 0
+            },
+            "MSAttributedStringFontAttribute": {
+              "_class": "fontDescriptor",
+              "attributes": {
+                "name": "SFPro-Bold",
+                "size": 17
+              }
+            },
+            "MSAttributedStringColorAttribute": {
+              "_class": "color",
+              "alpha": 0.85,
+              "blue": 0,
+              "green": 0,
+              "red": 0,
+              "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+            }
+          },
+          "verticalAlignment": 0,
+          "skipColors": true,
+          "skipAlignment": true
+        }
+      }
+    }
+  },
+  {
+    "id": "91A790FF-8149-4D56-B648-EDFE40B00AAE",
+    "name": "09 Footnote/Default",
+    "source_member": "document.json",
+    "json_pointer": "/layerTextStyles/objects/10",
+    "font_raw": {
+      "name": "SFPro-Regular",
+      "size": 10
+    },
+    "paragraph_raw": {
+      "_class": "paragraphStyle",
+      "maximumLineHeight": 13,
+      "minimumLineHeight": 13,
+      "allowsDefaultTighteningForTruncation": 0,
+      "alignment": 0
+    },
+    "color_raw": {
+      "_class": "color",
+      "alpha": 0.85,
+      "blue": 0,
+      "green": 0,
+      "red": 0,
+      "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+    },
+    "raw": {
+      "_class": "sharedStyle",
+      "do_objectID": "91A790FF-8149-4D56-B648-EDFE40B00AAE",
+      "name": "09 Footnote/Default",
+      "value": {
+        "_class": "style",
+        "do_objectID": "6450D815-E486-4C34-963E-69E088990E7A",
+        "endMarkerType": 0,
+        "miterLimit": 10,
+        "startMarkerType": 0,
+        "windingRule": 1,
+        "skipCorners": true,
+        "blurs": [],
+        "borderOptions": {
+          "_class": "borderOptions",
+          "isEnabled": true,
+          "dashPattern": [],
+          "centerDashes": true,
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0
+        },
+        "borders": [],
+        "colorControls": {
+          "_class": "colorControls",
+          "isEnabled": true,
+          "brightness": 0,
+          "contrast": 1,
+          "hue": 0,
+          "saturation": 1
+        },
+        "contextSettings": {
+          "_class": "graphicsContextSettings",
+          "blendMode": 0,
+          "opacity": 1,
+          "isProgressive": false
+        },
+        "fills": [],
+        "shadows": [],
+        "textStyle": {
+          "_class": "textStyle",
+          "encodedAttributes": {
+            "MSAttributedStringColorAttribute": {
+              "_class": "color",
+              "alpha": 0.85,
+              "blue": 0,
+              "green": 0,
+              "red": 0,
+              "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+            },
+            "MSAttributedStringFontAttribute": {
+              "_class": "fontDescriptor",
+              "attributes": {
+                "name": "SFPro-Regular",
+                "size": 10
+              }
+            },
+            "paragraphStyle": {
+              "_class": "paragraphStyle",
+              "maximumLineHeight": 13,
+              "minimumLineHeight": 13,
+              "allowsDefaultTighteningForTruncation": 0,
+              "alignment": 0
+            }
+          },
+          "verticalAlignment": 0,
+          "skipColors": true,
+          "skipAlignment": true
+        }
+      }
+    }
+  },
+  {
+    "id": "635F3211-69A0-4077-B6A2-3C3F9B1B3CA0",
+    "name": "10 Caption1/Emphasized",
+    "source_member": "document.json",
+    "json_pointer": "/layerTextStyles/objects/11",
+    "font_raw": {
+      "name": "SFPro-Semibold",
+      "size": 10
+    },
+    "paragraph_raw": {
+      "_class": "paragraphStyle",
+      "maximumLineHeight": 13,
+      "minimumLineHeight": 13,
+      "allowsDefaultTighteningForTruncation": 0,
+      "alignment": 0
+    },
+    "color_raw": {
+      "_class": "color",
+      "alpha": 0.85,
+      "blue": 0,
+      "green": 0,
+      "red": 0,
+      "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+    },
+    "raw": {
+      "_class": "sharedStyle",
+      "do_objectID": "635F3211-69A0-4077-B6A2-3C3F9B1B3CA0",
+      "name": "10 Caption1/Emphasized",
+      "value": {
+        "_class": "style",
+        "do_objectID": "9AB57BDE-6EF7-4F77-A74C-EF6A6CB75099",
+        "endMarkerType": 0,
+        "miterLimit": 10,
+        "startMarkerType": 0,
+        "windingRule": 1,
+        "skipCorners": true,
+        "blurs": [],
+        "borderOptions": {
+          "_class": "borderOptions",
+          "isEnabled": true,
+          "dashPattern": [],
+          "centerDashes": true,
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0
+        },
+        "borders": [],
+        "colorControls": {
+          "_class": "colorControls",
+          "isEnabled": true,
+          "brightness": 0,
+          "contrast": 1,
+          "hue": 0,
+          "saturation": 1
+        },
+        "contextSettings": {
+          "_class": "graphicsContextSettings",
+          "blendMode": 0,
+          "opacity": 1,
+          "isProgressive": false
+        },
+        "fills": [],
+        "shadows": [],
+        "textStyle": {
+          "_class": "textStyle",
+          "encodedAttributes": {
+            "MSAttributedStringColorAttribute": {
+              "_class": "color",
+              "alpha": 0.85,
+              "blue": 0,
+              "green": 0,
+              "red": 0,
+              "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+            },
+            "paragraphStyle": {
+              "_class": "paragraphStyle",
+              "maximumLineHeight": 13,
+              "minimumLineHeight": 13,
+              "allowsDefaultTighteningForTruncation": 0,
+              "alignment": 0
+            },
+            "MSAttributedStringFontAttribute": {
+              "_class": "fontDescriptor",
+              "attributes": {
+                "name": "SFPro-Semibold",
+                "size": 10
+              }
+            }
+          },
+          "verticalAlignment": 0,
+          "skipColors": true,
+          "skipAlignment": true
+        }
+      }
+    }
+  },
+  {
+    "id": "06055D2A-84CA-45CE-9F29-56E9279CF7B6",
+    "name": "05 Headline/Default",
+    "source_member": "document.json",
+    "json_pointer": "/layerTextStyles/objects/12",
+    "font_raw": {
+      "name": "SFPro-Bold",
+      "size": 13
+    },
+    "paragraph_raw": {
+      "_class": "paragraphStyle",
+      "maximumLineHeight": 16,
+      "minimumLineHeight": 16,
+      "allowsDefaultTighteningForTruncation": 0,
+      "alignment": 0
+    },
+    "color_raw": {
+      "_class": "color",
+      "alpha": 0.85,
+      "blue": 0,
+      "green": 0,
+      "red": 0,
+      "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+    },
+    "raw": {
+      "_class": "sharedStyle",
+      "do_objectID": "06055D2A-84CA-45CE-9F29-56E9279CF7B6",
+      "name": "05 Headline/Default",
+      "value": {
+        "_class": "style",
+        "do_objectID": "5FC0019D-5822-4D83-A43F-75935AC51190",
+        "endMarkerType": 0,
+        "miterLimit": 10,
+        "startMarkerType": 0,
+        "windingRule": 1,
+        "skipCorners": true,
+        "blurs": [],
+        "borderOptions": {
+          "_class": "borderOptions",
+          "isEnabled": true,
+          "dashPattern": [],
+          "centerDashes": true,
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0
+        },
+        "borders": [],
+        "colorControls": {
+          "_class": "colorControls",
+          "isEnabled": true,
+          "brightness": 0,
+          "contrast": 1,
+          "hue": 0,
+          "saturation": 1
+        },
+        "contextSettings": {
+          "_class": "graphicsContextSettings",
+          "blendMode": 0,
+          "opacity": 1,
+          "isProgressive": false
+        },
+        "fills": [],
+        "shadows": [],
+        "textStyle": {
+          "_class": "textStyle",
+          "encodedAttributes": {
+            "MSAttributedStringColorAttribute": {
+              "_class": "color",
+              "alpha": 0.85,
+              "blue": 0,
+              "green": 0,
+              "red": 0,
+              "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+            },
+            "MSAttributedStringFontAttribute": {
+              "_class": "fontDescriptor",
+              "attributes": {
+                "name": "SFPro-Bold",
+                "size": 13
+              }
+            },
+            "paragraphStyle": {
+              "_class": "paragraphStyle",
+              "maximumLineHeight": 16,
+              "minimumLineHeight": 16,
+              "allowsDefaultTighteningForTruncation": 0,
+              "alignment": 0
+            }
+          },
+          "verticalAlignment": 0,
+          "skipColors": true,
+          "skipAlignment": true
+        }
+      }
+    }
+  },
+  {
+    "id": "91D137F1-4F08-4B62-96AE-AFB7F24FD54D",
+    "name": "03 Title2/Default",
+    "source_member": "document.json",
+    "json_pointer": "/layerTextStyles/objects/13",
+    "font_raw": {
+      "name": "SFPro-Regular",
+      "size": 17
+    },
+    "paragraph_raw": {
+      "_class": "paragraphStyle",
+      "maximumLineHeight": 22,
+      "minimumLineHeight": 22,
+      "allowsDefaultTighteningForTruncation": 0,
+      "alignment": 0
+    },
+    "color_raw": {
+      "_class": "color",
+      "alpha": 0.85,
+      "blue": 0,
+      "green": 0,
+      "red": 0,
+      "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+    },
+    "raw": {
+      "_class": "sharedStyle",
+      "do_objectID": "91D137F1-4F08-4B62-96AE-AFB7F24FD54D",
+      "name": "03 Title2/Default",
+      "value": {
+        "_class": "style",
+        "do_objectID": "F74FE1FC-9D0D-4733-8274-44583A952789",
+        "endMarkerType": 0,
+        "miterLimit": 10,
+        "startMarkerType": 0,
+        "windingRule": 1,
+        "skipCorners": true,
+        "blurs": [],
+        "borderOptions": {
+          "_class": "borderOptions",
+          "isEnabled": true,
+          "dashPattern": [],
+          "centerDashes": true,
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0
+        },
+        "borders": [],
+        "colorControls": {
+          "_class": "colorControls",
+          "isEnabled": true,
+          "brightness": 0,
+          "contrast": 1,
+          "hue": 0,
+          "saturation": 1
+        },
+        "contextSettings": {
+          "_class": "graphicsContextSettings",
+          "blendMode": 0,
+          "opacity": 1,
+          "isProgressive": false
+        },
+        "fills": [],
+        "shadows": [],
+        "textStyle": {
+          "_class": "textStyle",
+          "encodedAttributes": {
+            "paragraphStyle": {
+              "_class": "paragraphStyle",
+              "maximumLineHeight": 22,
+              "minimumLineHeight": 22,
+              "allowsDefaultTighteningForTruncation": 0,
+              "alignment": 0
+            },
+            "MSAttributedStringColorAttribute": {
+              "_class": "color",
+              "alpha": 0.85,
+              "blue": 0,
+              "green": 0,
+              "red": 0,
+              "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+            },
+            "MSAttributedStringFontAttribute": {
+              "_class": "fontDescriptor",
+              "attributes": {
+                "name": "SFPro-Regular",
+                "size": 17
+              }
+            }
+          },
+          "verticalAlignment": 0,
+          "skipColors": true,
+          "skipAlignment": true
+        }
+      }
+    }
+  },
+  {
+    "id": "BF7ECE3E-DA6A-4F3E-B367-86D880A9EBF4",
+    "name": "02 Title1/Default",
+    "source_member": "document.json",
+    "json_pointer": "/layerTextStyles/objects/14",
+    "font_raw": {
+      "name": "SFPro-Regular",
+      "size": 22
+    },
+    "paragraph_raw": {
+      "_class": "paragraphStyle",
+      "maximumLineHeight": 26,
+      "minimumLineHeight": 26,
+      "allowsDefaultTighteningForTruncation": 0,
+      "alignment": 0
+    },
+    "color_raw": {
+      "_class": "color",
+      "alpha": 0.85,
+      "blue": 0,
+      "green": 0,
+      "red": 0,
+      "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+    },
+    "raw": {
+      "_class": "sharedStyle",
+      "do_objectID": "BF7ECE3E-DA6A-4F3E-B367-86D880A9EBF4",
+      "name": "02 Title1/Default",
+      "value": {
+        "_class": "style",
+        "do_objectID": "559F1E0F-983E-4192-A148-3D8F704D6E5B",
+        "endMarkerType": 0,
+        "miterLimit": 10,
+        "startMarkerType": 0,
+        "windingRule": 1,
+        "skipCorners": true,
+        "blurs": [],
+        "borderOptions": {
+          "_class": "borderOptions",
+          "isEnabled": true,
+          "dashPattern": [],
+          "centerDashes": true,
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0
+        },
+        "borders": [],
+        "colorControls": {
+          "_class": "colorControls",
+          "isEnabled": true,
+          "brightness": 0,
+          "contrast": 1,
+          "hue": 0,
+          "saturation": 1
+        },
+        "contextSettings": {
+          "_class": "graphicsContextSettings",
+          "blendMode": 0,
+          "opacity": 1,
+          "isProgressive": false
+        },
+        "fills": [],
+        "shadows": [],
+        "textStyle": {
+          "_class": "textStyle",
+          "encodedAttributes": {
+            "MSAttributedStringColorAttribute": {
+              "_class": "color",
+              "alpha": 0.85,
+              "blue": 0,
+              "green": 0,
+              "red": 0,
+              "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+            },
+            "paragraphStyle": {
+              "_class": "paragraphStyle",
+              "maximumLineHeight": 26,
+              "minimumLineHeight": 26,
+              "allowsDefaultTighteningForTruncation": 0,
+              "alignment": 0
+            },
+            "MSAttributedStringFontAttribute": {
+              "_class": "fontDescriptor",
+              "attributes": {
+                "name": "SFPro-Regular",
+                "size": 22
+              }
+            }
+          },
+          "verticalAlignment": 0,
+          "skipColors": true,
+          "skipAlignment": true
+        }
+      }
+    }
+  },
+  {
+    "id": "9093533D-7B28-4C26-9CA5-BB4B32668A18",
+    "name": "08 Subheadline/Default",
+    "source_member": "document.json",
+    "json_pointer": "/layerTextStyles/objects/15",
+    "font_raw": {
+      "name": "SFPro-Regular",
+      "size": 11
+    },
+    "paragraph_raw": {
+      "_class": "paragraphStyle",
+      "maximumLineHeight": 14,
+      "minimumLineHeight": 14,
+      "allowsDefaultTighteningForTruncation": 0,
+      "alignment": 0
+    },
+    "color_raw": {
+      "_class": "color",
+      "alpha": 0.85,
+      "blue": 0,
+      "green": 0,
+      "red": 0,
+      "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+    },
+    "raw": {
+      "_class": "sharedStyle",
+      "do_objectID": "9093533D-7B28-4C26-9CA5-BB4B32668A18",
+      "name": "08 Subheadline/Default",
+      "value": {
+        "_class": "style",
+        "do_objectID": "3041E5D6-DEC3-4703-84F0-B7E1A7D0934F",
+        "endMarkerType": 0,
+        "miterLimit": 10,
+        "startMarkerType": 0,
+        "windingRule": 1,
+        "skipCorners": true,
+        "blurs": [],
+        "borderOptions": {
+          "_class": "borderOptions",
+          "isEnabled": true,
+          "dashPattern": [],
+          "centerDashes": true,
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0
+        },
+        "borders": [],
+        "colorControls": {
+          "_class": "colorControls",
+          "isEnabled": true,
+          "brightness": 0,
+          "contrast": 1,
+          "hue": 0,
+          "saturation": 1
+        },
+        "contextSettings": {
+          "_class": "graphicsContextSettings",
+          "blendMode": 0,
+          "opacity": 1,
+          "isProgressive": false
+        },
+        "fills": [],
+        "shadows": [],
+        "textStyle": {
+          "_class": "textStyle",
+          "encodedAttributes": {
+            "paragraphStyle": {
+              "_class": "paragraphStyle",
+              "maximumLineHeight": 14,
+              "minimumLineHeight": 14,
+              "allowsDefaultTighteningForTruncation": 0,
+              "alignment": 0
+            },
+            "MSAttributedStringColorAttribute": {
+              "_class": "color",
+              "alpha": 0.85,
+              "blue": 0,
+              "green": 0,
+              "red": 0,
+              "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+            },
+            "MSAttributedStringFontAttribute": {
+              "_class": "fontDescriptor",
+              "attributes": {
+                "name": "SFPro-Regular",
+                "size": 11
+              }
+            }
+          },
+          "verticalAlignment": 0,
+          "skipColors": true,
+          "skipAlignment": true
+        }
+      }
+    }
+  },
+  {
+    "id": "D5A92B58-0E45-4C65-A623-C3E266BFD8EA",
+    "name": "07 Callout/Emphasized",
+    "source_member": "document.json",
+    "json_pointer": "/layerTextStyles/objects/16",
+    "font_raw": {
+      "name": "SFPro-Semibold",
+      "size": 12
+    },
+    "paragraph_raw": {
+      "_class": "paragraphStyle",
+      "maximumLineHeight": 15,
+      "minimumLineHeight": 15,
+      "allowsDefaultTighteningForTruncation": 0,
+      "alignment": 0
+    },
+    "color_raw": {
+      "_class": "color",
+      "alpha": 0.85,
+      "blue": 0,
+      "green": 0,
+      "red": 0,
+      "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+    },
+    "raw": {
+      "_class": "sharedStyle",
+      "do_objectID": "D5A92B58-0E45-4C65-A623-C3E266BFD8EA",
+      "name": "07 Callout/Emphasized",
+      "value": {
+        "_class": "style",
+        "do_objectID": "B3293BA5-9268-4CB1-8365-B60A6DAA7D1E",
+        "endMarkerType": 0,
+        "miterLimit": 10,
+        "startMarkerType": 0,
+        "windingRule": 1,
+        "skipCorners": true,
+        "blurs": [],
+        "borderOptions": {
+          "_class": "borderOptions",
+          "isEnabled": true,
+          "dashPattern": [],
+          "centerDashes": true,
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0
+        },
+        "borders": [],
+        "colorControls": {
+          "_class": "colorControls",
+          "isEnabled": true,
+          "brightness": 0,
+          "contrast": 1,
+          "hue": 0,
+          "saturation": 1
+        },
+        "contextSettings": {
+          "_class": "graphicsContextSettings",
+          "blendMode": 0,
+          "opacity": 1,
+          "isProgressive": false
+        },
+        "fills": [],
+        "shadows": [],
+        "textStyle": {
+          "_class": "textStyle",
+          "encodedAttributes": {
+            "paragraphStyle": {
+              "_class": "paragraphStyle",
+              "maximumLineHeight": 15,
+              "minimumLineHeight": 15,
+              "allowsDefaultTighteningForTruncation": 0,
+              "alignment": 0
+            },
+            "MSAttributedStringFontAttribute": {
+              "_class": "fontDescriptor",
+              "attributes": {
+                "name": "SFPro-Semibold",
+                "size": 12
+              }
+            },
+            "MSAttributedStringColorAttribute": {
+              "_class": "color",
+              "alpha": 0.85,
+              "blue": 0,
+              "green": 0,
+              "red": 0,
+              "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+            }
+          },
+          "verticalAlignment": 0,
+          "skipColors": true,
+          "skipAlignment": true
+        }
+      }
+    }
+  },
+  {
+    "id": "F42272DC-4A56-4A59-994A-6D990EC84C58",
+    "name": "06 Body/Default",
+    "source_member": "document.json",
+    "json_pointer": "/layerTextStyles/objects/17",
+    "font_raw": {
+      "name": "SFPro-Regular",
+      "size": 13
+    },
+    "paragraph_raw": {
+      "_class": "paragraphStyle",
+      "maximumLineHeight": 16,
+      "minimumLineHeight": 16,
+      "allowsDefaultTighteningForTruncation": 0,
+      "alignment": 0
+    },
+    "color_raw": {
+      "_class": "color",
+      "alpha": 0.85,
+      "blue": 0,
+      "green": 0,
+      "red": 0,
+      "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+    },
+    "raw": {
+      "_class": "sharedStyle",
+      "do_objectID": "F42272DC-4A56-4A59-994A-6D990EC84C58",
+      "name": "06 Body/Default",
+      "value": {
+        "_class": "style",
+        "do_objectID": "C964EC66-40E6-4472-AED8-E0D6061D3C37",
+        "endMarkerType": 0,
+        "miterLimit": 10,
+        "startMarkerType": 0,
+        "windingRule": 1,
+        "skipCorners": true,
+        "blurs": [],
+        "borderOptions": {
+          "_class": "borderOptions",
+          "isEnabled": true,
+          "dashPattern": [],
+          "centerDashes": true,
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0
+        },
+        "borders": [],
+        "colorControls": {
+          "_class": "colorControls",
+          "isEnabled": true,
+          "brightness": 0,
+          "contrast": 1,
+          "hue": 0,
+          "saturation": 1
+        },
+        "contextSettings": {
+          "_class": "graphicsContextSettings",
+          "blendMode": 0,
+          "opacity": 1,
+          "isProgressive": false
+        },
+        "fills": [],
+        "shadows": [],
+        "textStyle": {
+          "_class": "textStyle",
+          "encodedAttributes": {
+            "paragraphStyle": {
+              "_class": "paragraphStyle",
+              "maximumLineHeight": 16,
+              "minimumLineHeight": 16,
+              "allowsDefaultTighteningForTruncation": 0,
+              "alignment": 0
+            },
+            "MSAttributedStringFontAttribute": {
+              "_class": "fontDescriptor",
+              "attributes": {
+                "name": "SFPro-Regular",
+                "size": 13
+              }
+            },
+            "MSAttributedStringColorAttribute": {
+              "_class": "color",
+              "alpha": 0.85,
+              "blue": 0,
+              "green": 0,
+              "red": 0,
+              "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+            }
+          },
+          "verticalAlignment": 0,
+          "skipColors": true,
+          "skipAlignment": true
+        }
+      }
+    }
+  },
+  {
+    "id": "F719FB44-75E8-4709-BB5F-241CBE87AB7C",
+    "name": "02 Title1/Emphasized",
+    "source_member": "document.json",
+    "json_pointer": "/layerTextStyles/objects/18",
+    "font_raw": {
+      "name": "SFPro-Bold",
+      "size": 22
+    },
+    "paragraph_raw": {
+      "_class": "paragraphStyle",
+      "maximumLineHeight": 26,
+      "minimumLineHeight": 26,
+      "allowsDefaultTighteningForTruncation": 0,
+      "alignment": 0
+    },
+    "color_raw": {
+      "_class": "color",
+      "alpha": 0.85,
+      "blue": 0,
+      "green": 0,
+      "red": 0,
+      "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+    },
+    "raw": {
+      "_class": "sharedStyle",
+      "do_objectID": "F719FB44-75E8-4709-BB5F-241CBE87AB7C",
+      "name": "02 Title1/Emphasized",
+      "value": {
+        "_class": "style",
+        "do_objectID": "D7A8442A-A314-4BB0-B327-DC84C75E59CF",
+        "endMarkerType": 0,
+        "miterLimit": 10,
+        "startMarkerType": 0,
+        "windingRule": 1,
+        "skipCorners": true,
+        "blurs": [],
+        "borderOptions": {
+          "_class": "borderOptions",
+          "isEnabled": true,
+          "dashPattern": [],
+          "centerDashes": true,
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0
+        },
+        "borders": [],
+        "colorControls": {
+          "_class": "colorControls",
+          "isEnabled": true,
+          "brightness": 0,
+          "contrast": 1,
+          "hue": 0,
+          "saturation": 1
+        },
+        "contextSettings": {
+          "_class": "graphicsContextSettings",
+          "blendMode": 0,
+          "opacity": 1,
+          "isProgressive": false
+        },
+        "fills": [],
+        "shadows": [],
+        "textStyle": {
+          "_class": "textStyle",
+          "encodedAttributes": {
+            "MSAttributedStringColorAttribute": {
+              "_class": "color",
+              "alpha": 0.85,
+              "blue": 0,
+              "green": 0,
+              "red": 0,
+              "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+            },
+            "paragraphStyle": {
+              "_class": "paragraphStyle",
+              "maximumLineHeight": 26,
+              "minimumLineHeight": 26,
+              "allowsDefaultTighteningForTruncation": 0,
+              "alignment": 0
+            },
+            "MSAttributedStringFontAttribute": {
+              "_class": "fontDescriptor",
+              "attributes": {
+                "name": "SFPro-Bold",
+                "size": 22
+              }
+            }
+          },
+          "verticalAlignment": 0,
+          "skipColors": true,
+          "skipAlignment": true
+        }
+      }
+    }
+  },
+  {
+    "id": "5DFFAD4F-854A-461A-A84B-774663A668D0",
+    "name": "09 Footnote/Emphasized",
+    "source_member": "document.json",
+    "json_pointer": "/layerTextStyles/objects/19",
+    "font_raw": {
+      "name": "SFPro-Semibold",
+      "size": 10
+    },
+    "paragraph_raw": {
+      "_class": "paragraphStyle",
+      "maximumLineHeight": 13,
+      "minimumLineHeight": 13,
+      "allowsDefaultTighteningForTruncation": 0,
+      "alignment": 0
+    },
+    "color_raw": {
+      "_class": "color",
+      "alpha": 0.85,
+      "blue": 0,
+      "green": 0,
+      "red": 0,
+      "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+    },
+    "raw": {
+      "_class": "sharedStyle",
+      "do_objectID": "5DFFAD4F-854A-461A-A84B-774663A668D0",
+      "name": "09 Footnote/Emphasized",
+      "value": {
+        "_class": "style",
+        "do_objectID": "D95C0601-5A2B-4AE8-ACBE-E7EDB7D50EB4",
+        "endMarkerType": 0,
+        "miterLimit": 10,
+        "startMarkerType": 0,
+        "windingRule": 1,
+        "skipCorners": true,
+        "blurs": [],
+        "borderOptions": {
+          "_class": "borderOptions",
+          "isEnabled": true,
+          "dashPattern": [],
+          "centerDashes": true,
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0
+        },
+        "borders": [],
+        "colorControls": {
+          "_class": "colorControls",
+          "isEnabled": true,
+          "brightness": 0,
+          "contrast": 1,
+          "hue": 0,
+          "saturation": 1
+        },
+        "contextSettings": {
+          "_class": "graphicsContextSettings",
+          "blendMode": 0,
+          "opacity": 1,
+          "isProgressive": false
+        },
+        "fills": [],
+        "shadows": [],
+        "textStyle": {
+          "_class": "textStyle",
+          "encodedAttributes": {
+            "paragraphStyle": {
+              "_class": "paragraphStyle",
+              "maximumLineHeight": 13,
+              "minimumLineHeight": 13,
+              "allowsDefaultTighteningForTruncation": 0,
+              "alignment": 0
+            },
+            "MSAttributedStringFontAttribute": {
+              "_class": "fontDescriptor",
+              "attributes": {
+                "name": "SFPro-Semibold",
+                "size": 10
+              }
+            },
+            "MSAttributedStringColorAttribute": {
+              "_class": "color",
+              "alpha": 0.85,
+              "blue": 0,
+              "green": 0,
+              "red": 0,
+              "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+            }
+          },
+          "verticalAlignment": 0,
+          "skipColors": true,
+          "skipAlignment": true
+        }
+      }
+    }
+  },
+  {
+    "id": "0C7A6E9E-F150-4594-9681-DEFA9E9FB69F",
+    "name": "07 Callout/Default",
+    "source_member": "document.json",
+    "json_pointer": "/layerTextStyles/objects/20",
+    "font_raw": {
+      "name": "SFPro-Regular",
+      "size": 12
+    },
+    "paragraph_raw": {
+      "_class": "paragraphStyle",
+      "maximumLineHeight": 15,
+      "minimumLineHeight": 15,
+      "allowsDefaultTighteningForTruncation": 0,
+      "alignment": 0
+    },
+    "color_raw": {
+      "_class": "color",
+      "alpha": 0.85,
+      "blue": 0,
+      "green": 0,
+      "red": 0,
+      "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+    },
+    "raw": {
+      "_class": "sharedStyle",
+      "do_objectID": "0C7A6E9E-F150-4594-9681-DEFA9E9FB69F",
+      "name": "07 Callout/Default",
+      "value": {
+        "_class": "style",
+        "do_objectID": "170E4F38-4FDA-4786-A80A-047A9257CA9A",
+        "endMarkerType": 0,
+        "miterLimit": 10,
+        "startMarkerType": 0,
+        "windingRule": 1,
+        "skipCorners": true,
+        "blurs": [],
+        "borderOptions": {
+          "_class": "borderOptions",
+          "isEnabled": true,
+          "dashPattern": [],
+          "centerDashes": true,
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0
+        },
+        "borders": [],
+        "colorControls": {
+          "_class": "colorControls",
+          "isEnabled": true,
+          "brightness": 0,
+          "contrast": 1,
+          "hue": 0,
+          "saturation": 1
+        },
+        "contextSettings": {
+          "_class": "graphicsContextSettings",
+          "blendMode": 0,
+          "opacity": 1,
+          "isProgressive": false
+        },
+        "fills": [],
+        "shadows": [],
+        "textStyle": {
+          "_class": "textStyle",
+          "encodedAttributes": {
+            "paragraphStyle": {
+              "_class": "paragraphStyle",
+              "maximumLineHeight": 15,
+              "minimumLineHeight": 15,
+              "allowsDefaultTighteningForTruncation": 0,
+              "alignment": 0
+            },
+            "MSAttributedStringFontAttribute": {
+              "_class": "fontDescriptor",
+              "attributes": {
+                "name": "SFPro-Regular",
+                "size": 12
+              }
+            },
+            "MSAttributedStringColorAttribute": {
+              "_class": "color",
+              "alpha": 0.85,
+              "blue": 0,
+              "green": 0,
+              "red": 0,
+              "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+            }
+          },
+          "verticalAlignment": 0,
+          "skipColors": true,
+          "skipAlignment": true
+        }
+      }
+    }
+  },
+  {
+    "id": "27551AB9-67C6-47DC-86DB-05154E273669",
+    "name": "11 Caption2/Default",
+    "source_member": "document.json",
+    "json_pointer": "/layerTextStyles/objects/21",
+    "font_raw": {
+      "name": "SFPro-Regular",
+      "size": 10
+    },
+    "paragraph_raw": {
+      "_class": "paragraphStyle",
+      "maximumLineHeight": 13,
+      "minimumLineHeight": 13,
+      "allowsDefaultTighteningForTruncation": 0,
+      "alignment": 0
+    },
+    "color_raw": {
+      "_class": "color",
+      "alpha": 0.85,
+      "blue": 0,
+      "green": 0,
+      "red": 0,
+      "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+    },
+    "raw": {
+      "_class": "sharedStyle",
+      "do_objectID": "27551AB9-67C6-47DC-86DB-05154E273669",
+      "name": "11 Caption2/Default",
+      "value": {
+        "_class": "style",
+        "do_objectID": "B906CD52-9A3A-4E19-833F-0A1D9F4D590E",
+        "endMarkerType": 0,
+        "miterLimit": 10,
+        "startMarkerType": 0,
+        "windingRule": 1,
+        "skipCorners": true,
+        "blurs": [],
+        "borderOptions": {
+          "_class": "borderOptions",
+          "isEnabled": true,
+          "dashPattern": [],
+          "centerDashes": true,
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0
+        },
+        "borders": [],
+        "colorControls": {
+          "_class": "colorControls",
+          "isEnabled": true,
+          "brightness": 0,
+          "contrast": 1,
+          "hue": 0,
+          "saturation": 1
+        },
+        "contextSettings": {
+          "_class": "graphicsContextSettings",
+          "blendMode": 0,
+          "opacity": 1,
+          "isProgressive": false
+        },
+        "fills": [],
+        "shadows": [],
+        "textStyle": {
+          "_class": "textStyle",
+          "encodedAttributes": {
+            "paragraphStyle": {
+              "_class": "paragraphStyle",
+              "maximumLineHeight": 13,
+              "minimumLineHeight": 13,
+              "allowsDefaultTighteningForTruncation": 0,
+              "alignment": 0
+            },
+            "MSAttributedStringColorAttribute": {
+              "_class": "color",
+              "alpha": 0.85,
+              "blue": 0,
+              "green": 0,
+              "red": 0,
+              "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+            },
+            "MSAttributedStringFontAttribute": {
+              "_class": "fontDescriptor",
+              "attributes": {
+                "name": "SFPro-Regular",
+                "size": 10
+              }
+            }
+          },
+          "verticalAlignment": 0,
+          "skipColors": true,
+          "skipAlignment": true
+        }
+      }
+    }
+  },
+  {
+    "id": "7F6CCEFE-0D02-420C-9CA3-70240D9DF66F",
+    "name": "Loose Leading/01 LargeTitle/Default",
+    "source_member": "document.json",
+    "json_pointer": "/layerTextStyles/objects/22",
+    "font_raw": {
+      "name": "SFPro-Regular",
+      "size": 26
+    },
+    "paragraph_raw": {
+      "_class": "paragraphStyle",
+      "maximumLineHeight": 34,
+      "minimumLineHeight": 34,
+      "allowsDefaultTighteningForTruncation": 0,
+      "alignment": 0
+    },
+    "color_raw": {
+      "_class": "color",
+      "alpha": 0.85,
+      "blue": 0,
+      "green": 0,
+      "red": 0
+    },
+    "raw": {
+      "_class": "sharedStyle",
+      "do_objectID": "7F6CCEFE-0D02-420C-9CA3-70240D9DF66F",
+      "name": "Loose Leading/01 LargeTitle/Default",
+      "value": {
+        "_class": "style",
+        "do_objectID": "50B065EF-E6FC-463D-9525-33ECBF80BF1C",
+        "endMarkerType": 0,
+        "miterLimit": 10,
+        "startMarkerType": 0,
+        "windingRule": 1,
+        "skipCorners": true,
+        "blurs": [],
+        "borderOptions": {
+          "_class": "borderOptions",
+          "isEnabled": true,
+          "dashPattern": [],
+          "centerDashes": true,
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0
+        },
+        "borders": [],
+        "colorControls": {
+          "_class": "colorControls",
+          "isEnabled": true,
+          "brightness": 0,
+          "contrast": 1,
+          "hue": 0,
+          "saturation": 1
+        },
+        "contextSettings": {
+          "_class": "graphicsContextSettings",
+          "blendMode": 0,
+          "opacity": 1,
+          "isProgressive": false
+        },
+        "fills": [],
+        "shadows": [],
+        "textStyle": {
+          "_class": "textStyle",
+          "encodedAttributes": {
+            "MSAttributedStringColorAttribute": {
+              "_class": "color",
+              "alpha": 0.85,
+              "blue": 0,
+              "green": 0,
+              "red": 0
+            },
+            "paragraphStyle": {
+              "_class": "paragraphStyle",
+              "maximumLineHeight": 34,
+              "minimumLineHeight": 34,
+              "allowsDefaultTighteningForTruncation": 0,
+              "alignment": 0
+            },
+            "MSAttributedStringFontAttribute": {
+              "_class": "fontDescriptor",
+              "attributes": {
+                "name": "SFPro-Regular",
+                "size": 26
+              }
+            }
+          },
+          "verticalAlignment": 0,
+          "skipColors": true,
+          "skipAlignment": true
+        }
+      }
+    }
+  },
+  {
+    "id": "3DF3919C-1028-4C9A-ADA0-96A3364A0806",
+    "name": "Loose Leading/01 LargeTitle/Emphasized",
+    "source_member": "document.json",
+    "json_pointer": "/layerTextStyles/objects/23",
+    "font_raw": {
+      "name": "SFPro-Bold",
+      "size": 26
+    },
+    "paragraph_raw": {
+      "_class": "paragraphStyle",
+      "maximumLineHeight": 34,
+      "minimumLineHeight": 34,
+      "allowsDefaultTighteningForTruncation": 0,
+      "alignment": 0
+    },
+    "color_raw": {
+      "_class": "color",
+      "alpha": 0.85,
+      "blue": 0,
+      "green": 0,
+      "red": 0
+    },
+    "raw": {
+      "_class": "sharedStyle",
+      "do_objectID": "3DF3919C-1028-4C9A-ADA0-96A3364A0806",
+      "name": "Loose Leading/01 LargeTitle/Emphasized",
+      "value": {
+        "_class": "style",
+        "do_objectID": "30C9DE23-3558-464D-ADDB-983940AE0103",
+        "endMarkerType": 0,
+        "miterLimit": 10,
+        "startMarkerType": 0,
+        "windingRule": 1,
+        "skipCorners": true,
+        "blurs": [],
+        "borderOptions": {
+          "_class": "borderOptions",
+          "isEnabled": true,
+          "dashPattern": [],
+          "centerDashes": true,
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0
+        },
+        "borders": [],
+        "colorControls": {
+          "_class": "colorControls",
+          "isEnabled": true,
+          "brightness": 0,
+          "contrast": 1,
+          "hue": 0,
+          "saturation": 1
+        },
+        "contextSettings": {
+          "_class": "graphicsContextSettings",
+          "blendMode": 0,
+          "opacity": 1,
+          "isProgressive": false
+        },
+        "fills": [],
+        "shadows": [],
+        "textStyle": {
+          "_class": "textStyle",
+          "encodedAttributes": {
+            "MSAttributedStringColorAttribute": {
+              "_class": "color",
+              "alpha": 0.85,
+              "blue": 0,
+              "green": 0,
+              "red": 0
+            },
+            "MSAttributedStringFontAttribute": {
+              "_class": "fontDescriptor",
+              "attributes": {
+                "name": "SFPro-Bold",
+                "size": 26
+              }
+            },
+            "paragraphStyle": {
+              "_class": "paragraphStyle",
+              "maximumLineHeight": 34,
+              "minimumLineHeight": 34,
+              "allowsDefaultTighteningForTruncation": 0,
+              "alignment": 0
+            }
+          },
+          "verticalAlignment": 0,
+          "skipColors": true,
+          "skipAlignment": true
+        }
+      }
+    }
+  },
+  {
+    "id": "2C0C949F-0EEF-46CD-9EF7-625EC036CF34",
+    "name": "Loose Leading/02 Title1/Default",
+    "source_member": "document.json",
+    "json_pointer": "/layerTextStyles/objects/24",
+    "font_raw": {
+      "name": "SFPro-Regular",
+      "size": 22
+    },
+    "paragraph_raw": {
+      "_class": "paragraphStyle",
+      "maximumLineHeight": 28,
+      "minimumLineHeight": 28,
+      "allowsDefaultTighteningForTruncation": 0,
+      "alignment": 0
+    },
+    "color_raw": {
+      "_class": "color",
+      "alpha": 0.85,
+      "blue": 0,
+      "green": 0,
+      "red": 0,
+      "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+    },
+    "raw": {
+      "_class": "sharedStyle",
+      "do_objectID": "2C0C949F-0EEF-46CD-9EF7-625EC036CF34",
+      "name": "Loose Leading/02 Title1/Default",
+      "value": {
+        "_class": "style",
+        "do_objectID": "BB3125C7-69D0-49C5-9E2B-ECE2EF0E990B",
+        "endMarkerType": 0,
+        "miterLimit": 10,
+        "startMarkerType": 0,
+        "windingRule": 1,
+        "skipCorners": true,
+        "blurs": [],
+        "borderOptions": {
+          "_class": "borderOptions",
+          "isEnabled": true,
+          "dashPattern": [],
+          "centerDashes": true,
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0
+        },
+        "borders": [],
+        "colorControls": {
+          "_class": "colorControls",
+          "isEnabled": true,
+          "brightness": 0,
+          "contrast": 1,
+          "hue": 0,
+          "saturation": 1
+        },
+        "contextSettings": {
+          "_class": "graphicsContextSettings",
+          "blendMode": 0,
+          "opacity": 1,
+          "isProgressive": false
+        },
+        "fills": [],
+        "shadows": [],
+        "textStyle": {
+          "_class": "textStyle",
+          "encodedAttributes": {
+            "paragraphStyle": {
+              "_class": "paragraphStyle",
+              "maximumLineHeight": 28,
+              "minimumLineHeight": 28,
+              "allowsDefaultTighteningForTruncation": 0,
+              "alignment": 0
+            },
+            "MSAttributedStringColorAttribute": {
+              "_class": "color",
+              "alpha": 0.85,
+              "blue": 0,
+              "green": 0,
+              "red": 0,
+              "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+            },
+            "MSAttributedStringFontAttribute": {
+              "_class": "fontDescriptor",
+              "attributes": {
+                "name": "SFPro-Regular",
+                "size": 22
+              }
+            }
+          },
+          "verticalAlignment": 0,
+          "skipColors": true,
+          "skipAlignment": true
+        }
+      }
+    }
+  },
+  {
+    "id": "38AF97D3-7069-44E1-AA0B-19943F88EEAC",
+    "name": "Loose Leading/02 Title1/Emphasized",
+    "source_member": "document.json",
+    "json_pointer": "/layerTextStyles/objects/25",
+    "font_raw": {
+      "name": "SFPro-Bold",
+      "size": 22
+    },
+    "paragraph_raw": {
+      "_class": "paragraphStyle",
+      "maximumLineHeight": 28,
+      "minimumLineHeight": 28,
+      "allowsDefaultTighteningForTruncation": 0,
+      "alignment": 0
+    },
+    "color_raw": {
+      "_class": "color",
+      "alpha": 0.85,
+      "blue": 0,
+      "green": 0,
+      "red": 0,
+      "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+    },
+    "raw": {
+      "_class": "sharedStyle",
+      "do_objectID": "38AF97D3-7069-44E1-AA0B-19943F88EEAC",
+      "name": "Loose Leading/02 Title1/Emphasized",
+      "value": {
+        "_class": "style",
+        "do_objectID": "0F93F433-6EFD-4B10-9E61-2A25339ACD9F",
+        "endMarkerType": 0,
+        "miterLimit": 10,
+        "startMarkerType": 0,
+        "windingRule": 1,
+        "skipCorners": true,
+        "blurs": [],
+        "borderOptions": {
+          "_class": "borderOptions",
+          "isEnabled": true,
+          "dashPattern": [],
+          "centerDashes": true,
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0
+        },
+        "borders": [],
+        "colorControls": {
+          "_class": "colorControls",
+          "isEnabled": true,
+          "brightness": 0,
+          "contrast": 1,
+          "hue": 0,
+          "saturation": 1
+        },
+        "contextSettings": {
+          "_class": "graphicsContextSettings",
+          "blendMode": 0,
+          "opacity": 1,
+          "isProgressive": false
+        },
+        "fills": [],
+        "shadows": [],
+        "textStyle": {
+          "_class": "textStyle",
+          "encodedAttributes": {
+            "MSAttributedStringFontAttribute": {
+              "_class": "fontDescriptor",
+              "attributes": {
+                "name": "SFPro-Bold",
+                "size": 22
+              }
+            },
+            "paragraphStyle": {
+              "_class": "paragraphStyle",
+              "maximumLineHeight": 28,
+              "minimumLineHeight": 28,
+              "allowsDefaultTighteningForTruncation": 0,
+              "alignment": 0
+            },
+            "MSAttributedStringColorAttribute": {
+              "_class": "color",
+              "alpha": 0.85,
+              "blue": 0,
+              "green": 0,
+              "red": 0,
+              "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+            }
+          },
+          "verticalAlignment": 0,
+          "skipColors": true,
+          "skipAlignment": true
+        }
+      }
+    }
+  },
+  {
+    "id": "1AD321DF-AC26-4B91-9015-C7A50136B96F",
+    "name": "Loose Leading/03 Title2/Default",
+    "source_member": "document.json",
+    "json_pointer": "/layerTextStyles/objects/26",
+    "font_raw": {
+      "name": "SFPro-Regular",
+      "size": 17
+    },
+    "paragraph_raw": {
+      "_class": "paragraphStyle",
+      "maximumLineHeight": 24,
+      "minimumLineHeight": 24,
+      "allowsDefaultTighteningForTruncation": 0,
+      "alignment": 0
+    },
+    "color_raw": {
+      "_class": "color",
+      "alpha": 0.85,
+      "blue": 0,
+      "green": 0,
+      "red": 0,
+      "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+    },
+    "raw": {
+      "_class": "sharedStyle",
+      "do_objectID": "1AD321DF-AC26-4B91-9015-C7A50136B96F",
+      "name": "Loose Leading/03 Title2/Default",
+      "value": {
+        "_class": "style",
+        "do_objectID": "8BE280C2-1284-4F81-A75D-3BCBDD551355",
+        "endMarkerType": 0,
+        "miterLimit": 10,
+        "startMarkerType": 0,
+        "windingRule": 1,
+        "skipCorners": true,
+        "blurs": [],
+        "borderOptions": {
+          "_class": "borderOptions",
+          "isEnabled": true,
+          "dashPattern": [],
+          "centerDashes": true,
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0
+        },
+        "borders": [],
+        "colorControls": {
+          "_class": "colorControls",
+          "isEnabled": true,
+          "brightness": 0,
+          "contrast": 1,
+          "hue": 0,
+          "saturation": 1
+        },
+        "contextSettings": {
+          "_class": "graphicsContextSettings",
+          "blendMode": 0,
+          "opacity": 1,
+          "isProgressive": false
+        },
+        "fills": [],
+        "shadows": [],
+        "textStyle": {
+          "_class": "textStyle",
+          "encodedAttributes": {
+            "MSAttributedStringColorAttribute": {
+              "_class": "color",
+              "alpha": 0.85,
+              "blue": 0,
+              "green": 0,
+              "red": 0,
+              "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+            },
+            "paragraphStyle": {
+              "_class": "paragraphStyle",
+              "maximumLineHeight": 24,
+              "minimumLineHeight": 24,
+              "allowsDefaultTighteningForTruncation": 0,
+              "alignment": 0
+            },
+            "MSAttributedStringFontAttribute": {
+              "_class": "fontDescriptor",
+              "attributes": {
+                "name": "SFPro-Regular",
+                "size": 17
+              }
+            }
+          },
+          "verticalAlignment": 0,
+          "skipColors": true,
+          "skipAlignment": true
+        }
+      }
+    }
+  },
+  {
+    "id": "0FB98B1F-3691-4CD5-B444-D8E52BE24911",
+    "name": "Loose Leading/03 Title2/Emphasized",
+    "source_member": "document.json",
+    "json_pointer": "/layerTextStyles/objects/27",
+    "font_raw": {
+      "name": "SFPro-Bold",
+      "size": 17
+    },
+    "paragraph_raw": {
+      "_class": "paragraphStyle",
+      "maximumLineHeight": 24,
+      "minimumLineHeight": 24,
+      "allowsDefaultTighteningForTruncation": 0,
+      "alignment": 0
+    },
+    "color_raw": {
+      "_class": "color",
+      "alpha": 0.85,
+      "blue": 0,
+      "green": 0,
+      "red": 0,
+      "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+    },
+    "raw": {
+      "_class": "sharedStyle",
+      "do_objectID": "0FB98B1F-3691-4CD5-B444-D8E52BE24911",
+      "name": "Loose Leading/03 Title2/Emphasized",
+      "value": {
+        "_class": "style",
+        "do_objectID": "A678B6AA-CBE1-435C-BD71-F9E96B30E20E",
+        "endMarkerType": 0,
+        "miterLimit": 10,
+        "startMarkerType": 0,
+        "windingRule": 1,
+        "skipCorners": true,
+        "blurs": [],
+        "borderOptions": {
+          "_class": "borderOptions",
+          "isEnabled": true,
+          "dashPattern": [],
+          "centerDashes": true,
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0
+        },
+        "borders": [],
+        "colorControls": {
+          "_class": "colorControls",
+          "isEnabled": true,
+          "brightness": 0,
+          "contrast": 1,
+          "hue": 0,
+          "saturation": 1
+        },
+        "contextSettings": {
+          "_class": "graphicsContextSettings",
+          "blendMode": 0,
+          "opacity": 1,
+          "isProgressive": false
+        },
+        "fills": [],
+        "shadows": [],
+        "textStyle": {
+          "_class": "textStyle",
+          "encodedAttributes": {
+            "MSAttributedStringFontAttribute": {
+              "_class": "fontDescriptor",
+              "attributes": {
+                "name": "SFPro-Bold",
+                "size": 17
+              }
+            },
+            "paragraphStyle": {
+              "_class": "paragraphStyle",
+              "maximumLineHeight": 24,
+              "minimumLineHeight": 24,
+              "allowsDefaultTighteningForTruncation": 0,
+              "alignment": 0
+            },
+            "MSAttributedStringColorAttribute": {
+              "_class": "color",
+              "alpha": 0.85,
+              "blue": 0,
+              "green": 0,
+              "red": 0,
+              "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+            }
+          },
+          "verticalAlignment": 0,
+          "skipColors": true,
+          "skipAlignment": true
+        }
+      }
+    }
+  },
+  {
+    "id": "4FABEABB-0E56-4E05-815C-6828C464BE7C",
+    "name": "Loose Leading/04 Title3/Default",
+    "source_member": "document.json",
+    "json_pointer": "/layerTextStyles/objects/28",
+    "font_raw": {
+      "name": "SFPro-Regular",
+      "size": 15
+    },
+    "paragraph_raw": {
+      "_class": "paragraphStyle",
+      "maximumLineHeight": 22,
+      "minimumLineHeight": 22,
+      "allowsDefaultTighteningForTruncation": 0,
+      "alignment": 0
+    },
+    "color_raw": {
+      "_class": "color",
+      "alpha": 0.85,
+      "blue": 0,
+      "green": 0,
+      "red": 0,
+      "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+    },
+    "raw": {
+      "_class": "sharedStyle",
+      "do_objectID": "4FABEABB-0E56-4E05-815C-6828C464BE7C",
+      "name": "Loose Leading/04 Title3/Default",
+      "value": {
+        "_class": "style",
+        "do_objectID": "D3994EE9-470F-41A3-84C6-0CD904F1A2BC",
+        "endMarkerType": 0,
+        "miterLimit": 10,
+        "startMarkerType": 0,
+        "windingRule": 1,
+        "skipCorners": true,
+        "blurs": [],
+        "borderOptions": {
+          "_class": "borderOptions",
+          "isEnabled": true,
+          "dashPattern": [],
+          "centerDashes": true,
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0
+        },
+        "borders": [],
+        "colorControls": {
+          "_class": "colorControls",
+          "isEnabled": true,
+          "brightness": 0,
+          "contrast": 1,
+          "hue": 0,
+          "saturation": 1
+        },
+        "contextSettings": {
+          "_class": "graphicsContextSettings",
+          "blendMode": 0,
+          "opacity": 1,
+          "isProgressive": false
+        },
+        "fills": [],
+        "shadows": [],
+        "textStyle": {
+          "_class": "textStyle",
+          "encodedAttributes": {
+            "paragraphStyle": {
+              "_class": "paragraphStyle",
+              "maximumLineHeight": 22,
+              "minimumLineHeight": 22,
+              "allowsDefaultTighteningForTruncation": 0,
+              "alignment": 0
+            },
+            "MSAttributedStringFontAttribute": {
+              "_class": "fontDescriptor",
+              "attributes": {
+                "name": "SFPro-Regular",
+                "size": 15
+              }
+            },
+            "MSAttributedStringColorAttribute": {
+              "_class": "color",
+              "alpha": 0.85,
+              "blue": 0,
+              "green": 0,
+              "red": 0,
+              "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+            }
+          },
+          "verticalAlignment": 0,
+          "skipColors": true,
+          "skipAlignment": true
+        }
+      }
+    }
+  },
+  {
+    "id": "05A9714A-49C8-405E-8BD1-2D117C17EE4E",
+    "name": "Loose Leading/04 Title3/Emphasized",
+    "source_member": "document.json",
+    "json_pointer": "/layerTextStyles/objects/29",
+    "font_raw": {
+      "name": "SFPro-Semibold",
+      "size": 15
+    },
+    "paragraph_raw": {
+      "_class": "paragraphStyle",
+      "maximumLineHeight": 22,
+      "minimumLineHeight": 22,
+      "allowsDefaultTighteningForTruncation": 0,
+      "alignment": 0
+    },
+    "color_raw": {
+      "_class": "color",
+      "alpha": 0.85,
+      "blue": 0,
+      "green": 0,
+      "red": 0,
+      "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+    },
+    "raw": {
+      "_class": "sharedStyle",
+      "do_objectID": "05A9714A-49C8-405E-8BD1-2D117C17EE4E",
+      "name": "Loose Leading/04 Title3/Emphasized",
+      "value": {
+        "_class": "style",
+        "do_objectID": "4501F94A-D043-4BAE-AEC5-33E6220DE5C1",
+        "endMarkerType": 0,
+        "miterLimit": 10,
+        "startMarkerType": 0,
+        "windingRule": 1,
+        "skipCorners": true,
+        "blurs": [],
+        "borderOptions": {
+          "_class": "borderOptions",
+          "isEnabled": true,
+          "dashPattern": [],
+          "centerDashes": true,
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0
+        },
+        "borders": [],
+        "colorControls": {
+          "_class": "colorControls",
+          "isEnabled": true,
+          "brightness": 0,
+          "contrast": 1,
+          "hue": 0,
+          "saturation": 1
+        },
+        "contextSettings": {
+          "_class": "graphicsContextSettings",
+          "blendMode": 0,
+          "opacity": 1,
+          "isProgressive": false
+        },
+        "fills": [],
+        "shadows": [],
+        "textStyle": {
+          "_class": "textStyle",
+          "encodedAttributes": {
+            "paragraphStyle": {
+              "_class": "paragraphStyle",
+              "maximumLineHeight": 22,
+              "minimumLineHeight": 22,
+              "allowsDefaultTighteningForTruncation": 0,
+              "alignment": 0
+            },
+            "MSAttributedStringColorAttribute": {
+              "_class": "color",
+              "alpha": 0.85,
+              "blue": 0,
+              "green": 0,
+              "red": 0,
+              "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+            },
+            "MSAttributedStringFontAttribute": {
+              "_class": "fontDescriptor",
+              "attributes": {
+                "name": "SFPro-Semibold",
+                "size": 15
+              }
+            }
+          },
+          "verticalAlignment": 0,
+          "skipColors": true,
+          "skipAlignment": true
+        }
+      }
+    }
+  },
+  {
+    "id": "0D63C308-E12D-4E77-93F4-02ADEAFBE15E",
+    "name": "Loose Leading/05 Headline/Default",
+    "source_member": "document.json",
+    "json_pointer": "/layerTextStyles/objects/30",
+    "font_raw": {
+      "name": "SFPro-Bold",
+      "size": 13
+    },
+    "paragraph_raw": {
+      "_class": "paragraphStyle",
+      "maximumLineHeight": 18,
+      "minimumLineHeight": 18,
+      "allowsDefaultTighteningForTruncation": 0,
+      "alignment": 0
+    },
+    "color_raw": {
+      "_class": "color",
+      "alpha": 0.85,
+      "blue": 0,
+      "green": 0,
+      "red": 0,
+      "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+    },
+    "raw": {
+      "_class": "sharedStyle",
+      "do_objectID": "0D63C308-E12D-4E77-93F4-02ADEAFBE15E",
+      "name": "Loose Leading/05 Headline/Default",
+      "value": {
+        "_class": "style",
+        "do_objectID": "0FC9FDBA-DDC5-43A3-A913-FFA21DCBFF94",
+        "endMarkerType": 0,
+        "miterLimit": 10,
+        "startMarkerType": 0,
+        "windingRule": 1,
+        "skipCorners": true,
+        "blurs": [],
+        "borderOptions": {
+          "_class": "borderOptions",
+          "isEnabled": true,
+          "dashPattern": [],
+          "centerDashes": true,
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0
+        },
+        "borders": [],
+        "colorControls": {
+          "_class": "colorControls",
+          "isEnabled": true,
+          "brightness": 0,
+          "contrast": 1,
+          "hue": 0,
+          "saturation": 1
+        },
+        "contextSettings": {
+          "_class": "graphicsContextSettings",
+          "blendMode": 0,
+          "opacity": 1,
+          "isProgressive": false
+        },
+        "fills": [],
+        "shadows": [],
+        "textStyle": {
+          "_class": "textStyle",
+          "encodedAttributes": {
+            "MSAttributedStringColorAttribute": {
+              "_class": "color",
+              "alpha": 0.85,
+              "blue": 0,
+              "green": 0,
+              "red": 0,
+              "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+            },
+            "MSAttributedStringFontAttribute": {
+              "_class": "fontDescriptor",
+              "attributes": {
+                "name": "SFPro-Bold",
+                "size": 13
+              }
+            },
+            "paragraphStyle": {
+              "_class": "paragraphStyle",
+              "maximumLineHeight": 18,
+              "minimumLineHeight": 18,
+              "allowsDefaultTighteningForTruncation": 0,
+              "alignment": 0
+            }
+          },
+          "verticalAlignment": 0,
+          "skipColors": true,
+          "skipAlignment": true
+        }
+      }
+    }
+  },
+  {
+    "id": "C6D08EBD-7995-4A01-B7F7-6729AAD50058",
+    "name": "Loose Leading/05 Headline/Emphasized",
+    "source_member": "document.json",
+    "json_pointer": "/layerTextStyles/objects/31",
+    "font_raw": {
+      "name": "SFPro-Heavy",
+      "size": 13
+    },
+    "paragraph_raw": {
+      "_class": "paragraphStyle",
+      "maximumLineHeight": 18,
+      "minimumLineHeight": 18,
+      "allowsDefaultTighteningForTruncation": 0,
+      "alignment": 0
+    },
+    "color_raw": {
+      "_class": "color",
+      "alpha": 0.85,
+      "blue": 0,
+      "green": 0,
+      "red": 0,
+      "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+    },
+    "raw": {
+      "_class": "sharedStyle",
+      "do_objectID": "C6D08EBD-7995-4A01-B7F7-6729AAD50058",
+      "name": "Loose Leading/05 Headline/Emphasized",
+      "value": {
+        "_class": "style",
+        "do_objectID": "FBA5DD02-8B93-43FC-888F-4BCDF93B07D0",
+        "endMarkerType": 0,
+        "miterLimit": 10,
+        "startMarkerType": 0,
+        "windingRule": 1,
+        "skipCorners": true,
+        "blurs": [],
+        "borderOptions": {
+          "_class": "borderOptions",
+          "isEnabled": true,
+          "dashPattern": [],
+          "centerDashes": true,
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0
+        },
+        "borders": [],
+        "colorControls": {
+          "_class": "colorControls",
+          "isEnabled": true,
+          "brightness": 0,
+          "contrast": 1,
+          "hue": 0,
+          "saturation": 1
+        },
+        "contextSettings": {
+          "_class": "graphicsContextSettings",
+          "blendMode": 0,
+          "opacity": 1,
+          "isProgressive": false
+        },
+        "fills": [],
+        "shadows": [],
+        "textStyle": {
+          "_class": "textStyle",
+          "encodedAttributes": {
+            "MSAttributedStringFontAttribute": {
+              "_class": "fontDescriptor",
+              "attributes": {
+                "name": "SFPro-Heavy",
+                "size": 13
+              }
+            },
+            "paragraphStyle": {
+              "_class": "paragraphStyle",
+              "maximumLineHeight": 18,
+              "minimumLineHeight": 18,
+              "allowsDefaultTighteningForTruncation": 0,
+              "alignment": 0
+            },
+            "MSAttributedStringColorAttribute": {
+              "_class": "color",
+              "alpha": 0.85,
+              "blue": 0,
+              "green": 0,
+              "red": 0,
+              "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+            }
+          },
+          "verticalAlignment": 0,
+          "skipColors": true,
+          "skipAlignment": true
+        }
+      }
+    }
+  },
+  {
+    "id": "B0A8BA08-5023-4E5B-9F1C-810A73EA5BB1",
+    "name": "Loose Leading/06 Body/Default",
+    "source_member": "document.json",
+    "json_pointer": "/layerTextStyles/objects/32",
+    "font_raw": {
+      "name": "SFPro-Regular",
+      "size": 13
+    },
+    "paragraph_raw": {
+      "_class": "paragraphStyle",
+      "maximumLineHeight": 18,
+      "minimumLineHeight": 18,
+      "allowsDefaultTighteningForTruncation": 0,
+      "alignment": 0
+    },
+    "color_raw": {
+      "_class": "color",
+      "alpha": 0.85,
+      "blue": 0,
+      "green": 0,
+      "red": 0,
+      "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+    },
+    "raw": {
+      "_class": "sharedStyle",
+      "do_objectID": "B0A8BA08-5023-4E5B-9F1C-810A73EA5BB1",
+      "name": "Loose Leading/06 Body/Default",
+      "value": {
+        "_class": "style",
+        "do_objectID": "903E6698-A8EA-471D-A114-3382289D9208",
+        "endMarkerType": 0,
+        "miterLimit": 10,
+        "startMarkerType": 0,
+        "windingRule": 1,
+        "skipCorners": true,
+        "blurs": [],
+        "borderOptions": {
+          "_class": "borderOptions",
+          "isEnabled": true,
+          "dashPattern": [],
+          "centerDashes": true,
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0
+        },
+        "borders": [],
+        "colorControls": {
+          "_class": "colorControls",
+          "isEnabled": true,
+          "brightness": 0,
+          "contrast": 1,
+          "hue": 0,
+          "saturation": 1
+        },
+        "contextSettings": {
+          "_class": "graphicsContextSettings",
+          "blendMode": 0,
+          "opacity": 1,
+          "isProgressive": false
+        },
+        "fills": [],
+        "shadows": [],
+        "textStyle": {
+          "_class": "textStyle",
+          "encodedAttributes": {
+            "MSAttributedStringColorAttribute": {
+              "_class": "color",
+              "alpha": 0.85,
+              "blue": 0,
+              "green": 0,
+              "red": 0,
+              "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+            },
+            "MSAttributedStringFontAttribute": {
+              "_class": "fontDescriptor",
+              "attributes": {
+                "name": "SFPro-Regular",
+                "size": 13
+              }
+            },
+            "paragraphStyle": {
+              "_class": "paragraphStyle",
+              "maximumLineHeight": 18,
+              "minimumLineHeight": 18,
+              "allowsDefaultTighteningForTruncation": 0,
+              "alignment": 0
+            }
+          },
+          "verticalAlignment": 0,
+          "skipColors": true,
+          "skipAlignment": true
+        }
+      }
+    }
+  },
+  {
+    "id": "C3E52D4A-67F8-452A-8FBB-556E50D5BEB7",
+    "name": "Loose Leading/06 Body/Emphasized",
+    "source_member": "document.json",
+    "json_pointer": "/layerTextStyles/objects/33",
+    "font_raw": {
+      "name": "SFPro-Semibold",
+      "size": 13
+    },
+    "paragraph_raw": {
+      "_class": "paragraphStyle",
+      "maximumLineHeight": 18,
+      "minimumLineHeight": 18,
+      "allowsDefaultTighteningForTruncation": 0,
+      "alignment": 0
+    },
+    "color_raw": {
+      "_class": "color",
+      "alpha": 0.85,
+      "blue": 0,
+      "green": 0,
+      "red": 0,
+      "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+    },
+    "raw": {
+      "_class": "sharedStyle",
+      "do_objectID": "C3E52D4A-67F8-452A-8FBB-556E50D5BEB7",
+      "name": "Loose Leading/06 Body/Emphasized",
+      "value": {
+        "_class": "style",
+        "do_objectID": "414FEA9D-EF98-425A-B252-D59F883396DB",
+        "endMarkerType": 0,
+        "miterLimit": 10,
+        "startMarkerType": 0,
+        "windingRule": 1,
+        "skipCorners": true,
+        "blurs": [],
+        "borderOptions": {
+          "_class": "borderOptions",
+          "isEnabled": true,
+          "dashPattern": [],
+          "centerDashes": true,
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0
+        },
+        "borders": [],
+        "colorControls": {
+          "_class": "colorControls",
+          "isEnabled": true,
+          "brightness": 0,
+          "contrast": 1,
+          "hue": 0,
+          "saturation": 1
+        },
+        "contextSettings": {
+          "_class": "graphicsContextSettings",
+          "blendMode": 0,
+          "opacity": 1,
+          "isProgressive": false
+        },
+        "fills": [],
+        "shadows": [],
+        "textStyle": {
+          "_class": "textStyle",
+          "encodedAttributes": {
+            "MSAttributedStringColorAttribute": {
+              "_class": "color",
+              "alpha": 0.85,
+              "blue": 0,
+              "green": 0,
+              "red": 0,
+              "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+            },
+            "MSAttributedStringFontAttribute": {
+              "_class": "fontDescriptor",
+              "attributes": {
+                "name": "SFPro-Semibold",
+                "size": 13
+              }
+            },
+            "paragraphStyle": {
+              "_class": "paragraphStyle",
+              "maximumLineHeight": 18,
+              "minimumLineHeight": 18,
+              "allowsDefaultTighteningForTruncation": 0,
+              "alignment": 0
+            }
+          },
+          "verticalAlignment": 0,
+          "skipColors": true,
+          "skipAlignment": true
+        }
+      }
+    }
+  },
+  {
+    "id": "B7254BFA-4DE8-4B80-9B6E-F5550B7DC6A2",
+    "name": "Loose Leading/07 Callout/Default",
+    "source_member": "document.json",
+    "json_pointer": "/layerTextStyles/objects/34",
+    "font_raw": {
+      "name": "SFPro-Regular",
+      "size": 12
+    },
+    "paragraph_raw": {
+      "_class": "paragraphStyle",
+      "maximumLineHeight": 17,
+      "minimumLineHeight": 17,
+      "allowsDefaultTighteningForTruncation": 0,
+      "alignment": 0
+    },
+    "color_raw": {
+      "_class": "color",
+      "alpha": 0.85,
+      "blue": 0,
+      "green": 0,
+      "red": 0,
+      "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+    },
+    "raw": {
+      "_class": "sharedStyle",
+      "do_objectID": "B7254BFA-4DE8-4B80-9B6E-F5550B7DC6A2",
+      "name": "Loose Leading/07 Callout/Default",
+      "value": {
+        "_class": "style",
+        "do_objectID": "93DA35B6-606C-46E4-856F-8FC5697752EA",
+        "endMarkerType": 0,
+        "miterLimit": 10,
+        "startMarkerType": 0,
+        "windingRule": 1,
+        "skipCorners": true,
+        "blurs": [],
+        "borderOptions": {
+          "_class": "borderOptions",
+          "isEnabled": true,
+          "dashPattern": [],
+          "centerDashes": true,
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0
+        },
+        "borders": [],
+        "colorControls": {
+          "_class": "colorControls",
+          "isEnabled": true,
+          "brightness": 0,
+          "contrast": 1,
+          "hue": 0,
+          "saturation": 1
+        },
+        "contextSettings": {
+          "_class": "graphicsContextSettings",
+          "blendMode": 0,
+          "opacity": 1,
+          "isProgressive": false
+        },
+        "fills": [],
+        "shadows": [],
+        "textStyle": {
+          "_class": "textStyle",
+          "encodedAttributes": {
+            "paragraphStyle": {
+              "_class": "paragraphStyle",
+              "maximumLineHeight": 17,
+              "minimumLineHeight": 17,
+              "allowsDefaultTighteningForTruncation": 0,
+              "alignment": 0
+            },
+            "MSAttributedStringColorAttribute": {
+              "_class": "color",
+              "alpha": 0.85,
+              "blue": 0,
+              "green": 0,
+              "red": 0,
+              "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+            },
+            "MSAttributedStringFontAttribute": {
+              "_class": "fontDescriptor",
+              "attributes": {
+                "name": "SFPro-Regular",
+                "size": 12
+              }
+            }
+          },
+          "verticalAlignment": 0,
+          "skipColors": true,
+          "skipAlignment": true
+        }
+      }
+    }
+  },
+  {
+    "id": "734E4B69-8B49-4BC0-A512-6CD0D11AC4E1",
+    "name": "Loose Leading/07 Callout/Emphasized",
+    "source_member": "document.json",
+    "json_pointer": "/layerTextStyles/objects/35",
+    "font_raw": {
+      "name": "SFPro-Semibold",
+      "size": 12
+    },
+    "paragraph_raw": {
+      "_class": "paragraphStyle",
+      "maximumLineHeight": 17,
+      "minimumLineHeight": 17,
+      "allowsDefaultTighteningForTruncation": 0,
+      "alignment": 0
+    },
+    "color_raw": {
+      "_class": "color",
+      "alpha": 0.85,
+      "blue": 0,
+      "green": 0,
+      "red": 0,
+      "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+    },
+    "raw": {
+      "_class": "sharedStyle",
+      "do_objectID": "734E4B69-8B49-4BC0-A512-6CD0D11AC4E1",
+      "name": "Loose Leading/07 Callout/Emphasized",
+      "value": {
+        "_class": "style",
+        "do_objectID": "597EAB68-B28A-4251-9E9E-39353BE3F84C",
+        "endMarkerType": 0,
+        "miterLimit": 10,
+        "startMarkerType": 0,
+        "windingRule": 1,
+        "skipCorners": true,
+        "blurs": [],
+        "borderOptions": {
+          "_class": "borderOptions",
+          "isEnabled": true,
+          "dashPattern": [],
+          "centerDashes": true,
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0
+        },
+        "borders": [],
+        "colorControls": {
+          "_class": "colorControls",
+          "isEnabled": true,
+          "brightness": 0,
+          "contrast": 1,
+          "hue": 0,
+          "saturation": 1
+        },
+        "contextSettings": {
+          "_class": "graphicsContextSettings",
+          "blendMode": 0,
+          "opacity": 1,
+          "isProgressive": false
+        },
+        "fills": [],
+        "shadows": [],
+        "textStyle": {
+          "_class": "textStyle",
+          "encodedAttributes": {
+            "MSAttributedStringColorAttribute": {
+              "_class": "color",
+              "alpha": 0.85,
+              "blue": 0,
+              "green": 0,
+              "red": 0,
+              "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+            },
+            "MSAttributedStringFontAttribute": {
+              "_class": "fontDescriptor",
+              "attributes": {
+                "name": "SFPro-Semibold",
+                "size": 12
+              }
+            },
+            "paragraphStyle": {
+              "_class": "paragraphStyle",
+              "maximumLineHeight": 17,
+              "minimumLineHeight": 17,
+              "allowsDefaultTighteningForTruncation": 0,
+              "alignment": 0
+            }
+          },
+          "verticalAlignment": 0,
+          "skipColors": true,
+          "skipAlignment": true
+        }
+      }
+    }
+  },
+  {
+    "id": "96A749BA-7902-421A-BA47-E1AEC90074C4",
+    "name": "Loose Leading/08 Subheadline/Default",
+    "source_member": "document.json",
+    "json_pointer": "/layerTextStyles/objects/36",
+    "font_raw": {
+      "name": "SFPro-Regular",
+      "size": 11
+    },
+    "paragraph_raw": {
+      "_class": "paragraphStyle",
+      "maximumLineHeight": 16,
+      "minimumLineHeight": 16,
+      "allowsDefaultTighteningForTruncation": 0,
+      "alignment": 0
+    },
+    "color_raw": {
+      "_class": "color",
+      "alpha": 0.85,
+      "blue": 0,
+      "green": 0,
+      "red": 0,
+      "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+    },
+    "raw": {
+      "_class": "sharedStyle",
+      "do_objectID": "96A749BA-7902-421A-BA47-E1AEC90074C4",
+      "name": "Loose Leading/08 Subheadline/Default",
+      "value": {
+        "_class": "style",
+        "do_objectID": "CC233AAA-A992-4F16-BF71-A904FACBB910",
+        "endMarkerType": 0,
+        "miterLimit": 10,
+        "startMarkerType": 0,
+        "windingRule": 1,
+        "skipCorners": true,
+        "blurs": [],
+        "borderOptions": {
+          "_class": "borderOptions",
+          "isEnabled": true,
+          "dashPattern": [],
+          "centerDashes": true,
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0
+        },
+        "borders": [],
+        "colorControls": {
+          "_class": "colorControls",
+          "isEnabled": true,
+          "brightness": 0,
+          "contrast": 1,
+          "hue": 0,
+          "saturation": 1
+        },
+        "contextSettings": {
+          "_class": "graphicsContextSettings",
+          "blendMode": 0,
+          "opacity": 1,
+          "isProgressive": false
+        },
+        "fills": [],
+        "shadows": [],
+        "textStyle": {
+          "_class": "textStyle",
+          "encodedAttributes": {
+            "MSAttributedStringColorAttribute": {
+              "_class": "color",
+              "alpha": 0.85,
+              "blue": 0,
+              "green": 0,
+              "red": 0,
+              "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+            },
+            "MSAttributedStringFontAttribute": {
+              "_class": "fontDescriptor",
+              "attributes": {
+                "name": "SFPro-Regular",
+                "size": 11
+              }
+            },
+            "paragraphStyle": {
+              "_class": "paragraphStyle",
+              "maximumLineHeight": 16,
+              "minimumLineHeight": 16,
+              "allowsDefaultTighteningForTruncation": 0,
+              "alignment": 0
+            }
+          },
+          "verticalAlignment": 0,
+          "skipColors": true,
+          "skipAlignment": true
+        }
+      }
+    }
+  },
+  {
+    "id": "D260FAD2-E1BA-4C15-BA52-95F397762AB8",
+    "name": "Loose Leading/08 Subheadline/Emphasized",
+    "source_member": "document.json",
+    "json_pointer": "/layerTextStyles/objects/37",
+    "font_raw": {
+      "name": "SFPro-Semibold",
+      "size": 11
+    },
+    "paragraph_raw": {
+      "_class": "paragraphStyle",
+      "maximumLineHeight": 16,
+      "minimumLineHeight": 16,
+      "allowsDefaultTighteningForTruncation": 0,
+      "alignment": 0
+    },
+    "color_raw": {
+      "_class": "color",
+      "alpha": 0.85,
+      "blue": 0,
+      "green": 0,
+      "red": 0,
+      "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+    },
+    "raw": {
+      "_class": "sharedStyle",
+      "do_objectID": "D260FAD2-E1BA-4C15-BA52-95F397762AB8",
+      "name": "Loose Leading/08 Subheadline/Emphasized",
+      "value": {
+        "_class": "style",
+        "do_objectID": "FB82E9A9-CB0C-421A-8D25-650BBAEDD855",
+        "endMarkerType": 0,
+        "miterLimit": 10,
+        "startMarkerType": 0,
+        "windingRule": 1,
+        "skipCorners": true,
+        "blurs": [],
+        "borderOptions": {
+          "_class": "borderOptions",
+          "isEnabled": true,
+          "dashPattern": [],
+          "centerDashes": true,
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0
+        },
+        "borders": [],
+        "colorControls": {
+          "_class": "colorControls",
+          "isEnabled": true,
+          "brightness": 0,
+          "contrast": 1,
+          "hue": 0,
+          "saturation": 1
+        },
+        "contextSettings": {
+          "_class": "graphicsContextSettings",
+          "blendMode": 0,
+          "opacity": 1,
+          "isProgressive": false
+        },
+        "fills": [],
+        "shadows": [],
+        "textStyle": {
+          "_class": "textStyle",
+          "encodedAttributes": {
+            "MSAttributedStringColorAttribute": {
+              "_class": "color",
+              "alpha": 0.85,
+              "blue": 0,
+              "green": 0,
+              "red": 0,
+              "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+            },
+            "paragraphStyle": {
+              "_class": "paragraphStyle",
+              "maximumLineHeight": 16,
+              "minimumLineHeight": 16,
+              "allowsDefaultTighteningForTruncation": 0,
+              "alignment": 0
+            },
+            "MSAttributedStringFontAttribute": {
+              "_class": "fontDescriptor",
+              "attributes": {
+                "name": "SFPro-Semibold",
+                "size": 11
+              }
+            }
+          },
+          "verticalAlignment": 0,
+          "skipColors": true,
+          "skipAlignment": true
+        }
+      }
+    }
+  },
+  {
+    "id": "56253636-550F-4333-AC1C-B8C2B1023DA3",
+    "name": "Loose Leading/09 Footnote/Default",
+    "source_member": "document.json",
+    "json_pointer": "/layerTextStyles/objects/38",
+    "font_raw": {
+      "name": "SFPro-Regular",
+      "size": 10
+    },
+    "paragraph_raw": {
+      "_class": "paragraphStyle",
+      "maximumLineHeight": 15,
+      "minimumLineHeight": 15,
+      "allowsDefaultTighteningForTruncation": 0,
+      "alignment": 0
+    },
+    "color_raw": {
+      "_class": "color",
+      "alpha": 0.85,
+      "blue": 0,
+      "green": 0,
+      "red": 0,
+      "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+    },
+    "raw": {
+      "_class": "sharedStyle",
+      "do_objectID": "56253636-550F-4333-AC1C-B8C2B1023DA3",
+      "name": "Loose Leading/09 Footnote/Default",
+      "value": {
+        "_class": "style",
+        "do_objectID": "AB353051-BEEB-480A-B516-CFB96740765F",
+        "endMarkerType": 0,
+        "miterLimit": 10,
+        "startMarkerType": 0,
+        "windingRule": 1,
+        "skipCorners": true,
+        "blurs": [],
+        "borderOptions": {
+          "_class": "borderOptions",
+          "isEnabled": true,
+          "dashPattern": [],
+          "centerDashes": true,
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0
+        },
+        "borders": [],
+        "colorControls": {
+          "_class": "colorControls",
+          "isEnabled": true,
+          "brightness": 0,
+          "contrast": 1,
+          "hue": 0,
+          "saturation": 1
+        },
+        "contextSettings": {
+          "_class": "graphicsContextSettings",
+          "blendMode": 0,
+          "opacity": 1,
+          "isProgressive": false
+        },
+        "fills": [],
+        "shadows": [],
+        "textStyle": {
+          "_class": "textStyle",
+          "encodedAttributes": {
+            "MSAttributedStringColorAttribute": {
+              "_class": "color",
+              "alpha": 0.85,
+              "blue": 0,
+              "green": 0,
+              "red": 0,
+              "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+            },
+            "paragraphStyle": {
+              "_class": "paragraphStyle",
+              "maximumLineHeight": 15,
+              "minimumLineHeight": 15,
+              "allowsDefaultTighteningForTruncation": 0,
+              "alignment": 0
+            },
+            "MSAttributedStringFontAttribute": {
+              "_class": "fontDescriptor",
+              "attributes": {
+                "name": "SFPro-Regular",
+                "size": 10
+              }
+            }
+          },
+          "verticalAlignment": 0,
+          "skipColors": true,
+          "skipAlignment": true
+        }
+      }
+    }
+  },
+  {
+    "id": "F4E9A159-7858-4886-9068-0209935AA09C",
+    "name": "Loose Leading/09 Footnote/Emphasized",
+    "source_member": "document.json",
+    "json_pointer": "/layerTextStyles/objects/39",
+    "font_raw": {
+      "name": "SFPro-Semibold",
+      "size": 10
+    },
+    "paragraph_raw": {
+      "_class": "paragraphStyle",
+      "maximumLineHeight": 15,
+      "minimumLineHeight": 15,
+      "allowsDefaultTighteningForTruncation": 0,
+      "alignment": 0
+    },
+    "color_raw": {
+      "_class": "color",
+      "alpha": 0.85,
+      "blue": 0,
+      "green": 0,
+      "red": 0,
+      "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+    },
+    "raw": {
+      "_class": "sharedStyle",
+      "do_objectID": "F4E9A159-7858-4886-9068-0209935AA09C",
+      "name": "Loose Leading/09 Footnote/Emphasized",
+      "value": {
+        "_class": "style",
+        "do_objectID": "AC394502-76D2-4616-A2CC-DEA56034A6EB",
+        "endMarkerType": 0,
+        "miterLimit": 10,
+        "startMarkerType": 0,
+        "windingRule": 1,
+        "skipCorners": true,
+        "blurs": [],
+        "borderOptions": {
+          "_class": "borderOptions",
+          "isEnabled": true,
+          "dashPattern": [],
+          "centerDashes": true,
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0
+        },
+        "borders": [],
+        "colorControls": {
+          "_class": "colorControls",
+          "isEnabled": true,
+          "brightness": 0,
+          "contrast": 1,
+          "hue": 0,
+          "saturation": 1
+        },
+        "contextSettings": {
+          "_class": "graphicsContextSettings",
+          "blendMode": 0,
+          "opacity": 1,
+          "isProgressive": false
+        },
+        "fills": [],
+        "shadows": [],
+        "textStyle": {
+          "_class": "textStyle",
+          "encodedAttributes": {
+            "MSAttributedStringColorAttribute": {
+              "_class": "color",
+              "alpha": 0.85,
+              "blue": 0,
+              "green": 0,
+              "red": 0,
+              "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+            },
+            "paragraphStyle": {
+              "_class": "paragraphStyle",
+              "maximumLineHeight": 15,
+              "minimumLineHeight": 15,
+              "allowsDefaultTighteningForTruncation": 0,
+              "alignment": 0
+            },
+            "MSAttributedStringFontAttribute": {
+              "_class": "fontDescriptor",
+              "attributes": {
+                "name": "SFPro-Semibold",
+                "size": 10
+              }
+            }
+          },
+          "verticalAlignment": 0,
+          "skipColors": true,
+          "skipAlignment": true
+        }
+      }
+    }
+  },
+  {
+    "id": "254766E0-4EEB-4888-A155-5D602912DC3D",
+    "name": "Loose Leading/10 Caption1/Default",
+    "source_member": "document.json",
+    "json_pointer": "/layerTextStyles/objects/40",
+    "font_raw": {
+      "name": "SFPro-Regular",
+      "size": 10
+    },
+    "paragraph_raw": {
+      "_class": "paragraphStyle",
+      "maximumLineHeight": 15,
+      "minimumLineHeight": 15,
+      "allowsDefaultTighteningForTruncation": 0,
+      "alignment": 0
+    },
+    "color_raw": {
+      "_class": "color",
+      "alpha": 0.85,
+      "blue": 0,
+      "green": 0,
+      "red": 0,
+      "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+    },
+    "raw": {
+      "_class": "sharedStyle",
+      "do_objectID": "254766E0-4EEB-4888-A155-5D602912DC3D",
+      "name": "Loose Leading/10 Caption1/Default",
+      "value": {
+        "_class": "style",
+        "do_objectID": "0A9047D7-B3F6-457D-958D-B28C924CBB38",
+        "endMarkerType": 0,
+        "miterLimit": 10,
+        "startMarkerType": 0,
+        "windingRule": 1,
+        "skipCorners": true,
+        "blurs": [],
+        "borderOptions": {
+          "_class": "borderOptions",
+          "isEnabled": true,
+          "dashPattern": [],
+          "centerDashes": true,
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0
+        },
+        "borders": [],
+        "colorControls": {
+          "_class": "colorControls",
+          "isEnabled": true,
+          "brightness": 0,
+          "contrast": 1,
+          "hue": 0,
+          "saturation": 1
+        },
+        "contextSettings": {
+          "_class": "graphicsContextSettings",
+          "blendMode": 0,
+          "opacity": 1,
+          "isProgressive": false
+        },
+        "fills": [],
+        "shadows": [],
+        "textStyle": {
+          "_class": "textStyle",
+          "encodedAttributes": {
+            "paragraphStyle": {
+              "_class": "paragraphStyle",
+              "maximumLineHeight": 15,
+              "minimumLineHeight": 15,
+              "allowsDefaultTighteningForTruncation": 0,
+              "alignment": 0
+            },
+            "MSAttributedStringColorAttribute": {
+              "_class": "color",
+              "alpha": 0.85,
+              "blue": 0,
+              "green": 0,
+              "red": 0,
+              "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+            },
+            "MSAttributedStringFontAttribute": {
+              "_class": "fontDescriptor",
+              "attributes": {
+                "name": "SFPro-Regular",
+                "size": 10
+              }
+            }
+          },
+          "verticalAlignment": 0,
+          "skipColors": true,
+          "skipAlignment": true
+        }
+      }
+    }
+  },
+  {
+    "id": "90058950-5406-4879-93DE-8738B453FB92",
+    "name": "Loose Leading/10 Caption1/Emphasized",
+    "source_member": "document.json",
+    "json_pointer": "/layerTextStyles/objects/41",
+    "font_raw": {
+      "name": "SFPro-Semibold",
+      "size": 10
+    },
+    "paragraph_raw": {
+      "_class": "paragraphStyle",
+      "maximumLineHeight": 15,
+      "minimumLineHeight": 15,
+      "allowsDefaultTighteningForTruncation": 0,
+      "alignment": 0
+    },
+    "color_raw": {
+      "_class": "color",
+      "alpha": 0.85,
+      "blue": 0,
+      "green": 0,
+      "red": 0,
+      "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+    },
+    "raw": {
+      "_class": "sharedStyle",
+      "do_objectID": "90058950-5406-4879-93DE-8738B453FB92",
+      "name": "Loose Leading/10 Caption1/Emphasized",
+      "value": {
+        "_class": "style",
+        "do_objectID": "F742B34B-C6DB-4D33-B771-EB772783DB7A",
+        "endMarkerType": 0,
+        "miterLimit": 10,
+        "startMarkerType": 0,
+        "windingRule": 1,
+        "skipCorners": true,
+        "blurs": [],
+        "borderOptions": {
+          "_class": "borderOptions",
+          "isEnabled": true,
+          "dashPattern": [],
+          "centerDashes": true,
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0
+        },
+        "borders": [],
+        "colorControls": {
+          "_class": "colorControls",
+          "isEnabled": true,
+          "brightness": 0,
+          "contrast": 1,
+          "hue": 0,
+          "saturation": 1
+        },
+        "contextSettings": {
+          "_class": "graphicsContextSettings",
+          "blendMode": 0,
+          "opacity": 1,
+          "isProgressive": false
+        },
+        "fills": [],
+        "shadows": [],
+        "textStyle": {
+          "_class": "textStyle",
+          "encodedAttributes": {
+            "paragraphStyle": {
+              "_class": "paragraphStyle",
+              "maximumLineHeight": 15,
+              "minimumLineHeight": 15,
+              "allowsDefaultTighteningForTruncation": 0,
+              "alignment": 0
+            },
+            "MSAttributedStringFontAttribute": {
+              "_class": "fontDescriptor",
+              "attributes": {
+                "name": "SFPro-Semibold",
+                "size": 10
+              }
+            },
+            "MSAttributedStringColorAttribute": {
+              "_class": "color",
+              "alpha": 0.85,
+              "blue": 0,
+              "green": 0,
+              "red": 0,
+              "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+            }
+          },
+          "verticalAlignment": 0,
+          "skipColors": true,
+          "skipAlignment": true
+        }
+      }
+    }
+  },
+  {
+    "id": "62CE4E5A-5649-453B-9F70-4E44571BB9D2",
+    "name": "Loose Leading/11 Caption2/Default",
+    "source_member": "document.json",
+    "json_pointer": "/layerTextStyles/objects/42",
+    "font_raw": {
+      "name": "SFPro-Regular",
+      "size": 10
+    },
+    "paragraph_raw": {
+      "_class": "paragraphStyle",
+      "maximumLineHeight": 15,
+      "minimumLineHeight": 15,
+      "allowsDefaultTighteningForTruncation": 0,
+      "alignment": 0
+    },
+    "color_raw": {
+      "_class": "color",
+      "alpha": 0.85,
+      "blue": 0,
+      "green": 0,
+      "red": 0,
+      "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+    },
+    "raw": {
+      "_class": "sharedStyle",
+      "do_objectID": "62CE4E5A-5649-453B-9F70-4E44571BB9D2",
+      "name": "Loose Leading/11 Caption2/Default",
+      "value": {
+        "_class": "style",
+        "do_objectID": "EE8C266E-54D5-415F-9341-2CBB566DBFBB",
+        "endMarkerType": 0,
+        "miterLimit": 10,
+        "startMarkerType": 0,
+        "windingRule": 1,
+        "skipCorners": true,
+        "blurs": [],
+        "borderOptions": {
+          "_class": "borderOptions",
+          "isEnabled": true,
+          "dashPattern": [],
+          "centerDashes": true,
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0
+        },
+        "borders": [],
+        "colorControls": {
+          "_class": "colorControls",
+          "isEnabled": true,
+          "brightness": 0,
+          "contrast": 1,
+          "hue": 0,
+          "saturation": 1
+        },
+        "contextSettings": {
+          "_class": "graphicsContextSettings",
+          "blendMode": 0,
+          "opacity": 1,
+          "isProgressive": false
+        },
+        "fills": [],
+        "shadows": [],
+        "textStyle": {
+          "_class": "textStyle",
+          "encodedAttributes": {
+            "MSAttributedStringColorAttribute": {
+              "_class": "color",
+              "alpha": 0.85,
+              "blue": 0,
+              "green": 0,
+              "red": 0,
+              "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+            },
+            "paragraphStyle": {
+              "_class": "paragraphStyle",
+              "maximumLineHeight": 15,
+              "minimumLineHeight": 15,
+              "allowsDefaultTighteningForTruncation": 0,
+              "alignment": 0
+            },
+            "MSAttributedStringFontAttribute": {
+              "_class": "fontDescriptor",
+              "attributes": {
+                "name": "SFPro-Regular",
+                "size": 10
+              }
+            }
+          },
+          "verticalAlignment": 0,
+          "skipColors": true,
+          "skipAlignment": true
+        }
+      }
+    }
+  },
+  {
+    "id": "61B7EF3C-97BB-4A14-B0F6-D88E397FB594",
+    "name": "Loose Leading/11 Caption2/Emphasized",
+    "source_member": "document.json",
+    "json_pointer": "/layerTextStyles/objects/43",
+    "font_raw": {
+      "name": "SFPro-Semibold",
+      "size": 10
+    },
+    "paragraph_raw": {
+      "_class": "paragraphStyle",
+      "maximumLineHeight": 15,
+      "minimumLineHeight": 15,
+      "allowsDefaultTighteningForTruncation": 0,
+      "alignment": 0
+    },
+    "color_raw": {
+      "_class": "color",
+      "alpha": 0.85,
+      "blue": 0,
+      "green": 0,
+      "red": 0,
+      "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+    },
+    "raw": {
+      "_class": "sharedStyle",
+      "do_objectID": "61B7EF3C-97BB-4A14-B0F6-D88E397FB594",
+      "name": "Loose Leading/11 Caption2/Emphasized",
+      "value": {
+        "_class": "style",
+        "do_objectID": "C77AD8C0-7FAF-49D5-9C83-72239EDEDFD7",
+        "endMarkerType": 0,
+        "miterLimit": 10,
+        "startMarkerType": 0,
+        "windingRule": 1,
+        "skipCorners": true,
+        "blurs": [],
+        "borderOptions": {
+          "_class": "borderOptions",
+          "isEnabled": true,
+          "dashPattern": [],
+          "centerDashes": true,
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0
+        },
+        "borders": [],
+        "colorControls": {
+          "_class": "colorControls",
+          "isEnabled": true,
+          "brightness": 0,
+          "contrast": 1,
+          "hue": 0,
+          "saturation": 1
+        },
+        "contextSettings": {
+          "_class": "graphicsContextSettings",
+          "blendMode": 0,
+          "opacity": 1,
+          "isProgressive": false
+        },
+        "fills": [],
+        "shadows": [],
+        "textStyle": {
+          "_class": "textStyle",
+          "encodedAttributes": {
+            "MSAttributedStringColorAttribute": {
+              "_class": "color",
+              "alpha": 0.85,
+              "blue": 0,
+              "green": 0,
+              "red": 0,
+              "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+            },
+            "paragraphStyle": {
+              "_class": "paragraphStyle",
+              "maximumLineHeight": 15,
+              "minimumLineHeight": 15,
+              "allowsDefaultTighteningForTruncation": 0,
+              "alignment": 0
+            },
+            "MSAttributedStringFontAttribute": {
+              "_class": "fontDescriptor",
+              "attributes": {
+                "name": "SFPro-Semibold",
+                "size": 10
+              }
+            }
+          },
+          "verticalAlignment": 0,
+          "skipColors": true,
+          "skipAlignment": true
+        }
+      }
+    }
+  },
+  {
+    "id": "EB92D64A-D817-4332-8BA0-11E55DB5E4B2",
+    "name": "Tight Leading/01 LargeTitle/Default",
+    "source_member": "document.json",
+    "json_pointer": "/layerTextStyles/objects/44",
+    "font_raw": {
+      "name": "SFPro-Regular",
+      "size": 26
+    },
+    "paragraph_raw": {
+      "_class": "paragraphStyle",
+      "maximumLineHeight": 30,
+      "minimumLineHeight": 30,
+      "allowsDefaultTighteningForTruncation": 0,
+      "alignment": 0
+    },
+    "color_raw": {
+      "_class": "color",
+      "alpha": 0.85,
+      "blue": 0,
+      "green": 0,
+      "red": 0
+    },
+    "raw": {
+      "_class": "sharedStyle",
+      "do_objectID": "EB92D64A-D817-4332-8BA0-11E55DB5E4B2",
+      "name": "Tight Leading/01 LargeTitle/Default",
+      "value": {
+        "_class": "style",
+        "do_objectID": "ECABDEE3-FAE2-43AE-9D72-DA58B2F4EABD",
+        "endMarkerType": 0,
+        "miterLimit": 10,
+        "startMarkerType": 0,
+        "windingRule": 1,
+        "skipCorners": true,
+        "blurs": [],
+        "borderOptions": {
+          "_class": "borderOptions",
+          "isEnabled": true,
+          "dashPattern": [],
+          "centerDashes": true,
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0
+        },
+        "borders": [],
+        "colorControls": {
+          "_class": "colorControls",
+          "isEnabled": true,
+          "brightness": 0,
+          "contrast": 1,
+          "hue": 0,
+          "saturation": 1
+        },
+        "contextSettings": {
+          "_class": "graphicsContextSettings",
+          "blendMode": 0,
+          "opacity": 1,
+          "isProgressive": false
+        },
+        "fills": [],
+        "shadows": [],
+        "textStyle": {
+          "_class": "textStyle",
+          "encodedAttributes": {
+            "MSAttributedStringFontAttribute": {
+              "_class": "fontDescriptor",
+              "attributes": {
+                "name": "SFPro-Regular",
+                "size": 26
+              }
+            },
+            "MSAttributedStringColorAttribute": {
+              "_class": "color",
+              "alpha": 0.85,
+              "blue": 0,
+              "green": 0,
+              "red": 0
+            },
+            "paragraphStyle": {
+              "_class": "paragraphStyle",
+              "maximumLineHeight": 30,
+              "minimumLineHeight": 30,
+              "allowsDefaultTighteningForTruncation": 0,
+              "alignment": 0
+            }
+          },
+          "verticalAlignment": 0,
+          "skipColors": true,
+          "skipAlignment": true
+        }
+      }
+    }
+  },
+  {
+    "id": "D7704294-B90E-4786-B97E-23B3356A1C11",
+    "name": "Tight Leading/01 LargeTitle/Emphasized",
+    "source_member": "document.json",
+    "json_pointer": "/layerTextStyles/objects/45",
+    "font_raw": {
+      "name": "SFPro-Bold",
+      "size": 26
+    },
+    "paragraph_raw": {
+      "_class": "paragraphStyle",
+      "maximumLineHeight": 30,
+      "minimumLineHeight": 30,
+      "allowsDefaultTighteningForTruncation": 0,
+      "alignment": 0
+    },
+    "color_raw": {
+      "_class": "color",
+      "alpha": 0.85,
+      "blue": 0,
+      "green": 0,
+      "red": 0
+    },
+    "raw": {
+      "_class": "sharedStyle",
+      "do_objectID": "D7704294-B90E-4786-B97E-23B3356A1C11",
+      "name": "Tight Leading/01 LargeTitle/Emphasized",
+      "value": {
+        "_class": "style",
+        "do_objectID": "1DB9938B-7F16-4F00-9E12-DDF95C555BBF",
+        "endMarkerType": 0,
+        "miterLimit": 10,
+        "startMarkerType": 0,
+        "windingRule": 1,
+        "skipCorners": true,
+        "blurs": [],
+        "borderOptions": {
+          "_class": "borderOptions",
+          "isEnabled": true,
+          "dashPattern": [],
+          "centerDashes": true,
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0
+        },
+        "borders": [],
+        "colorControls": {
+          "_class": "colorControls",
+          "isEnabled": true,
+          "brightness": 0,
+          "contrast": 1,
+          "hue": 0,
+          "saturation": 1
+        },
+        "contextSettings": {
+          "_class": "graphicsContextSettings",
+          "blendMode": 0,
+          "opacity": 1,
+          "isProgressive": false
+        },
+        "fills": [],
+        "shadows": [],
+        "textStyle": {
+          "_class": "textStyle",
+          "encodedAttributes": {
+            "paragraphStyle": {
+              "_class": "paragraphStyle",
+              "maximumLineHeight": 30,
+              "minimumLineHeight": 30,
+              "allowsDefaultTighteningForTruncation": 0,
+              "alignment": 0
+            },
+            "MSAttributedStringColorAttribute": {
+              "_class": "color",
+              "alpha": 0.85,
+              "blue": 0,
+              "green": 0,
+              "red": 0
+            },
+            "MSAttributedStringFontAttribute": {
+              "_class": "fontDescriptor",
+              "attributes": {
+                "name": "SFPro-Bold",
+                "size": 26
+              }
+            }
+          },
+          "verticalAlignment": 0,
+          "skipColors": true,
+          "skipAlignment": true
+        }
+      }
+    }
+  },
+  {
+    "id": "B13D9DCB-9B68-4FE2-8AEC-7171D5BA5714",
+    "name": "Tight Leading/02 Title1/Default",
+    "source_member": "document.json",
+    "json_pointer": "/layerTextStyles/objects/46",
+    "font_raw": {
+      "name": "SFPro-Regular",
+      "size": 22
+    },
+    "paragraph_raw": {
+      "_class": "paragraphStyle",
+      "maximumLineHeight": 24,
+      "minimumLineHeight": 24,
+      "allowsDefaultTighteningForTruncation": 0,
+      "alignment": 0
+    },
+    "color_raw": {
+      "_class": "color",
+      "alpha": 0.85,
+      "blue": 0,
+      "green": 0,
+      "red": 0,
+      "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+    },
+    "raw": {
+      "_class": "sharedStyle",
+      "do_objectID": "B13D9DCB-9B68-4FE2-8AEC-7171D5BA5714",
+      "name": "Tight Leading/02 Title1/Default",
+      "value": {
+        "_class": "style",
+        "do_objectID": "F2C812F2-C187-40FC-AC52-41FC228B8704",
+        "endMarkerType": 0,
+        "miterLimit": 10,
+        "startMarkerType": 0,
+        "windingRule": 1,
+        "skipCorners": true,
+        "blurs": [],
+        "borderOptions": {
+          "_class": "borderOptions",
+          "isEnabled": true,
+          "dashPattern": [],
+          "centerDashes": true,
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0
+        },
+        "borders": [],
+        "colorControls": {
+          "_class": "colorControls",
+          "isEnabled": true,
+          "brightness": 0,
+          "contrast": 1,
+          "hue": 0,
+          "saturation": 1
+        },
+        "contextSettings": {
+          "_class": "graphicsContextSettings",
+          "blendMode": 0,
+          "opacity": 1,
+          "isProgressive": false
+        },
+        "fills": [],
+        "shadows": [],
+        "textStyle": {
+          "_class": "textStyle",
+          "encodedAttributes": {
+            "paragraphStyle": {
+              "_class": "paragraphStyle",
+              "maximumLineHeight": 24,
+              "minimumLineHeight": 24,
+              "allowsDefaultTighteningForTruncation": 0,
+              "alignment": 0
+            },
+            "MSAttributedStringColorAttribute": {
+              "_class": "color",
+              "alpha": 0.85,
+              "blue": 0,
+              "green": 0,
+              "red": 0,
+              "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+            },
+            "MSAttributedStringFontAttribute": {
+              "_class": "fontDescriptor",
+              "attributes": {
+                "name": "SFPro-Regular",
+                "size": 22
+              }
+            }
+          },
+          "verticalAlignment": 0,
+          "skipColors": true,
+          "skipAlignment": true
+        }
+      }
+    }
+  },
+  {
+    "id": "ED981CA8-EE39-41A6-9C7D-B3D03C5D24FF",
+    "name": "Tight Leading/02 Title1/Emphasized",
+    "source_member": "document.json",
+    "json_pointer": "/layerTextStyles/objects/47",
+    "font_raw": {
+      "name": "SFPro-Bold",
+      "size": 22
+    },
+    "paragraph_raw": {
+      "_class": "paragraphStyle",
+      "maximumLineHeight": 24,
+      "minimumLineHeight": 24,
+      "allowsDefaultTighteningForTruncation": 0,
+      "alignment": 0
+    },
+    "color_raw": {
+      "_class": "color",
+      "alpha": 0.85,
+      "blue": 0,
+      "green": 0,
+      "red": 0,
+      "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+    },
+    "raw": {
+      "_class": "sharedStyle",
+      "do_objectID": "ED981CA8-EE39-41A6-9C7D-B3D03C5D24FF",
+      "name": "Tight Leading/02 Title1/Emphasized",
+      "value": {
+        "_class": "style",
+        "do_objectID": "E071C387-15D2-48FA-B72E-375BCEBE97BF",
+        "endMarkerType": 0,
+        "miterLimit": 10,
+        "startMarkerType": 0,
+        "windingRule": 1,
+        "skipCorners": true,
+        "blurs": [],
+        "borderOptions": {
+          "_class": "borderOptions",
+          "isEnabled": true,
+          "dashPattern": [],
+          "centerDashes": true,
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0
+        },
+        "borders": [],
+        "colorControls": {
+          "_class": "colorControls",
+          "isEnabled": true,
+          "brightness": 0,
+          "contrast": 1,
+          "hue": 0,
+          "saturation": 1
+        },
+        "contextSettings": {
+          "_class": "graphicsContextSettings",
+          "blendMode": 0,
+          "opacity": 1,
+          "isProgressive": false
+        },
+        "fills": [],
+        "shadows": [],
+        "textStyle": {
+          "_class": "textStyle",
+          "encodedAttributes": {
+            "paragraphStyle": {
+              "_class": "paragraphStyle",
+              "maximumLineHeight": 24,
+              "minimumLineHeight": 24,
+              "allowsDefaultTighteningForTruncation": 0,
+              "alignment": 0
+            },
+            "MSAttributedStringFontAttribute": {
+              "_class": "fontDescriptor",
+              "attributes": {
+                "name": "SFPro-Bold",
+                "size": 22
+              }
+            },
+            "MSAttributedStringColorAttribute": {
+              "_class": "color",
+              "alpha": 0.85,
+              "blue": 0,
+              "green": 0,
+              "red": 0,
+              "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+            }
+          },
+          "verticalAlignment": 0,
+          "skipColors": true,
+          "skipAlignment": true
+        }
+      }
+    }
+  },
+  {
+    "id": "2313AD80-3F7C-42F0-B7FE-DD095958BC3E",
+    "name": "Tight Leading/03 Title2/Default",
+    "source_member": "document.json",
+    "json_pointer": "/layerTextStyles/objects/48",
+    "font_raw": {
+      "name": "SFPro-Regular",
+      "size": 17
+    },
+    "paragraph_raw": {
+      "_class": "paragraphStyle",
+      "maximumLineHeight": 20,
+      "minimumLineHeight": 20,
+      "allowsDefaultTighteningForTruncation": 0,
+      "alignment": 0
+    },
+    "color_raw": {
+      "_class": "color",
+      "alpha": 0.85,
+      "blue": 0,
+      "green": 0,
+      "red": 0,
+      "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+    },
+    "raw": {
+      "_class": "sharedStyle",
+      "do_objectID": "2313AD80-3F7C-42F0-B7FE-DD095958BC3E",
+      "name": "Tight Leading/03 Title2/Default",
+      "value": {
+        "_class": "style",
+        "do_objectID": "41225E87-D64C-43B9-AA96-A4626297788B",
+        "endMarkerType": 0,
+        "miterLimit": 10,
+        "startMarkerType": 0,
+        "windingRule": 1,
+        "skipCorners": true,
+        "blurs": [],
+        "borderOptions": {
+          "_class": "borderOptions",
+          "isEnabled": true,
+          "dashPattern": [],
+          "centerDashes": true,
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0
+        },
+        "borders": [],
+        "colorControls": {
+          "_class": "colorControls",
+          "isEnabled": true,
+          "brightness": 0,
+          "contrast": 1,
+          "hue": 0,
+          "saturation": 1
+        },
+        "contextSettings": {
+          "_class": "graphicsContextSettings",
+          "blendMode": 0,
+          "opacity": 1,
+          "isProgressive": false
+        },
+        "fills": [],
+        "shadows": [],
+        "textStyle": {
+          "_class": "textStyle",
+          "encodedAttributes": {
+            "MSAttributedStringColorAttribute": {
+              "_class": "color",
+              "alpha": 0.85,
+              "blue": 0,
+              "green": 0,
+              "red": 0,
+              "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+            },
+            "paragraphStyle": {
+              "_class": "paragraphStyle",
+              "maximumLineHeight": 20,
+              "minimumLineHeight": 20,
+              "allowsDefaultTighteningForTruncation": 0,
+              "alignment": 0
+            },
+            "MSAttributedStringFontAttribute": {
+              "_class": "fontDescriptor",
+              "attributes": {
+                "name": "SFPro-Regular",
+                "size": 17
+              }
+            }
+          },
+          "verticalAlignment": 0,
+          "skipColors": true,
+          "skipAlignment": true
+        }
+      }
+    }
+  },
+  {
+    "id": "1B266117-FF18-4FA5-9865-3C5249BA9C88",
+    "name": "Tight Leading/03 Title2/Emphasized",
+    "source_member": "document.json",
+    "json_pointer": "/layerTextStyles/objects/49",
+    "font_raw": {
+      "name": "SFPro-Bold",
+      "size": 17
+    },
+    "paragraph_raw": {
+      "_class": "paragraphStyle",
+      "maximumLineHeight": 20,
+      "minimumLineHeight": 20,
+      "allowsDefaultTighteningForTruncation": 0,
+      "alignment": 0
+    },
+    "color_raw": {
+      "_class": "color",
+      "alpha": 0.85,
+      "blue": 0,
+      "green": 0,
+      "red": 0,
+      "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+    },
+    "raw": {
+      "_class": "sharedStyle",
+      "do_objectID": "1B266117-FF18-4FA5-9865-3C5249BA9C88",
+      "name": "Tight Leading/03 Title2/Emphasized",
+      "value": {
+        "_class": "style",
+        "do_objectID": "B5F7CEFE-314C-4E05-9F7E-79C00D52791A",
+        "endMarkerType": 0,
+        "miterLimit": 10,
+        "startMarkerType": 0,
+        "windingRule": 1,
+        "skipCorners": true,
+        "blurs": [],
+        "borderOptions": {
+          "_class": "borderOptions",
+          "isEnabled": true,
+          "dashPattern": [],
+          "centerDashes": true,
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0
+        },
+        "borders": [],
+        "colorControls": {
+          "_class": "colorControls",
+          "isEnabled": true,
+          "brightness": 0,
+          "contrast": 1,
+          "hue": 0,
+          "saturation": 1
+        },
+        "contextSettings": {
+          "_class": "graphicsContextSettings",
+          "blendMode": 0,
+          "opacity": 1,
+          "isProgressive": false
+        },
+        "fills": [],
+        "shadows": [],
+        "textStyle": {
+          "_class": "textStyle",
+          "encodedAttributes": {
+            "paragraphStyle": {
+              "_class": "paragraphStyle",
+              "maximumLineHeight": 20,
+              "minimumLineHeight": 20,
+              "allowsDefaultTighteningForTruncation": 0,
+              "alignment": 0
+            },
+            "MSAttributedStringFontAttribute": {
+              "_class": "fontDescriptor",
+              "attributes": {
+                "name": "SFPro-Bold",
+                "size": 17
+              }
+            },
+            "MSAttributedStringColorAttribute": {
+              "_class": "color",
+              "alpha": 0.85,
+              "blue": 0,
+              "green": 0,
+              "red": 0,
+              "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+            }
+          },
+          "verticalAlignment": 0,
+          "skipColors": true,
+          "skipAlignment": true
+        }
+      }
+    }
+  },
+  {
+    "id": "C4A1AE29-FDB6-4C6E-8CC1-A4368B85ABE1",
+    "name": "Tight Leading/04 Title3/Default",
+    "source_member": "document.json",
+    "json_pointer": "/layerTextStyles/objects/50",
+    "font_raw": {
+      "name": "SFPro-Regular",
+      "size": 15
+    },
+    "paragraph_raw": {
+      "_class": "paragraphStyle",
+      "maximumLineHeight": 18,
+      "minimumLineHeight": 18,
+      "allowsDefaultTighteningForTruncation": 0,
+      "alignment": 0
+    },
+    "color_raw": {
+      "_class": "color",
+      "alpha": 0.85,
+      "blue": 0,
+      "green": 0,
+      "red": 0,
+      "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+    },
+    "raw": {
+      "_class": "sharedStyle",
+      "do_objectID": "C4A1AE29-FDB6-4C6E-8CC1-A4368B85ABE1",
+      "name": "Tight Leading/04 Title3/Default",
+      "value": {
+        "_class": "style",
+        "do_objectID": "AE9CC2A5-69FC-4097-98CA-6317C8DD3699",
+        "endMarkerType": 0,
+        "miterLimit": 10,
+        "startMarkerType": 0,
+        "windingRule": 1,
+        "skipCorners": true,
+        "blurs": [],
+        "borderOptions": {
+          "_class": "borderOptions",
+          "isEnabled": true,
+          "dashPattern": [],
+          "centerDashes": true,
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0
+        },
+        "borders": [],
+        "colorControls": {
+          "_class": "colorControls",
+          "isEnabled": true,
+          "brightness": 0,
+          "contrast": 1,
+          "hue": 0,
+          "saturation": 1
+        },
+        "contextSettings": {
+          "_class": "graphicsContextSettings",
+          "blendMode": 0,
+          "opacity": 1,
+          "isProgressive": false
+        },
+        "fills": [],
+        "shadows": [],
+        "textStyle": {
+          "_class": "textStyle",
+          "encodedAttributes": {
+            "MSAttributedStringFontAttribute": {
+              "_class": "fontDescriptor",
+              "attributes": {
+                "name": "SFPro-Regular",
+                "size": 15
+              }
+            },
+            "MSAttributedStringColorAttribute": {
+              "_class": "color",
+              "alpha": 0.85,
+              "blue": 0,
+              "green": 0,
+              "red": 0,
+              "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+            },
+            "paragraphStyle": {
+              "_class": "paragraphStyle",
+              "maximumLineHeight": 18,
+              "minimumLineHeight": 18,
+              "allowsDefaultTighteningForTruncation": 0,
+              "alignment": 0
+            }
+          },
+          "verticalAlignment": 0,
+          "skipColors": true,
+          "skipAlignment": true
+        }
+      }
+    }
+  },
+  {
+    "id": "5BECCC19-4658-4A3A-94B4-7D78F037AE96",
+    "name": "Tight Leading/04 Title3/Emphasized",
+    "source_member": "document.json",
+    "json_pointer": "/layerTextStyles/objects/51",
+    "font_raw": {
+      "name": "SFPro-Semibold",
+      "size": 15
+    },
+    "paragraph_raw": {
+      "_class": "paragraphStyle",
+      "maximumLineHeight": 18,
+      "minimumLineHeight": 18,
+      "allowsDefaultTighteningForTruncation": 0,
+      "alignment": 0
+    },
+    "color_raw": {
+      "_class": "color",
+      "alpha": 0.85,
+      "blue": 0,
+      "green": 0,
+      "red": 0,
+      "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+    },
+    "raw": {
+      "_class": "sharedStyle",
+      "do_objectID": "5BECCC19-4658-4A3A-94B4-7D78F037AE96",
+      "name": "Tight Leading/04 Title3/Emphasized",
+      "value": {
+        "_class": "style",
+        "do_objectID": "CCB4E52F-AA82-4426-BF6C-1BF117C269DA",
+        "endMarkerType": 0,
+        "miterLimit": 10,
+        "startMarkerType": 0,
+        "windingRule": 1,
+        "skipCorners": true,
+        "blurs": [],
+        "borderOptions": {
+          "_class": "borderOptions",
+          "isEnabled": true,
+          "dashPattern": [],
+          "centerDashes": true,
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0
+        },
+        "borders": [],
+        "colorControls": {
+          "_class": "colorControls",
+          "isEnabled": true,
+          "brightness": 0,
+          "contrast": 1,
+          "hue": 0,
+          "saturation": 1
+        },
+        "contextSettings": {
+          "_class": "graphicsContextSettings",
+          "blendMode": 0,
+          "opacity": 1,
+          "isProgressive": false
+        },
+        "fills": [],
+        "shadows": [],
+        "textStyle": {
+          "_class": "textStyle",
+          "encodedAttributes": {
+            "paragraphStyle": {
+              "_class": "paragraphStyle",
+              "maximumLineHeight": 18,
+              "minimumLineHeight": 18,
+              "allowsDefaultTighteningForTruncation": 0,
+              "alignment": 0
+            },
+            "MSAttributedStringFontAttribute": {
+              "_class": "fontDescriptor",
+              "attributes": {
+                "name": "SFPro-Semibold",
+                "size": 15
+              }
+            },
+            "MSAttributedStringColorAttribute": {
+              "_class": "color",
+              "alpha": 0.85,
+              "blue": 0,
+              "green": 0,
+              "red": 0,
+              "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+            }
+          },
+          "verticalAlignment": 0,
+          "skipColors": true,
+          "skipAlignment": true
+        }
+      }
+    }
+  },
+  {
+    "id": "2867D48C-0599-460D-9D4B-D26A59F22F19",
+    "name": "Tight Leading/05 Headline/Default",
+    "source_member": "document.json",
+    "json_pointer": "/layerTextStyles/objects/52",
+    "font_raw": {
+      "name": "SFPro-Bold",
+      "size": 13
+    },
+    "paragraph_raw": {
+      "_class": "paragraphStyle",
+      "maximumLineHeight": 14,
+      "minimumLineHeight": 14,
+      "allowsDefaultTighteningForTruncation": 0,
+      "alignment": 0
+    },
+    "color_raw": {
+      "_class": "color",
+      "alpha": 0.85,
+      "blue": 0,
+      "green": 0,
+      "red": 0,
+      "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+    },
+    "raw": {
+      "_class": "sharedStyle",
+      "do_objectID": "2867D48C-0599-460D-9D4B-D26A59F22F19",
+      "name": "Tight Leading/05 Headline/Default",
+      "value": {
+        "_class": "style",
+        "do_objectID": "BAFBB028-3A16-4239-A8C2-398F39719735",
+        "endMarkerType": 0,
+        "miterLimit": 10,
+        "startMarkerType": 0,
+        "windingRule": 1,
+        "skipCorners": true,
+        "blurs": [],
+        "borderOptions": {
+          "_class": "borderOptions",
+          "isEnabled": true,
+          "dashPattern": [],
+          "centerDashes": true,
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0
+        },
+        "borders": [],
+        "colorControls": {
+          "_class": "colorControls",
+          "isEnabled": true,
+          "brightness": 0,
+          "contrast": 1,
+          "hue": 0,
+          "saturation": 1
+        },
+        "contextSettings": {
+          "_class": "graphicsContextSettings",
+          "blendMode": 0,
+          "opacity": 1,
+          "isProgressive": false
+        },
+        "fills": [],
+        "shadows": [],
+        "textStyle": {
+          "_class": "textStyle",
+          "encodedAttributes": {
+            "paragraphStyle": {
+              "_class": "paragraphStyle",
+              "maximumLineHeight": 14,
+              "minimumLineHeight": 14,
+              "allowsDefaultTighteningForTruncation": 0,
+              "alignment": 0
+            },
+            "MSAttributedStringColorAttribute": {
+              "_class": "color",
+              "alpha": 0.85,
+              "blue": 0,
+              "green": 0,
+              "red": 0,
+              "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+            },
+            "MSAttributedStringFontAttribute": {
+              "_class": "fontDescriptor",
+              "attributes": {
+                "name": "SFPro-Bold",
+                "size": 13
+              }
+            }
+          },
+          "verticalAlignment": 0,
+          "skipColors": true,
+          "skipAlignment": true
+        }
+      }
+    }
+  },
+  {
+    "id": "8F67B47D-659A-4E56-AFAC-56A69336F81C",
+    "name": "Tight Leading/05 Headline/Emphasized",
+    "source_member": "document.json",
+    "json_pointer": "/layerTextStyles/objects/53",
+    "font_raw": {
+      "name": "SFPro-Heavy",
+      "size": 13
+    },
+    "paragraph_raw": {
+      "_class": "paragraphStyle",
+      "maximumLineHeight": 14,
+      "minimumLineHeight": 14,
+      "allowsDefaultTighteningForTruncation": 0,
+      "alignment": 0
+    },
+    "color_raw": {
+      "_class": "color",
+      "alpha": 0.85,
+      "blue": 0,
+      "green": 0,
+      "red": 0,
+      "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+    },
+    "raw": {
+      "_class": "sharedStyle",
+      "do_objectID": "8F67B47D-659A-4E56-AFAC-56A69336F81C",
+      "name": "Tight Leading/05 Headline/Emphasized",
+      "value": {
+        "_class": "style",
+        "do_objectID": "FD8655BC-765A-4414-A595-301E9B40F64D",
+        "endMarkerType": 0,
+        "miterLimit": 10,
+        "startMarkerType": 0,
+        "windingRule": 1,
+        "skipCorners": true,
+        "blurs": [],
+        "borderOptions": {
+          "_class": "borderOptions",
+          "isEnabled": true,
+          "dashPattern": [],
+          "centerDashes": true,
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0
+        },
+        "borders": [],
+        "colorControls": {
+          "_class": "colorControls",
+          "isEnabled": true,
+          "brightness": 0,
+          "contrast": 1,
+          "hue": 0,
+          "saturation": 1
+        },
+        "contextSettings": {
+          "_class": "graphicsContextSettings",
+          "blendMode": 0,
+          "opacity": 1,
+          "isProgressive": false
+        },
+        "fills": [],
+        "shadows": [],
+        "textStyle": {
+          "_class": "textStyle",
+          "encodedAttributes": {
+            "paragraphStyle": {
+              "_class": "paragraphStyle",
+              "maximumLineHeight": 14,
+              "minimumLineHeight": 14,
+              "allowsDefaultTighteningForTruncation": 0,
+              "alignment": 0
+            },
+            "MSAttributedStringColorAttribute": {
+              "_class": "color",
+              "alpha": 0.85,
+              "blue": 0,
+              "green": 0,
+              "red": 0,
+              "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+            },
+            "MSAttributedStringFontAttribute": {
+              "_class": "fontDescriptor",
+              "attributes": {
+                "name": "SFPro-Heavy",
+                "size": 13
+              }
+            }
+          },
+          "verticalAlignment": 0,
+          "skipColors": true,
+          "skipAlignment": true
+        }
+      }
+    }
+  },
+  {
+    "id": "B78BDCB2-BE70-45F9-B8F7-B0B8C6DBF90A",
+    "name": "Tight Leading/06 Body/Default",
+    "source_member": "document.json",
+    "json_pointer": "/layerTextStyles/objects/54",
+    "font_raw": {
+      "name": "SFPro-Regular",
+      "size": 13
+    },
+    "paragraph_raw": {
+      "_class": "paragraphStyle",
+      "maximumLineHeight": 14,
+      "minimumLineHeight": 14,
+      "allowsDefaultTighteningForTruncation": 0,
+      "alignment": 0
+    },
+    "color_raw": {
+      "_class": "color",
+      "alpha": 0.85,
+      "blue": 0,
+      "green": 0,
+      "red": 0,
+      "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+    },
+    "raw": {
+      "_class": "sharedStyle",
+      "do_objectID": "B78BDCB2-BE70-45F9-B8F7-B0B8C6DBF90A",
+      "name": "Tight Leading/06 Body/Default",
+      "value": {
+        "_class": "style",
+        "do_objectID": "1BB3EC75-99A1-4745-A133-F26F2CD97708",
+        "endMarkerType": 0,
+        "miterLimit": 10,
+        "startMarkerType": 0,
+        "windingRule": 1,
+        "skipCorners": true,
+        "blurs": [],
+        "borderOptions": {
+          "_class": "borderOptions",
+          "isEnabled": true,
+          "dashPattern": [],
+          "centerDashes": true,
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0
+        },
+        "borders": [],
+        "colorControls": {
+          "_class": "colorControls",
+          "isEnabled": true,
+          "brightness": 0,
+          "contrast": 1,
+          "hue": 0,
+          "saturation": 1
+        },
+        "contextSettings": {
+          "_class": "graphicsContextSettings",
+          "blendMode": 0,
+          "opacity": 1,
+          "isProgressive": false
+        },
+        "fills": [],
+        "shadows": [],
+        "textStyle": {
+          "_class": "textStyle",
+          "encodedAttributes": {
+            "paragraphStyle": {
+              "_class": "paragraphStyle",
+              "maximumLineHeight": 14,
+              "minimumLineHeight": 14,
+              "allowsDefaultTighteningForTruncation": 0,
+              "alignment": 0
+            },
+            "MSAttributedStringFontAttribute": {
+              "_class": "fontDescriptor",
+              "attributes": {
+                "name": "SFPro-Regular",
+                "size": 13
+              }
+            },
+            "MSAttributedStringColorAttribute": {
+              "_class": "color",
+              "alpha": 0.85,
+              "blue": 0,
+              "green": 0,
+              "red": 0,
+              "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+            }
+          },
+          "verticalAlignment": 0,
+          "skipColors": true,
+          "skipAlignment": true
+        }
+      }
+    }
+  },
+  {
+    "id": "DBB3838F-BABC-4986-9E0A-8239D7CD0883",
+    "name": "Tight Leading/06 Body/Emphasized",
+    "source_member": "document.json",
+    "json_pointer": "/layerTextStyles/objects/55",
+    "font_raw": {
+      "name": "SFPro-Semibold",
+      "size": 13
+    },
+    "paragraph_raw": {
+      "_class": "paragraphStyle",
+      "maximumLineHeight": 14,
+      "minimumLineHeight": 14,
+      "allowsDefaultTighteningForTruncation": 0,
+      "alignment": 0
+    },
+    "color_raw": {
+      "_class": "color",
+      "alpha": 0.85,
+      "blue": 0,
+      "green": 0,
+      "red": 0,
+      "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+    },
+    "raw": {
+      "_class": "sharedStyle",
+      "do_objectID": "DBB3838F-BABC-4986-9E0A-8239D7CD0883",
+      "name": "Tight Leading/06 Body/Emphasized",
+      "value": {
+        "_class": "style",
+        "do_objectID": "D96C1554-C5E1-4730-8007-EA85E9291386",
+        "endMarkerType": 0,
+        "miterLimit": 10,
+        "startMarkerType": 0,
+        "windingRule": 1,
+        "skipCorners": true,
+        "blurs": [],
+        "borderOptions": {
+          "_class": "borderOptions",
+          "isEnabled": true,
+          "dashPattern": [],
+          "centerDashes": true,
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0
+        },
+        "borders": [],
+        "colorControls": {
+          "_class": "colorControls",
+          "isEnabled": true,
+          "brightness": 0,
+          "contrast": 1,
+          "hue": 0,
+          "saturation": 1
+        },
+        "contextSettings": {
+          "_class": "graphicsContextSettings",
+          "blendMode": 0,
+          "opacity": 1,
+          "isProgressive": false
+        },
+        "fills": [],
+        "shadows": [],
+        "textStyle": {
+          "_class": "textStyle",
+          "encodedAttributes": {
+            "MSAttributedStringFontAttribute": {
+              "_class": "fontDescriptor",
+              "attributes": {
+                "name": "SFPro-Semibold",
+                "size": 13
+              }
+            },
+            "paragraphStyle": {
+              "_class": "paragraphStyle",
+              "maximumLineHeight": 14,
+              "minimumLineHeight": 14,
+              "allowsDefaultTighteningForTruncation": 0,
+              "alignment": 0
+            },
+            "MSAttributedStringColorAttribute": {
+              "_class": "color",
+              "alpha": 0.85,
+              "blue": 0,
+              "green": 0,
+              "red": 0,
+              "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+            }
+          },
+          "verticalAlignment": 0,
+          "skipColors": true,
+          "skipAlignment": true
+        }
+      }
+    }
+  },
+  {
+    "id": "A30A60FE-CD96-46D2-B07B-B2537D9DE27A",
+    "name": "Tight Leading/07 Callout/Default",
+    "source_member": "document.json",
+    "json_pointer": "/layerTextStyles/objects/56",
+    "font_raw": {
+      "name": "SFPro-Regular",
+      "size": 12
+    },
+    "paragraph_raw": {
+      "_class": "paragraphStyle",
+      "maximumLineHeight": 13,
+      "minimumLineHeight": 13,
+      "allowsDefaultTighteningForTruncation": 0,
+      "alignment": 0
+    },
+    "color_raw": {
+      "_class": "color",
+      "alpha": 0.85,
+      "blue": 0,
+      "green": 0,
+      "red": 0,
+      "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+    },
+    "raw": {
+      "_class": "sharedStyle",
+      "do_objectID": "A30A60FE-CD96-46D2-B07B-B2537D9DE27A",
+      "name": "Tight Leading/07 Callout/Default",
+      "value": {
+        "_class": "style",
+        "do_objectID": "971A1113-583A-4D79-BC93-B7EF358C6EA7",
+        "endMarkerType": 0,
+        "miterLimit": 10,
+        "startMarkerType": 0,
+        "windingRule": 1,
+        "skipCorners": true,
+        "blurs": [],
+        "borderOptions": {
+          "_class": "borderOptions",
+          "isEnabled": true,
+          "dashPattern": [],
+          "centerDashes": true,
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0
+        },
+        "borders": [],
+        "colorControls": {
+          "_class": "colorControls",
+          "isEnabled": true,
+          "brightness": 0,
+          "contrast": 1,
+          "hue": 0,
+          "saturation": 1
+        },
+        "contextSettings": {
+          "_class": "graphicsContextSettings",
+          "blendMode": 0,
+          "opacity": 1,
+          "isProgressive": false
+        },
+        "fills": [],
+        "shadows": [],
+        "textStyle": {
+          "_class": "textStyle",
+          "encodedAttributes": {
+            "MSAttributedStringColorAttribute": {
+              "_class": "color",
+              "alpha": 0.85,
+              "blue": 0,
+              "green": 0,
+              "red": 0,
+              "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+            },
+            "MSAttributedStringFontAttribute": {
+              "_class": "fontDescriptor",
+              "attributes": {
+                "name": "SFPro-Regular",
+                "size": 12
+              }
+            },
+            "paragraphStyle": {
+              "_class": "paragraphStyle",
+              "maximumLineHeight": 13,
+              "minimumLineHeight": 13,
+              "allowsDefaultTighteningForTruncation": 0,
+              "alignment": 0
+            }
+          },
+          "verticalAlignment": 0,
+          "skipColors": true,
+          "skipAlignment": true
+        }
+      }
+    }
+  },
+  {
+    "id": "C8BCF0F2-7C94-4E78-B400-CA7B365FA0EC",
+    "name": "Tight Leading/07 Callout/Emphasized",
+    "source_member": "document.json",
+    "json_pointer": "/layerTextStyles/objects/57",
+    "font_raw": {
+      "name": "SFPro-Semibold",
+      "size": 12
+    },
+    "paragraph_raw": {
+      "_class": "paragraphStyle",
+      "maximumLineHeight": 13,
+      "minimumLineHeight": 13,
+      "allowsDefaultTighteningForTruncation": 0,
+      "alignment": 0
+    },
+    "color_raw": {
+      "_class": "color",
+      "alpha": 0.85,
+      "blue": 0,
+      "green": 0,
+      "red": 0,
+      "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+    },
+    "raw": {
+      "_class": "sharedStyle",
+      "do_objectID": "C8BCF0F2-7C94-4E78-B400-CA7B365FA0EC",
+      "name": "Tight Leading/07 Callout/Emphasized",
+      "value": {
+        "_class": "style",
+        "do_objectID": "64C1C836-2F03-4637-979D-D522A49791D0",
+        "endMarkerType": 0,
+        "miterLimit": 10,
+        "startMarkerType": 0,
+        "windingRule": 1,
+        "skipCorners": true,
+        "blurs": [],
+        "borderOptions": {
+          "_class": "borderOptions",
+          "isEnabled": true,
+          "dashPattern": [],
+          "centerDashes": true,
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0
+        },
+        "borders": [],
+        "colorControls": {
+          "_class": "colorControls",
+          "isEnabled": true,
+          "brightness": 0,
+          "contrast": 1,
+          "hue": 0,
+          "saturation": 1
+        },
+        "contextSettings": {
+          "_class": "graphicsContextSettings",
+          "blendMode": 0,
+          "opacity": 1,
+          "isProgressive": false
+        },
+        "fills": [],
+        "shadows": [],
+        "textStyle": {
+          "_class": "textStyle",
+          "encodedAttributes": {
+            "paragraphStyle": {
+              "_class": "paragraphStyle",
+              "maximumLineHeight": 13,
+              "minimumLineHeight": 13,
+              "allowsDefaultTighteningForTruncation": 0,
+              "alignment": 0
+            },
+            "MSAttributedStringColorAttribute": {
+              "_class": "color",
+              "alpha": 0.85,
+              "blue": 0,
+              "green": 0,
+              "red": 0,
+              "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+            },
+            "MSAttributedStringFontAttribute": {
+              "_class": "fontDescriptor",
+              "attributes": {
+                "name": "SFPro-Semibold",
+                "size": 12
+              }
+            }
+          },
+          "verticalAlignment": 0,
+          "skipColors": true,
+          "skipAlignment": true
+        }
+      }
+    }
+  },
+  {
+    "id": "BB2ED56E-1190-4375-8D2E-5002BC93D444",
+    "name": "Tight Leading/08 Subheadline/Default",
+    "source_member": "document.json",
+    "json_pointer": "/layerTextStyles/objects/58",
+    "font_raw": {
+      "name": "SFPro-Regular",
+      "size": 11
+    },
+    "paragraph_raw": {
+      "_class": "paragraphStyle",
+      "maximumLineHeight": 12,
+      "minimumLineHeight": 12,
+      "allowsDefaultTighteningForTruncation": 0,
+      "alignment": 0
+    },
+    "color_raw": {
+      "_class": "color",
+      "alpha": 0.85,
+      "blue": 0,
+      "green": 0,
+      "red": 0,
+      "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+    },
+    "raw": {
+      "_class": "sharedStyle",
+      "do_objectID": "BB2ED56E-1190-4375-8D2E-5002BC93D444",
+      "name": "Tight Leading/08 Subheadline/Default",
+      "value": {
+        "_class": "style",
+        "do_objectID": "9A7A1B2E-85FF-46E2-A89E-414FAFF24056",
+        "endMarkerType": 0,
+        "miterLimit": 10,
+        "startMarkerType": 0,
+        "windingRule": 1,
+        "skipCorners": true,
+        "blurs": [],
+        "borderOptions": {
+          "_class": "borderOptions",
+          "isEnabled": true,
+          "dashPattern": [],
+          "centerDashes": true,
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0
+        },
+        "borders": [],
+        "colorControls": {
+          "_class": "colorControls",
+          "isEnabled": true,
+          "brightness": 0,
+          "contrast": 1,
+          "hue": 0,
+          "saturation": 1
+        },
+        "contextSettings": {
+          "_class": "graphicsContextSettings",
+          "blendMode": 0,
+          "opacity": 1,
+          "isProgressive": false
+        },
+        "fills": [],
+        "shadows": [],
+        "textStyle": {
+          "_class": "textStyle",
+          "encodedAttributes": {
+            "MSAttributedStringColorAttribute": {
+              "_class": "color",
+              "alpha": 0.85,
+              "blue": 0,
+              "green": 0,
+              "red": 0,
+              "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+            },
+            "MSAttributedStringFontAttribute": {
+              "_class": "fontDescriptor",
+              "attributes": {
+                "name": "SFPro-Regular",
+                "size": 11
+              }
+            },
+            "paragraphStyle": {
+              "_class": "paragraphStyle",
+              "maximumLineHeight": 12,
+              "minimumLineHeight": 12,
+              "allowsDefaultTighteningForTruncation": 0,
+              "alignment": 0
+            }
+          },
+          "verticalAlignment": 0,
+          "skipColors": true,
+          "skipAlignment": true
+        }
+      }
+    }
+  },
+  {
+    "id": "417E2AF3-77BE-4327-96F2-4A56A0957248",
+    "name": "Tight Leading/08 Subheadline/Emphasized",
+    "source_member": "document.json",
+    "json_pointer": "/layerTextStyles/objects/59",
+    "font_raw": {
+      "name": "SFPro-Semibold",
+      "size": 11
+    },
+    "paragraph_raw": {
+      "_class": "paragraphStyle",
+      "maximumLineHeight": 12,
+      "minimumLineHeight": 12,
+      "allowsDefaultTighteningForTruncation": 0,
+      "alignment": 0
+    },
+    "color_raw": {
+      "_class": "color",
+      "alpha": 0.85,
+      "blue": 0,
+      "green": 0,
+      "red": 0,
+      "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+    },
+    "raw": {
+      "_class": "sharedStyle",
+      "do_objectID": "417E2AF3-77BE-4327-96F2-4A56A0957248",
+      "name": "Tight Leading/08 Subheadline/Emphasized",
+      "value": {
+        "_class": "style",
+        "do_objectID": "1BF431A2-9C71-4954-A34B-8DD17664A895",
+        "endMarkerType": 0,
+        "miterLimit": 10,
+        "startMarkerType": 0,
+        "windingRule": 1,
+        "skipCorners": true,
+        "blurs": [],
+        "borderOptions": {
+          "_class": "borderOptions",
+          "isEnabled": true,
+          "dashPattern": [],
+          "centerDashes": true,
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0
+        },
+        "borders": [],
+        "colorControls": {
+          "_class": "colorControls",
+          "isEnabled": true,
+          "brightness": 0,
+          "contrast": 1,
+          "hue": 0,
+          "saturation": 1
+        },
+        "contextSettings": {
+          "_class": "graphicsContextSettings",
+          "blendMode": 0,
+          "opacity": 1,
+          "isProgressive": false
+        },
+        "fills": [],
+        "shadows": [],
+        "textStyle": {
+          "_class": "textStyle",
+          "encodedAttributes": {
+            "MSAttributedStringColorAttribute": {
+              "_class": "color",
+              "alpha": 0.85,
+              "blue": 0,
+              "green": 0,
+              "red": 0,
+              "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+            },
+            "MSAttributedStringFontAttribute": {
+              "_class": "fontDescriptor",
+              "attributes": {
+                "name": "SFPro-Semibold",
+                "size": 11
+              }
+            },
+            "paragraphStyle": {
+              "_class": "paragraphStyle",
+              "maximumLineHeight": 12,
+              "minimumLineHeight": 12,
+              "allowsDefaultTighteningForTruncation": 0,
+              "alignment": 0
+            }
+          },
+          "verticalAlignment": 0,
+          "skipColors": true,
+          "skipAlignment": true
+        }
+      }
+    }
+  },
+  {
+    "id": "BFAB9A63-B006-493D-9BBB-0E9423F9505C",
+    "name": "Tight Leading/09 Footnote/Default",
+    "source_member": "document.json",
+    "json_pointer": "/layerTextStyles/objects/60",
+    "font_raw": {
+      "name": "SFPro-Regular",
+      "size": 10
+    },
+    "paragraph_raw": {
+      "_class": "paragraphStyle",
+      "maximumLineHeight": 11,
+      "minimumLineHeight": 11,
+      "allowsDefaultTighteningForTruncation": 0,
+      "alignment": 0
+    },
+    "color_raw": {
+      "_class": "color",
+      "alpha": 0.85,
+      "blue": 0,
+      "green": 0,
+      "red": 0,
+      "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+    },
+    "raw": {
+      "_class": "sharedStyle",
+      "do_objectID": "BFAB9A63-B006-493D-9BBB-0E9423F9505C",
+      "name": "Tight Leading/09 Footnote/Default",
+      "value": {
+        "_class": "style",
+        "do_objectID": "6703F657-A165-4DA3-A87F-CEA4476AAA52",
+        "endMarkerType": 0,
+        "miterLimit": 10,
+        "startMarkerType": 0,
+        "windingRule": 1,
+        "skipCorners": true,
+        "blurs": [],
+        "borderOptions": {
+          "_class": "borderOptions",
+          "isEnabled": true,
+          "dashPattern": [],
+          "centerDashes": true,
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0
+        },
+        "borders": [],
+        "colorControls": {
+          "_class": "colorControls",
+          "isEnabled": true,
+          "brightness": 0,
+          "contrast": 1,
+          "hue": 0,
+          "saturation": 1
+        },
+        "contextSettings": {
+          "_class": "graphicsContextSettings",
+          "blendMode": 0,
+          "opacity": 1,
+          "isProgressive": false
+        },
+        "fills": [],
+        "shadows": [],
+        "textStyle": {
+          "_class": "textStyle",
+          "encodedAttributes": {
+            "MSAttributedStringFontAttribute": {
+              "_class": "fontDescriptor",
+              "attributes": {
+                "name": "SFPro-Regular",
+                "size": 10
+              }
+            },
+            "MSAttributedStringColorAttribute": {
+              "_class": "color",
+              "alpha": 0.85,
+              "blue": 0,
+              "green": 0,
+              "red": 0,
+              "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+            },
+            "paragraphStyle": {
+              "_class": "paragraphStyle",
+              "maximumLineHeight": 11,
+              "minimumLineHeight": 11,
+              "allowsDefaultTighteningForTruncation": 0,
+              "alignment": 0
+            }
+          },
+          "verticalAlignment": 0,
+          "skipColors": true,
+          "skipAlignment": true
+        }
+      }
+    }
+  },
+  {
+    "id": "1DC03FE5-8E26-4C82-9DD6-8D81A1E685FC",
+    "name": "Tight Leading/09 Footnote/Emphasized",
+    "source_member": "document.json",
+    "json_pointer": "/layerTextStyles/objects/61",
+    "font_raw": {
+      "name": "SFPro-Semibold",
+      "size": 10
+    },
+    "paragraph_raw": {
+      "_class": "paragraphStyle",
+      "maximumLineHeight": 11,
+      "minimumLineHeight": 11,
+      "allowsDefaultTighteningForTruncation": 0,
+      "alignment": 0
+    },
+    "color_raw": {
+      "_class": "color",
+      "alpha": 0.85,
+      "blue": 0,
+      "green": 0,
+      "red": 0,
+      "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+    },
+    "raw": {
+      "_class": "sharedStyle",
+      "do_objectID": "1DC03FE5-8E26-4C82-9DD6-8D81A1E685FC",
+      "name": "Tight Leading/09 Footnote/Emphasized",
+      "value": {
+        "_class": "style",
+        "do_objectID": "E8B6380F-2DF8-41AA-8E03-2A3238CEC0CB",
+        "endMarkerType": 0,
+        "miterLimit": 10,
+        "startMarkerType": 0,
+        "windingRule": 1,
+        "skipCorners": true,
+        "blurs": [],
+        "borderOptions": {
+          "_class": "borderOptions",
+          "isEnabled": true,
+          "dashPattern": [],
+          "centerDashes": true,
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0
+        },
+        "borders": [],
+        "colorControls": {
+          "_class": "colorControls",
+          "isEnabled": true,
+          "brightness": 0,
+          "contrast": 1,
+          "hue": 0,
+          "saturation": 1
+        },
+        "contextSettings": {
+          "_class": "graphicsContextSettings",
+          "blendMode": 0,
+          "opacity": 1,
+          "isProgressive": false
+        },
+        "fills": [],
+        "shadows": [],
+        "textStyle": {
+          "_class": "textStyle",
+          "encodedAttributes": {
+            "MSAttributedStringColorAttribute": {
+              "_class": "color",
+              "alpha": 0.85,
+              "blue": 0,
+              "green": 0,
+              "red": 0,
+              "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+            },
+            "paragraphStyle": {
+              "_class": "paragraphStyle",
+              "maximumLineHeight": 11,
+              "minimumLineHeight": 11,
+              "allowsDefaultTighteningForTruncation": 0,
+              "alignment": 0
+            },
+            "MSAttributedStringFontAttribute": {
+              "_class": "fontDescriptor",
+              "attributes": {
+                "name": "SFPro-Semibold",
+                "size": 10
+              }
+            }
+          },
+          "verticalAlignment": 0,
+          "skipColors": true,
+          "skipAlignment": true
+        }
+      }
+    }
+  },
+  {
+    "id": "38AE1AA6-F274-4AC9-8B2E-EFAC69C68A46",
+    "name": "Tight Leading/10 Caption1/Default",
+    "source_member": "document.json",
+    "json_pointer": "/layerTextStyles/objects/62",
+    "font_raw": {
+      "name": "SFPro-Regular",
+      "size": 10
+    },
+    "paragraph_raw": {
+      "_class": "paragraphStyle",
+      "maximumLineHeight": 11,
+      "minimumLineHeight": 11,
+      "allowsDefaultTighteningForTruncation": 0,
+      "alignment": 0
+    },
+    "color_raw": {
+      "_class": "color",
+      "alpha": 0.85,
+      "blue": 0,
+      "green": 0,
+      "red": 0,
+      "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+    },
+    "raw": {
+      "_class": "sharedStyle",
+      "do_objectID": "38AE1AA6-F274-4AC9-8B2E-EFAC69C68A46",
+      "name": "Tight Leading/10 Caption1/Default",
+      "value": {
+        "_class": "style",
+        "do_objectID": "9CAE9A2F-A584-4361-87F6-8E0CEEF0008D",
+        "endMarkerType": 0,
+        "miterLimit": 10,
+        "startMarkerType": 0,
+        "windingRule": 1,
+        "skipCorners": true,
+        "blurs": [],
+        "borderOptions": {
+          "_class": "borderOptions",
+          "isEnabled": true,
+          "dashPattern": [],
+          "centerDashes": true,
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0
+        },
+        "borders": [],
+        "colorControls": {
+          "_class": "colorControls",
+          "isEnabled": true,
+          "brightness": 0,
+          "contrast": 1,
+          "hue": 0,
+          "saturation": 1
+        },
+        "contextSettings": {
+          "_class": "graphicsContextSettings",
+          "blendMode": 0,
+          "opacity": 1,
+          "isProgressive": false
+        },
+        "fills": [],
+        "shadows": [],
+        "textStyle": {
+          "_class": "textStyle",
+          "encodedAttributes": {
+            "paragraphStyle": {
+              "_class": "paragraphStyle",
+              "maximumLineHeight": 11,
+              "minimumLineHeight": 11,
+              "allowsDefaultTighteningForTruncation": 0,
+              "alignment": 0
+            },
+            "MSAttributedStringFontAttribute": {
+              "_class": "fontDescriptor",
+              "attributes": {
+                "name": "SFPro-Regular",
+                "size": 10
+              }
+            },
+            "MSAttributedStringColorAttribute": {
+              "_class": "color",
+              "alpha": 0.85,
+              "blue": 0,
+              "green": 0,
+              "red": 0,
+              "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+            }
+          },
+          "verticalAlignment": 0,
+          "skipColors": true,
+          "skipAlignment": true
+        }
+      }
+    }
+  },
+  {
+    "id": "EC465EC6-E172-4B85-8CE5-DBCC2BEE9498",
+    "name": "Tight Leading/10 Caption1/Emphasized",
+    "source_member": "document.json",
+    "json_pointer": "/layerTextStyles/objects/63",
+    "font_raw": {
+      "name": "SFPro-Semibold",
+      "size": 10
+    },
+    "paragraph_raw": {
+      "_class": "paragraphStyle",
+      "maximumLineHeight": 11,
+      "minimumLineHeight": 11,
+      "allowsDefaultTighteningForTruncation": 0,
+      "alignment": 0
+    },
+    "color_raw": {
+      "_class": "color",
+      "alpha": 0.85,
+      "blue": 0,
+      "green": 0,
+      "red": 0,
+      "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+    },
+    "raw": {
+      "_class": "sharedStyle",
+      "do_objectID": "EC465EC6-E172-4B85-8CE5-DBCC2BEE9498",
+      "name": "Tight Leading/10 Caption1/Emphasized",
+      "value": {
+        "_class": "style",
+        "do_objectID": "C80A1403-B44A-48DA-8455-5C46761604A7",
+        "endMarkerType": 0,
+        "miterLimit": 10,
+        "startMarkerType": 0,
+        "windingRule": 1,
+        "skipCorners": true,
+        "blurs": [],
+        "borderOptions": {
+          "_class": "borderOptions",
+          "isEnabled": true,
+          "dashPattern": [],
+          "centerDashes": true,
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0
+        },
+        "borders": [],
+        "colorControls": {
+          "_class": "colorControls",
+          "isEnabled": true,
+          "brightness": 0,
+          "contrast": 1,
+          "hue": 0,
+          "saturation": 1
+        },
+        "contextSettings": {
+          "_class": "graphicsContextSettings",
+          "blendMode": 0,
+          "opacity": 1,
+          "isProgressive": false
+        },
+        "fills": [],
+        "shadows": [],
+        "textStyle": {
+          "_class": "textStyle",
+          "encodedAttributes": {
+            "paragraphStyle": {
+              "_class": "paragraphStyle",
+              "maximumLineHeight": 11,
+              "minimumLineHeight": 11,
+              "allowsDefaultTighteningForTruncation": 0,
+              "alignment": 0
+            },
+            "MSAttributedStringFontAttribute": {
+              "_class": "fontDescriptor",
+              "attributes": {
+                "name": "SFPro-Semibold",
+                "size": 10
+              }
+            },
+            "MSAttributedStringColorAttribute": {
+              "_class": "color",
+              "alpha": 0.85,
+              "blue": 0,
+              "green": 0,
+              "red": 0,
+              "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+            }
+          },
+          "verticalAlignment": 0,
+          "skipColors": true,
+          "skipAlignment": true
+        }
+      }
+    }
+  },
+  {
+    "id": "747DE782-9C16-45CD-9819-A5EE4C7912F4",
+    "name": "Tight Leading/11 Caption2/Default",
+    "source_member": "document.json",
+    "json_pointer": "/layerTextStyles/objects/64",
+    "font_raw": {
+      "name": "SFPro-Regular",
+      "size": 10
+    },
+    "paragraph_raw": {
+      "_class": "paragraphStyle",
+      "maximumLineHeight": 11,
+      "minimumLineHeight": 11,
+      "allowsDefaultTighteningForTruncation": 0,
+      "alignment": 0
+    },
+    "color_raw": {
+      "_class": "color",
+      "alpha": 0.85,
+      "blue": 0,
+      "green": 0,
+      "red": 0,
+      "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+    },
+    "raw": {
+      "_class": "sharedStyle",
+      "do_objectID": "747DE782-9C16-45CD-9819-A5EE4C7912F4",
+      "name": "Tight Leading/11 Caption2/Default",
+      "value": {
+        "_class": "style",
+        "do_objectID": "EB499780-AF16-46E7-906B-2B955370599E",
+        "endMarkerType": 0,
+        "miterLimit": 10,
+        "startMarkerType": 0,
+        "windingRule": 1,
+        "skipCorners": true,
+        "blurs": [],
+        "borderOptions": {
+          "_class": "borderOptions",
+          "isEnabled": true,
+          "dashPattern": [],
+          "centerDashes": true,
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0
+        },
+        "borders": [],
+        "colorControls": {
+          "_class": "colorControls",
+          "isEnabled": true,
+          "brightness": 0,
+          "contrast": 1,
+          "hue": 0,
+          "saturation": 1
+        },
+        "contextSettings": {
+          "_class": "graphicsContextSettings",
+          "blendMode": 0,
+          "opacity": 1,
+          "isProgressive": false
+        },
+        "fills": [],
+        "shadows": [],
+        "textStyle": {
+          "_class": "textStyle",
+          "encodedAttributes": {
+            "MSAttributedStringColorAttribute": {
+              "_class": "color",
+              "alpha": 0.85,
+              "blue": 0,
+              "green": 0,
+              "red": 0,
+              "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+            },
+            "paragraphStyle": {
+              "_class": "paragraphStyle",
+              "maximumLineHeight": 11,
+              "minimumLineHeight": 11,
+              "allowsDefaultTighteningForTruncation": 0,
+              "alignment": 0
+            },
+            "MSAttributedStringFontAttribute": {
+              "_class": "fontDescriptor",
+              "attributes": {
+                "name": "SFPro-Regular",
+                "size": 10
+              }
+            }
+          },
+          "verticalAlignment": 0,
+          "skipColors": true,
+          "skipAlignment": true
+        }
+      }
+    }
+  },
+  {
+    "id": "CBA28B90-9B60-4F07-BE3E-5B39970446CF",
+    "name": "Tight Leading/11 Caption2/Emphasized",
+    "source_member": "document.json",
+    "json_pointer": "/layerTextStyles/objects/65",
+    "font_raw": {
+      "name": "SFPro-Semibold",
+      "size": 10
+    },
+    "paragraph_raw": {
+      "_class": "paragraphStyle",
+      "maximumLineHeight": 11,
+      "minimumLineHeight": 11,
+      "allowsDefaultTighteningForTruncation": 0,
+      "alignment": 0
+    },
+    "color_raw": {
+      "_class": "color",
+      "alpha": 0.85,
+      "blue": 0,
+      "green": 0,
+      "red": 0,
+      "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+    },
+    "raw": {
+      "_class": "sharedStyle",
+      "do_objectID": "CBA28B90-9B60-4F07-BE3E-5B39970446CF",
+      "name": "Tight Leading/11 Caption2/Emphasized",
+      "value": {
+        "_class": "style",
+        "do_objectID": "1FA27E50-FD70-4F28-A32C-05F08AE5D8E9",
+        "endMarkerType": 0,
+        "miterLimit": 10,
+        "startMarkerType": 0,
+        "windingRule": 1,
+        "skipCorners": true,
+        "blurs": [],
+        "borderOptions": {
+          "_class": "borderOptions",
+          "isEnabled": true,
+          "dashPattern": [],
+          "centerDashes": true,
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0
+        },
+        "borders": [],
+        "colorControls": {
+          "_class": "colorControls",
+          "isEnabled": true,
+          "brightness": 0,
+          "contrast": 1,
+          "hue": 0,
+          "saturation": 1
+        },
+        "contextSettings": {
+          "_class": "graphicsContextSettings",
+          "blendMode": 0,
+          "opacity": 1,
+          "isProgressive": false
+        },
+        "fills": [],
+        "shadows": [],
+        "textStyle": {
+          "_class": "textStyle",
+          "encodedAttributes": {
+            "MSAttributedStringFontAttribute": {
+              "_class": "fontDescriptor",
+              "attributes": {
+                "name": "SFPro-Semibold",
+                "size": 10
+              }
+            },
+            "MSAttributedStringColorAttribute": {
+              "_class": "color",
+              "alpha": 0.85,
+              "blue": 0,
+              "green": 0,
+              "red": 0,
+              "swatchID": "E565BB11-90DE-445A-9054-AC99EEA6FD87"
+            },
+            "paragraphStyle": {
+              "_class": "paragraphStyle",
+              "maximumLineHeight": 11,
+              "minimumLineHeight": 11,
+              "allowsDefaultTighteningForTruncation": 0,
+              "alignment": 0
+            }
+          },
+          "verticalAlignment": 0,
+          "skipColors": true,
+          "skipAlignment": true
+        }
+      }
+    }
+  },
+  {
+    "id": "7F15B0CD-3B36-4CBF-9FD0-8252807DAEB5",
+    "name": "Secondary Style",
+    "source_member": "document.json",
+    "json_pointer": "/layerTextStyles/objects/66",
+    "font_raw": {
+      "name": "SFPro-Regular",
+      "size": 17
+    },
+    "paragraph_raw": {
+      "_class": "paragraphStyle",
+      "maximumLineHeight": 22,
+      "minimumLineHeight": 22,
+      "allowsDefaultTighteningForTruncation": 0
+    },
+    "color_raw": {
+      "_class": "color",
+      "alpha": 0.62,
+      "blue": 0.2,
+      "green": 0.2,
+      "red": 0.2
+    },
+    "raw": {
+      "_class": "sharedStyle",
+      "do_objectID": "7F15B0CD-3B36-4CBF-9FD0-8252807DAEB5",
+      "name": "Secondary Style",
+      "value": {
+        "_class": "style",
+        "do_objectID": "FE552926-9E43-4D80-93E8-41F10282C1F6",
+        "endMarkerType": 0,
+        "miterLimit": 10,
+        "startMarkerType": 0,
+        "windingRule": 0,
+        "skipCorners": true,
+        "blurs": [],
+        "borderOptions": {
+          "_class": "borderOptions",
+          "isEnabled": true,
+          "dashPattern": [],
+          "centerDashes": true,
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0
+        },
+        "borders": [],
+        "colorControls": {
+          "_class": "colorControls",
+          "isEnabled": true,
+          "brightness": 0,
+          "contrast": 1,
+          "hue": 0,
+          "saturation": 1
+        },
+        "contextSettings": {
+          "_class": "graphicsContextSettings",
+          "blendMode": 16,
+          "opacity": 1,
+          "isProgressive": false
+        },
+        "fills": [],
+        "shadows": [],
+        "textStyle": {
+          "_class": "textStyle",
+          "encodedAttributes": {
+            "MSAttributedStringColorAttribute": {
+              "_class": "color",
+              "alpha": 0.62,
+              "blue": 0.2,
+              "green": 0.2,
+              "red": 0.2
+            },
+            "paragraphStyle": {
+              "_class": "paragraphStyle",
+              "maximumLineHeight": 22,
+              "minimumLineHeight": 22,
+              "allowsDefaultTighteningForTruncation": 0
+            },
+            "MSAttributedStringFontAttribute": {
+              "_class": "fontDescriptor",
+              "attributes": {
+                "name": "SFPro-Regular",
+                "size": 17
+              }
+            }
+          },
+          "verticalAlignment": 0,
+          "skipColors": true,
+          "skipAlignment": true
+        }
+      }
+    }
+  }
+]

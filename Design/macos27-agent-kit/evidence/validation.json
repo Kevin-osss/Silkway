@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "errors": [],
+  "checked_records": 5735,
+  "counts": {
+    "pages": 37,
+    "symbol_masters": 4679,
+    "symbol_instances": 4725,
+    "text_styles": 67,
+    "layer_styles": 285,
+    "local_swatches": 110,
+    "foreign_cached_swatches": 2,
+    "page_elements_outside_symbols": 592,
+    "text_layers_outside_symbols": 251,
+    "representative_native_pngs": 18
+  },
+  "source_file_hash_checked": true,
+  "source_reference_gaps_preserved": {
+    "symbol_override": 44,
+    "swatch": 118
+  },
+  "scope": "Verifies extraction consistency and hashes; not macOS runtime appearance or SDK conformance.",
+  "verified_at_utc": "2026-09-09T05:38:26.521150+00:00",
+  "visual_manifest_associations_checked": 18,
+  "render_wrapper_smoke_check": "Passed after fresh staging-directory change; official export succeeded into an output directory that already contained an older preview.",
+  "independent_review": "Passed: raw Sidebar Flex layouts/overrides, Menu missing overrides, text-style missing swatch, and all 18 visual associations checked against original source."
+}

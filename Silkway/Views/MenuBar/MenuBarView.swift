@@ -48,7 +48,8 @@ struct MenuBarView: View {
             ActionFooter()
         }
         .frame(width: 340)
-        .background(.ultraThinMaterial)
+        // 不手动覆盖背景材质：MenuBarExtra(.window) 的系统默认材质
+        // 就是 Liquid Glass（macOS 27 菜单类弹窗）。手动覆盖会脱离系统视觉。
     }
 
     private var emptyState: some View {

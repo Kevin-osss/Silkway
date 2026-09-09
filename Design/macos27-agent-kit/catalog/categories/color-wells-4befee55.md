@@ -1,0 +1,44 @@
+# Color Wells
+
+原页面名称：􀎘 Color Wells
+Page ID：`4BEFEE55-1C70-4775-A7FF-6609AA5E8142`
+来源：`pages/4BEFEE55-1C70-4775-A7FF-6609AA5E8142.json`（位于 evidence/source-json.zip）
+
+下列为样本定义；使用脚本 show 查询嵌套引用、覆盖项和原始属性。
+
+| 原始 Symbol 名称 | Symbol ID | Layer ID | 样本宽 × 高 |
+|---|---|---|---|
+| Color Picker (Wheel)/Dark/No Color | `0BDD7197-0DE5-48A0-97F7-0F9CBE57C66D` | `5D97D40B-A9DF-4AA9-9A8D-A6BD84C08B04` | 28 × 28 |
+| Color Picker (Wheel)/Dark/Selected Color | `39E10214-D0C4-49B9-9A40-0272D03F1B36` | `FEADE886-42DF-4446-9E66-D871594BD12E` | 28 × 28 |
+| Color Picker (Wheel)/Light/No Color | `84DEFE70-693A-4AA0-82BA-8572030CC4A8` | `3B18F041-A44E-4E2E-A7C5-6E620F732763` | 28 × 28 |
+| Color Picker (Wheel)/Light/Selected Color | `F35FADE9-DA17-4940-8761-97A144B6EC34` | `DBD8B0F5-CE5F-40BF-A5F4-72577FD3E311` | 28 × 28 |
+| Color Pickers/Dark/Content Area/Standard/1 Min/1 - Idle | `F665F140-C059-4270-A32B-085D63731994` | `616FB9B1-53C4-40CB-B9CF-E044B25081A8` | 32 × 16 |
+| Color Pickers/Dark/Content Area/Standard/1 Min/3 - Selected | `9423A744-7758-422D-8077-6E1C9B971D74` | `26CF896F-F491-4A64-8B79-526F2F4A1826` | 32 × 16 |
+| Color Pickers/Dark/Content Area/Standard/1 Min/4 - Disabled | `69D85230-D384-4990-9E20-38C7B6A368E7` | `E3A0C684-810C-4B7E-AA62-3B434D4844BD` | 32 × 16 |
+| Color Pickers/Dark/Content Area/Standard/2 Sm/1 - Idle | `E06ACBC5-7852-40C3-B051-AD61C4ACE9DD` | `84D08218-6EB0-4F9B-AEC9-D04892342687` | 40 × 20 |
+| Color Pickers/Dark/Content Area/Standard/2 Sm/3 - Selected | `0F1AD7E3-4A83-47A2-BED8-7C8B972C5962` | `A3CDD9ED-7F70-4799-BC89-AF3006C11D68` | 40 × 20 |
+| Color Pickers/Dark/Content Area/Standard/2 Sm/4 - Disabled | `254FE562-F523-4187-B735-E41A7EB3B2B0` | `EE46A60C-05AB-478F-9A60-478492735B42` | 40 × 20 |
+| Color Pickers/Dark/Content Area/Standard/3 Rg/1 - Idle | `5BEE9159-8252-4443-A1BC-492FEA9E7529` | `72F6B4AE-7487-4600-8A7C-B476AC8CF7B2` | 48 × 24 |
+| Color Pickers/Dark/Content Area/Standard/3 Rg/3 - Selected | `7620FA7C-F278-4205-814B-9F97921C2484` | `8396E088-EB8C-4D55-B6B9-83A92E7F7271` | 48 × 24 |
+| Color Pickers/Dark/Content Area/Standard/3 Rg/4 - Disabled | `3FAE85C7-AA98-4C52-B900-A0E73C4D51F0` | `50870C32-1287-467E-AD1F-C4854F276B17` | 48 × 24 |
+| Color Pickers/Dark/Content Area/Standard/4 Lg/1 - Idle | `BCF2257A-27AE-4804-AC44-C1FA40962CC4` | `E586E186-5A05-4FD8-AD6D-D2FCC747DE76` | 56 × 28 |
+| Color Pickers/Dark/Content Area/Standard/4 Lg/3 - Selected | `6D3543DA-1A38-4559-B7DE-FE7C26CA75D8` | `A3E444BB-87B2-4662-AE6A-80778982D0A0` | 56 × 28 |
+| Color Pickers/Dark/Content Area/Standard/4 Lg/4 - Disabled | `F2AEEEB8-D8FE-4E3C-8041-A1060DB0B608` | `4BD395AC-B311-41E0-A460-2859B1238E40` | 56 × 28 |
+| Color Pickers/Dark/Content Area/Standard/5 XL/1 - Idle | `FFB63BC4-0651-4D64-ADB9-77F417BC9720` | `A5E758FC-2E92-4CEB-B857-9A093806C1AC` | 72 × 36 |
+| Color Pickers/Dark/Content Area/Standard/5 XL/3 - Selected | `46CCD843-823F-47C7-91F7-568776699C02` | `73EB55F0-7B27-4716-9DC5-7ABA6BD8ED32` | 72 × 36 |
+| Color Pickers/Dark/Content Area/Standard/5 XL/4 - Disabled | `7166AE5A-771E-4D66-B37D-E65B47BC04D4` | `77B156D0-3124-44C4-A380-5A66DBAC39EA` | 72 × 36 |
+| Color Pickers/Light/Content Area/Standard/1 Min/1 - Idle | `36ABDB06-0529-4BA4-86B9-73007D5F29A2` | `8C445588-0AB1-4A8C-BA5C-4A5AD368B3DD` | 32 × 16 |
+| Color Pickers/Light/Content Area/Standard/1 Min/3 - Selected | `5A39127D-5AF6-42E0-A790-EEA69DC1BC3F` | `47632E89-6C45-4919-B10D-7AA1ED6A74AD` | 32 × 16 |
+| Color Pickers/Light/Content Area/Standard/1 Min/4 - Disabled | `F7706387-AD94-45CC-99BB-7619FE7DE929` | `AD71D580-36C8-476A-85F0-40B0654EE41A` | 32 × 16 |
+| Color Pickers/Light/Content Area/Standard/2 Sm/1 - Idle | `1E19130B-8A2F-42EA-8BD7-1F206042EF51` | `DB617350-BB4B-4A9D-BFEF-F1E42914E5D5` | 40 × 20 |
+| Color Pickers/Light/Content Area/Standard/2 Sm/3 - Selected | `0786C4E2-C662-4C46-99AD-894634F8F0FD` | `C960C409-40AE-4046-8DC2-C3ED85BB61E4` | 40 × 20 |
+| Color Pickers/Light/Content Area/Standard/2 Sm/4 - Disabled | `3B67ACF0-661A-4B48-AFF6-F7C229FA51FA` | `425B0048-E66C-4482-BEB5-513581146F90` | 40 × 20 |
+| Color Pickers/Light/Content Area/Standard/3 Rg/1 - Idle | `3E5BD7EF-CF9B-44A0-A06D-F3084043127C` | `88D4DB11-D5F9-42AF-89E0-5773772BA7BF` | 48 × 24 |
+| Color Pickers/Light/Content Area/Standard/3 Rg/3 - Selected | `0CD09854-4271-4834-9D8A-50135318FD29` | `FF590987-6F80-49B0-B342-9E1DAD9CAFC6` | 48 × 24 |
+| Color Pickers/Light/Content Area/Standard/3 Rg/4 - Disabled | `9B573338-9FBF-4E43-ACEF-9E5ABF1ABEAA` | `6E1B9FE0-4807-42F4-930B-FE82A09A3863` | 48 × 24 |
+| Color Pickers/Light/Content Area/Standard/4 Lg/1 - Idle | `DB32BD24-117F-4E54-86BB-C2B4E31794E9` | `C43CDB30-E9AC-4A70-BBC7-6FB7CD6B9CE3` | 56 × 28 |
+| Color Pickers/Light/Content Area/Standard/4 Lg/3 - Selected | `A970F6BB-F873-4CDF-8354-BA0D191AC7EB` | `B4668F94-CE6C-4320-A24C-01FE717F368B` | 56 × 28 |
+| Color Pickers/Light/Content Area/Standard/4 Lg/4 - Disabled | `8C3396EB-CEF1-41ED-A1DA-FDF587D65C89` | `A447FB97-6C7C-462F-A316-0810CCEB64AC` | 56 × 28 |
+| Color Pickers/Light/Content Area/Standard/5 XL/1 - Idle | `E3D384D2-7C3F-475A-B1E3-CA569403B2EE` | `536D11F1-8DD0-41D9-9D11-B40FD7646ABF` | 72 × 36 |
+| Color Pickers/Light/Content Area/Standard/5 XL/3 - Selected | `F14953E7-1990-4AB0-B6D2-CFC1620B6378` | `DECF63DA-1C65-44A8-AFBD-D459198B7752` | 72 × 36 |
+| Color Pickers/Light/Content Area/Standard/5 XL/4 - Disabled | `48C72594-6A2F-4AB4-83CD-3CC31BFB1FDE` | `8AAB0000-7309-4FCB-A86B-B4617509304F` | 72 × 36 |

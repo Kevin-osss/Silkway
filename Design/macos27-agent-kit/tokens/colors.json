@@ -1,0 +1,2846 @@
+[
+  {
+    "id": "117CF35E-A575-4626-B899-FA9637445FFC",
+    "name": "System Colors/Light/8 Blue",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/0",
+    "rgba_raw": {
+      "red": 0,
+      "green": 0.533333333333333,
+      "blue": 1,
+      "alpha": 1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "117CF35E-A575-4626-B899-FA9637445FFC",
+      "name": "System Colors/Light/8 Blue",
+      "value": {
+        "_class": "color",
+        "alpha": 1,
+        "blue": 1,
+        "green": 0.533333333333333,
+        "red": 0
+      }
+    }
+  },
+  {
+    "id": "41D75B92-9ED2-4C1B-90D0-33CCDC7D93E3",
+    "name": "System Colors/Light/4 Green",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/1",
+    "rgba_raw": {
+      "red": 0.203921568627451,
+      "green": 0.780392156862745,
+      "blue": 0.349019607843137,
+      "alpha": 1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "41D75B92-9ED2-4C1B-90D0-33CCDC7D93E3",
+      "name": "System Colors/Light/4 Green",
+      "value": {
+        "_class": "color",
+        "alpha": 1,
+        "blue": 0.349019607843137,
+        "green": 0.780392156862745,
+        "red": 0.203921568627451
+      }
+    }
+  },
+  {
+    "id": "8DF81EA4-5547-43EA-ACC7-145BEFCDA073",
+    "name": "System Colors/Dark/6 Teal",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/2",
+    "rgba_raw": {
+      "red": 0,
+      "green": 0.823529411764706,
+      "blue": 0.87843137254902,
+      "alpha": 1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "8DF81EA4-5547-43EA-ACC7-145BEFCDA073",
+      "name": "System Colors/Dark/6 Teal",
+      "value": {
+        "_class": "color",
+        "alpha": 1,
+        "blue": 0.87843137254902,
+        "green": 0.823529411764706,
+        "red": 0
+      }
+    }
+  },
+  {
+    "id": "0A6FA887-AE13-41DF-9AA5-07313DCA56DC",
+    "name": "System Colors/Dark/8 Blue",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/3",
+    "rgba_raw": {
+      "red": 0,
+      "green": 0.568627450980392,
+      "blue": 1,
+      "alpha": 1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "0A6FA887-AE13-41DF-9AA5-07313DCA56DC",
+      "name": "System Colors/Dark/8 Blue",
+      "value": {
+        "_class": "color",
+        "alpha": 1,
+        "blue": 1,
+        "green": 0.568627450980392,
+        "red": 0
+      }
+    }
+  },
+  {
+    "id": "63C4A706-674B-4FFE-87F7-D118593625B2",
+    "name": "System Colors/Dark/4 Green",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/4",
+    "rgba_raw": {
+      "red": 0.188235294117647,
+      "green": 0.819607843137255,
+      "blue": 0.345098039215686,
+      "alpha": 1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "63C4A706-674B-4FFE-87F7-D118593625B2",
+      "name": "System Colors/Dark/4 Green",
+      "value": {
+        "_class": "color",
+        "alpha": 1,
+        "blue": 0.345098039215686,
+        "green": 0.819607843137255,
+        "red": 0.188235294117647
+      }
+    }
+  },
+  {
+    "id": "98CA0935-12B5-4064-A093-FABD1280B6D2",
+    "name": "System Colors/Dark/1 Red",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/5",
+    "rgba_raw": {
+      "red": 1,
+      "green": 0.258823529411765,
+      "blue": 0.270588235294118,
+      "alpha": 1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "98CA0935-12B5-4064-A093-FABD1280B6D2",
+      "name": "System Colors/Dark/1 Red",
+      "value": {
+        "_class": "color",
+        "alpha": 1,
+        "blue": 0.270588235294118,
+        "green": 0.258823529411765,
+        "red": 1
+      }
+    }
+  },
+  {
+    "id": "565D5936-9913-46F7-B020-EB9CD8FD66B9",
+    "name": "System Colors/Light/10 Purple",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/6",
+    "rgba_raw": {
+      "red": 0.796078431372549,
+      "green": 0.188235294117647,
+      "blue": 0.87843137254902,
+      "alpha": 1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "565D5936-9913-46F7-B020-EB9CD8FD66B9",
+      "name": "System Colors/Light/10 Purple",
+      "value": {
+        "_class": "color",
+        "alpha": 1,
+        "blue": 0.87843137254902,
+        "green": 0.188235294117647,
+        "red": 0.796078431372549
+      }
+    }
+  },
+  {
+    "id": "1A2077EE-C84D-42EC-950B-FB20F3373D6E",
+    "name": "System Colors/Dark/12 Brown",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/7",
+    "rgba_raw": {
+      "red": 0.71764705882353,
+      "green": 0.541176470588235,
+      "blue": 0.4,
+      "alpha": 1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "1A2077EE-C84D-42EC-950B-FB20F3373D6E",
+      "name": "System Colors/Dark/12 Brown",
+      "value": {
+        "_class": "color",
+        "alpha": 1,
+        "blue": 0.4,
+        "green": 0.541176470588235,
+        "red": 0.71764705882353
+      }
+    }
+  },
+  {
+    "id": "1F2CA37F-5B76-4873-A388-64C860F77489",
+    "name": "System Colors/Light/12 Brown",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/8",
+    "rgba_raw": {
+      "red": 0.674509803921569,
+      "green": 0.498039215686275,
+      "blue": 0.368627450980392,
+      "alpha": 1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "1F2CA37F-5B76-4873-A388-64C860F77489",
+      "name": "System Colors/Light/12 Brown",
+      "value": {
+        "_class": "color",
+        "alpha": 1,
+        "blue": 0.368627450980392,
+        "green": 0.498039215686275,
+        "red": 0.674509803921569
+      }
+    }
+  },
+  {
+    "id": "9EE96618-9A34-4990-98B1-D96E43A95920",
+    "name": "System Colors/Light/3 Yellow",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/9",
+    "rgba_raw": {
+      "red": 1,
+      "green": 0.8,
+      "blue": 0,
+      "alpha": 1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "9EE96618-9A34-4990-98B1-D96E43A95920",
+      "name": "System Colors/Light/3 Yellow",
+      "value": {
+        "_class": "color",
+        "alpha": 1,
+        "blue": 0,
+        "green": 0.8,
+        "red": 1
+      }
+    }
+  },
+  {
+    "id": "389A3FFC-BC69-4735-B048-58A1FF7F4734",
+    "name": "System Colors/Dark/11 Pink",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/10",
+    "rgba_raw": {
+      "red": 1,
+      "green": 0.215686274509804,
+      "blue": 0.372549019607843,
+      "alpha": 1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "389A3FFC-BC69-4735-B048-58A1FF7F4734",
+      "name": "System Colors/Dark/11 Pink",
+      "value": {
+        "_class": "color",
+        "alpha": 1,
+        "blue": 0.372549019607843,
+        "green": 0.215686274509804,
+        "red": 1
+      }
+    }
+  },
+  {
+    "id": "4214F849-A16F-4EAB-B2CA-E002729FA305",
+    "name": "System Colors/Light/6 Teal",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/11",
+    "rgba_raw": {
+      "red": 0,
+      "green": 0.764705882352941,
+      "blue": 0.815686274509804,
+      "alpha": 1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "4214F849-A16F-4EAB-B2CA-E002729FA305",
+      "name": "System Colors/Light/6 Teal",
+      "value": {
+        "_class": "color",
+        "alpha": 1,
+        "blue": 0.815686274509804,
+        "green": 0.764705882352941,
+        "red": 0
+      }
+    }
+  },
+  {
+    "id": "FD26791E-9A15-448B-AFF3-1FC2DDFF2349",
+    "name": "System Colors/Light/2 Orange",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/12",
+    "rgba_raw": {
+      "red": 1,
+      "green": 0.552941176470588,
+      "blue": 0.156862745098039,
+      "alpha": 1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "FD26791E-9A15-448B-AFF3-1FC2DDFF2349",
+      "name": "System Colors/Light/2 Orange",
+      "value": {
+        "_class": "color",
+        "alpha": 1,
+        "blue": 0.156862745098039,
+        "green": 0.552941176470588,
+        "red": 1
+      }
+    }
+  },
+  {
+    "id": "B2CED119-337F-4F2B-827B-1506B1D5A838",
+    "name": "System Colors/Light/5 Mint",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/13",
+    "rgba_raw": {
+      "red": 0,
+      "green": 0.784313725490196,
+      "blue": 0.701960784313726,
+      "alpha": 1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "B2CED119-337F-4F2B-827B-1506B1D5A838",
+      "name": "System Colors/Light/5 Mint",
+      "value": {
+        "_class": "color",
+        "alpha": 1,
+        "blue": 0.701960784313726,
+        "green": 0.784313725490196,
+        "red": 0
+      }
+    }
+  },
+  {
+    "id": "A8FC9FB9-3084-4890-9A4E-E9C17BF2D863",
+    "name": "System Colors/Dark/10 Purple",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/14",
+    "rgba_raw": {
+      "red": 0.858823529411765,
+      "green": 0.203921568627451,
+      "blue": 0.949019607843137,
+      "alpha": 1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "A8FC9FB9-3084-4890-9A4E-E9C17BF2D863",
+      "name": "System Colors/Dark/10 Purple",
+      "value": {
+        "_class": "color",
+        "alpha": 1,
+        "blue": 0.949019607843137,
+        "green": 0.203921568627451,
+        "red": 0.858823529411765
+      }
+    }
+  },
+  {
+    "id": "B0BEE55A-A859-4133-A511-CF163B9DD459",
+    "name": "System Colors/Dark/9 Indigo",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/15",
+    "rgba_raw": {
+      "red": 0.427450980392157,
+      "green": 0.486274509803922,
+      "blue": 1,
+      "alpha": 1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "B0BEE55A-A859-4133-A511-CF163B9DD459",
+      "name": "System Colors/Dark/9 Indigo",
+      "value": {
+        "_class": "color",
+        "alpha": 1,
+        "blue": 1,
+        "green": 0.486274509803922,
+        "red": 0.427450980392157
+      }
+    }
+  },
+  {
+    "id": "EC41E3B8-9682-4969-A92F-EEF61389D585",
+    "name": "System Colors/Light/11 Pink",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/16",
+    "rgba_raw": {
+      "red": 1,
+      "green": 0.176470588235294,
+      "blue": 0.333333333333333,
+      "alpha": 1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "EC41E3B8-9682-4969-A92F-EEF61389D585",
+      "name": "System Colors/Light/11 Pink",
+      "value": {
+        "_class": "color",
+        "alpha": 1,
+        "blue": 0.333333333333333,
+        "green": 0.176470588235294,
+        "red": 1
+      }
+    }
+  },
+  {
+    "id": "80842949-072B-453B-9873-23A16F7ADB3A",
+    "name": "System Colors/Dark/3 Yellow",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/17",
+    "rgba_raw": {
+      "red": 1,
+      "green": 0.83921568627451,
+      "blue": 0,
+      "alpha": 1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "80842949-072B-453B-9873-23A16F7ADB3A",
+      "name": "System Colors/Dark/3 Yellow",
+      "value": {
+        "_class": "color",
+        "alpha": 1,
+        "blue": 0,
+        "green": 0.83921568627451,
+        "red": 1
+      }
+    }
+  },
+  {
+    "id": "A0BFBE6B-A05B-4D05-80EF-A94CFD20EB36",
+    "name": "System Colors/Dark/7 Cyan",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/18",
+    "rgba_raw": {
+      "red": 0.235294117647059,
+      "green": 0.827450980392157,
+      "blue": 0.996078431372549,
+      "alpha": 1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "A0BFBE6B-A05B-4D05-80EF-A94CFD20EB36",
+      "name": "System Colors/Dark/7 Cyan",
+      "value": {
+        "_class": "color",
+        "alpha": 1,
+        "blue": 0.996078431372549,
+        "green": 0.827450980392157,
+        "red": 0.235294117647059
+      }
+    }
+  },
+  {
+    "id": "2ED7A1EB-71E5-4A0C-B9FE-93763B253CCF",
+    "name": "System Colors/Dark/2 Orange",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/19",
+    "rgba_raw": {
+      "red": 1,
+      "green": 0.572549019607843,
+      "blue": 0.188235294117647,
+      "alpha": 1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "2ED7A1EB-71E5-4A0C-B9FE-93763B253CCF",
+      "name": "System Colors/Dark/2 Orange",
+      "value": {
+        "_class": "color",
+        "alpha": 1,
+        "blue": 0.188235294117647,
+        "green": 0.572549019607843,
+        "red": 1
+      }
+    }
+  },
+  {
+    "id": "0E6817F6-2AFF-4B37-99A1-D6E9FD04910B",
+    "name": "System Colors/Dark/5 Mint",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/20",
+    "rgba_raw": {
+      "red": 0,
+      "green": 0.854901960784314,
+      "blue": 0.764705882352941,
+      "alpha": 1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "0E6817F6-2AFF-4B37-99A1-D6E9FD04910B",
+      "name": "System Colors/Dark/5 Mint",
+      "value": {
+        "_class": "color",
+        "alpha": 1,
+        "blue": 0.764705882352941,
+        "green": 0.854901960784314,
+        "red": 0
+      }
+    }
+  },
+  {
+    "id": "F6E825EF-B7D7-487A-932C-986C84C8E323",
+    "name": "System Colors/Light/1 Red",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/21",
+    "rgba_raw": {
+      "red": 1,
+      "green": 0.219607843137255,
+      "blue": 0.235294117647059,
+      "alpha": 1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "F6E825EF-B7D7-487A-932C-986C84C8E323",
+      "name": "System Colors/Light/1 Red",
+      "value": {
+        "_class": "color",
+        "alpha": 1,
+        "blue": 0.235294117647059,
+        "green": 0.219607843137255,
+        "red": 1
+      }
+    }
+  },
+  {
+    "id": "7C301FBB-9788-40AE-A911-1AE0707D9519",
+    "name": "System Colors/Light/7 Cyan",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/22",
+    "rgba_raw": {
+      "red": 0,
+      "green": 0.752941176470588,
+      "blue": 0.909803921568628,
+      "alpha": 1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "7C301FBB-9788-40AE-A911-1AE0707D9519",
+      "name": "System Colors/Light/7 Cyan",
+      "value": {
+        "_class": "color",
+        "alpha": 1,
+        "blue": 0.909803921568628,
+        "green": 0.752941176470588,
+        "red": 0
+      }
+    }
+  },
+  {
+    "id": "9B9A21CB-4BD4-4C01-B132-9956F8C8453E",
+    "name": "System Colors/Light/9 Indigo",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/23",
+    "rgba_raw": {
+      "red": 0.380392156862745,
+      "green": 0.333333333333333,
+      "blue": 0.96078431372549,
+      "alpha": 1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "9B9A21CB-4BD4-4C01-B132-9956F8C8453E",
+      "name": "System Colors/Light/9 Indigo",
+      "value": {
+        "_class": "color",
+        "alpha": 1,
+        "blue": 0.96078431372549,
+        "green": 0.333333333333333,
+        "red": 0.380392156862745
+      }
+    }
+  },
+  {
+    "id": "8A99EC46-3950-411A-9734-91C48BBDECE0",
+    "name": "x. Kit/Nested Symbol BG Dark",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/24",
+    "rgba_raw": {
+      "red": 0.21,
+      "green": 0.405,
+      "blue": 0.6,
+      "alpha": 1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "8A99EC46-3950-411A-9734-91C48BBDECE0",
+      "name": "x. Kit/Nested Symbol BG Dark",
+      "value": {
+        "_class": "color",
+        "alpha": 1,
+        "blue": 0.6,
+        "green": 0.405,
+        "red": 0.21
+      }
+    }
+  },
+  {
+    "id": "ED7987FA-568A-42E9-85E6-0092654FDD6C",
+    "name": "x. Kit/Nested Symbol BG Light",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/25",
+    "rgba_raw": {
+      "red": 0.8,
+      "green": 0.901960784313726,
+      "blue": 1,
+      "alpha": 1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "ED7987FA-568A-42E9-85E6-0092654FDD6C",
+      "name": "x. Kit/Nested Symbol BG Light",
+      "value": {
+        "_class": "color",
+        "alpha": 1,
+        "blue": 1,
+        "green": 0.901960784313726,
+        "red": 0.8
+      }
+    }
+  },
+  {
+    "id": "1F6FF237-AF3F-4A01-9CBD-A85429855583",
+    "name": "x. Kit/Symbol BG Dark",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/26",
+    "rgba_raw": {
+      "red": 0.2,
+      "green": 0.2,
+      "blue": 0.2,
+      "alpha": 1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "1F6FF237-AF3F-4A01-9CBD-A85429855583",
+      "name": "x. Kit/Symbol BG Dark",
+      "value": {
+        "_class": "color",
+        "alpha": 1,
+        "blue": 0.2,
+        "green": 0.2,
+        "red": 0.2
+      }
+    }
+  },
+  {
+    "id": "402903CF-7E9B-4340-B06F-88BF3AA2C51B",
+    "name": "x. Kit/Symbol BG Light",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/27",
+    "rgba_raw": {
+      "red": 0.8,
+      "green": 0.8,
+      "blue": 0.8,
+      "alpha": 1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "402903CF-7E9B-4340-B06F-88BF3AA2C51B",
+      "name": "x. Kit/Symbol BG Light",
+      "value": {
+        "_class": "color",
+        "alpha": 1,
+        "blue": 0.8,
+        "green": 0.8,
+        "red": 0.8
+      }
+    }
+  },
+  {
+    "id": "197D8B27-49D1-4430-9197-5B59B4762F35",
+    "name": "Separators/Light",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/28",
+    "rgba_raw": {
+      "red": 0.235294117647059,
+      "green": 0.235294117647059,
+      "blue": 0.262745098039216,
+      "alpha": 0.29
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "197D8B27-49D1-4430-9197-5B59B4762F35",
+      "name": "Separators/Light",
+      "value": {
+        "_class": "color",
+        "alpha": 0.29,
+        "blue": 0.262745098039216,
+        "green": 0.235294117647059,
+        "red": 0.235294117647059
+      }
+    }
+  },
+  {
+    "id": "6890706A-C8B1-4E9E-9353-306C3A321BDA",
+    "name": "Labels/Dark Vibrant (use plus lighter)/1 Primary",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/29",
+    "rgba_raw": {
+      "red": 1,
+      "green": 1,
+      "blue": 1,
+      "alpha": 0.96
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "6890706A-C8B1-4E9E-9353-306C3A321BDA",
+      "name": "Labels/Dark Vibrant (use plus lighter)/1 Primary",
+      "value": {
+        "_class": "color",
+        "alpha": 0.96,
+        "blue": 1,
+        "green": 1,
+        "red": 1
+      }
+    }
+  },
+  {
+    "id": "120A91E5-5B47-4FA7-A2B0-A8918177F16F",
+    "name": "Fills/Light/3 Tertiary",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/30",
+    "rgba_raw": {
+      "red": 0,
+      "green": 0,
+      "blue": 0,
+      "alpha": 0.05
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "120A91E5-5B47-4FA7-A2B0-A8918177F16F",
+      "name": "Fills/Light/3 Tertiary",
+      "value": {
+        "_class": "color",
+        "alpha": 0.05,
+        "blue": 0,
+        "green": 0,
+        "red": 0
+      }
+    }
+  },
+  {
+    "id": "C9C46302-50A4-4575-A747-FABE22A08515",
+    "name": "Grays/Dark/Black",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/31",
+    "rgba_raw": {
+      "red": 0,
+      "green": 0,
+      "blue": 0,
+      "alpha": 1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "C9C46302-50A4-4575-A747-FABE22A08515",
+      "name": "Grays/Dark/Black",
+      "value": {
+        "_class": "color",
+        "alpha": 1,
+        "blue": 0,
+        "green": 0,
+        "red": 0
+      }
+    }
+  },
+  {
+    "id": "BECA2D04-BFED-4CCC-B3EA-311BE6FDF3AE",
+    "name": "Grays/Dark/White",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/32",
+    "rgba_raw": {
+      "red": 1,
+      "green": 1,
+      "blue": 1,
+      "alpha": 1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "BECA2D04-BFED-4CCC-B3EA-311BE6FDF3AE",
+      "name": "Grays/Dark/White",
+      "value": {
+        "_class": "color",
+        "alpha": 1,
+        "blue": 1,
+        "green": 1,
+        "red": 1
+      }
+    }
+  },
+  {
+    "id": "7BB1B9CA-8865-476B-BD7A-7DCA1A780FD4",
+    "name": "Fills/Light/2 Secondary",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/33",
+    "rgba_raw": {
+      "red": 0,
+      "green": 0,
+      "blue": 0,
+      "alpha": 0.08
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "7BB1B9CA-8865-476B-BD7A-7DCA1A780FD4",
+      "name": "Fills/Light/2 Secondary",
+      "value": {
+        "_class": "color",
+        "alpha": 0.08,
+        "blue": 0,
+        "green": 0,
+        "red": 0
+      }
+    }
+  },
+  {
+    "id": "83C809D1-E8CD-43F5-8DD5-5ED5D41B951F",
+    "name": "Grays/Dark/Grey",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/34",
+    "rgba_raw": {
+      "red": 0.596078431372549,
+      "green": 0.596078431372549,
+      "blue": 0.615686274509804,
+      "alpha": 1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "83C809D1-E8CD-43F5-8DD5-5ED5D41B951F",
+      "name": "Grays/Dark/Grey",
+      "value": {
+        "_class": "color",
+        "alpha": 1,
+        "blue": 0.615686274509804,
+        "green": 0.596078431372549,
+        "red": 0.596078431372549
+      }
+    }
+  },
+  {
+    "id": "8630741E-8604-408F-B07A-BD40716FB598",
+    "name": "Grays/Light/Black",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/35",
+    "rgba_raw": {
+      "red": 0,
+      "green": 0,
+      "blue": 0,
+      "alpha": 1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "8630741E-8604-408F-B07A-BD40716FB598",
+      "name": "Grays/Light/Black",
+      "value": {
+        "_class": "color",
+        "alpha": 1,
+        "blue": 0,
+        "green": 0,
+        "red": 0
+      }
+    }
+  },
+  {
+    "id": "565CF85C-D813-4A4D-B045-66B688BDECD7",
+    "name": "Grays/Light/Grey",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/36",
+    "rgba_raw": {
+      "red": 0.556862745098039,
+      "green": 0.556862745098039,
+      "blue": 0.576470588235294,
+      "alpha": 1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "565CF85C-D813-4A4D-B045-66B688BDECD7",
+      "name": "Grays/Light/Grey",
+      "value": {
+        "_class": "color",
+        "alpha": 1,
+        "blue": 0.576470588235294,
+        "green": 0.556862745098039,
+        "red": 0.556862745098039
+      }
+    }
+  },
+  {
+    "id": "1CEAE67B-496F-47FD-A292-D348293380B6",
+    "name": "Grays/Light/White",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/37",
+    "rgba_raw": {
+      "red": 1,
+      "green": 1,
+      "blue": 1,
+      "alpha": 1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "1CEAE67B-496F-47FD-A292-D348293380B6",
+      "name": "Grays/Light/White",
+      "value": {
+        "_class": "color",
+        "alpha": 1,
+        "blue": 1,
+        "green": 1,
+        "red": 1
+      }
+    }
+  },
+  {
+    "id": "35B09BE9-C157-4B82-A0C4-7C5B562FB569",
+    "name": "Labels/Dark Vibrant (use plus lighter)/5 Quinary",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/38",
+    "rgba_raw": {
+      "red": 0.07,
+      "green": 0.07,
+      "blue": 0.07,
+      "alpha": 1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "35B09BE9-C157-4B82-A0C4-7C5B562FB569",
+      "name": "Labels/Dark Vibrant (use plus lighter)/5 Quinary",
+      "value": {
+        "_class": "color",
+        "alpha": 1,
+        "blue": 0.07,
+        "green": 0.07,
+        "red": 0.07
+      }
+    }
+  },
+  {
+    "id": "0ED186D6-38D2-45D3-B93A-15AADB6E3C05",
+    "name": "Labels/Dark Vibrant (use plus lighter)/4 Quaternary",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/39",
+    "rgba_raw": {
+      "red": 0.15,
+      "green": 0.15,
+      "blue": 0.15,
+      "alpha": 1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "0ED186D6-38D2-45D3-B93A-15AADB6E3C05",
+      "name": "Labels/Dark Vibrant (use plus lighter)/4 Quaternary",
+      "value": {
+        "_class": "color",
+        "alpha": 1,
+        "blue": 0.15,
+        "green": 0.15,
+        "red": 0.15
+      }
+    }
+  },
+  {
+    "id": "73A7CE94-E7B3-43D9-A36B-FD826DCF1E29",
+    "name": "Labels/Dark Vibrant (use plus lighter)/2 Secondary",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/40",
+    "rgba_raw": {
+      "red": 0.54,
+      "green": 0.54,
+      "blue": 0.54,
+      "alpha": 1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "73A7CE94-E7B3-43D9-A36B-FD826DCF1E29",
+      "name": "Labels/Dark Vibrant (use plus lighter)/2 Secondary",
+      "value": {
+        "_class": "color",
+        "alpha": 1,
+        "blue": 0.54,
+        "green": 0.54,
+        "red": 0.54
+      }
+    }
+  },
+  {
+    "id": "04187B61-44CA-4A78-9932-5958D76D3925",
+    "name": "Labels/Dark Vibrant (use plus lighter)/3 Tertiary",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/41",
+    "rgba_raw": {
+      "red": 0.3,
+      "green": 0.3,
+      "blue": 0.3,
+      "alpha": 1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "04187B61-44CA-4A78-9932-5958D76D3925",
+      "name": "Labels/Dark Vibrant (use plus lighter)/3 Tertiary",
+      "value": {
+        "_class": "color",
+        "alpha": 1,
+        "blue": 0.3,
+        "green": 0.3,
+        "red": 0.3
+      }
+    }
+  },
+  {
+    "id": "00E553B6-CE90-4F2A-9D4D-0FC52F66A894",
+    "name": "Fills/Light/1 Primary",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/42",
+    "rgba_raw": {
+      "red": 0,
+      "green": 0,
+      "blue": 0,
+      "alpha": 0.1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "00E553B6-CE90-4F2A-9D4D-0FC52F66A894",
+      "name": "Fills/Light/1 Primary",
+      "value": {
+        "_class": "color",
+        "alpha": 0.1,
+        "blue": 0,
+        "green": 0,
+        "red": 0
+      }
+    }
+  },
+  {
+    "id": "C48C8284-46C1-4617-8838-77980C8BF05D",
+    "name": "Fills/Light/4 Quatenary",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/43",
+    "rgba_raw": {
+      "red": 0,
+      "green": 0,
+      "blue": 0,
+      "alpha": 0.03
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "C48C8284-46C1-4617-8838-77980C8BF05D",
+      "name": "Fills/Light/4 Quatenary",
+      "value": {
+        "_class": "color",
+        "alpha": 0.03,
+        "blue": 0,
+        "green": 0,
+        "red": 0
+      }
+    }
+  },
+  {
+    "id": "9973DC2D-F8BB-4D3E-A4F1-C89FD7D36049",
+    "name": "Fills/Light/5 Quinary",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/44",
+    "rgba_raw": {
+      "red": 0,
+      "green": 0,
+      "blue": 0,
+      "alpha": 0.02
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "9973DC2D-F8BB-4D3E-A4F1-C89FD7D36049",
+      "name": "Fills/Light/5 Quinary",
+      "value": {
+        "_class": "color",
+        "alpha": 0.02,
+        "blue": 0,
+        "green": 0,
+        "red": 0
+      }
+    }
+  },
+  {
+    "id": "AF024093-2ED1-4C46-BD01-D0A91E4AB6F3",
+    "name": "Fills/Dark/4 Quatenary",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/45",
+    "rgba_raw": {
+      "red": 1,
+      "green": 1,
+      "blue": 1,
+      "alpha": 0.03
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "AF024093-2ED1-4C46-BD01-D0A91E4AB6F3",
+      "name": "Fills/Dark/4 Quatenary",
+      "value": {
+        "_class": "color",
+        "alpha": 0.03,
+        "blue": 1,
+        "green": 1,
+        "red": 1
+      }
+    }
+  },
+  {
+    "id": "57693DF1-4A2F-43EA-8643-FB02591CAB87",
+    "name": "Fills/Dark/3 Tertiary",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/46",
+    "rgba_raw": {
+      "red": 1,
+      "green": 1,
+      "blue": 1,
+      "alpha": 0.05
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "57693DF1-4A2F-43EA-8643-FB02591CAB87",
+      "name": "Fills/Dark/3 Tertiary",
+      "value": {
+        "_class": "color",
+        "alpha": 0.05,
+        "blue": 1,
+        "green": 1,
+        "red": 1
+      }
+    }
+  },
+  {
+    "id": "ED2A0D2C-4A4C-429E-BA9F-8B20A65CA88B",
+    "name": "Fills/Dark/5 Quinary",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/47",
+    "rgba_raw": {
+      "red": 1,
+      "green": 1,
+      "blue": 1,
+      "alpha": 0.02
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "ED2A0D2C-4A4C-429E-BA9F-8B20A65CA88B",
+      "name": "Fills/Dark/5 Quinary",
+      "value": {
+        "_class": "color",
+        "alpha": 0.02,
+        "blue": 1,
+        "green": 1,
+        "red": 1
+      }
+    }
+  },
+  {
+    "id": "D1A7C701-F5F1-4B33-941E-D6B92A513078",
+    "name": "Fills/Dark/2 Secondary",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/48",
+    "rgba_raw": {
+      "red": 1,
+      "green": 1,
+      "blue": 1,
+      "alpha": 0.08
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "D1A7C701-F5F1-4B33-941E-D6B92A513078",
+      "name": "Fills/Dark/2 Secondary",
+      "value": {
+        "_class": "color",
+        "alpha": 0.08,
+        "blue": 1,
+        "green": 1,
+        "red": 1
+      }
+    }
+  },
+  {
+    "id": "B44716D1-A72A-4036-8D6D-60C60085A70D",
+    "name": "Fills/Dark/1 Primary",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/49",
+    "rgba_raw": {
+      "red": 1,
+      "green": 1,
+      "blue": 1,
+      "alpha": 0.1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "B44716D1-A72A-4036-8D6D-60C60085A70D",
+      "name": "Fills/Dark/1 Primary",
+      "value": {
+        "_class": "color",
+        "alpha": 0.1,
+        "blue": 1,
+        "green": 1,
+        "red": 1
+      }
+    }
+  },
+  {
+    "id": "F377CA60-6798-44A7-AFBE-A90781711014",
+    "name": "Fills/Dark Vibrant (use plus lighter)/1 Primary",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/50",
+    "rgba_raw": {
+      "red": 1,
+      "green": 1,
+      "blue": 1,
+      "alpha": 0.14
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "F377CA60-6798-44A7-AFBE-A90781711014",
+      "name": "Fills/Dark Vibrant (use plus lighter)/1 Primary",
+      "value": {
+        "_class": "color",
+        "alpha": 0.14,
+        "blue": 1,
+        "green": 1,
+        "red": 1
+      }
+    }
+  },
+  {
+    "id": "96319B40-0D37-43D6-AE28-9CD05AF10F7C",
+    "name": "Fills/Dark Vibrant (use plus lighter)/2 Secondary",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/51",
+    "rgba_raw": {
+      "red": 1,
+      "green": 1,
+      "blue": 1,
+      "alpha": 0.08
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "96319B40-0D37-43D6-AE28-9CD05AF10F7C",
+      "name": "Fills/Dark Vibrant (use plus lighter)/2 Secondary",
+      "value": {
+        "_class": "color",
+        "alpha": 0.08,
+        "blue": 1,
+        "green": 1,
+        "red": 1
+      }
+    }
+  },
+  {
+    "id": "C318B79C-035A-4DAC-B4AF-9B86839EC7C9",
+    "name": "Fills/Dark Vibrant (use plus lighter)/3 Tertiary",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/52",
+    "rgba_raw": {
+      "red": 1,
+      "green": 1,
+      "blue": 1,
+      "alpha": 0.05
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "C318B79C-035A-4DAC-B4AF-9B86839EC7C9",
+      "name": "Fills/Dark Vibrant (use plus lighter)/3 Tertiary",
+      "value": {
+        "_class": "color",
+        "alpha": 0.05,
+        "blue": 1,
+        "green": 1,
+        "red": 1
+      }
+    }
+  },
+  {
+    "id": "800A6B10-36DD-4764-AD0F-598614390A41",
+    "name": "Fills/Dark Vibrant (use plus lighter)/4 Quatenary",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/53",
+    "rgba_raw": {
+      "red": 1,
+      "green": 1,
+      "blue": 1,
+      "alpha": 0.04
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "800A6B10-36DD-4764-AD0F-598614390A41",
+      "name": "Fills/Dark Vibrant (use plus lighter)/4 Quatenary",
+      "value": {
+        "_class": "color",
+        "alpha": 0.04,
+        "blue": 1,
+        "green": 1,
+        "red": 1
+      }
+    }
+  },
+  {
+    "id": "F8C49B18-9455-4DF0-8808-56D7B5D3C696",
+    "name": "Fills/Dark Vibrant (use plus lighter)/5 Quinary",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/54",
+    "rgba_raw": {
+      "red": 1,
+      "green": 1,
+      "blue": 1,
+      "alpha": 0.03
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "F8C49B18-9455-4DF0-8808-56D7B5D3C696",
+      "name": "Fills/Dark Vibrant (use plus lighter)/5 Quinary",
+      "value": {
+        "_class": "color",
+        "alpha": 0.03,
+        "blue": 1,
+        "green": 1,
+        "red": 1
+      }
+    }
+  },
+  {
+    "id": "65102EB9-05D0-45EC-BA21-52C6CA6DB15B",
+    "name": "Fills/Light Vibrant (use plus darker)/1 Primary",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/55",
+    "rgba_raw": {
+      "red": 0,
+      "green": 0,
+      "blue": 0,
+      "alpha": 0.15
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "65102EB9-05D0-45EC-BA21-52C6CA6DB15B",
+      "name": "Fills/Light Vibrant (use plus darker)/1 Primary",
+      "value": {
+        "_class": "color",
+        "alpha": 0.15,
+        "blue": 0,
+        "green": 0,
+        "red": 0
+      }
+    }
+  },
+  {
+    "id": "2D6C52AC-EED0-4784-99BD-CBA62A7AC2E6",
+    "name": "Fills/Light Vibrant (use plus darker)/2 Secondary",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/56",
+    "rgba_raw": {
+      "red": 0,
+      "green": 0,
+      "blue": 0,
+      "alpha": 0.07
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "2D6C52AC-EED0-4784-99BD-CBA62A7AC2E6",
+      "name": "Fills/Light Vibrant (use plus darker)/2 Secondary",
+      "value": {
+        "_class": "color",
+        "alpha": 0.07,
+        "blue": 0,
+        "green": 0,
+        "red": 0
+      }
+    }
+  },
+  {
+    "id": "49F62BD6-5DE6-435C-A4CE-A4E915ED890D",
+    "name": "Fills/Light Vibrant (use plus darker)/3 Tertiary",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/57",
+    "rgba_raw": {
+      "red": 0,
+      "green": 0,
+      "blue": 0,
+      "alpha": 0.05
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "49F62BD6-5DE6-435C-A4CE-A4E915ED890D",
+      "name": "Fills/Light Vibrant (use plus darker)/3 Tertiary",
+      "value": {
+        "_class": "color",
+        "alpha": 0.05,
+        "blue": 0,
+        "green": 0,
+        "red": 0
+      }
+    }
+  },
+  {
+    "id": "491F0245-B64E-4B62-B988-A04EA2C81B7D",
+    "name": "Fills/Light Vibrant (use plus darker)/4 Quatenary",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/58",
+    "rgba_raw": {
+      "red": 0,
+      "green": 0,
+      "blue": 0,
+      "alpha": 0.03
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "491F0245-B64E-4B62-B988-A04EA2C81B7D",
+      "name": "Fills/Light Vibrant (use plus darker)/4 Quatenary",
+      "value": {
+        "_class": "color",
+        "alpha": 0.03,
+        "blue": 0,
+        "green": 0,
+        "red": 0
+      }
+    }
+  },
+  {
+    "id": "EA2064C9-67EB-4AA3-A1E6-767FD3185CBE",
+    "name": "Fills/Light Vibrant (use plus darker)/5 Quinary",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/59",
+    "rgba_raw": {
+      "red": 0,
+      "green": 0,
+      "blue": 0,
+      "alpha": 0.02
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "EA2064C9-67EB-4AA3-A1E6-767FD3185CBE",
+      "name": "Fills/Light Vibrant (use plus darker)/5 Quinary",
+      "value": {
+        "_class": "color",
+        "alpha": 0.02,
+        "blue": 0,
+        "green": 0,
+        "red": 0
+      }
+    }
+  },
+  {
+    "id": "B32D5987-8640-4883-B854-88ECEDA26827",
+    "name": "System Colors/Dark (use plus lighter)/8 Blue",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/60",
+    "rgba_raw": {
+      "red": 0.0392156862745098,
+      "green": 0.6,
+      "blue": 1,
+      "alpha": 1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "B32D5987-8640-4883-B854-88ECEDA26827",
+      "name": "System Colors/Dark (use plus lighter)/8 Blue",
+      "value": {
+        "_class": "color",
+        "alpha": 1,
+        "blue": 1,
+        "green": 0.6,
+        "red": 0.0392156862745098
+      }
+    }
+  },
+  {
+    "id": "F9C91D7A-819B-44D8-9945-E37F3AFCDDFA",
+    "name": "System Colors/Dark (use plus lighter)/12 Brown",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/61",
+    "rgba_raw": {
+      "red": 0.76078431372549,
+      "green": 0.588235294117647,
+      "blue": 0.447058823529412,
+      "alpha": 1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "F9C91D7A-819B-44D8-9945-E37F3AFCDDFA",
+      "name": "System Colors/Dark (use plus lighter)/12 Brown",
+      "value": {
+        "_class": "color",
+        "alpha": 1,
+        "blue": 0.447058823529412,
+        "green": 0.588235294117647,
+        "red": 0.76078431372549
+      }
+    }
+  },
+  {
+    "id": "36C603D7-0E1E-417B-8CFA-7EF5FF9910A7",
+    "name": "System Colors/Dark (use plus lighter)/7 Cyan",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/62",
+    "rgba_raw": {
+      "red": 0.27843137254902,
+      "green": 0.847058823529412,
+      "blue": 0.988235294117647,
+      "alpha": 1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "36C603D7-0E1E-417B-8CFA-7EF5FF9910A7",
+      "name": "System Colors/Dark (use plus lighter)/7 Cyan",
+      "value": {
+        "_class": "color",
+        "alpha": 1,
+        "blue": 0.988235294117647,
+        "green": 0.847058823529412,
+        "red": 0.27843137254902
+      }
+    }
+  },
+  {
+    "id": "B65A5082-5C68-4FC7-97BE-5647936935DF",
+    "name": "System Colors/Dark (use plus lighter)/4 Green",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/63",
+    "rgba_raw": {
+      "red": 0.231372549019608,
+      "green": 0.858823529411765,
+      "blue": 0.388235294117647,
+      "alpha": 1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "B65A5082-5C68-4FC7-97BE-5647936935DF",
+      "name": "System Colors/Dark (use plus lighter)/4 Green",
+      "value": {
+        "_class": "color",
+        "alpha": 1,
+        "blue": 0.388235294117647,
+        "green": 0.858823529411765,
+        "red": 0.231372549019608
+      }
+    }
+  },
+  {
+    "id": "A648D317-F153-45F3-91BE-44820A6A5610",
+    "name": "System Colors/Dark (use plus lighter)/9 Indigo",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/64",
+    "rgba_raw": {
+      "red": 0.443137254901961,
+      "green": 0.388235294117647,
+      "blue": 1,
+      "alpha": 1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "A648D317-F153-45F3-91BE-44820A6A5610",
+      "name": "System Colors/Dark (use plus lighter)/9 Indigo",
+      "value": {
+        "_class": "color",
+        "alpha": 1,
+        "blue": 1,
+        "green": 0.388235294117647,
+        "red": 0.443137254901961
+      }
+    }
+  },
+  {
+    "id": "1CA1EB01-48AD-4555-83C8-8FE99EF9207F",
+    "name": "System Colors/Dark (use plus lighter)/5 Mint",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/65",
+    "rgba_raw": {
+      "red": 0.176470588235294,
+      "green": 0.87843137254902,
+      "blue": 0.803921568627451,
+      "alpha": 1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "1CA1EB01-48AD-4555-83C8-8FE99EF9207F",
+      "name": "System Colors/Dark (use plus lighter)/5 Mint",
+      "value": {
+        "_class": "color",
+        "alpha": 1,
+        "blue": 0.803921568627451,
+        "green": 0.87843137254902,
+        "red": 0.176470588235294
+      }
+    }
+  },
+  {
+    "id": "A9C4F699-3ABF-41B0-BB15-2C2B8847F71B",
+    "name": "System Colors/Dark (use plus lighter)/2 Orange",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/66",
+    "rgba_raw": {
+      "red": 1,
+      "green": 0.619607843137255,
+      "blue": 0.2,
+      "alpha": 1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "A9C4F699-3ABF-41B0-BB15-2C2B8847F71B",
+      "name": "System Colors/Dark (use plus lighter)/2 Orange",
+      "value": {
+        "_class": "color",
+        "alpha": 1,
+        "blue": 0.2,
+        "green": 0.619607843137255,
+        "red": 1
+      }
+    }
+  },
+  {
+    "id": "DFD051A8-47FF-44B0-BC3B-900EBDC13A89",
+    "name": "System Colors/Dark (use plus lighter)/11 Pink",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/67",
+    "rgba_raw": {
+      "red": 1,
+      "green": 0.254901960784314,
+      "blue": 0.411764705882353,
+      "alpha": 1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "DFD051A8-47FF-44B0-BC3B-900EBDC13A89",
+      "name": "System Colors/Dark (use plus lighter)/11 Pink",
+      "value": {
+        "_class": "color",
+        "alpha": 1,
+        "blue": 0.411764705882353,
+        "green": 0.254901960784314,
+        "red": 1
+      }
+    }
+  },
+  {
+    "id": "13172B5C-A6D9-4FC2-86D0-C8583ED7B6D1",
+    "name": "System Colors/Dark (use plus lighter)/10 Purple",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/68",
+    "rgba_raw": {
+      "red": 0.901960784313726,
+      "green": 0.27843137254902,
+      "blue": 0.988235294117647,
+      "alpha": 1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "13172B5C-A6D9-4FC2-86D0-C8583ED7B6D1",
+      "name": "System Colors/Dark (use plus lighter)/10 Purple",
+      "value": {
+        "_class": "color",
+        "alpha": 1,
+        "blue": 0.988235294117647,
+        "green": 0.27843137254902,
+        "red": 0.901960784313726
+      }
+    }
+  },
+  {
+    "id": "D6A284E0-86EF-4433-BFE1-7E62589A6649",
+    "name": "System Colors/Dark (use plus lighter)/1 Red",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/69",
+    "rgba_raw": {
+      "red": 1,
+      "green": 0.27843137254902,
+      "blue": 0.27843137254902,
+      "alpha": 1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "D6A284E0-86EF-4433-BFE1-7E62589A6649",
+      "name": "System Colors/Dark (use plus lighter)/1 Red",
+      "value": {
+        "_class": "color",
+        "alpha": 1,
+        "blue": 0.27843137254902,
+        "green": 0.27843137254902,
+        "red": 1
+      }
+    }
+  },
+  {
+    "id": "908B1D6C-9248-4554-842C-B1F21628B448",
+    "name": "System Colors/Dark (use plus lighter)/6 Teal",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/70",
+    "rgba_raw": {
+      "red": 0.176470588235294,
+      "green": 0.843137254901961,
+      "blue": 0.87843137254902,
+      "alpha": 1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "908B1D6C-9248-4554-842C-B1F21628B448",
+      "name": "System Colors/Dark (use plus lighter)/6 Teal",
+      "value": {
+        "_class": "color",
+        "alpha": 1,
+        "blue": 0.87843137254902,
+        "green": 0.843137254901961,
+        "red": 0.176470588235294
+      }
+    }
+  },
+  {
+    "id": "7938744E-3889-4A2C-8449-26141498C70F",
+    "name": "System Colors/Dark (use plus lighter)/3 Yellow",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/71",
+    "rgba_raw": {
+      "red": 1,
+      "green": 0.87843137254902,
+      "blue": 0.0784313725490196,
+      "alpha": 1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "7938744E-3889-4A2C-8449-26141498C70F",
+      "name": "System Colors/Dark (use plus lighter)/3 Yellow",
+      "value": {
+        "_class": "color",
+        "alpha": 1,
+        "blue": 0.0784313725490196,
+        "green": 0.87843137254902,
+        "red": 1
+      }
+    }
+  },
+  {
+    "id": "C0FF25AA-95B0-44F2-9E4F-8B4B3F0F8300",
+    "name": "System Colors/Light Vibrant (use plus darker)/8 Blue",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/72",
+    "rgba_raw": {
+      "red": 0,
+      "green": 0.470588235294118,
+      "blue": 0.941176470588235,
+      "alpha": 1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "C0FF25AA-95B0-44F2-9E4F-8B4B3F0F8300",
+      "name": "System Colors/Light Vibrant (use plus darker)/8 Blue",
+      "value": {
+        "_class": "color",
+        "alpha": 1,
+        "blue": 0.941176470588235,
+        "green": 0.470588235294118,
+        "red": 0
+      }
+    }
+  },
+  {
+    "id": "85B60860-46C4-4EEA-92C7-2C0FB887B036",
+    "name": "System Colors/Light Vibrant (use plus darker)/12 Brown",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/73",
+    "rgba_raw": {
+      "red": 0.619607843137255,
+      "green": 0.450980392156863,
+      "blue": 0.329411764705882,
+      "alpha": 1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "85B60860-46C4-4EEA-92C7-2C0FB887B036",
+      "name": "System Colors/Light Vibrant (use plus darker)/12 Brown",
+      "value": {
+        "_class": "color",
+        "alpha": 1,
+        "blue": 0.329411764705882,
+        "green": 0.450980392156863,
+        "red": 0.619607843137255
+      }
+    }
+  },
+  {
+    "id": "B6065ADE-8C3F-407B-8655-33C6A4A2D554",
+    "name": "System Colors/Light Vibrant (use plus darker)/7 Cyan",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/74",
+    "rgba_raw": {
+      "red": 0,
+      "green": 0.670588235294118,
+      "blue": 0.811764705882353,
+      "alpha": 1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "B6065ADE-8C3F-407B-8655-33C6A4A2D554",
+      "name": "System Colors/Light Vibrant (use plus darker)/7 Cyan",
+      "value": {
+        "_class": "color",
+        "alpha": 1,
+        "blue": 0.811764705882353,
+        "green": 0.670588235294118,
+        "red": 0
+      }
+    }
+  },
+  {
+    "id": "3D74B8D9-4EBE-4BBC-9F25-285D8CF3ECAF",
+    "name": "System Colors/Light Vibrant (use plus darker)/4 Green",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/75",
+    "rgba_raw": {
+      "red": 0.149019607843137,
+      "green": 0.749019607843137,
+      "blue": 0.301960784313726,
+      "alpha": 1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "3D74B8D9-4EBE-4BBC-9F25-285D8CF3ECAF",
+      "name": "System Colors/Light Vibrant (use plus darker)/4 Green",
+      "value": {
+        "_class": "color",
+        "alpha": 1,
+        "blue": 0.301960784313726,
+        "green": 0.749019607843137,
+        "red": 0.149019607843137
+      }
+    }
+  },
+  {
+    "id": "7F1AB058-759D-4CE1-ACB8-D9CE608DC2A3",
+    "name": "System Colors/Light Vibrant (use plus darker)/9 Indigo",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/76",
+    "rgba_raw": {
+      "red": 0.36078431372549,
+      "green": 0.313725490196078,
+      "blue": 0.901960784313726,
+      "alpha": 1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "7F1AB058-759D-4CE1-ACB8-D9CE608DC2A3",
+      "name": "System Colors/Light Vibrant (use plus darker)/9 Indigo",
+      "value": {
+        "_class": "color",
+        "alpha": 1,
+        "blue": 0.901960784313726,
+        "green": 0.313725490196078,
+        "red": 0.36078431372549
+      }
+    }
+  },
+  {
+    "id": "006F0EDA-B878-4DF3-B256-404F763E3F84",
+    "name": "System Colors/Light Vibrant (use plus darker)/5 Mint",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/77",
+    "rgba_raw": {
+      "red": 0,
+      "green": 0.741176470588235,
+      "blue": 0.662745098039216,
+      "alpha": 1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "006F0EDA-B878-4DF3-B256-404F763E3F84",
+      "name": "System Colors/Light Vibrant (use plus darker)/5 Mint",
+      "value": {
+        "_class": "color",
+        "alpha": 1,
+        "blue": 0.662745098039216,
+        "green": 0.741176470588235,
+        "red": 0
+      }
+    }
+  },
+  {
+    "id": "B8B6DF2A-A349-43D5-8980-AA9D28CA0687",
+    "name": "System Colors/Light Vibrant (use plus darker)/2 Orange",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/78",
+    "rgba_raw": {
+      "red": 0.96078431372549,
+      "green": 0.525490196078431,
+      "blue": 0.145098039215686,
+      "alpha": 1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "B8B6DF2A-A349-43D5-8980-AA9D28CA0687",
+      "name": "System Colors/Light Vibrant (use plus darker)/2 Orange",
+      "value": {
+        "_class": "color",
+        "alpha": 1,
+        "blue": 0.145098039215686,
+        "green": 0.525490196078431,
+        "red": 0.96078431372549
+      }
+    }
+  },
+  {
+    "id": "E2CC849D-AE05-4B12-A747-4F7D22C4A890",
+    "name": "System Colors/Light Vibrant (use plus darker)/11 Pink",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/79",
+    "rgba_raw": {
+      "red": 0.96078431372549,
+      "green": 0.137254901960784,
+      "blue": 0.294117647058824,
+      "alpha": 1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "E2CC849D-AE05-4B12-A747-4F7D22C4A890",
+      "name": "System Colors/Light Vibrant (use plus darker)/11 Pink",
+      "value": {
+        "_class": "color",
+        "alpha": 1,
+        "blue": 0.294117647058824,
+        "green": 0.137254901960784,
+        "red": 0.96078431372549
+      }
+    }
+  },
+  {
+    "id": "C193A180-403F-4191-BFF1-B81141971BCA",
+    "name": "System Colors/Light Vibrant (use plus darker)/10 Purple",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/80",
+    "rgba_raw": {
+      "red": 0.71764705882353,
+      "green": 0.168627450980392,
+      "blue": 0.788235294117647,
+      "alpha": 1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "C193A180-403F-4191-BFF1-B81141971BCA",
+      "name": "System Colors/Light Vibrant (use plus darker)/10 Purple",
+      "value": {
+        "_class": "color",
+        "alpha": 1,
+        "blue": 0.788235294117647,
+        "green": 0.168627450980392,
+        "red": 0.71764705882353
+      }
+    }
+  },
+  {
+    "id": "9A50FBEB-1351-433B-B284-4584A49DF10F",
+    "name": "System Colors/Light Vibrant (use plus darker)/1 Red",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/81",
+    "rgba_raw": {
+      "red": 0.96078431372549,
+      "green": 0.184313725490196,
+      "blue": 0.196078431372549,
+      "alpha": 1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "9A50FBEB-1351-433B-B284-4584A49DF10F",
+      "name": "System Colors/Light Vibrant (use plus darker)/1 Red",
+      "value": {
+        "_class": "color",
+        "alpha": 1,
+        "blue": 0.196078431372549,
+        "green": 0.184313725490196,
+        "red": 0.96078431372549
+      }
+    }
+  },
+  {
+    "id": "7C2D54D0-251F-4F69-BE4D-E42970DF0638",
+    "name": "System Colors/Light Vibrant (use plus darker)/6 Teal",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/82",
+    "rgba_raw": {
+      "red": 0,
+      "green": 0.701960784313726,
+      "blue": 0.749019607843137,
+      "alpha": 1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "7C2D54D0-251F-4F69-BE4D-E42970DF0638",
+      "name": "System Colors/Light Vibrant (use plus darker)/6 Teal",
+      "value": {
+        "_class": "color",
+        "alpha": 1,
+        "blue": 0.749019607843137,
+        "green": 0.701960784313726,
+        "red": 0
+      }
+    }
+  },
+  {
+    "id": "BB20B36B-F596-4F67-8A05-C12E862F46F2",
+    "name": "System Colors/Light Vibrant (use plus darker)/3 Yellow",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/83",
+    "rgba_raw": {
+      "red": 0.96078431372549,
+      "green": 0.76078431372549,
+      "blue": 0,
+      "alpha": 1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "BB20B36B-F596-4F67-8A05-C12E862F46F2",
+      "name": "System Colors/Light Vibrant (use plus darker)/3 Yellow",
+      "value": {
+        "_class": "color",
+        "alpha": 1,
+        "blue": 0,
+        "green": 0.76078431372549,
+        "red": 0.96078431372549
+      }
+    }
+  },
+  {
+    "id": "AD59E6E8-F92B-421A-BB9A-9E77A1BC5A9E",
+    "name": "Grays/Light Vibrant (use plus darker)/Black",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/84",
+    "rgba_raw": {
+      "red": 0,
+      "green": 0,
+      "blue": 0,
+      "alpha": 1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "AD59E6E8-F92B-421A-BB9A-9E77A1BC5A9E",
+      "name": "Grays/Light Vibrant (use plus darker)/Black",
+      "value": {
+        "_class": "color",
+        "alpha": 1,
+        "blue": 0,
+        "green": 0,
+        "red": 0
+      }
+    }
+  },
+  {
+    "id": "DB2826D5-F32E-4244-A768-43E638B48A76",
+    "name": "Grays/Light Vibrant (use plus darker)/Grey",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/85",
+    "rgba_raw": {
+      "red": 0.51764705882353,
+      "green": 0.51764705882353,
+      "blue": 0.537254901960784,
+      "alpha": 1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "DB2826D5-F32E-4244-A768-43E638B48A76",
+      "name": "Grays/Light Vibrant (use plus darker)/Grey",
+      "value": {
+        "_class": "color",
+        "alpha": 1,
+        "blue": 0.537254901960784,
+        "green": 0.51764705882353,
+        "red": 0.51764705882353
+      }
+    }
+  },
+  {
+    "id": "59690D96-D772-4CD7-A13F-2A58AD45DA75",
+    "name": "Grays/Light Vibrant (use plus darker)/White",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/86",
+    "rgba_raw": {
+      "red": 1,
+      "green": 1,
+      "blue": 1,
+      "alpha": 1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "59690D96-D772-4CD7-A13F-2A58AD45DA75",
+      "name": "Grays/Light Vibrant (use plus darker)/White",
+      "value": {
+        "_class": "color",
+        "alpha": 1,
+        "blue": 1,
+        "green": 1,
+        "red": 1
+      }
+    }
+  },
+  {
+    "id": "F7EF2871-7D2B-4656-A762-F41C381C2ACB",
+    "name": "Grays/Dark (use plus lighter)/Black",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/87",
+    "rgba_raw": {
+      "red": 0,
+      "green": 0,
+      "blue": 0,
+      "alpha": 1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "F7EF2871-7D2B-4656-A762-F41C381C2ACB",
+      "name": "Grays/Dark (use plus lighter)/Black",
+      "value": {
+        "_class": "color",
+        "alpha": 1,
+        "blue": 0,
+        "green": 0,
+        "red": 0
+      }
+    }
+  },
+  {
+    "id": "5DC48B7A-1714-4D63-963E-21AC565014F9",
+    "name": "Grays/Dark (use plus lighter)/Grey",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/88",
+    "rgba_raw": {
+      "red": 0.635294117647059,
+      "green": 0.635294117647059,
+      "blue": 0.654901960784314,
+      "alpha": 1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "5DC48B7A-1714-4D63-963E-21AC565014F9",
+      "name": "Grays/Dark (use plus lighter)/Grey",
+      "value": {
+        "_class": "color",
+        "alpha": 1,
+        "blue": 0.654901960784314,
+        "green": 0.635294117647059,
+        "red": 0.635294117647059
+      }
+    }
+  },
+  {
+    "id": "E7762650-AD81-4F18-A097-418062FCC32E",
+    "name": "Grays/Dark (use plus lighter)/White",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/89",
+    "rgba_raw": {
+      "red": 1,
+      "green": 1,
+      "blue": 1,
+      "alpha": 1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "E7762650-AD81-4F18-A097-418062FCC32E",
+      "name": "Grays/Dark (use plus lighter)/White",
+      "value": {
+        "_class": "color",
+        "alpha": 1,
+        "blue": 1,
+        "green": 1,
+        "red": 1
+      }
+    }
+  },
+  {
+    "id": "CCE6371C-0F22-4E81-AC6C-68E6E5D1AB45",
+    "name": "Labels/Light Vibrant (use plus darker)/1 Primary",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/90",
+    "rgba_raw": {
+      "red": 0.21,
+      "green": 0.21,
+      "blue": 0.21,
+      "alpha": 1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "CCE6371C-0F22-4E81-AC6C-68E6E5D1AB45",
+      "name": "Labels/Light Vibrant (use plus darker)/1 Primary",
+      "value": {
+        "_class": "color",
+        "alpha": 1,
+        "blue": 0.21,
+        "green": 0.21,
+        "red": 0.21
+      }
+    }
+  },
+  {
+    "id": "9DC3C7DC-E18D-4208-87CC-DE6B694BA7E5",
+    "name": "Labels/Light/3 Tertiary",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/91",
+    "rgba_raw": {
+      "red": 0,
+      "green": 0,
+      "blue": 0,
+      "alpha": 0.25
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "9DC3C7DC-E18D-4208-87CC-DE6B694BA7E5",
+      "name": "Labels/Light/3 Tertiary",
+      "value": {
+        "_class": "color",
+        "alpha": 0.25,
+        "blue": 0,
+        "green": 0,
+        "red": 0
+      }
+    }
+  },
+  {
+    "id": "5A246CA8-2E26-4ACF-A2AB-56D22F652B9E",
+    "name": "Labels/Dark/1 Primary",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/92",
+    "rgba_raw": {
+      "red": 1,
+      "green": 1,
+      "blue": 1,
+      "alpha": 1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "5A246CA8-2E26-4ACF-A2AB-56D22F652B9E",
+      "name": "Labels/Dark/1 Primary",
+      "value": {
+        "_class": "color",
+        "alpha": 1,
+        "blue": 1,
+        "green": 1,
+        "red": 1
+      }
+    }
+  },
+  {
+    "id": "B903B0BC-E902-4090-835D-82C4FE132795",
+    "name": "Labels/Light Vibrant (use plus darker)/3 Tertiary",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/93",
+    "rgba_raw": {
+      "red": 0.7,
+      "green": 0.7,
+      "blue": 0.7,
+      "alpha": 1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "B903B0BC-E902-4090-835D-82C4FE132795",
+      "name": "Labels/Light Vibrant (use plus darker)/3 Tertiary",
+      "value": {
+        "_class": "color",
+        "alpha": 1,
+        "blue": 0.7,
+        "green": 0.7,
+        "red": 0.7
+      }
+    }
+  },
+  {
+    "id": "E50D4582-9C11-4B74-A56A-D9ED85AE67E7",
+    "name": "Labels/Light/6 Seximal",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/94",
+    "rgba_raw": {
+      "red": 0,
+      "green": 0,
+      "blue": 0,
+      "alpha": 0.03
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "E50D4582-9C11-4B74-A56A-D9ED85AE67E7",
+      "name": "Labels/Light/6 Seximal",
+      "value": {
+        "_class": "color",
+        "alpha": 0.03,
+        "blue": 0,
+        "green": 0,
+        "red": 0
+      }
+    }
+  },
+  {
+    "id": "A8F3E0DE-1F60-4310-953B-732A62FD6CED",
+    "name": "Labels/Light Vibrant (use plus darker)/2 Secondary",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/95",
+    "rgba_raw": {
+      "red": 0.45,
+      "green": 0.45,
+      "blue": 0.45,
+      "alpha": 1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "A8F3E0DE-1F60-4310-953B-732A62FD6CED",
+      "name": "Labels/Light Vibrant (use plus darker)/2 Secondary",
+      "value": {
+        "_class": "color",
+        "alpha": 1,
+        "blue": 0.45,
+        "green": 0.45,
+        "red": 0.45
+      }
+    }
+  },
+  {
+    "id": "4928019B-30D7-4558-B6B2-80F2E171E6EA",
+    "name": "Labels/Light/2 Secondary",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/96",
+    "rgba_raw": {
+      "red": 0,
+      "green": 0,
+      "blue": 0,
+      "alpha": 0.5
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "4928019B-30D7-4558-B6B2-80F2E171E6EA",
+      "name": "Labels/Light/2 Secondary",
+      "value": {
+        "_class": "color",
+        "alpha": 0.5,
+        "blue": 0,
+        "green": 0,
+        "red": 0
+      }
+    }
+  },
+  {
+    "id": "39D7BCD5-BBAF-4800-9DEF-596598BC74F3",
+    "name": "Labels/Light/4 Quaternary",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/97",
+    "rgba_raw": {
+      "red": 0,
+      "green": 0,
+      "blue": 0,
+      "alpha": 0.1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "39D7BCD5-BBAF-4800-9DEF-596598BC74F3",
+      "name": "Labels/Light/4 Quaternary",
+      "value": {
+        "_class": "color",
+        "alpha": 0.1,
+        "blue": 0,
+        "green": 0,
+        "red": 0
+      }
+    }
+  },
+  {
+    "id": "92B29959-B503-4F11-8304-2F52C30CFD3A",
+    "name": "Labels/Light/5 Quinary",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/98",
+    "rgba_raw": {
+      "red": 0,
+      "green": 0,
+      "blue": 0,
+      "alpha": 0.05
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "92B29959-B503-4F11-8304-2F52C30CFD3A",
+      "name": "Labels/Light/5 Quinary",
+      "value": {
+        "_class": "color",
+        "alpha": 0.05,
+        "blue": 0,
+        "green": 0,
+        "red": 0
+      }
+    }
+  },
+  {
+    "id": "2E2D2309-55DC-47E7-A385-800BA821048B",
+    "name": "Labels/Light/1 Primary",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/99",
+    "rgba_raw": {
+      "red": 0,
+      "green": 0,
+      "blue": 0,
+      "alpha": 0.85
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "2E2D2309-55DC-47E7-A385-800BA821048B",
+      "name": "Labels/Light/1 Primary",
+      "value": {
+        "_class": "color",
+        "alpha": 0.85,
+        "blue": 0,
+        "green": 0,
+        "red": 0
+      }
+    }
+  },
+  {
+    "id": "3DBE505F-DAD6-4915-93BE-155E77BE69AE",
+    "name": "Labels/Light Vibrant (use plus darker)/4 Quaternary",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/100",
+    "rgba_raw": {
+      "red": 0.85,
+      "green": 0.85,
+      "blue": 0.85,
+      "alpha": 1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "3DBE505F-DAD6-4915-93BE-155E77BE69AE",
+      "name": "Labels/Light Vibrant (use plus darker)/4 Quaternary",
+      "value": {
+        "_class": "color",
+        "alpha": 1,
+        "blue": 0.85,
+        "green": 0.85,
+        "red": 0.85
+      }
+    }
+  },
+  {
+    "id": "EB00B97E-55F3-474A-8F93-6FC5FAD17D19",
+    "name": "Labels/Light Vibrant (use plus darker)/5 Quinary",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/101",
+    "rgba_raw": {
+      "red": 0.9,
+      "green": 0.9,
+      "blue": 0.9,
+      "alpha": 1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "EB00B97E-55F3-474A-8F93-6FC5FAD17D19",
+      "name": "Labels/Light Vibrant (use plus darker)/5 Quinary",
+      "value": {
+        "_class": "color",
+        "alpha": 1,
+        "blue": 0.9,
+        "green": 0.9,
+        "red": 0.9
+      }
+    }
+  },
+  {
+    "id": "52F1245C-07C0-495F-B354-FDC6BDA1809B",
+    "name": "Labels/Light Vibrant (use plus darker)/6 Seximal",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/102",
+    "rgba_raw": {
+      "red": 0.98,
+      "green": 0.98,
+      "blue": 0.98,
+      "alpha": 1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "52F1245C-07C0-495F-B354-FDC6BDA1809B",
+      "name": "Labels/Light Vibrant (use plus darker)/6 Seximal",
+      "value": {
+        "_class": "color",
+        "alpha": 1,
+        "blue": 0.98,
+        "green": 0.98,
+        "red": 0.98
+      }
+    }
+  },
+  {
+    "id": "332E3010-176D-4F98-BEE0-9839AD252637",
+    "name": "Labels/Dark/2 Secondary",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/103",
+    "rgba_raw": {
+      "red": 1,
+      "green": 1,
+      "blue": 1,
+      "alpha": 0.55
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "332E3010-176D-4F98-BEE0-9839AD252637",
+      "name": "Labels/Dark/2 Secondary",
+      "value": {
+        "_class": "color",
+        "alpha": 0.55,
+        "blue": 1,
+        "green": 1,
+        "red": 1
+      }
+    }
+  },
+  {
+    "id": "DCF881A5-8691-4B9E-8ACE-59A51310DE20",
+    "name": "Labels/Dark/3 Tertiary",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/104",
+    "rgba_raw": {
+      "red": 1,
+      "green": 1,
+      "blue": 1,
+      "alpha": 0.25
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "DCF881A5-8691-4B9E-8ACE-59A51310DE20",
+      "name": "Labels/Dark/3 Tertiary",
+      "value": {
+        "_class": "color",
+        "alpha": 0.25,
+        "blue": 1,
+        "green": 1,
+        "red": 1
+      }
+    }
+  },
+  {
+    "id": "ABE2886E-D217-499D-A2A7-FF3FFC4675F6",
+    "name": "Labels/Dark/4 Quaternary",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/105",
+    "rgba_raw": {
+      "red": 1,
+      "green": 1,
+      "blue": 1,
+      "alpha": 0.1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "ABE2886E-D217-499D-A2A7-FF3FFC4675F6",
+      "name": "Labels/Dark/4 Quaternary",
+      "value": {
+        "_class": "color",
+        "alpha": 0.1,
+        "blue": 1,
+        "green": 1,
+        "red": 1
+      }
+    }
+  },
+  {
+    "id": "0D4532AB-5B5E-469D-81DF-531678BBE2D2",
+    "name": "Labels/Dark/5 Quinary",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/106",
+    "rgba_raw": {
+      "red": 1,
+      "green": 1,
+      "blue": 1,
+      "alpha": 0.05
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "0D4532AB-5B5E-469D-81DF-531678BBE2D2",
+      "name": "Labels/Dark/5 Quinary",
+      "value": {
+        "_class": "color",
+        "alpha": 0.05,
+        "blue": 1,
+        "green": 1,
+        "red": 1
+      }
+    }
+  },
+  {
+    "id": "5E14D0B2-EF2F-40DB-BF90-9F9388297D52",
+    "name": "Labels/Dark/6 Seximal",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/107",
+    "rgba_raw": {
+      "red": 1,
+      "green": 1,
+      "blue": 1,
+      "alpha": 0.03
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "5E14D0B2-EF2F-40DB-BF90-9F9388297D52",
+      "name": "Labels/Dark/6 Seximal",
+      "value": {
+        "_class": "color",
+        "alpha": 0.03,
+        "blue": 1,
+        "green": 1,
+        "red": 1
+      }
+    }
+  },
+  {
+    "id": "57F96BB4-6044-41B9-8012-155741EBC875",
+    "name": "Window Backgrounds/Dark Background",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/108",
+    "rgba_raw": {
+      "red": 0.117647058823529,
+      "green": 0.117647058823529,
+      "blue": 0.117647058823529,
+      "alpha": 1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "57F96BB4-6044-41B9-8012-155741EBC875",
+      "name": "Window Backgrounds/Dark Background",
+      "value": {
+        "_class": "color",
+        "alpha": 1,
+        "blue": 0.117647058823529,
+        "green": 0.117647058823529,
+        "red": 0.117647058823529
+      }
+    }
+  },
+  {
+    "id": "00A208FC-B925-446F-8CFE-C3E02D64E8B0",
+    "name": "Window Backgrounds/Light Background",
+    "scope": "local",
+    "source_member": "document.json",
+    "json_pointer": "/sharedSwatches/objects/109",
+    "rgba_raw": {
+      "red": 1,
+      "green": 1,
+      "blue": 1,
+      "alpha": 1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "00A208FC-B925-446F-8CFE-C3E02D64E8B0",
+      "name": "Window Backgrounds/Light Background",
+      "value": {
+        "_class": "color",
+        "alpha": 1,
+        "blue": 1,
+        "green": 1,
+        "red": 1
+      }
+    }
+  },
+  {
+    "id": "C01B639A-E18E-4805-A8B2-6A2E32B40F9B",
+    "name": "2 White",
+    "scope": "foreign_cached",
+    "source_member": "document.json",
+    "json_pointer": "/foreignSwatches/0/localSwatch",
+    "source_library_name": "HI_iOS_Toolkit",
+    "remote_id": "31B8AEE4-B3F6-497D-9472-4A96E218F279",
+    "rgba_raw": {
+      "red": 1,
+      "green": 1,
+      "blue": 1,
+      "alpha": 1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "C01B639A-E18E-4805-A8B2-6A2E32B40F9B",
+      "name": "2 White",
+      "value": {
+        "_class": "color",
+        "alpha": 1,
+        "blue": 1,
+        "green": 1,
+        "red": 1
+      }
+    },
+    "foreign_wrapper_raw": {
+      "_class": "MSImmutableForeignSwatch",
+      "do_objectID": "A92540E5-4EA9-44AD-91EC-686D616DB3A6",
+      "libraryID": "EF974581-57F8-44D3-84DC-F255D51AFD10",
+      "sourceLibraryName": "HI_iOS_Toolkit",
+      "symbolPrivate": false,
+      "remoteSwatchID": "31B8AEE4-B3F6-497D-9472-4A96E218F279",
+      "localSwatch": {
+        "_class": "swatch",
+        "do_objectID": "C01B639A-E18E-4805-A8B2-6A2E32B40F9B",
+        "name": "2 White",
+        "value": {
+          "_class": "color",
+          "alpha": 1,
+          "blue": 1,
+          "green": 1,
+          "red": 1
+        }
+      }
+    }
+  },
+  {
+    "id": "75CF0518-818C-432E-87D5-3A15623D5810",
+    "name": "Label Colors/1 Label Light",
+    "scope": "foreign_cached",
+    "source_member": "document.json",
+    "json_pointer": "/foreignSwatches/1/localSwatch",
+    "source_library_name": "Apple iOS UI",
+    "remote_id": "0EB60FBB-357A-4A55-A15F-D6C7FE4BC369",
+    "rgba_raw": {
+      "red": 0,
+      "green": 0,
+      "blue": 0,
+      "alpha": 1
+    },
+    "raw": {
+      "_class": "swatch",
+      "do_objectID": "75CF0518-818C-432E-87D5-3A15623D5810",
+      "name": "Label Colors/1 Label Light",
+      "value": {
+        "_class": "color",
+        "alpha": 1,
+        "blue": 0,
+        "green": 0,
+        "red": 0
+      }
+    },
+    "foreign_wrapper_raw": {
+      "_class": "MSImmutableForeignSwatch",
+      "do_objectID": "428CB76F-A7CA-4C2E-BCF3-0177FCC307C8",
+      "libraryID": "DD59C2AC-DA86-465C-B5D7-FC1979E0DDB8",
+      "sourceLibraryName": "Apple iOS UI",
+      "symbolPrivate": false,
+      "remoteSwatchID": "0EB60FBB-357A-4A55-A15F-D6C7FE4BC369",
+      "localSwatch": {
+        "_class": "swatch",
+        "do_objectID": "75CF0518-818C-432E-87D5-3A15623D5810",
+        "name": "Label Colors/1 Label Light",
+        "value": {
+          "_class": "color",
+          "alpha": 1,
+          "blue": 0,
+          "green": 0,
+          "red": 0
+        }
+      }
+    }
+  }
+]

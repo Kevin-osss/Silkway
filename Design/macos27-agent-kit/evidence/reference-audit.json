@@ -1,0 +1,1172 @@
+{
+  "definition": "Reference resolution in this extracted file only; not a runtime SDK validity test.",
+  "reference_occurrences": {
+    "shared_style": 4360,
+    "symbol_instance": 4725,
+    "swatch": 9483,
+    "symbol_override": 614
+  },
+  "unresolved_occurrences": {
+    "symbol_override": 44,
+    "swatch": 118
+  },
+  "unresolved_unique_ids": {
+    "swatch": [
+      "0107C39B-8C16-458E-952D-BBBCA4685864",
+      "0D4D323B-26B9-4403-B973-43E576190D6E",
+      "2A72D10E-000D-472B-A26C-CCFE6877995D",
+      "2E8883D3-F897-4714-B37D-87A37D63185C",
+      "39AA4929-2883-41E6-8B89-6E6218DC443C",
+      "4A96211B-0CD6-4988-B8D7-844F967D75E5",
+      "562E24E5-DB66-4C08-83A4-53156144E669",
+      "5B258EAC-664C-4861-8F7F-94098CA7D636",
+      "85F45E14-610A-4846-9067-1060325429BF",
+      "A0509940-AAF1-4266-B9C7-0D23F705AAA3",
+      "B3357975-0CEB-4592-AC95-10DC398A7831",
+      "C4D2118B-21F7-4AED-AE9F-B1A5394D123B",
+      "DE0E6C7F-C76B-4F4D-9607-A35E2CD4F1C6",
+      "E565BB11-90DE-445A-9054-AC99EEA6FD87",
+      "F12FDEB9-2045-4049-8AEC-5DE4106BFB61"
+    ],
+    "symbol_override": [
+      "A14693B2-2D28-4FE8-961A-5B95A360C705",
+      "ABB87AED-5A0E-4D37-BCF8-9070A0C0BE05",
+      "E9B75A82-5340-4766-B014-B57136BFEF10",
+      "F6F87B8F-E6D7-468D-9687-6FAAFCF2439E",
+      "FDEEA4E7-3E88-4DE2-AE4C-68E90BFA811B"
+    ]
+  },
+  "unresolved_references": [
+    {
+      "kind": "symbol_override",
+      "target_id": "ABB87AED-5A0E-4D37-BCF8-9070A0C0BE05",
+      "source_member": "pages/FBEC33FE-F369-4BDD-BB22-C7CD70651D5B.json",
+      "json_pointer": "/layers/0/layers/1/layers/0/layers/9/layers/0/layers/0/overrideValues/0",
+      "layer_id": "92B5D7D1-6030-4CD1-9C7E-12815CDC4B45",
+      "owner_symbol_id": "CA1D2126-E23B-4A5E-91C2-4E287052691F",
+      "page_id": "FBEC33FE-F369-4BDD-BB22-C7CD70651D5B"
+    },
+    {
+      "kind": "symbol_override",
+      "target_id": "ABB87AED-5A0E-4D37-BCF8-9070A0C0BE05",
+      "source_member": "pages/FBEC33FE-F369-4BDD-BB22-C7CD70651D5B.json",
+      "json_pointer": "/layers/0/layers/1/layers/0/layers/10/layers/0/layers/0/overrideValues/0",
+      "layer_id": "640F11E0-38A3-4644-A6FA-977A94EA3C42",
+      "owner_symbol_id": "CA1D2126-E23B-4A5E-91C2-4E287052691F",
+      "page_id": "FBEC33FE-F369-4BDD-BB22-C7CD70651D5B"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "2A72D10E-000D-472B-A26C-CCFE6877995D",
+      "source_member": "pages/FBEC33FE-F369-4BDD-BB22-C7CD70651D5B.json",
+      "json_pointer": "/layers/6/style/fills/0/color",
+      "layer_id": "F6FA12EB-621B-49CD-9AE8-F1550FF7BD51",
+      "owner_symbol_id": "EBB1B200-DF6B-4F94-8449-65605F53C5C8",
+      "page_id": "FBEC33FE-F369-4BDD-BB22-C7CD70651D5B"
+    },
+    {
+      "kind": "symbol_override",
+      "target_id": "FDEEA4E7-3E88-4DE2-AE4C-68E90BFA811B",
+      "source_member": "pages/084FD8C2-7B31-46C5-9C46-FC1DEF6957A3.json",
+      "json_pointer": "/layers/106/layers/2/layers/1/overrideValues/2",
+      "layer_id": "E9A43D3E-1916-4806-9F05-EED1398B7BB0",
+      "owner_symbol_id": "03773267-689D-4E87-951F-645CCA6FA290",
+      "page_id": "084FD8C2-7B31-46C5-9C46-FC1DEF6957A3"
+    },
+    {
+      "kind": "symbol_override",
+      "target_id": "A14693B2-2D28-4FE8-961A-5B95A360C705",
+      "source_member": "pages/084FD8C2-7B31-46C5-9C46-FC1DEF6957A3.json",
+      "json_pointer": "/layers/106/layers/2/layers/8/overrideValues/0",
+      "layer_id": "49F349A3-AA91-4BD1-8393-573820388F5A",
+      "owner_symbol_id": "03773267-689D-4E87-951F-645CCA6FA290",
+      "page_id": "084FD8C2-7B31-46C5-9C46-FC1DEF6957A3"
+    },
+    {
+      "kind": "symbol_override",
+      "target_id": "F6F87B8F-E6D7-468D-9687-6FAAFCF2439E",
+      "source_member": "pages/084FD8C2-7B31-46C5-9C46-FC1DEF6957A3.json",
+      "json_pointer": "/layers/106/layers/2/layers/9/overrideValues/0",
+      "layer_id": "BA2F1B91-4857-47BD-8398-A1F54AB12C4D",
+      "owner_symbol_id": "03773267-689D-4E87-951F-645CCA6FA290",
+      "page_id": "084FD8C2-7B31-46C5-9C46-FC1DEF6957A3"
+    },
+    {
+      "kind": "symbol_override",
+      "target_id": "A14693B2-2D28-4FE8-961A-5B95A360C705",
+      "source_member": "pages/084FD8C2-7B31-46C5-9C46-FC1DEF6957A3.json",
+      "json_pointer": "/layers/106/layers/2/layers/9/overrideValues/1",
+      "layer_id": "BA2F1B91-4857-47BD-8398-A1F54AB12C4D",
+      "owner_symbol_id": "03773267-689D-4E87-951F-645CCA6FA290",
+      "page_id": "084FD8C2-7B31-46C5-9C46-FC1DEF6957A3"
+    },
+    {
+      "kind": "symbol_override",
+      "target_id": "A14693B2-2D28-4FE8-961A-5B95A360C705",
+      "source_member": "pages/084FD8C2-7B31-46C5-9C46-FC1DEF6957A3.json",
+      "json_pointer": "/layers/106/layers/2/layers/10/overrideValues/0",
+      "layer_id": "AD7CEAA8-6134-4E41-BC7D-91E2AAE0A43E",
+      "owner_symbol_id": "03773267-689D-4E87-951F-645CCA6FA290",
+      "page_id": "084FD8C2-7B31-46C5-9C46-FC1DEF6957A3"
+    },
+    {
+      "kind": "symbol_override",
+      "target_id": "FDEEA4E7-3E88-4DE2-AE4C-68E90BFA811B",
+      "source_member": "pages/084FD8C2-7B31-46C5-9C46-FC1DEF6957A3.json",
+      "json_pointer": "/layers/106/layers/2/layers/11/overrideValues/0",
+      "layer_id": "751598AF-7F7D-4742-893F-451162A6B5CC",
+      "owner_symbol_id": "03773267-689D-4E87-951F-645CCA6FA290",
+      "page_id": "084FD8C2-7B31-46C5-9C46-FC1DEF6957A3"
+    },
+    {
+      "kind": "symbol_override",
+      "target_id": "E9B75A82-5340-4766-B014-B57136BFEF10",
+      "source_member": "pages/084FD8C2-7B31-46C5-9C46-FC1DEF6957A3.json",
+      "json_pointer": "/layers/106/layers/2/layers/14/overrideValues/2",
+      "layer_id": "B8A5D763-9205-4BE8-BCFA-DD5812C674BD",
+      "owner_symbol_id": "03773267-689D-4E87-951F-645CCA6FA290",
+      "page_id": "084FD8C2-7B31-46C5-9C46-FC1DEF6957A3"
+    },
+    {
+      "kind": "symbol_override",
+      "target_id": "A14693B2-2D28-4FE8-961A-5B95A360C705",
+      "source_member": "pages/084FD8C2-7B31-46C5-9C46-FC1DEF6957A3.json",
+      "json_pointer": "/layers/107/layers/2/layers/1/overrideValues/0",
+      "layer_id": "0343C8E0-A769-4BC6-828D-06FFE1D04F2E",
+      "owner_symbol_id": "4CB144CC-5CF1-4E99-AA63-90724D8881DD",
+      "page_id": "084FD8C2-7B31-46C5-9C46-FC1DEF6957A3"
+    },
+    {
+      "kind": "symbol_override",
+      "target_id": "A14693B2-2D28-4FE8-961A-5B95A360C705",
+      "source_member": "pages/084FD8C2-7B31-46C5-9C46-FC1DEF6957A3.json",
+      "json_pointer": "/layers/107/layers/2/layers/8/overrideValues/0",
+      "layer_id": "193FF6EE-CB59-4364-BDFE-278E92930D65",
+      "owner_symbol_id": "4CB144CC-5CF1-4E99-AA63-90724D8881DD",
+      "page_id": "084FD8C2-7B31-46C5-9C46-FC1DEF6957A3"
+    },
+    {
+      "kind": "symbol_override",
+      "target_id": "A14693B2-2D28-4FE8-961A-5B95A360C705",
+      "source_member": "pages/084FD8C2-7B31-46C5-9C46-FC1DEF6957A3.json",
+      "json_pointer": "/layers/107/layers/2/layers/10/overrideValues/0",
+      "layer_id": "2C1D93FA-DB0A-400A-BFF1-958CF30EB8A8",
+      "owner_symbol_id": "4CB144CC-5CF1-4E99-AA63-90724D8881DD",
+      "page_id": "084FD8C2-7B31-46C5-9C46-FC1DEF6957A3"
+    },
+    {
+      "kind": "symbol_override",
+      "target_id": "A14693B2-2D28-4FE8-961A-5B95A360C705",
+      "source_member": "pages/5FB9D013-0583-4ADE-8E3E-D2E526147A52.json",
+      "json_pointer": "/layers/60/layers/2/layers/0/overrideValues/0",
+      "layer_id": "9E877A23-CB2D-470C-AC0D-4D121AA428AB",
+      "owner_symbol_id": "F3E3E983-9AA7-4AD2-BA5E-34D653C56CDF",
+      "page_id": "5FB9D013-0583-4ADE-8E3E-D2E526147A52"
+    },
+    {
+      "kind": "symbol_override",
+      "target_id": "A14693B2-2D28-4FE8-961A-5B95A360C705",
+      "source_member": "pages/5FB9D013-0583-4ADE-8E3E-D2E526147A52.json",
+      "json_pointer": "/layers/60/layers/2/layers/1/overrideValues/0",
+      "layer_id": "13E3425A-D526-46CD-B580-DC443B0E7609",
+      "owner_symbol_id": "F3E3E983-9AA7-4AD2-BA5E-34D653C56CDF",
+      "page_id": "5FB9D013-0583-4ADE-8E3E-D2E526147A52"
+    },
+    {
+      "kind": "symbol_override",
+      "target_id": "A14693B2-2D28-4FE8-961A-5B95A360C705",
+      "source_member": "pages/5FB9D013-0583-4ADE-8E3E-D2E526147A52.json",
+      "json_pointer": "/layers/60/layers/2/layers/2/overrideValues/0",
+      "layer_id": "1E823BC8-3015-4055-A91A-ABCE49EEEB57",
+      "owner_symbol_id": "F3E3E983-9AA7-4AD2-BA5E-34D653C56CDF",
+      "page_id": "5FB9D013-0583-4ADE-8E3E-D2E526147A52"
+    },
+    {
+      "kind": "symbol_override",
+      "target_id": "A14693B2-2D28-4FE8-961A-5B95A360C705",
+      "source_member": "pages/5FB9D013-0583-4ADE-8E3E-D2E526147A52.json",
+      "json_pointer": "/layers/60/layers/2/layers/3/overrideValues/0",
+      "layer_id": "0A49EA16-5CDE-46A1-AD18-C13E99816B3B",
+      "owner_symbol_id": "F3E3E983-9AA7-4AD2-BA5E-34D653C56CDF",
+      "page_id": "5FB9D013-0583-4ADE-8E3E-D2E526147A52"
+    },
+    {
+      "kind": "symbol_override",
+      "target_id": "A14693B2-2D28-4FE8-961A-5B95A360C705",
+      "source_member": "pages/5FB9D013-0583-4ADE-8E3E-D2E526147A52.json",
+      "json_pointer": "/layers/61/layers/2/layers/0/overrideValues/0",
+      "layer_id": "CB99B5A5-4A45-43A1-B730-E75A2253E8EE",
+      "owner_symbol_id": "0D068954-6799-4343-8421-9921F984A298",
+      "page_id": "5FB9D013-0583-4ADE-8E3E-D2E526147A52"
+    },
+    {
+      "kind": "symbol_override",
+      "target_id": "A14693B2-2D28-4FE8-961A-5B95A360C705",
+      "source_member": "pages/5FB9D013-0583-4ADE-8E3E-D2E526147A52.json",
+      "json_pointer": "/layers/61/layers/2/layers/1/overrideValues/0",
+      "layer_id": "30A0E1EE-E620-439F-9249-D3E113DEF40A",
+      "owner_symbol_id": "0D068954-6799-4343-8421-9921F984A298",
+      "page_id": "5FB9D013-0583-4ADE-8E3E-D2E526147A52"
+    },
+    {
+      "kind": "symbol_override",
+      "target_id": "A14693B2-2D28-4FE8-961A-5B95A360C705",
+      "source_member": "pages/5FB9D013-0583-4ADE-8E3E-D2E526147A52.json",
+      "json_pointer": "/layers/61/layers/2/layers/2/overrideValues/0",
+      "layer_id": "7C444DB5-DEC9-4D28-A08A-6402F1117836",
+      "owner_symbol_id": "0D068954-6799-4343-8421-9921F984A298",
+      "page_id": "5FB9D013-0583-4ADE-8E3E-D2E526147A52"
+    },
+    {
+      "kind": "symbol_override",
+      "target_id": "A14693B2-2D28-4FE8-961A-5B95A360C705",
+      "source_member": "pages/5FB9D013-0583-4ADE-8E3E-D2E526147A52.json",
+      "json_pointer": "/layers/61/layers/2/layers/3/overrideValues/0",
+      "layer_id": "E8DEF059-D369-4B67-B079-A8B55CFC3497",
+      "owner_symbol_id": "0D068954-6799-4343-8421-9921F984A298",
+      "page_id": "5FB9D013-0583-4ADE-8E3E-D2E526147A52"
+    },
+    {
+      "kind": "symbol_override",
+      "target_id": "A14693B2-2D28-4FE8-961A-5B95A360C705",
+      "source_member": "pages/5FB9D013-0583-4ADE-8E3E-D2E526147A52.json",
+      "json_pointer": "/layers/62/layers/2/layers/0/overrideValues/0",
+      "layer_id": "1C894C16-05E5-4B31-BE0A-B4738FBE7B3C",
+      "owner_symbol_id": "32FEA920-19C8-4230-B3C4-65A5F6DA8ACD",
+      "page_id": "5FB9D013-0583-4ADE-8E3E-D2E526147A52"
+    },
+    {
+      "kind": "symbol_override",
+      "target_id": "A14693B2-2D28-4FE8-961A-5B95A360C705",
+      "source_member": "pages/5FB9D013-0583-4ADE-8E3E-D2E526147A52.json",
+      "json_pointer": "/layers/62/layers/2/layers/1/overrideValues/0",
+      "layer_id": "E9F402EE-A9E9-464D-999D-8EEC04DC05D5",
+      "owner_symbol_id": "32FEA920-19C8-4230-B3C4-65A5F6DA8ACD",
+      "page_id": "5FB9D013-0583-4ADE-8E3E-D2E526147A52"
+    },
+    {
+      "kind": "symbol_override",
+      "target_id": "A14693B2-2D28-4FE8-961A-5B95A360C705",
+      "source_member": "pages/5FB9D013-0583-4ADE-8E3E-D2E526147A52.json",
+      "json_pointer": "/layers/62/layers/2/layers/2/overrideValues/0",
+      "layer_id": "A849016A-C6B3-4C6A-862B-C80BCD64A8FC",
+      "owner_symbol_id": "32FEA920-19C8-4230-B3C4-65A5F6DA8ACD",
+      "page_id": "5FB9D013-0583-4ADE-8E3E-D2E526147A52"
+    },
+    {
+      "kind": "symbol_override",
+      "target_id": "A14693B2-2D28-4FE8-961A-5B95A360C705",
+      "source_member": "pages/5FB9D013-0583-4ADE-8E3E-D2E526147A52.json",
+      "json_pointer": "/layers/62/layers/2/layers/3/overrideValues/0",
+      "layer_id": "DBAC9402-BA1F-4348-9361-5A8017F26D5D",
+      "owner_symbol_id": "32FEA920-19C8-4230-B3C4-65A5F6DA8ACD",
+      "page_id": "5FB9D013-0583-4ADE-8E3E-D2E526147A52"
+    },
+    {
+      "kind": "symbol_override",
+      "target_id": "A14693B2-2D28-4FE8-961A-5B95A360C705",
+      "source_member": "pages/5FB9D013-0583-4ADE-8E3E-D2E526147A52.json",
+      "json_pointer": "/layers/125/layers/2/layers/0/overrideValues/0",
+      "layer_id": "DB63BFEF-003F-4EF1-80C7-348C93898443",
+      "owner_symbol_id": "76ABCFD7-2F06-4D4E-9D8A-7D4226343AD1",
+      "page_id": "5FB9D013-0583-4ADE-8E3E-D2E526147A52"
+    },
+    {
+      "kind": "symbol_override",
+      "target_id": "A14693B2-2D28-4FE8-961A-5B95A360C705",
+      "source_member": "pages/5FB9D013-0583-4ADE-8E3E-D2E526147A52.json",
+      "json_pointer": "/layers/125/layers/2/layers/1/overrideValues/0",
+      "layer_id": "F7498993-0BEC-476E-BC2A-A168C9C6A714",
+      "owner_symbol_id": "76ABCFD7-2F06-4D4E-9D8A-7D4226343AD1",
+      "page_id": "5FB9D013-0583-4ADE-8E3E-D2E526147A52"
+    },
+    {
+      "kind": "symbol_override",
+      "target_id": "A14693B2-2D28-4FE8-961A-5B95A360C705",
+      "source_member": "pages/5FB9D013-0583-4ADE-8E3E-D2E526147A52.json",
+      "json_pointer": "/layers/125/layers/2/layers/2/overrideValues/0",
+      "layer_id": "6554FEEF-642D-4BC8-B513-A20404E2EC4F",
+      "owner_symbol_id": "76ABCFD7-2F06-4D4E-9D8A-7D4226343AD1",
+      "page_id": "5FB9D013-0583-4ADE-8E3E-D2E526147A52"
+    },
+    {
+      "kind": "symbol_override",
+      "target_id": "A14693B2-2D28-4FE8-961A-5B95A360C705",
+      "source_member": "pages/5FB9D013-0583-4ADE-8E3E-D2E526147A52.json",
+      "json_pointer": "/layers/125/layers/2/layers/3/overrideValues/0",
+      "layer_id": "F1D82807-15EE-4378-9D0F-7759F533B25A",
+      "owner_symbol_id": "76ABCFD7-2F06-4D4E-9D8A-7D4226343AD1",
+      "page_id": "5FB9D013-0583-4ADE-8E3E-D2E526147A52"
+    },
+    {
+      "kind": "symbol_override",
+      "target_id": "A14693B2-2D28-4FE8-961A-5B95A360C705",
+      "source_member": "pages/5FB9D013-0583-4ADE-8E3E-D2E526147A52.json",
+      "json_pointer": "/layers/128/layers/2/layers/0/overrideValues/0",
+      "layer_id": "58F09447-891F-46F1-B252-7CD19BB8D6E5",
+      "owner_symbol_id": "A608F6AD-6710-444F-BA41-9B54AE24FDF5",
+      "page_id": "5FB9D013-0583-4ADE-8E3E-D2E526147A52"
+    },
+    {
+      "kind": "symbol_override",
+      "target_id": "A14693B2-2D28-4FE8-961A-5B95A360C705",
+      "source_member": "pages/5FB9D013-0583-4ADE-8E3E-D2E526147A52.json",
+      "json_pointer": "/layers/128/layers/2/layers/1/overrideValues/0",
+      "layer_id": "FBD7EC19-CADF-45F3-97FA-9F2A67988D1A",
+      "owner_symbol_id": "A608F6AD-6710-444F-BA41-9B54AE24FDF5",
+      "page_id": "5FB9D013-0583-4ADE-8E3E-D2E526147A52"
+    },
+    {
+      "kind": "symbol_override",
+      "target_id": "A14693B2-2D28-4FE8-961A-5B95A360C705",
+      "source_member": "pages/5FB9D013-0583-4ADE-8E3E-D2E526147A52.json",
+      "json_pointer": "/layers/128/layers/2/layers/2/overrideValues/0",
+      "layer_id": "7E05FA81-508A-4D73-98B9-A4EBFF47164C",
+      "owner_symbol_id": "A608F6AD-6710-444F-BA41-9B54AE24FDF5",
+      "page_id": "5FB9D013-0583-4ADE-8E3E-D2E526147A52"
+    },
+    {
+      "kind": "symbol_override",
+      "target_id": "A14693B2-2D28-4FE8-961A-5B95A360C705",
+      "source_member": "pages/5FB9D013-0583-4ADE-8E3E-D2E526147A52.json",
+      "json_pointer": "/layers/128/layers/2/layers/3/overrideValues/0",
+      "layer_id": "81C583D9-3F3A-4959-924E-FB8DF1823A7D",
+      "owner_symbol_id": "A608F6AD-6710-444F-BA41-9B54AE24FDF5",
+      "page_id": "5FB9D013-0583-4ADE-8E3E-D2E526147A52"
+    },
+    {
+      "kind": "symbol_override",
+      "target_id": "FDEEA4E7-3E88-4DE2-AE4C-68E90BFA811B",
+      "source_member": "pages/5FB9D013-0583-4ADE-8E3E-D2E526147A52.json",
+      "json_pointer": "/layers/129/layers/1/layers/2/overrideValues/0",
+      "layer_id": "C1CC8A50-E70A-48A6-B9A0-1ABE39BBCDA3",
+      "owner_symbol_id": "EF7D0CF7-52B2-4E4C-B3DB-114C64781CB5",
+      "page_id": "5FB9D013-0583-4ADE-8E3E-D2E526147A52"
+    },
+    {
+      "kind": "symbol_override",
+      "target_id": "FDEEA4E7-3E88-4DE2-AE4C-68E90BFA811B",
+      "source_member": "pages/5FB9D013-0583-4ADE-8E3E-D2E526147A52.json",
+      "json_pointer": "/layers/129/layers/1/layers/3/overrideValues/0",
+      "layer_id": "318BBA18-DF8B-4A6B-8D0C-333BB461786E",
+      "owner_symbol_id": "EF7D0CF7-52B2-4E4C-B3DB-114C64781CB5",
+      "page_id": "5FB9D013-0583-4ADE-8E3E-D2E526147A52"
+    },
+    {
+      "kind": "symbol_override",
+      "target_id": "FDEEA4E7-3E88-4DE2-AE4C-68E90BFA811B",
+      "source_member": "pages/5FB9D013-0583-4ADE-8E3E-D2E526147A52.json",
+      "json_pointer": "/layers/129/layers/1/layers/4/overrideValues/0",
+      "layer_id": "950F4AF6-C412-471D-B8F3-18D51FE16A58",
+      "owner_symbol_id": "EF7D0CF7-52B2-4E4C-B3DB-114C64781CB5",
+      "page_id": "5FB9D013-0583-4ADE-8E3E-D2E526147A52"
+    },
+    {
+      "kind": "symbol_override",
+      "target_id": "FDEEA4E7-3E88-4DE2-AE4C-68E90BFA811B",
+      "source_member": "pages/5FB9D013-0583-4ADE-8E3E-D2E526147A52.json",
+      "json_pointer": "/layers/129/layers/1/layers/9/overrideValues/0",
+      "layer_id": "79205464-876C-4313-8964-B984FB44C7F7",
+      "owner_symbol_id": "EF7D0CF7-52B2-4E4C-B3DB-114C64781CB5",
+      "page_id": "5FB9D013-0583-4ADE-8E3E-D2E526147A52"
+    },
+    {
+      "kind": "symbol_override",
+      "target_id": "FDEEA4E7-3E88-4DE2-AE4C-68E90BFA811B",
+      "source_member": "pages/5FB9D013-0583-4ADE-8E3E-D2E526147A52.json",
+      "json_pointer": "/layers/129/layers/1/layers/10/overrideValues/0",
+      "layer_id": "8B3E1481-930F-441F-ABE2-25019FE6754A",
+      "owner_symbol_id": "EF7D0CF7-52B2-4E4C-B3DB-114C64781CB5",
+      "page_id": "5FB9D013-0583-4ADE-8E3E-D2E526147A52"
+    },
+    {
+      "kind": "symbol_override",
+      "target_id": "FDEEA4E7-3E88-4DE2-AE4C-68E90BFA811B",
+      "source_member": "pages/5FB9D013-0583-4ADE-8E3E-D2E526147A52.json",
+      "json_pointer": "/layers/129/layers/1/layers/11/overrideValues/0",
+      "layer_id": "F04F494F-C512-4A30-A21E-75C4D188B1E8",
+      "owner_symbol_id": "EF7D0CF7-52B2-4E4C-B3DB-114C64781CB5",
+      "page_id": "5FB9D013-0583-4ADE-8E3E-D2E526147A52"
+    },
+    {
+      "kind": "symbol_override",
+      "target_id": "FDEEA4E7-3E88-4DE2-AE4C-68E90BFA811B",
+      "source_member": "pages/5FB9D013-0583-4ADE-8E3E-D2E526147A52.json",
+      "json_pointer": "/layers/129/layers/2/layers/0/overrideValues/0",
+      "layer_id": "BFA5A955-7926-434C-8CA5-6D2EFCFABFA3",
+      "owner_symbol_id": "EF7D0CF7-52B2-4E4C-B3DB-114C64781CB5",
+      "page_id": "5FB9D013-0583-4ADE-8E3E-D2E526147A52"
+    },
+    {
+      "kind": "symbol_override",
+      "target_id": "A14693B2-2D28-4FE8-961A-5B95A360C705",
+      "source_member": "pages/5FB9D013-0583-4ADE-8E3E-D2E526147A52.json",
+      "json_pointer": "/layers/129/layers/2/layers/0/overrideValues/2",
+      "layer_id": "BFA5A955-7926-434C-8CA5-6D2EFCFABFA3",
+      "owner_symbol_id": "EF7D0CF7-52B2-4E4C-B3DB-114C64781CB5",
+      "page_id": "5FB9D013-0583-4ADE-8E3E-D2E526147A52"
+    },
+    {
+      "kind": "symbol_override",
+      "target_id": "FDEEA4E7-3E88-4DE2-AE4C-68E90BFA811B",
+      "source_member": "pages/5FB9D013-0583-4ADE-8E3E-D2E526147A52.json",
+      "json_pointer": "/layers/129/layers/2/layers/1/overrideValues/0",
+      "layer_id": "DD7E6CCE-5748-4668-8F82-38D12BDCF723",
+      "owner_symbol_id": "EF7D0CF7-52B2-4E4C-B3DB-114C64781CB5",
+      "page_id": "5FB9D013-0583-4ADE-8E3E-D2E526147A52"
+    },
+    {
+      "kind": "symbol_override",
+      "target_id": "A14693B2-2D28-4FE8-961A-5B95A360C705",
+      "source_member": "pages/5FB9D013-0583-4ADE-8E3E-D2E526147A52.json",
+      "json_pointer": "/layers/129/layers/2/layers/1/overrideValues/2",
+      "layer_id": "DD7E6CCE-5748-4668-8F82-38D12BDCF723",
+      "owner_symbol_id": "EF7D0CF7-52B2-4E4C-B3DB-114C64781CB5",
+      "page_id": "5FB9D013-0583-4ADE-8E3E-D2E526147A52"
+    },
+    {
+      "kind": "symbol_override",
+      "target_id": "A14693B2-2D28-4FE8-961A-5B95A360C705",
+      "source_member": "pages/5FB9D013-0583-4ADE-8E3E-D2E526147A52.json",
+      "json_pointer": "/layers/129/layers/2/layers/2/overrideValues/0",
+      "layer_id": "02CE4935-1DF7-4263-AB88-985C8225ED00",
+      "owner_symbol_id": "EF7D0CF7-52B2-4E4C-B3DB-114C64781CB5",
+      "page_id": "5FB9D013-0583-4ADE-8E3E-D2E526147A52"
+    },
+    {
+      "kind": "symbol_override",
+      "target_id": "A14693B2-2D28-4FE8-961A-5B95A360C705",
+      "source_member": "pages/5FB9D013-0583-4ADE-8E3E-D2E526147A52.json",
+      "json_pointer": "/layers/129/layers/2/layers/3/overrideValues/0",
+      "layer_id": "BF3882A5-781B-43DF-B7A2-447343BA40AA",
+      "owner_symbol_id": "EF7D0CF7-52B2-4E4C-B3DB-114C64781CB5",
+      "page_id": "5FB9D013-0583-4ADE-8E3E-D2E526147A52"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "DE0E6C7F-C76B-4F4D-9607-A35E2CD4F1C6",
+      "source_member": "pages/0F963399-EA2F-4684-8165-18BD3CCA224B.json",
+      "json_pointer": "/layers/125/layers/2/style/fills/0/color",
+      "layer_id": "85B6E6D5-20D5-4298-8EA4-603E0676F938",
+      "owner_symbol_id": "FB585735-BBFB-4422-81DA-851E65339390",
+      "page_id": "0F963399-EA2F-4684-8165-18BD3CCA224B"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "DE0E6C7F-C76B-4F4D-9607-A35E2CD4F1C6",
+      "source_member": "pages/0F963399-EA2F-4684-8165-18BD3CCA224B.json",
+      "json_pointer": "/layers/291/layers/2/style/fills/0/color",
+      "layer_id": "895546E9-FB2B-4BC6-9F49-4D435C8B44D6",
+      "owner_symbol_id": "1265C5F7-DE97-4667-9FE5-D31944EC7D3B",
+      "page_id": "0F963399-EA2F-4684-8165-18BD3CCA224B"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "DE0E6C7F-C76B-4F4D-9607-A35E2CD4F1C6",
+      "source_member": "pages/0F963399-EA2F-4684-8165-18BD3CCA224B.json",
+      "json_pointer": "/layers/513/layers/2/style/fills/0/color",
+      "layer_id": "E565F08B-C364-4020-AB45-4DBCE935AD6A",
+      "owner_symbol_id": "FA960073-47AE-4E92-A728-D7DCBC1C2095",
+      "page_id": "0F963399-EA2F-4684-8165-18BD3CCA224B"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "562E24E5-DB66-4C08-83A4-53156144E669",
+      "source_member": "document.json",
+      "json_pointer": "/layerStyles/objects/14/value/fills/0/color"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "DE0E6C7F-C76B-4F4D-9607-A35E2CD4F1C6",
+      "source_member": "document.json",
+      "json_pointer": "/layerStyles/objects/15/value/fills/0/color"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "DE0E6C7F-C76B-4F4D-9607-A35E2CD4F1C6",
+      "source_member": "document.json",
+      "json_pointer": "/layerStyles/objects/53/value/fills/0/color"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "5B258EAC-664C-4861-8F7F-94098CA7D636",
+      "source_member": "document.json",
+      "json_pointer": "/layerStyles/objects/55/value/fills/0/color"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "39AA4929-2883-41E6-8B89-6E6218DC443C",
+      "source_member": "document.json",
+      "json_pointer": "/layerStyles/objects/56/value/fills/0/color"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "85F45E14-610A-4846-9067-1060325429BF",
+      "source_member": "document.json",
+      "json_pointer": "/layerStyles/objects/57/value/fills/0/color"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "C4D2118B-21F7-4AED-AE9F-B1A5394D123B",
+      "source_member": "document.json",
+      "json_pointer": "/layerStyles/objects/58/value/fills/0/color"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "0D4D323B-26B9-4403-B973-43E576190D6E",
+      "source_member": "document.json",
+      "json_pointer": "/layerStyles/objects/59/value/fills/0/color"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "2E8883D3-F897-4714-B37D-87A37D63185C",
+      "source_member": "document.json",
+      "json_pointer": "/layerStyles/objects/60/value/fills/0/color"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "85F45E14-610A-4846-9067-1060325429BF",
+      "source_member": "document.json",
+      "json_pointer": "/layerStyles/objects/61/value/fills/0/color"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "A0509940-AAF1-4266-B9C7-0D23F705AAA3",
+      "source_member": "document.json",
+      "json_pointer": "/layerStyles/objects/62/value/fills/0/color"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "5B258EAC-664C-4861-8F7F-94098CA7D636",
+      "source_member": "document.json",
+      "json_pointer": "/layerStyles/objects/63/value/fills/0/color"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "F12FDEB9-2045-4049-8AEC-5DE4106BFB61",
+      "source_member": "document.json",
+      "json_pointer": "/layerStyles/objects/64/value/fills/0/color"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "B3357975-0CEB-4592-AC95-10DC398A7831",
+      "source_member": "document.json",
+      "json_pointer": "/layerStyles/objects/65/value/fills/0/color"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "0107C39B-8C16-458E-952D-BBBCA4685864",
+      "source_member": "document.json",
+      "json_pointer": "/layerStyles/objects/66/value/fills/0/color"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "DE0E6C7F-C76B-4F4D-9607-A35E2CD4F1C6",
+      "source_member": "document.json",
+      "json_pointer": "/layerStyles/objects/67/value/fills/0/color"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "39AA4929-2883-41E6-8B89-6E6218DC443C",
+      "source_member": "document.json",
+      "json_pointer": "/layerStyles/objects/68/value/fills/0/color"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "4A96211B-0CD6-4988-B8D7-844F967D75E5",
+      "source_member": "document.json",
+      "json_pointer": "/layerStyles/objects/69/value/fills/0/color"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "4A96211B-0CD6-4988-B8D7-844F967D75E5",
+      "source_member": "document.json",
+      "json_pointer": "/layerStyles/objects/70/value/fills/0/color"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "F12FDEB9-2045-4049-8AEC-5DE4106BFB61",
+      "source_member": "document.json",
+      "json_pointer": "/layerStyles/objects/71/value/fills/0/color"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "C4D2118B-21F7-4AED-AE9F-B1A5394D123B",
+      "source_member": "document.json",
+      "json_pointer": "/layerStyles/objects/72/value/fills/0/color"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "0D4D323B-26B9-4403-B973-43E576190D6E",
+      "source_member": "document.json",
+      "json_pointer": "/layerStyles/objects/73/value/fills/0/color"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "0107C39B-8C16-458E-952D-BBBCA4685864",
+      "source_member": "document.json",
+      "json_pointer": "/layerStyles/objects/74/value/fills/0/color"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "A0509940-AAF1-4266-B9C7-0D23F705AAA3",
+      "source_member": "document.json",
+      "json_pointer": "/layerStyles/objects/75/value/fills/0/color"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "B3357975-0CEB-4592-AC95-10DC398A7831",
+      "source_member": "document.json",
+      "json_pointer": "/layerStyles/objects/76/value/fills/0/color"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "2E8883D3-F897-4714-B37D-87A37D63185C",
+      "source_member": "document.json",
+      "json_pointer": "/layerStyles/objects/77/value/fills/0/color"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "DE0E6C7F-C76B-4F4D-9607-A35E2CD4F1C6",
+      "source_member": "document.json",
+      "json_pointer": "/layerStyles/objects/78/value/fills/0/color"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "DE0E6C7F-C76B-4F4D-9607-A35E2CD4F1C6",
+      "source_member": "document.json",
+      "json_pointer": "/layerStyles/objects/112/value/fills/0/color"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "39AA4929-2883-41E6-8B89-6E6218DC443C",
+      "source_member": "document.json",
+      "json_pointer": "/layerStyles/objects/113/value/fills/0/color"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "85F45E14-610A-4846-9067-1060325429BF",
+      "source_member": "document.json",
+      "json_pointer": "/layerStyles/objects/114/value/fills/0/color"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "5B258EAC-664C-4861-8F7F-94098CA7D636",
+      "source_member": "document.json",
+      "json_pointer": "/layerStyles/objects/115/value/fills/0/color"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "0107C39B-8C16-458E-952D-BBBCA4685864",
+      "source_member": "document.json",
+      "json_pointer": "/layerStyles/objects/116/value/fills/0/color"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "C4D2118B-21F7-4AED-AE9F-B1A5394D123B",
+      "source_member": "document.json",
+      "json_pointer": "/layerStyles/objects/117/value/fills/0/color"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "F12FDEB9-2045-4049-8AEC-5DE4106BFB61",
+      "source_member": "document.json",
+      "json_pointer": "/layerStyles/objects/118/value/fills/0/color"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "4A96211B-0CD6-4988-B8D7-844F967D75E5",
+      "source_member": "document.json",
+      "json_pointer": "/layerStyles/objects/119/value/fills/0/color"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "B3357975-0CEB-4592-AC95-10DC398A7831",
+      "source_member": "document.json",
+      "json_pointer": "/layerStyles/objects/120/value/fills/0/color"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "2E8883D3-F897-4714-B37D-87A37D63185C",
+      "source_member": "document.json",
+      "json_pointer": "/layerStyles/objects/121/value/fills/0/color"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "A0509940-AAF1-4266-B9C7-0D23F705AAA3",
+      "source_member": "document.json",
+      "json_pointer": "/layerStyles/objects/122/value/fills/0/color"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "0D4D323B-26B9-4403-B973-43E576190D6E",
+      "source_member": "document.json",
+      "json_pointer": "/layerStyles/objects/123/value/fills/0/color"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "DE0E6C7F-C76B-4F4D-9607-A35E2CD4F1C6",
+      "source_member": "document.json",
+      "json_pointer": "/layerStyles/objects/139/value/fills/0/color"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "5B258EAC-664C-4861-8F7F-94098CA7D636",
+      "source_member": "document.json",
+      "json_pointer": "/layerStyles/objects/140/value/fills/0/color"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "85F45E14-610A-4846-9067-1060325429BF",
+      "source_member": "document.json",
+      "json_pointer": "/layerStyles/objects/141/value/fills/0/color"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "DE0E6C7F-C76B-4F4D-9607-A35E2CD4F1C6",
+      "source_member": "document.json",
+      "json_pointer": "/layerStyles/objects/151/value/fills/0/color"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "39AA4929-2883-41E6-8B89-6E6218DC443C",
+      "source_member": "document.json",
+      "json_pointer": "/layerStyles/objects/152/value/fills/0/color"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "85F45E14-610A-4846-9067-1060325429BF",
+      "source_member": "document.json",
+      "json_pointer": "/layerStyles/objects/153/value/fills/0/color"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "5B258EAC-664C-4861-8F7F-94098CA7D636",
+      "source_member": "document.json",
+      "json_pointer": "/layerStyles/objects/154/value/fills/0/color"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "0107C39B-8C16-458E-952D-BBBCA4685864",
+      "source_member": "document.json",
+      "json_pointer": "/layerStyles/objects/155/value/fills/0/color"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "C4D2118B-21F7-4AED-AE9F-B1A5394D123B",
+      "source_member": "document.json",
+      "json_pointer": "/layerStyles/objects/156/value/fills/0/color"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "F12FDEB9-2045-4049-8AEC-5DE4106BFB61",
+      "source_member": "document.json",
+      "json_pointer": "/layerStyles/objects/157/value/fills/0/color"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "4A96211B-0CD6-4988-B8D7-844F967D75E5",
+      "source_member": "document.json",
+      "json_pointer": "/layerStyles/objects/158/value/fills/0/color"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "B3357975-0CEB-4592-AC95-10DC398A7831",
+      "source_member": "document.json",
+      "json_pointer": "/layerStyles/objects/159/value/fills/0/color"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "2E8883D3-F897-4714-B37D-87A37D63185C",
+      "source_member": "document.json",
+      "json_pointer": "/layerStyles/objects/160/value/fills/0/color"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "A0509940-AAF1-4266-B9C7-0D23F705AAA3",
+      "source_member": "document.json",
+      "json_pointer": "/layerStyles/objects/161/value/fills/0/color"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "0D4D323B-26B9-4403-B973-43E576190D6E",
+      "source_member": "document.json",
+      "json_pointer": "/layerStyles/objects/162/value/fills/0/color"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "E565BB11-90DE-445A-9054-AC99EEA6FD87",
+      "source_member": "document.json",
+      "json_pointer": "/layerTextStyles/objects/1/value/textStyle/encodedAttributes/MSAttributedStringColorAttribute"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "E565BB11-90DE-445A-9054-AC99EEA6FD87",
+      "source_member": "document.json",
+      "json_pointer": "/layerTextStyles/objects/2/value/textStyle/encodedAttributes/MSAttributedStringColorAttribute"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "E565BB11-90DE-445A-9054-AC99EEA6FD87",
+      "source_member": "document.json",
+      "json_pointer": "/layerTextStyles/objects/3/value/textStyle/encodedAttributes/MSAttributedStringColorAttribute"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "E565BB11-90DE-445A-9054-AC99EEA6FD87",
+      "source_member": "document.json",
+      "json_pointer": "/layerTextStyles/objects/4/value/textStyle/encodedAttributes/MSAttributedStringColorAttribute"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "E565BB11-90DE-445A-9054-AC99EEA6FD87",
+      "source_member": "document.json",
+      "json_pointer": "/layerTextStyles/objects/5/value/textStyle/encodedAttributes/MSAttributedStringColorAttribute"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "E565BB11-90DE-445A-9054-AC99EEA6FD87",
+      "source_member": "document.json",
+      "json_pointer": "/layerTextStyles/objects/7/value/textStyle/encodedAttributes/MSAttributedStringColorAttribute"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "E565BB11-90DE-445A-9054-AC99EEA6FD87",
+      "source_member": "document.json",
+      "json_pointer": "/layerTextStyles/objects/8/value/textStyle/encodedAttributes/MSAttributedStringColorAttribute"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "E565BB11-90DE-445A-9054-AC99EEA6FD87",
+      "source_member": "document.json",
+      "json_pointer": "/layerTextStyles/objects/9/value/textStyle/encodedAttributes/MSAttributedStringColorAttribute"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "E565BB11-90DE-445A-9054-AC99EEA6FD87",
+      "source_member": "document.json",
+      "json_pointer": "/layerTextStyles/objects/10/value/textStyle/encodedAttributes/MSAttributedStringColorAttribute"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "E565BB11-90DE-445A-9054-AC99EEA6FD87",
+      "source_member": "document.json",
+      "json_pointer": "/layerTextStyles/objects/11/value/textStyle/encodedAttributes/MSAttributedStringColorAttribute"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "E565BB11-90DE-445A-9054-AC99EEA6FD87",
+      "source_member": "document.json",
+      "json_pointer": "/layerTextStyles/objects/12/value/textStyle/encodedAttributes/MSAttributedStringColorAttribute"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "E565BB11-90DE-445A-9054-AC99EEA6FD87",
+      "source_member": "document.json",
+      "json_pointer": "/layerTextStyles/objects/13/value/textStyle/encodedAttributes/MSAttributedStringColorAttribute"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "E565BB11-90DE-445A-9054-AC99EEA6FD87",
+      "source_member": "document.json",
+      "json_pointer": "/layerTextStyles/objects/14/value/textStyle/encodedAttributes/MSAttributedStringColorAttribute"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "E565BB11-90DE-445A-9054-AC99EEA6FD87",
+      "source_member": "document.json",
+      "json_pointer": "/layerTextStyles/objects/15/value/textStyle/encodedAttributes/MSAttributedStringColorAttribute"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "E565BB11-90DE-445A-9054-AC99EEA6FD87",
+      "source_member": "document.json",
+      "json_pointer": "/layerTextStyles/objects/16/value/textStyle/encodedAttributes/MSAttributedStringColorAttribute"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "E565BB11-90DE-445A-9054-AC99EEA6FD87",
+      "source_member": "document.json",
+      "json_pointer": "/layerTextStyles/objects/17/value/textStyle/encodedAttributes/MSAttributedStringColorAttribute"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "E565BB11-90DE-445A-9054-AC99EEA6FD87",
+      "source_member": "document.json",
+      "json_pointer": "/layerTextStyles/objects/18/value/textStyle/encodedAttributes/MSAttributedStringColorAttribute"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "E565BB11-90DE-445A-9054-AC99EEA6FD87",
+      "source_member": "document.json",
+      "json_pointer": "/layerTextStyles/objects/19/value/textStyle/encodedAttributes/MSAttributedStringColorAttribute"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "E565BB11-90DE-445A-9054-AC99EEA6FD87",
+      "source_member": "document.json",
+      "json_pointer": "/layerTextStyles/objects/20/value/textStyle/encodedAttributes/MSAttributedStringColorAttribute"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "E565BB11-90DE-445A-9054-AC99EEA6FD87",
+      "source_member": "document.json",
+      "json_pointer": "/layerTextStyles/objects/21/value/textStyle/encodedAttributes/MSAttributedStringColorAttribute"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "E565BB11-90DE-445A-9054-AC99EEA6FD87",
+      "source_member": "document.json",
+      "json_pointer": "/layerTextStyles/objects/24/value/textStyle/encodedAttributes/MSAttributedStringColorAttribute"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "E565BB11-90DE-445A-9054-AC99EEA6FD87",
+      "source_member": "document.json",
+      "json_pointer": "/layerTextStyles/objects/25/value/textStyle/encodedAttributes/MSAttributedStringColorAttribute"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "E565BB11-90DE-445A-9054-AC99EEA6FD87",
+      "source_member": "document.json",
+      "json_pointer": "/layerTextStyles/objects/26/value/textStyle/encodedAttributes/MSAttributedStringColorAttribute"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "E565BB11-90DE-445A-9054-AC99EEA6FD87",
+      "source_member": "document.json",
+      "json_pointer": "/layerTextStyles/objects/27/value/textStyle/encodedAttributes/MSAttributedStringColorAttribute"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "E565BB11-90DE-445A-9054-AC99EEA6FD87",
+      "source_member": "document.json",
+      "json_pointer": "/layerTextStyles/objects/28/value/textStyle/encodedAttributes/MSAttributedStringColorAttribute"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "E565BB11-90DE-445A-9054-AC99EEA6FD87",
+      "source_member": "document.json",
+      "json_pointer": "/layerTextStyles/objects/29/value/textStyle/encodedAttributes/MSAttributedStringColorAttribute"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "E565BB11-90DE-445A-9054-AC99EEA6FD87",
+      "source_member": "document.json",
+      "json_pointer": "/layerTextStyles/objects/30/value/textStyle/encodedAttributes/MSAttributedStringColorAttribute"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "E565BB11-90DE-445A-9054-AC99EEA6FD87",
+      "source_member": "document.json",
+      "json_pointer": "/layerTextStyles/objects/31/value/textStyle/encodedAttributes/MSAttributedStringColorAttribute"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "E565BB11-90DE-445A-9054-AC99EEA6FD87",
+      "source_member": "document.json",
+      "json_pointer": "/layerTextStyles/objects/32/value/textStyle/encodedAttributes/MSAttributedStringColorAttribute"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "E565BB11-90DE-445A-9054-AC99EEA6FD87",
+      "source_member": "document.json",
+      "json_pointer": "/layerTextStyles/objects/33/value/textStyle/encodedAttributes/MSAttributedStringColorAttribute"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "E565BB11-90DE-445A-9054-AC99EEA6FD87",
+      "source_member": "document.json",
+      "json_pointer": "/layerTextStyles/objects/34/value/textStyle/encodedAttributes/MSAttributedStringColorAttribute"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "E565BB11-90DE-445A-9054-AC99EEA6FD87",
+      "source_member": "document.json",
+      "json_pointer": "/layerTextStyles/objects/35/value/textStyle/encodedAttributes/MSAttributedStringColorAttribute"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "E565BB11-90DE-445A-9054-AC99EEA6FD87",
+      "source_member": "document.json",
+      "json_pointer": "/layerTextStyles/objects/36/value/textStyle/encodedAttributes/MSAttributedStringColorAttribute"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "E565BB11-90DE-445A-9054-AC99EEA6FD87",
+      "source_member": "document.json",
+      "json_pointer": "/layerTextStyles/objects/37/value/textStyle/encodedAttributes/MSAttributedStringColorAttribute"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "E565BB11-90DE-445A-9054-AC99EEA6FD87",
+      "source_member": "document.json",
+      "json_pointer": "/layerTextStyles/objects/38/value/textStyle/encodedAttributes/MSAttributedStringColorAttribute"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "E565BB11-90DE-445A-9054-AC99EEA6FD87",
+      "source_member": "document.json",
+      "json_pointer": "/layerTextStyles/objects/39/value/textStyle/encodedAttributes/MSAttributedStringColorAttribute"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "E565BB11-90DE-445A-9054-AC99EEA6FD87",
+      "source_member": "document.json",
+      "json_pointer": "/layerTextStyles/objects/40/value/textStyle/encodedAttributes/MSAttributedStringColorAttribute"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "E565BB11-90DE-445A-9054-AC99EEA6FD87",
+      "source_member": "document.json",
+      "json_pointer": "/layerTextStyles/objects/41/value/textStyle/encodedAttributes/MSAttributedStringColorAttribute"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "E565BB11-90DE-445A-9054-AC99EEA6FD87",
+      "source_member": "document.json",
+      "json_pointer": "/layerTextStyles/objects/42/value/textStyle/encodedAttributes/MSAttributedStringColorAttribute"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "E565BB11-90DE-445A-9054-AC99EEA6FD87",
+      "source_member": "document.json",
+      "json_pointer": "/layerTextStyles/objects/43/value/textStyle/encodedAttributes/MSAttributedStringColorAttribute"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "E565BB11-90DE-445A-9054-AC99EEA6FD87",
+      "source_member": "document.json",
+      "json_pointer": "/layerTextStyles/objects/46/value/textStyle/encodedAttributes/MSAttributedStringColorAttribute"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "E565BB11-90DE-445A-9054-AC99EEA6FD87",
+      "source_member": "document.json",
+      "json_pointer": "/layerTextStyles/objects/47/value/textStyle/encodedAttributes/MSAttributedStringColorAttribute"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "E565BB11-90DE-445A-9054-AC99EEA6FD87",
+      "source_member": "document.json",
+      "json_pointer": "/layerTextStyles/objects/48/value/textStyle/encodedAttributes/MSAttributedStringColorAttribute"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "E565BB11-90DE-445A-9054-AC99EEA6FD87",
+      "source_member": "document.json",
+      "json_pointer": "/layerTextStyles/objects/49/value/textStyle/encodedAttributes/MSAttributedStringColorAttribute"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "E565BB11-90DE-445A-9054-AC99EEA6FD87",
+      "source_member": "document.json",
+      "json_pointer": "/layerTextStyles/objects/50/value/textStyle/encodedAttributes/MSAttributedStringColorAttribute"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "E565BB11-90DE-445A-9054-AC99EEA6FD87",
+      "source_member": "document.json",
+      "json_pointer": "/layerTextStyles/objects/51/value/textStyle/encodedAttributes/MSAttributedStringColorAttribute"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "E565BB11-90DE-445A-9054-AC99EEA6FD87",
+      "source_member": "document.json",
+      "json_pointer": "/layerTextStyles/objects/52/value/textStyle/encodedAttributes/MSAttributedStringColorAttribute"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "E565BB11-90DE-445A-9054-AC99EEA6FD87",
+      "source_member": "document.json",
+      "json_pointer": "/layerTextStyles/objects/53/value/textStyle/encodedAttributes/MSAttributedStringColorAttribute"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "E565BB11-90DE-445A-9054-AC99EEA6FD87",
+      "source_member": "document.json",
+      "json_pointer": "/layerTextStyles/objects/54/value/textStyle/encodedAttributes/MSAttributedStringColorAttribute"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "E565BB11-90DE-445A-9054-AC99EEA6FD87",
+      "source_member": "document.json",
+      "json_pointer": "/layerTextStyles/objects/55/value/textStyle/encodedAttributes/MSAttributedStringColorAttribute"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "E565BB11-90DE-445A-9054-AC99EEA6FD87",
+      "source_member": "document.json",
+      "json_pointer": "/layerTextStyles/objects/56/value/textStyle/encodedAttributes/MSAttributedStringColorAttribute"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "E565BB11-90DE-445A-9054-AC99EEA6FD87",
+      "source_member": "document.json",
+      "json_pointer": "/layerTextStyles/objects/57/value/textStyle/encodedAttributes/MSAttributedStringColorAttribute"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "E565BB11-90DE-445A-9054-AC99EEA6FD87",
+      "source_member": "document.json",
+      "json_pointer": "/layerTextStyles/objects/58/value/textStyle/encodedAttributes/MSAttributedStringColorAttribute"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "E565BB11-90DE-445A-9054-AC99EEA6FD87",
+      "source_member": "document.json",
+      "json_pointer": "/layerTextStyles/objects/59/value/textStyle/encodedAttributes/MSAttributedStringColorAttribute"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "E565BB11-90DE-445A-9054-AC99EEA6FD87",
+      "source_member": "document.json",
+      "json_pointer": "/layerTextStyles/objects/60/value/textStyle/encodedAttributes/MSAttributedStringColorAttribute"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "E565BB11-90DE-445A-9054-AC99EEA6FD87",
+      "source_member": "document.json",
+      "json_pointer": "/layerTextStyles/objects/61/value/textStyle/encodedAttributes/MSAttributedStringColorAttribute"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "E565BB11-90DE-445A-9054-AC99EEA6FD87",
+      "source_member": "document.json",
+      "json_pointer": "/layerTextStyles/objects/62/value/textStyle/encodedAttributes/MSAttributedStringColorAttribute"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "E565BB11-90DE-445A-9054-AC99EEA6FD87",
+      "source_member": "document.json",
+      "json_pointer": "/layerTextStyles/objects/63/value/textStyle/encodedAttributes/MSAttributedStringColorAttribute"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "E565BB11-90DE-445A-9054-AC99EEA6FD87",
+      "source_member": "document.json",
+      "json_pointer": "/layerTextStyles/objects/64/value/textStyle/encodedAttributes/MSAttributedStringColorAttribute"
+    },
+    {
+      "kind": "swatch",
+      "target_id": "E565BB11-90DE-445A-9054-AC99EEA6FD87",
+      "source_member": "document.json",
+      "json_pointer": "/layerTextStyles/objects/65/value/textStyle/encodedAttributes/MSAttributedStringColorAttribute"
+    }
+  ],
+  "duplicate_symbol_names": {
+    "Pointers/Resize North-South": 2,
+    "Pointers/Default": 2,
+    "Windows/Dark/Window BG (with Sidebar)/Active": 2,
+    "Windows/Dark/Window BG (with Sidebar)/Inactive": 2,
+    "Windows/Light/Window BG (with Sidebar)/Active": 2,
+    "Windows/Light/Window BG (with Sidebar)/Inactive": 2
+  },
+  "notes": [
+    "No missing reference has been repaired or guessed.",
+    "A resolved symbolInstance does not imply all symbol overrides or swatches resolve.",
+    "Duplicate names are preserved; use symbol_id or layer_id to disambiguate.",
+    "Empty symbol override values are retained in source, excluded from nonempty ID checks.",
+    "Raw enum values, font glyphs, and max-radius sentinels are not interpreted as SDK APIs."
+  ]
+}

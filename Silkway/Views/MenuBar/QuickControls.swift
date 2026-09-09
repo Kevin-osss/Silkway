@@ -25,33 +25,22 @@ struct QuickControls: View {
 
     private var takeoverRow: some View {
         ControlRow(label: "接管方式") {
-            HStack(spacing: 0) {
-                takeoverButton("系统代理", active: !config.tunEnabled)
-                takeoverButton("TUN", active: config.tunEnabled)
+            Picker("接管方式", selection: Binding(
+                get: { config.tunEnabled },
+                set: { wantTUN in
+                    guard wantTUN != config.tunEnabled else { return }
+                    Task { await switchTakeover(toTUN: wantTUN) }
+                }
+            )) {
+                Text("系统代理").tag(false)
+                Text("TUN").tag(true)
             }
-            .padding(2)
-            .background(Color.white.opacity(0.06), in: RoundedRectangle(cornerRadius: 6))
+            .pickerStyle(.segmented)
+            .labelsHidden()  // 标签已在行首显示，避免重复
+            .controlSize(.small)
+            .frame(width: 140)
+            .disabled(isSwitching)
         }
-    }
-
-    private func takeoverButton(_ title: String, active: Bool) -> some View {
-        Button {
-            let wantTUN = title == "TUN"
-            guard wantTUN != config.tunEnabled else { return }
-            Task { await switchTakeover(toTUN: wantTUN) }
-        } label: {
-            Text(title)
-                .font(.system(size: 11, weight: .medium))
-                .frame(width: 62)
-                .padding(.vertical, 3)
-                .background(
-                    active ? Color.white.opacity(0.18) : Color.clear,
-                    in: RoundedRectangle(cornerRadius: 5)
-                )
-                .foregroundStyle(active ? ColorToken.textPrimary : ColorToken.textSecondary.opacity(0.75))
-        }
-        .buttonStyle(.plain)
-        .disabled(isSwitching)
     }
 
     /// 切换接管方式 = 改配置 + 重启 sing-box（两种模式的 inbound 结构不同，
@@ -73,32 +62,20 @@ struct QuickControls: View {
 
     private var modeRow: some View {
         ControlRow(label: "出站模式") {
-            HStack(spacing: 0) {
+            Picker("出站模式", selection: Binding(
+                get: { manager.mode },
+                set: { newMode in
+                    Task { await manager.setMode(newMode) }
+                }
+            )) {
                 ForEach(ProxyMode.allCases) { mode in
-                    Button {
-                        Task { await manager.setMode(mode) }
-                    } label: {
-                        Text(mode.displayName)
-                            .font(.system(size: 11, weight: .medium))
-                            .frame(width: 40)
-                            .padding(.vertical, 3)
-                            .background(
-                                manager.mode == mode
-                                ? Color.white.opacity(0.18)
-                                : Color.clear,
-                                in: RoundedRectangle(cornerRadius: 5)
-                            )
-                            .foregroundStyle(
-                                manager.mode == mode
-                                ? ColorToken.textPrimary
-                                : ColorToken.textSecondary.opacity(0.75)
-                            )
-                    }
-                    .buttonStyle(.plain)
+                    Text(mode.displayName).tag(mode)
                 }
             }
-            .padding(2)
-            .background(Color.white.opacity(0.06), in: RoundedRectangle(cornerRadius: 6))
+            .pickerStyle(.segmented)
+            .labelsHidden()
+            .controlSize(.small)
+            .frame(width: 160)
         }
     }
 
@@ -142,15 +119,11 @@ struct QuickControls: View {
                     Text(activeProfileName)
                         .font(.system(size: 11))
                         .lineLimit(1)
-                    Image(systemName: "chevron.up.chevron.down")
-                        .font(.system(size: 8, weight: .bold))
                 }
                 .foregroundStyle(ColorToken.textSecondary)
-                .padding(.horizontal, 8)
-                .padding(.vertical, 4)
-                .background(Color.white.opacity(0.06), in: RoundedRectangle(cornerRadius: 5))
             }
             .menuStyle(.borderlessButton)
+            .menuIndicator(.visible)  // 下拉箭头由系统绘制，不自绘 chevron
             .fixedSize()
             .disabled(isSwitching)
         }
