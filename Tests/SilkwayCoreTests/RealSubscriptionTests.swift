@@ -135,3 +135,33 @@ struct RealSubscriptionTests {
         }
     }
 }
+
+// MARK: - 真实订阅响应体解析
+
+/// 用真实机场返回的原文验证解析器。
+/// 运行前先执行：curl -A "sing-box/1.13.19" <订阅地址> -o /tmp/silkway-real-sub.txt
+/// 文件不存在则跳过（视为通过），因此可以常驻在测试集里。
+@Suite("真实订阅响应体")
+struct RealSubscriptionBodyTests {
+
+    private static let bodyPath = "/tmp/silkway-real-sub.txt"
+
+    @Test("真实订阅原文能解析出全部可用节点")
+    func realBodyParses() throws {
+        guard let text = try? String(contentsOfFile: Self.bodyPath, encoding: .utf8) else {
+            return  // 没有样本，跳过
+        }
+
+        let result = SubscriptionParser.parseDetailed(text)
+        print("真实订阅：解析出 \(result.nodes.count) 个节点，跳过 \(result.skippedCount) 个")
+        if !result.skipped.isEmpty {
+            print("跳过原因（前 5 条）：\(result.skipped.prefix(5).joined(separator: " / "))")
+        }
+
+        #expect(!result.nodes.isEmpty, "真实订阅不应解析出 0 个节点")
+        // 每个节点都必须带可用凭证，否则会在 ConfigBuilder 里被静默丢弃
+        for node in result.nodes {
+            #expect(node.outboundJSON != nil, "节点「\(node.name)」缺少 outboundJSON")
+        }
+    }
+}

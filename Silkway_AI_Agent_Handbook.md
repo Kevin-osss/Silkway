@@ -773,6 +773,20 @@ TUN 是独立于主链路的增量功能。**建议 P0–P1 全部完成、系�
 | TUN 模式不劫持 DNS | DNS 请求当普通 UDP 走 final → 代理，慢且可能形成「解析机场域名需先连上机场」死循环 | 加 `{"action": "hijack-dns", "protocol": "dns"}` + `route.default_domain_resolver` |
 | 代理协议跑 ICMP | `icmp is not supported by default outbound`，ping 全废 | TUN 下加 `{"network": "icmp", "outbound": "direct-out"}` |
 | TUN 配置 IPv6 地址但机场无 v6 出口 | 应用拿到原生 v6 地址后进 TUN，direct 出站报 `no route to host`；双栈站点卡死（2026-09-08 实测电信 240e:: 全网段） | TUN 只配 IPv4 地址 + `dns.strategy: prefer_ipv4`；v6 流量不进 TUN，macOS 自动降级 v4 |
+
+### 订阅解析与持久化的坑（2026-09-08 通用性审查）
+
+| 坑 | 症状 | 对策 |
+|---|---|---|
+| **解析器产出不带凭证的节点** | Clash YAML 用扁平行扫描只能读出 name/server/port，生成的节点 `outboundJSON == nil`，`ConfigBuilder` 静默跳过 → **UI 上看得见节点，选了连不上且无任何报错** | 单独的 `ClashConverter` 做嵌套 YAML 解析 + 完整字段映射；凭证不全的条目**解析阶段就丢弃**，宁可少一个节点也不造幽灵节点 |
+| **不支持的协议降级处理** | `ssr`/`snell` 被 `?? .shadowsocks` 兜底成 SS 节点，同样是连不上的幽灵 | `ClashConverter.proxyProtocol(for:)` 返回 nil 就整条丢弃并记录原因 |
+| **静默丢弃无上报** | 机场说 80 个节点，导入后只有 52 个，用户无从判断是谁的错 | `ParseResult` 带回 `skipped: [String]`（含节点名 + 原因），写入 `Subscription.skippedCount/skippedReasons`，UI 显示「N 个条目未导入」悬停可看原因 |
+| **🔥 Codable 新增非可选字段 = 静默重置用户全部设置** | Swift 合成的 `init(from:)` 遇缺失 key 抛 `keyNotFound`（**属性默认值救不了**），而 `AppConfigStore` 用 `try?` 加载 → 回退到全默认。每加一个配置字段，老用户的代理模式/开机自启/绕过大陆全没 | `AppConfig` 手写 `init(from:)`，逐字段 `decodeIfPresent ?? 默认值`；`Subscription` 新增字段一律用 Optional。回归测试锁死（`ConfigCompatibilityTests`） |
+| **订阅 UA 决定返回格式** | 机场按 UA 分发内容：含 `clash`→YAML、含 `sing-box`→完整配置、未知 UA→base64 或直接拒绝。自报 `Silkway/1.0` 拿到最差的那份 | 默认 `sing-box/1.13.19`（凭证最完整），并在设置里开放修改 + 预设菜单 |
+| **流量/到期信息被丢弃** | 机场在 `Subscription-Userinfo` 响应头里返回已用/总量/到期，之前完全没读 | `Subscription.applyUserInfo(header:)` 解析，UI 显示进度条。`total=0` = 不限量，`expire=0` 不能算成 1970 年 |
+
+**验证方式**：不能只断言「解析出几个节点」，必须断言「每个节点都能生成**可用**出站」，并拿真实 `sing-box check` 校 schema——
+字段名写错（`alter_id` 写成 `alterId`、REALITY 缺 `utls`）只有内核能抓到。
 | 测试读 `AppConfigStore.shared` 真实配置 | 用户开了 TUN 后，集成测试也走 TUN 分支 → SMAppService 在测试 bundle 里必挂 | 测试必须注入 `configProvider = { AppConfig() }`（同 `nodeProvider`/`appSupportDir`） |
 | 试图用 `Process()` 启动 TUN 模式 | 权限不足，静默失败 | TUN 必须经特权 Helper 启动，见第 8 节 |
 | 开启 App Sandbox | Helper 注册与系统代理设置全部失效 | 保持沙盒关闭，见 8.6 |
@@ -885,7 +899,7 @@ Agent 每次只领取一个任务，完成后更新状态。**同优先级内按
 
 ---
 
-*本文档版本: v1.20*  
+*本文档版本: v1.21*  
 *v1.1：新增第 8 节「TUN 模式与特权 Helper」，原 8–11 节顺延为 9–12*  
 *v1.2：第 10 节任务清单重排（P0 改为端到端闭环，UI 后置）；第 11 节清空第三方依赖*  
 *v1.3：完成任务 0 技术验证。修正 7.3 `store_selected` 废弃、7.4 DNS 旧格式两处错误；*  
@@ -926,6 +940,8 @@ Agent 每次只领取一个任务，完成后更新状态。**同优先级内按
 *v1.19：修「有的网站打不开」—— 双栈站点卡死根因是 TUN 接管了 IPv6 但 SS 机场无 v6 出口；*  
 *TUN 改纯 IPv4 + DNS prefer_ipv4；绕过大陆默认开启 + 首次启动自动下载规则集*  
 *v1.20：TUN 全部真机验证通过。绕过大陆分流生效（微博/B站直连、ChatGPT/Google 走代理）*  
+*v1.21：通用性改造 —— Clash YAML 完整支持（嵌套 ws-opts/reality-opts/plugin-opts）、*  
+*不支持条目上报而非静默丢弃、UA 可配、流量/到期显示、tuic+anytls、Codable 容错解码*  
 
 *最后更新: 2026-09-02*  
 *如有架构变更，必须同步更新本文档。*  

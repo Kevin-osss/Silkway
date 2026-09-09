@@ -32,6 +32,10 @@ struct SubscriptionView: View {
                         }
                     }
                     .onDelete(perform: delete)
+
+                    Section("高级") {
+                        UserAgentField()
+                    }
                 }
             }
         }
@@ -123,6 +127,17 @@ private struct SubscriptionRow: View {
                         .font(.caption2)
                         .foregroundStyle(ColorToken.warning)
                 }
+
+                // 被跳过的条目必须可见：否则用户面对「机场说 80 个节点，
+                // 这里只有 52 个」无从判断是自己的错还是机场的错
+                if let skipped = subscription.skippedCount, skipped > 0 {
+                    Label("\(skipped) 个条目未导入", systemImage: "minus.circle")
+                        .font(.caption2)
+                        .foregroundStyle(ColorToken.warning)
+                        .help(subscription.skippedReasons?.joined(separator: "\n") ?? "")
+                }
+
+                TrafficBar(subscription: subscription)
             }
 
             Spacer()
@@ -142,6 +157,99 @@ private struct SubscriptionRow: View {
             .disabled(isUpdating)
         }
         .padding(.vertical, 4)
+    }
+}
+
+// MARK: - User-Agent 设置
+
+/// 机场根据 UA 返回不同格式的订阅内容，有些甚至只认特定客户端。
+/// 拉不到节点时换一个 UA 往往就好了，所以开放给用户改。
+private struct UserAgentField: View {
+    @State private var store = AppConfigStore.shared
+    @State private var text: String = AppConfigStore.shared.config.subscriptionUserAgent
+
+    private static let presets = [
+        "sing-box/1.13.19",
+        "clash-verge/v1.5.11",
+        "ClashforWindows/0.19.23",
+        "v2rayN/6.23",
+    ]
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 6) {
+            HStack {
+                Text("User-Agent")
+                Spacer()
+                TextField("", text: $text)
+                    .textFieldStyle(.roundedBorder)
+                    .frame(width: 220)
+                    .onSubmit(save)
+
+                Menu {
+                    ForEach(Self.presets, id: \.self) { preset in
+                        Button(preset) {
+                            text = preset
+                            save()
+                        }
+                    }
+                } label: {
+                    Image(systemName: "list.bullet")
+                }
+                .menuStyle(.borderlessButton)
+                .frame(width: 24)
+            }
+
+            Text("机场按 UA 返回不同格式。拉不到节点时可换成 clash 或 v2rayN 试试。")
+                .font(.caption2)
+                .foregroundStyle(ColorToken.textSecondary)
+        }
+        .padding(.vertical, 2)
+    }
+
+    private func save() {
+        let trimmed = text.trimmingCharacters(in: .whitespaces)
+        guard !trimmed.isEmpty else {
+            text = store.config.subscriptionUserAgent
+            return
+        }
+        store.update { $0.subscriptionUserAgent = trimmed }
+    }
+}
+
+// MARK: - 流量与到期
+
+/// 机场在 Subscription-Userinfo 响应头里返回的流量/到期信息。
+/// 没返回这个头的机场就不显示（而不是显示 0）—— “未知”和“用完了”是两回事。
+private struct TrafficBar: View {
+    let subscription: Subscription
+
+    var body: some View {
+        if let used = subscription.trafficUsed {
+            VStack(alignment: .leading, spacing: 3) {
+                HStack(spacing: 6) {
+                    if let total = subscription.trafficTotal, total > 0 {
+                        Text("\(Formatters.bytes(used)) / \(Formatters.bytes(total))")
+                    } else {
+                        Text("已用 \(Formatters.bytes(used))・不限量")
+                    }
+
+                    if let days = subscription.daysUntilExpiry() {
+                        Text("·")
+                        Text(days >= 0 ? "\(days) 天后到期" : "已过期")
+                            .foregroundStyle(days <= 7 ? ColorToken.warning : ColorToken.textSecondary)
+                    }
+                }
+                .font(.caption2)
+                .foregroundStyle(ColorToken.textSecondary)
+
+                if let ratio = subscription.trafficRatio {
+                    ProgressView(value: ratio)
+                        .progressViewStyle(.linear)
+                        .frame(maxWidth: 220)
+                        .tint(ratio > 0.9 ? ColorToken.error : ColorToken.accent)
+                }
+            }
+        }
     }
 }
 

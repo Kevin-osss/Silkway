@@ -69,8 +69,11 @@ struct SingBoxCheckTests {
         try? FileManager.default.removeItem(at: tmpDir)
     }
 
-    @Test("YAML 子集节点（无凭证）被跳过但不影响整体配置")
-    func yamlNodesSkipped() throws {
+    @Test("缺凭证的 YAML 条目整条丢弃，不造幽灵节点")
+    func yamlNodesWithoutCredentialsDropped() throws {
+        // trojan 没有 password 就无法连接。早期实现会把它当成节点显示在 UI 上，
+        // 但 ConfigBuilder 生成配置时静默跳过 —— 用户选了却连不上且无从查起。
+        // 现在的契约：解析阶段就丢掉，宁可少一个节点。
         let yaml = """
         proxies:
           - name: "节点A"
@@ -79,14 +82,115 @@ struct SingBoxCheckTests {
             port: 443
         """
         let nodes = SubscriptionParser.parse(yaml)
-        #expect(nodes.count == 1)
-        #expect(nodes.first?.outboundJSON == nil, "YAML 子集只有元数据")
+        #expect(nodes.isEmpty, "缺必填凭证的条目不应产出节点")
 
-        // 生成配置应只含 direct-out + selector，不 crash
+        // 零节点时配置仍应合法（只有 direct-out + 空策略组）
         let dict = ConfigBuilder.build(nodes: nodes, apiPort: 19091, mixedPort: 17891)
         let outbounds = dict["outbounds"] as? [[String: Any]] ?? []
         #expect(outbounds.contains { $0["tag"] as? String == "direct-out" })
         #expect(outbounds.contains { $0["tag"] as? String == "PROXY" })
+    }
+
+    @Test("Clash YAML 生成的配置通过 sing-box check")
+    func clashDerivedConfigPassesCheck() throws {
+        // 结构对不代表 sing-box 认：字段名写错（alter_id 写成 alterId、
+        // congestion_control 写成 congestion-controller）只有真实 schema 校验能抓到。
+        let yaml = """
+        proxies:
+          - name: WS-VMess
+            type: vmess
+            server: a.example.com
+            port: 443
+            uuid: 11111111-2222-3333-4444-555555555555
+            alterId: 0
+            cipher: auto
+            tls: true
+            servername: a.example.com
+            network: ws
+            ws-opts:
+              path: /ws
+              headers:
+                Host: a.example.com
+          - name: Reality-VLESS
+            type: vless
+            server: b.example.com
+            port: 443
+            uuid: 22222222-3333-4444-5555-666666666666
+            tls: true
+            flow: xtls-rprx-vision
+            client-fingerprint: chrome
+            reality-opts:
+              public-key: PXScH5cpX7GItYuQdbGqwCzMB3cynRBrtKIE089M_jU
+              short-id: 6ba85179e30d4fc2
+          - name: Obfs-SS
+            type: ss
+            server: c.example.com
+            port: 8388
+            cipher: aes-256-gcm
+            password: sspassword
+          - name: HY2
+            type: hysteria2
+            server: d.example.com
+            port: 443
+            password: hy2pw
+            sni: d.example.com
+          - name: TUIC-Node
+            type: tuic
+            server: e.example.com
+            port: 443
+            uuid: 33333333-4444-5555-6666-777777777777
+            password: tuicpw
+            congestion-controller: bbr
+            sni: e.example.com
+        """
+        let nodes = SubscriptionParser.parse(yaml)
+        #expect(nodes.count == 5, "应解析出 5 个节点，实际 \(nodes.count)")
+
+        let config = try ConfigBuilder.data(nodes: nodes, apiPort: 19093, mixedPort: 17893)
+        try Self.runSingBoxCheck(config)
+    }
+
+    @Test("分享链接：tuic / anytls 通过 sing-box check")
+    func newProtocolShareLinks() throws {
+        let uris = [
+            "tuic://33333333-4444-5555-6666-777777777777:tuicpassword@tuic.example.com:443?congestion_control=bbr&alpn=h3&sni=tuic.example.com#TUIC节点",
+            "anytls://anytlspw@any.example.com:443?sni=any.example.com#AnyTLS节点",
+        ]
+        let nodes = uris.flatMap { SubscriptionParser.parse($0) }
+        #expect(nodes.count == 2)
+        #expect(nodes.first?.proxyProtocol == .tuic)
+        #expect(nodes.last?.proxyProtocol == .anytls)
+
+        let config = try ConfigBuilder.data(nodes: nodes, apiPort: 19094, mixedPort: 17894)
+        try Self.runSingBoxCheck(config)
+    }
+
+    /// 写临时配置并跑 sing-box check，失败时把 stderr 原文报出来。
+    private static func runSingBoxCheck(_ config: Data) throws {
+        let tmpDir = FileManager.default.temporaryDirectory
+            .appendingPathComponent("silkway-check-\(UUID().uuidString)")
+        try FileManager.default.createDirectory(at: tmpDir, withIntermediateDirectories: true)
+        defer { try? FileManager.default.removeItem(at: tmpDir) }
+
+        let configURL = tmpDir.appendingPathComponent("config.json")
+        try config.write(to: configURL)
+
+        let process = Process()
+        process.executableURL = URL(fileURLWithPath: binaryPath)
+        process.arguments = ["check", "-c", configURL.path, "-D", tmpDir.path]
+        let stderr = Pipe()
+        process.standardError = stderr
+        process.standardOutput = Pipe()
+        try process.run()
+        process.waitUntilExit()
+
+        if process.terminationReason != .exit || process.terminationStatus != 0 {
+            let errText = String(
+                data: stderr.fileHandleForReading.readDataToEndOfFile(),
+                encoding: .utf8
+            ) ?? ""
+            Issue.record("sing-box check 失败 (exit=\(process.terminationStatus)):\n\(errText)")
+        }
     }
 
     @Test("TUN 模式配置通过 sing-box check")

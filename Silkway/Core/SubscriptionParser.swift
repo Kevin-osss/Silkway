@@ -9,19 +9,38 @@ import Foundation
 enum SubscriptionParser {
 
     /// 解析失败时返回空数组，不抛异常 —— 由调用方检查 nodeCount。
-    static func parse(_ text: String) -> [ProxyNode] {
-        let trimmed = text.trimmingCharacters(in: .whitespacesAndNewlines)
-        guard !trimmed.isEmpty else { return [] }
+    /// 解析结果：除了节点，还带回被丢弃的条目。
+    ///
+    /// 为什么需要这个：机场订阅里混着我们不支持的协议（ssr/snell）或缺凭证的条目，
+    /// 静默丢弃会让用户面对「机场说有 80 个节点，这里只有 52 个」而无从判断是
+    /// 自己的错还是机场的错。
+    struct ParseResult: Sendable {
+        var nodes: [ProxyNode]
+        /// 被丢弃条目的描述，形如 "香港01：ssr 协议不支持"
+        var skipped: [String]
 
-        // 1. 尝试 SIP008 JSON
-        if trimmed.hasPrefix("{"), let nodes = parseSIP008JSON(trimmed) {
-            return nodes
+        var skippedCount: Int { skipped.count }
+    }
+
+    /// 兼容入口：只要节点。
+    static func parse(_ text: String) -> [ProxyNode] {
+        parseDetailed(text).nodes
+    }
+
+    /// 完整入口：节点 + 丢弃明细。
+    static func parseDetailed(_ text: String) -> ParseResult {
+        let trimmed = text.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard !trimmed.isEmpty else { return ParseResult(nodes: [], skipped: []) }
+
+        // 1. 尝试 SIP008 / sing-box 完整配置 JSON
+        if trimmed.hasPrefix("{"), let result = parseJSONDetailed(trimmed) {
+            return result
         }
 
         // 2. 尝试 Clash YAML
         if trimmed.contains("proxies:") || trimmed.contains("Proxy:") {
-            if let nodes = parseClashYAML(trimmed) {
-                return nodes
+            if let result = parseClashDetailed(trimmed) {
+                return result
             }
         }
 
@@ -29,15 +48,27 @@ enum SubscriptionParser {
         let lines = trimmed.components(separatedBy: .newlines)
         let decoded = lines.flatMap { decodeLine($0) }
         if !decoded.isEmpty {
-            return decoded
+            return ParseResult(nodes: decoded, skipped: skippedURILines(lines))
         }
 
         // 4. 整段文本可能是 Base64 编码的多行 URI
         if let whole = decodeBase64(trimmed) {
-            return whole.components(separatedBy: .newlines).flatMap { decodeLine($0) }
+            let innerLines = whole.components(separatedBy: .newlines)
+            let nodes = innerLines.flatMap { decodeLine($0) }
+            return ParseResult(nodes: nodes, skipped: skippedURILines(innerLines))
         }
 
-        return []
+        return ParseResult(nodes: [], skipped: [])
+    }
+
+    /// 找出长得像分享链接、但没能解析成节点的行。
+    private static func skippedURILines(_ lines: [String]) -> [String] {
+        lines.compactMap { raw in
+            let line = raw.trimmingCharacters(in: .whitespaces)
+            guard line.contains("://"), decodeLine(line).isEmpty else { return nil }
+            let scheme = line.components(separatedBy: "://").first ?? "未知"
+            return "\(scheme) 协议不支持或链接格式有误"
+        }
     }
 
     // MARK: - 单行 URI 解码
@@ -69,11 +100,85 @@ enum SubscriptionParser {
             return [parseTrojan(url)].compactMap { $0 }
         case "ss":
             return parseSS(uri).compactMap { $0 }
-        case "hysteria2", "h2":
+        case "hysteria2", "h2", "hy2":
             return [parseHysteria2(url)].compactMap { $0 }
+        case "tuic":
+            return [parseTUIC(url)].compactMap { $0 }
+        case "anytls":
+            return [parseAnyTLS(url)].compactMap { $0 }
         default:
             return []
         }
+    }
+
+    // MARK: - tuic:// 与 anytls://
+
+    /// tuic://uuid:password@host:port?params#name
+    private static func parseTUIC(_ url: URL) -> ProxyNode? {
+        guard let host = url.host, let port = url.port,
+              let uuid = url.user, !uuid.isEmpty
+        else { return nil }
+        let name = url.fragment?.removingPercentEncoding ?? "TUIC"
+        let query = queryItems(url)
+
+        var node = ProxyNode(
+            name: name,
+            server: host,
+            port: port,
+            proxyProtocol: .tuic,
+            countryCode: inferCountry(from: name)
+        )
+        var base: [String: Any] = [
+            "type": "tuic",
+            "server": host,
+            "server_port": port,
+            "uuid": uuid,
+        ]
+        if let password = url.password, !password.isEmpty { base["password"] = password }
+        if let cc = query["congestion_control"] ?? query["congestion-controller"], !cc.isEmpty {
+            base["congestion_control"] = cc
+        }
+        if let mode = query["udp_relay_mode"], !mode.isEmpty { base["udp_relay_mode"] = mode }
+
+        // tuic 建在 QUIC 上，TLS 必开
+        var tls: [String: Any] = ["enabled": true]
+        if let sni = query["sni"], !sni.isEmpty { tls["server_name"] = sni }
+        if query["allow_insecure"] == "1" || query["insecure"] == "1" { tls["insecure"] = true }
+        if let alpn = query["alpn"], !alpn.isEmpty {
+            tls["alpn"] = alpn.split(separator: ",").map { String($0) }
+        }
+        node.outboundJSON = makeOutboundJSON(base, tls: tls)
+        return node
+    }
+
+    /// anytls://password@host:port?params#name
+    private static func parseAnyTLS(_ url: URL) -> ProxyNode? {
+        guard let host = url.host, let port = url.port,
+              let password = url.password ?? url.user, !password.isEmpty
+        else { return nil }
+        let name = url.fragment?.removingPercentEncoding ?? "AnyTLS"
+        let query = queryItems(url)
+
+        var node = ProxyNode(
+            name: name,
+            server: host,
+            port: port,
+            proxyProtocol: .anytls,
+            countryCode: inferCountry(from: name)
+        )
+        var tls: [String: Any] = ["enabled": true]
+        if let sni = query["sni"], !sni.isEmpty { tls["server_name"] = sni }
+        if query["insecure"] == "1" { tls["insecure"] = true }
+        node.outboundJSON = makeOutboundJSON(
+            [
+                "type": "anytls",
+                "server": host,
+                "server_port": port,
+                "password": password,
+            ],
+            tls: tls
+        )
+        return node
     }
 
     // MARK: - vmess://BASE64
@@ -387,7 +492,7 @@ enum SubscriptionParser {
 
     // MARK: - SIP008 JSON
 
-    private static func parseSIP008JSON(_ text: String) -> [ProxyNode]? {
+    private static func parseJSONDetailed(_ text: String) -> ParseResult? {
         guard let data = text.data(using: .utf8),
               let json = try? JSONSerialization.jsonObject(with: data) as? [String: Any]
         else { return nil }
@@ -395,15 +500,26 @@ enum SubscriptionParser {
         let servers = json["servers"] as? [[String: Any]] ?? json["outbounds"] as? [[String: Any]]
         guard let serverList = servers else { return nil }
 
-        return serverList.compactMap { dict -> ProxyNode? in
+        var nodes: [ProxyNode] = []
+        var skipped: [String] = []
+
+        for dict in serverList {
+            let name = dict["remarks"] as? String ?? dict["tag"] as? String ?? "Node"
+            let typeString = (dict["type"] as? String ?? dict["protocol"] as? String ?? "").lowercased()
+
+            // sing-box 完整配置里的 selector/urltest/direct/block 不是真实节点，
+            // 它们被跳过是预期行为，不该报给用户
+            let structural = ["selector", "urltest", "direct", "block", "dns"]
+            if structural.contains(typeString) { continue }
+
             guard let server = dict["server"] as? String ?? dict["address"] as? String,
                   let port = parsePort(dict["server_port"] ?? dict["port"])
-            else { return nil }
+            else {
+                skipped.append("\(name)：缺少服务器地址或端口")
+                continue
+            }
 
-            let name = dict["remarks"] as? String ?? dict["tag"] as? String ?? "Node"
-            // sing-box 条目用 type 标识协议，SIP008 用 protocol
-            let protoString = (dict["type"] as? String ?? dict["protocol"] as? String ?? "shadowsocks").lowercased()
-            let proto = ProxyProtocol(rawValue: protoString) ?? .shadowsocks
+            let proto = ProxyProtocol(rawValue: typeString) ?? .shadowsocks
             var node = ProxyNode(
                 name: name,
                 server: server,
@@ -416,8 +532,7 @@ enum SubscriptionParser {
                 // sing-box 完整 outbound：原样直通，凭证零丢失。
                 // tag 会被 ConfigBuilder 覆盖为显示名，这里原样保留无所谓。
                 node.outboundJSON = makeOutboundJSON(dict)
-            } else if proto == .shadowsocks,
-                      let method = dict["method"] as? String,
+            } else if let method = dict["method"] as? String,
                       let password = dict["password"] as? String {
                 // SIP008 的 shadowsocks 条目携带 method/password，手动组装完整 outbound
                 node.outboundJSON = makeOutboundJSON([
@@ -428,116 +543,64 @@ enum SubscriptionParser {
                     "password": password,
                 ])
             }
-            return node
-        }
-    }
 
-    // MARK: - Clash YAML 子集
-
-    private static func parseClashYAML(_ text: String) -> [ProxyNode]? {
-        // 机场 YAML 往往巨大，这里不引入 YAML 库，只提取 `proxies:` 到下一个顶格 key 之间的文本，
-        // 再按行解析。支持的最小子集：
-        //   - {name: x, server: x, port: x, type: vmess}
-        //   - name: x
-        //     server: x
-        //     port: x
-        //     type: vmess
-        var inProxies = false
-        var proxyLines: [String] = []
-
-        for line in text.components(separatedBy: .newlines) {
-            if line.hasPrefix("proxies:") || line.hasPrefix("Proxy:") {
-                inProxies = true
+            guard node.outboundJSON != nil else {
+                skipped.append("\(name)：缺少可用凭证")
                 continue
             }
-            if inProxies {
-                // 下一个顶格 key 表示 proxies 结束
-                if !line.hasPrefix(" ") && !line.hasPrefix("\t") && !line.isEmpty {
-                    break
-                }
-                proxyLines.append(line)
-            }
-        }
-
-        // 把 YAML 列表项的每行整理成 name/server/port/type 字典
-        var nodes: [ProxyNode] = []
-        var current: [String: String] = [:]
-        for line in proxyLines {
-            let trimmed = line.trimmingCharacters(in: .whitespaces)
-            if trimmed.isEmpty { continue }
-
-            if trimmed.hasPrefix("- name:") || trimmed.hasPrefix("- {name:") {
-                if let node = nodeFromYAMLDict(current) {
-                    nodes.append(node)
-                }
-                current = [:]
-
-                if trimmed.hasPrefix("- {name:") {
-                    // 内联字典：- {name: x, server: x, port: x, type: trojan}
-                    let inner = trimmed
-                        .trimmingCharacters(in: .whitespaces)
-                        .dropFirst(2)
-                        .trimmingCharacters(in: CharacterSet(charactersIn: "{}"))
-                    let pairs = String(inner).split(separator: ",")
-                    for pair in pairs {
-                        let kv = pair.split(separator: ":", maxSplits: 1)
-                        guard kv.count == 2 else { continue }
-                        let k = kv[0].trimmingCharacters(in: .whitespaces)
-                            .trimmingCharacters(in: CharacterSet(charactersIn: "{}"))
-                        let v = kv[1].trimmingCharacters(in: .whitespaces)
-                            .trimmingCharacters(in: CharacterSet(charactersIn: "\"'"))
-                        current[k] = v
-                    }
-                } else if let name = extractYAMLValue(line, key: "name") {
-                    current["name"] = name
-                }
-            } else if let key = extractYAMLKey(line) {
-                current[key] = extractYAMLValue(line, key: key)
-            }
-        }
-        if let node = nodeFromYAMLDict(current) {
             nodes.append(node)
         }
 
-        return nodes.isEmpty ? nil : nodes
+        guard !nodes.isEmpty || !skipped.isEmpty else { return nil }
+        return ParseResult(nodes: nodes, skipped: skipped)
     }
 
-    private static func extractYAMLKey(_ line: String) -> String? {
-        let trimmed = line.trimmingCharacters(in: .whitespaces)
-        guard let colonIdx = trimmed.firstIndex(of: ":") else { return nil }
-        return String(trimmed[..<colonIdx]).trimmingCharacters(in: .whitespaces)
-    }
+    // MARK: - Clash YAML
 
-    private static func extractYAMLValue(_ line: String, key: String) -> String? {
-        let trimmed = line.trimmingCharacters(in: .whitespaces)
-        let prefix = "- \(key):"
-        if trimmed.hasPrefix(prefix) {
-            let rest = String(trimmed.dropFirst(prefix.count))
-            return rest.trimmingCharacters(in: .whitespaces).trimmingCharacters(in: CharacterSet(charactersIn: "\"'"))
+    /// 委托给 ClashConverter：它能读懂嵌套的 ws-opts / reality-opts / plugin-opts，
+    /// 并产出带完整凭证的 outboundJSON。旧版扁平行扫描只能读出名字和端口，
+    /// 生成的节点在 ConfigBuilder 里会被静默丢弃（节点看得见但连不上）。
+    private static func parseClashDetailed(_ text: String) -> ParseResult? {
+        let proxies = ClashConverter.parseProxies(text)
+        guard !proxies.isEmpty else { return nil }
+
+        var nodes: [ProxyNode] = []
+        var skipped: [String] = []
+
+        for dict in proxies {
+            let name = (dict["name"] as? String) ?? "未命名节点"
+            let typeRaw = (dict["type"] as? String) ?? ""
+
+            guard let server = dict["server"] as? String, !server.isEmpty,
+                  let port = parsePort(dict["port"])
+            else {
+                skipped.append("\(name)：缺少服务器地址或端口")
+                continue
+            }
+            // 不支持的协议直接丢弃而不是降级成 ss ——
+            // 造一个连不上的节点比少一个节点更糟
+            guard let proto = ClashConverter.proxyProtocol(for: typeRaw) else {
+                skipped.append("\(name)：\(typeRaw.isEmpty ? "未知" : typeRaw) 协议不支持")
+                continue
+            }
+            guard let outbound = ClashConverter.outbound(from: dict) else {
+                skipped.append("\(name)：\(typeRaw) 缺少必填凭证")
+                continue
+            }
+
+            var node = ProxyNode(
+                name: name,
+                server: server,
+                port: port,
+                proxyProtocol: proto,
+                countryCode: inferCountry(from: name)
+            )
+            node.outboundJSON = makeOutboundJSON(outbound)
+            nodes.append(node)
         }
 
-        let plainPrefix = "\(key):"
-        if trimmed.hasPrefix(plainPrefix) && !trimmed.hasPrefix("- " + plainPrefix) {
-            let rest = String(trimmed.dropFirst(plainPrefix.count))
-            return rest.trimmingCharacters(in: .whitespaces).trimmingCharacters(in: CharacterSet(charactersIn: "\"'"))
-        }
-        return nil
-    }
-
-    private static func nodeFromYAMLDict(_ dict: [String: String]) -> ProxyNode? {
-        guard let server = dict["server"], let portStr = dict["port"], let port = Int(portStr) else { return nil }
-        let name = dict["name"] ?? "Proxy"
-        let typeRaw = dict["type"] ?? "ss"
-        let proto = GroupType.fromClashType(typeRaw) == nil
-            ? (ProxyProtocol(rawValue: typeRaw.lowercased()) ?? .shadowsocks)
-            : .shadowsocks
-        return ProxyNode(
-            name: name,
-            server: server,
-            port: port,
-            proxyProtocol: proto,
-            countryCode: inferCountry(from: name)
-        )
+        guard !nodes.isEmpty || !skipped.isEmpty else { return nil }
+        return ParseResult(nodes: nodes, skipped: skipped)
     }
 
     // MARK: - 工具

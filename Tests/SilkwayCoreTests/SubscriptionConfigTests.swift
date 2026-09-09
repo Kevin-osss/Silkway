@@ -148,11 +148,12 @@ struct BulkParserTests {
     func parseClashYAML() {
         let yaml = """
         proxies:
-          - {name: 香港 IEPL, server: hk.example.com, port: 443, type: trojan}
+          - {name: 香港 IEPL, server: hk.example.com, port: 443, type: trojan, password: trojan-pw}
           - name: 日本 BGP
             server: jp.example.com
             port: 8443
             type: vmess
+            uuid: 11111111-2222-3333-4444-555555555555
         rules:
           - DOMAIN,example.com,PROXY
         """
@@ -162,6 +163,8 @@ struct BulkParserTests {
         #expect(nodes.first?.proxyProtocol == .trojan)
         #expect(nodes.last?.name == "日本 BGP")
         #expect(nodes.last?.proxyProtocol == .vmess)
+        // 节点必须带凭证，否则 ConfigBuilder 会静默丢弃
+        #expect(nodes.allSatisfy { $0.outboundJSON != nil })
     }
 }
 

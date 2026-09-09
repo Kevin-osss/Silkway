@@ -61,5 +61,51 @@ struct AppConfig: Codable, Hashable, Sendable {
     /// 导致启动死锁 —— 技术验证实测确认。
     var dnsProfile: String = "system"
 
+    // MARK: 订阅
+    /// 拉取订阅时发送的 User-Agent。
+    ///
+    /// 机场普遍根据 UA 返回不同格式：含 clash → Clash YAML，
+    /// 含 sing-box → sing-box 完整配置，未知 UA → base64 分享链接（或直接拒绝）。
+    /// 默认报 sing-box：拿到的配置凭证最完整，无需二次转换。
+    /// 开放修改是因为总有机场只认特定 UA（常见：clash-verge / v2rayN）。
+    var subscriptionUserAgent: String = "sing-box/1.13.19"
+
     init() {}
+}
+
+// MARK: - 容错解码
+
+extension AppConfig {
+
+    /// 手写 init(from:)，每个字段都走 decodeIfPresent + 默认值。
+    ///
+    /// 为什么不用合成的：Swift 合成的 Decodable 遇到缺失的 key 直接抛
+    /// keyNotFound，**属性默认值救不了**。而 AppConfigStore 用 `try?` 加载，
+    /// 解码失败会静默回退到全默认配置 —— 合起来的后果是：
+    /// **每次给 AppConfig 新增一个字段，所有老用户的设置全部静默重置**
+    /// （代理模式、开机自启、绕过大陆……全没）。
+    /// 2026-09-08 加 subscriptionUserAgent 时发现并实测确认。
+    init(from decoder: Decoder) throws {
+        let c = try decoder.container(keyedBy: CodingKeys.self)
+        var d = AppConfig()
+
+        d.launchAtLogin = try c.decodeIfPresent(Bool.self, forKey: .launchAtLogin) ?? d.launchAtLogin
+        d.autoConnectOnLaunch = try c.decodeIfPresent(Bool.self, forKey: .autoConnectOnLaunch) ?? d.autoConnectOnLaunch
+        d.silentLaunch = try c.decodeIfPresent(Bool.self, forKey: .silentLaunch) ?? d.silentLaunch
+        d.mode = try c.decodeIfPresent(ProxyMode.self, forKey: .mode) ?? d.mode
+        d.systemProxyEnabled = try c.decodeIfPresent(Bool.self, forKey: .systemProxyEnabled) ?? d.systemProxyEnabled
+        d.tunEnabled = try c.decodeIfPresent(Bool.self, forKey: .tunEnabled) ?? d.tunEnabled
+        d.showSpeedInMenuBar = try c.decodeIfPresent(Bool.self, forKey: .showSpeedInMenuBar) ?? d.showSpeedInMenuBar
+        d.latencyTestURL = try c.decodeIfPresent(URL.self, forKey: .latencyTestURL) ?? d.latencyTestURL
+        d.latencyTestTimeout = try c.decodeIfPresent(TimeInterval.self, forKey: .latencyTestTimeout) ?? d.latencyTestTimeout
+        d.latencyTestConcurrency = try c.decodeIfPresent(Int.self, forKey: .latencyTestConcurrency) ?? d.latencyTestConcurrency
+        d.fixedMixedPort = try c.decodeIfPresent(Int.self, forKey: .fixedMixedPort)
+        d.fixedClashAPIPort = try c.decodeIfPresent(Int.self, forKey: .fixedClashAPIPort)
+        d.bypassChinaMainland = try c.decodeIfPresent(Bool.self, forKey: .bypassChinaMainland) ?? d.bypassChinaMainland
+        d.customDirectDomains = try c.decodeIfPresent([String].self, forKey: .customDirectDomains) ?? d.customDirectDomains
+        d.dnsProfile = try c.decodeIfPresent(String.self, forKey: .dnsProfile) ?? d.dnsProfile
+        d.subscriptionUserAgent = try c.decodeIfPresent(String.self, forKey: .subscriptionUserAgent) ?? d.subscriptionUserAgent
+
+        self = d
+    }
 }

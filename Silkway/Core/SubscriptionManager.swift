@@ -99,7 +99,11 @@ final class SubscriptionManager {
     /// 拉取并解析，同时更新 subscription 的元数据。
     private func update(subscription: inout Subscription) async throws -> [ProxyNode] {
         var request = URLRequest(url: subscription.url)
-        request.setValue("Silkway/1.0", forHTTPHeaderField: "User-Agent")
+        // 机场普遍按 User-Agent 返回不同格式：UA 含 clash 返回 YAML、
+        // 含 sing-box 返回 sing-box 配置、未知 UA 则回退到 base64 分享链接。
+        // 自报家门（Silkway/1.0）会拿到最差的那份，甚至被有些机场直接拒绝。
+        request.setValue(AppConfigStore.shared.config.subscriptionUserAgent,
+                         forHTTPHeaderField: "User-Agent")
         request.timeoutInterval = 30
 
         let (data, response) = try await urlSession.data(for: request)
@@ -108,7 +112,8 @@ final class SubscriptionManager {
         }
 
         let text = String(data: data, encoding: .utf8) ?? ""
-        var nodes = SubscriptionParser.parse(text)
+        let result = SubscriptionParser.parseDetailed(text)
+        var nodes = result.nodes
 
         // 节点归属到本订阅（手动添加或解析器没设时兜底）
         for i in nodes.indices where nodes[i].subscriptionID == nil {
@@ -118,7 +123,25 @@ final class SubscriptionManager {
         subscription.lastUpdated = Date()
         subscription.nodeCount = nodes.count
         subscription.lastError = nodes.isEmpty ? "订阅未解析出任何节点" : nil
+
+        // 被丢弃的条目必须让用户知道，否则「机场说 80 个节点这里只有 52 个」
+        // 无从查起。只保留前 10 条原因，避免持久化文件膨胀。
+        subscription.skippedCount = result.skippedCount
+        subscription.skippedReasons = result.skipped.isEmpty ? nil : Array(result.skipped.prefix(10))
+
+        applyUserInfo(from: http, to: &subscription)
         return nodes
+    }
+
+    /// 解析机场的 `Subscription-Userinfo` 响应头。
+    ///
+    /// 格式（事实标准，来自 Clash 生态）：
+    ///   upload=1234; download=5678; total=107374182400; expire=1735660800
+    /// 单位是字节，expire 是 Unix 时间戳。total=0 表示不限量。
+    private func applyUserInfo(from response: HTTPURLResponse, to subscription: inout Subscription) {
+        guard let raw = response.value(forHTTPHeaderField: "Subscription-Userinfo"), !raw.isEmpty
+        else { return }
+        subscription.applyUserInfo(header: raw)
     }
 }
 

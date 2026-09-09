@@ -134,6 +134,7 @@ enum ProxyProtocol: String, Codable, CaseIterable, Sendable {
     case trojan
     case hysteria2
     case tuic
+    case anytls
     case wireguard
     case socks
     case http
@@ -149,6 +150,7 @@ enum ProxyProtocol: String, Codable, CaseIterable, Sendable {
         case .trojan:      return "Trojan"
         case .hysteria2:   return "Hysteria2"
         case .tuic:        return "TUIC"
+        case .anytls:      return "AnyTLS"
         case .wireguard:   return "WireGuard"
         case .socks:       return "SOCKS"
         case .http:        return "HTTP"
