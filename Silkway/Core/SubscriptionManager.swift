@@ -130,6 +130,36 @@ final class SubscriptionManager {
         subscription.skippedReasons = result.skipped.isEmpty ? nil : Array(result.skipped.prefix(10))
 
         applyUserInfo(from: http, to: &subscription)
+
+        // 完整配置检测：Clash YAML（含 proxy-groups）或 sing-box 配置（含
+        // selector/urltest 出站）会产出 ImportedProfile，保留策略组与规则。
+        // 节点订阅返回 nil，走节点模式，什么都不用做。
+        // existingProfileID 传入后复用旧 id：同一订阅反复更新不该增生新配置。
+        let existingID = ProfileStore.shared
+            .profile(forSubscription: subscription.id)?.id
+        let importResult = ProfileImporter.attemptImport(
+            text: text, subscriptionID: subscription.id,
+            name: subscription.name, existingProfileID: existingID
+        )
+        if let profile = importResult.profile {
+            ProfileStore.shared.saveProfile(profile)
+            subscription.importedProfileID = profile.id
+        } else {
+            // 曾经导入过完整配置、这次更新后不再是了（机场换了订阅格式），
+            // 清理孤儿 profile，避免菜单里出现失效选项
+            if let oldID = subscription.importedProfileID {
+                ProfileStore.shared.removeProfile(id: oldID)
+                subscription.importedProfileID = nil
+            }
+        }
+        // profile 构建中的跳过项（不支持的规则/悬空引用组）也并入订阅提示
+        if !importResult.skipped.isEmpty {
+            var reasons = subscription.skippedReasons ?? []
+            reasons.append(contentsOf: importResult.skipped.prefix(10))
+            subscription.skippedReasons = Array(reasons.prefix(15))
+            subscription.skippedCount = (subscription.skippedCount ?? 0) + importResult.skipped.count
+        }
+
         return nodes
     }
 

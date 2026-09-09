@@ -45,6 +45,10 @@ struct Subscription: Identifiable, Codable, Hashable, Sendable {
     /// 套餐到期时间。同样来自 `Subscription-Userinfo`。
     var expiresAt: Date?
 
+    /// 该订阅导入的完整配置（ImportedProfile）。nil 表示节点模式。
+    /// 解析出策略组/规则时由 SubscriptionManager 自动填充。
+    var importedProfileID: UUID?
+
     init(
         id: UUID = UUID(),
         name: String,
@@ -58,7 +62,8 @@ struct Subscription: Identifiable, Codable, Hashable, Sendable {
         trafficUpload: Int64? = nil,
         trafficDownload: Int64? = nil,
         trafficTotal: Int64? = nil,
-        expiresAt: Date? = nil
+        expiresAt: Date? = nil,
+        importedProfileID: UUID? = nil
     ) {
         self.id = id
         self.name = name
@@ -73,6 +78,7 @@ struct Subscription: Identifiable, Codable, Hashable, Sendable {
         self.trafficDownload = trafficDownload
         self.trafficTotal = trafficTotal
         self.expiresAt = expiresAt
+        self.importedProfileID = importedProfileID
     }
 }
 

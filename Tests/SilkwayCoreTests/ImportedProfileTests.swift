@@ -38,6 +38,83 @@ struct ImportedProfileTests {
       - MATCH,PROXY
     """
 
+    private let subID = UUID()
+
+    @Test("正式 API：Clash YAML 产出 profile")
+    func importerClashYAML() throws {
+        let (profile, skipped) = ProfileImporter.attemptImport(
+            text: clashYAML, subscriptionID: subID, name: "测试机场"
+        )
+        let p = try #require(profile)
+        #expect(p.subscriptionID == subID)
+        #expect(p.name == "测试机场")
+        #expect(p.outbounds.count == 4)
+        #expect(p.rules.count == 4)
+        #expect(skipped.isEmpty)
+    }
+
+    @Test("正式 API：纯节点 YAML 返回 nil 走节点模式")
+    func importerNodeOnlyYAML() throws {
+        let yaml = """
+        proxies:
+          - {name: A, type: ss, server: a.com, port: 8388, cipher: aes-256-gcm, password: pw}
+        """
+        let (profile, skipped) = ProfileImporter.attemptImport(
+            text: yaml, subscriptionID: subID, name: "x"
+        )
+        #expect(profile == nil)
+        #expect(skipped.isEmpty)
+    }
+
+    @Test("正式 API：sing-box 配置含 selector 时直通保留")
+    func importerSingBoxConfig() throws {
+        let json = """
+        {
+          "log": {"level": "error"},
+          "outbounds": [
+            {"type": "selector", "tag": "PROXY", "outbounds": ["n1", "n2"], "default": "n1"},
+            {"type": "shadowsocks", "tag": "n1", "server": "a.com", "server_port": 8388, "method": "aes-256-gcm", "password": "pw"},
+            {"type": "vmess", "tag": "n2", "server": "b.com", "server_port": 443, "uuid": "11111111-2222-3333-4444-555555555555"},
+            {"type": "direct", "tag": "direct-out"},
+            {"type": "dns", "tag": "dns-out"}
+          ],
+          "route": {
+            "rules": [
+              {"domain_suffix": ["cn"], "outbound": "direct-out"},
+              {"ip_is_private": true, "outbound": "direct-out"}
+            ],
+            "final": "PROXY"
+          }
+        }
+        """
+        let (profile, _) = ProfileImporter.attemptImport(
+            text: json, subscriptionID: subID, name: "sing-box 订阅"
+        )
+        let p = try #require(profile)
+        // direct/dns 出站被过滤，只剩 1 组 + 2 节点
+        #expect(p.outbounds.count == 3)
+        #expect(p.rules.count == 2, "route.rules 应原样保留")
+        #expect(p.rawConfig != nil)
+    }
+
+    @Test("正式 API：sing-box 纯节点配置返回 nil")
+    func importerSingBoxNodesOnly() throws {
+        let json = #"{"outbounds": [{"type": "shadowsocks", "tag": "n1", "server": "a.com", "server_port": 8388, "method": "aes-256-gcm", "password": "pw"}]}"#
+        let (profile, _) = ProfileImporter.attemptImport(
+            text: json, subscriptionID: subID, name: "x"
+        )
+        #expect(profile == nil)
+    }
+
+    @Test("重复导入复用同一 profile id")
+    func importerReusesExistingID() throws {
+        let existingID = UUID()
+        let (p1, _) = ProfileImporter.attemptImport(
+            text: clashYAML, subscriptionID: subID, name: "x", existingProfileID: existingID
+        )
+        #expect(p1?.id == existingID)
+    }
+
     // MARK: - ImportedProfile 提取
 
     @Test("从 sing-box 完整配置提取策略组")
