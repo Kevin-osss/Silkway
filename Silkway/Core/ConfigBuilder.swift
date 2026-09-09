@@ -20,12 +20,120 @@ enum ConfigBuilder {
     ///   - config: 应用配置
     ///   - apiPort: Clash API 端口
     ///   - mixedPort: mixed 入站端口
+    ///   - profile: 完整配置（自带策略组与规则）。提供时走「完整配置模式」，
+    ///     使用 profile.outbounds + profile.rules，忽略 nodes，只包装
+    ///     inbounds/dns/api/route.final。
+    ///   - ruleSets: 本地规则集（geoip-cn / geosite-cn）的引用定义
     static func build(
         nodes: [ProxyNode],
         config: AppConfig = AppConfig(),
         apiPort: UInt16,
         mixedPort: UInt16,
+        profile: ImportedProfile? = nil,
         ruleSets: [[String: Any]] = []
+    ) -> [String: Any] {
+        if let profile {
+            return buildProfile(
+                profile, config: config, apiPort: apiPort,
+                mixedPort: mixedPort, ruleSets: ruleSets
+            )
+        }
+        return buildNodes(
+            nodes, config: config, apiPort: apiPort,
+            mixedPort: mixedPort, ruleSets: ruleSets
+        )
+    }
+
+    // MARK: - 完整配置模式
+
+    /// 用导入的完整配置生成最终配置。
+    ///
+    /// 与节点模式的核心区别：出站（含 selector/urltest 策略组）和路由规则
+    /// 全部来自 profile，我们只负责包装 inbounds/dns/api 这些运行时层。
+    /// 不修改 profile 的规则语义 —— 用户导入的配置分流是什么样就是什么样。
+    private static func buildProfile(
+        _ profile: ImportedProfile,
+        config: AppConfig,
+        apiPort: UInt16,
+        mixedPort: UInt16,
+        ruleSets: [[String: Any]]
+    ) -> [String: Any] {
+        // 出站：原样使用 profile 的（已含策略组 + 节点）
+        var allOutbounds: [[String: Any]] = profile.outbounds.compactMap { raw in
+            guard let data = raw.data(using: .utf8) else { return nil }
+            return try? JSONSerialization.jsonObject(with: data) as? [String: Any]
+        }
+
+        // 保证 direct-out 存在（Clash 规则的 DIRECT 目标依赖它）
+        if !allOutbounds.contains(where: { $0["tag"] as? String == "direct-out" }) {
+            allOutbounds.append(["type": "direct", "tag": "direct-out"])
+        }
+        // REJECT 目标需要 block 出站（Clash 的 REJECT 语义）
+        if !allOutbounds.contains(where: { $0["tag"] as? String == "REJECT" }) {
+            allOutbounds.append(["type": "block", "tag": "REJECT"])
+        }
+
+        // 规则：原样使用 profile 的；规则引用的 rule_set 由我们注入
+        let rules: [[String: Any]] = profile.rules.compactMap { raw in
+            guard let data = raw.data(using: .utf8) else { return nil }
+            return try? JSONSerialization.jsonObject(with: data) as? [String: Any]
+        }
+
+        // final：配置的兜底。Clash 的 MATCH 已在导入时提取，这里由调用方
+        // 通过 AppConfig.mode 决定 —— 规则模式下用配置自带的 final（若有），
+        // 否则用第一个策略组；全局/直连模式覆盖为用户显式选择。
+        var route: [String: Any] = ["rules": rules]
+        if config.mode == .global {
+            route["final"] = profile.proxyGroups.first?.name ?? "direct-out"
+        } else if config.mode == .direct {
+            route["final"] = "direct-out"
+        } else {
+            // 规则模式：优先配置自带的 final，其次第一个策略组
+            route["final"] = profileFinalTag(profile) ?? profile.proxyGroups.first?.name ?? "direct-out"
+        }
+        route["default_domain_resolver"] = "local"
+
+        if config.tunEnabled {
+            route["auto_detect_interface"] = true
+        }
+        if !ruleSets.isEmpty {
+            route["rule_set"] = ruleSets
+        }
+
+        return [
+            "log": ["level": "info", "output": "sing-box.log"],
+            "dns": dnsConfig(profile: config.dnsProfile),
+            "inbounds": inbounds(config: config, mixedPort: mixedPort),
+            "outbounds": allOutbounds,
+            "route": route,
+            "experimental": [
+                "clash_api": [
+                    "external_controller": "127.0.0.1:\(apiPort)",
+                    "secret": ""
+                ],
+                "cache_file": ["enabled": true, "path": "cache.db"]
+            ]
+        ]
+    }
+
+    /// 从 rawConfig 里提取 sing-box 配置自带的 route.final（若有）。
+    private static func profileFinalTag(_ profile: ImportedProfile) -> String? {
+        guard let raw = profile.rawConfig,
+              let data = raw.data(using: .utf8),
+              let dict = try? JSONSerialization.jsonObject(with: data) as? [String: Any],
+              let route = dict["route"] as? [String: Any]
+        else { return nil }
+        return route["final"] as? String
+    }
+
+    // MARK: - 节点模式（原有逻辑）
+
+    private static func buildNodes(
+        _ nodes: [ProxyNode],
+        config: AppConfig,
+        apiPort: UInt16,
+        mixedPort: UInt16,
+        ruleSets: [[String: Any]]
     ) -> [String: Any] {
         // 只保留成功还原 outbound 的节点（有完整凭证的）
         let outbounds = nodes.compactMap { outbound(from: $0) }
@@ -211,9 +319,13 @@ enum ConfigBuilder {
         config: AppConfig = AppConfig(),
         apiPort: UInt16,
         mixedPort: UInt16,
+        profile: ImportedProfile? = nil,
         ruleSets: [[String: Any]] = []
     ) throws -> Data {
-        let dict = build(nodes: nodes, config: config, apiPort: apiPort, mixedPort: mixedPort, ruleSets: ruleSets)
+        let dict = build(
+            nodes: nodes, config: config, apiPort: apiPort,
+            mixedPort: mixedPort, profile: profile, ruleSets: ruleSets
+        )
         do {
             return try JSONSerialization.data(withJSONObject: dict, options: [.prettyPrinted, .sortedKeys])
         } catch {

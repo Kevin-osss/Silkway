@@ -369,6 +369,62 @@ struct SubscriptionFormatTests {
         #expect(try upMbps("1.5 Gbps") == 1500)
     }
 
+    // MARK: - proxy-groups 与 rules
+
+    @Test("proxy-groups：嵌套引用提取")
+    func parseProxyGroups() throws {
+        let yaml = """
+        proxy-groups:
+          - name: PROXY
+            type: select
+            proxies:
+              - 香港01
+              - 美国01
+          - name: 故障转移
+            type: url-test
+            url: http://www.gstatic.com/generate_204
+            interval: 300
+            tolerance: 50
+            proxies:
+              - PROXY
+              - DIRECT
+        rules:
+          - DOMAIN-SUFFIX,google.com,PROXY
+          - IP-CIDR,1.1.1.1/32,DIRECT,no-resolve
+        """
+
+        let groups = ClashConverter.parseGroups(yaml)
+        #expect(groups.count == 2)
+
+        let proxy = try #require(groups.first { ($0["name"] as? String) == "PROXY" })
+        #expect(proxy["type"] as? String == "select")
+        let members = try #require(proxy["proxies"] as? [String])
+        #expect(members == ["香港01", "美国01"])
+
+        let fallback = try #require(groups.first { ($0["name"] as? String) == "故障转移" })
+        #expect(fallback["type"] as? String == "url-test")
+        #expect(fallback["interval"] as? String == "300")
+        let fbMembers = try #require(fallback["proxies"] as? [String])
+        #expect(fbMembers == ["PROXY", "DIRECT"])
+
+        let rules = ClashConverter.parseRules(yaml)
+        #expect(rules.count == 2)
+        #expect(rules.first == "DOMAIN-SUFFIX,google.com,PROXY")
+        #expect(rules.last == "IP-CIDR,1.1.1.1/32,DIRECT,no-resolve")
+    }
+
+    @Test("rules 带引号")
+    func parseRulesQuoted() throws {
+        let yaml = """
+        rules:
+          - 'DOMAIN-SUFFIX,example.com,DIRECT'
+          - \"IP-CIDR,10.0.0.0/8,DIRECT,no-resolve\"
+        """
+        let rules = ClashConverter.parseRules(yaml)
+        #expect(rules.first == "DOMAIN-SUFFIX,example.com,DIRECT")
+        #expect(rules.last == "IP-CIDR,10.0.0.0/8,DIRECT,no-resolve")
+    }
+
     // MARK: - 端到端：解析结果必须能进配置
 
     @Test("Clash YAML 节点能进入最终 sing-box 配置")

@@ -268,6 +268,88 @@ enum ClashConverter {
         case lines([String])  // 块式列表
     }
 
+    // MARK: - proxy-groups 与 rules
+
+    /// 解析 `proxy-groups:` 块，每项是带嵌套结构的字典。
+    ///
+    /// 组可以引用节点（by name）、其他组（嵌套）、或特殊目标 DIRECT/REJECT/DIRECT。
+    /// 这里只做结构化提取，语义校验（引用是否存在、类型是否支持）留给 ImportedProfile。
+    static func parseGroups(_ text: String) -> [[String: Any]] {
+        switch extractBlock(text, key: "proxy-groups", alias: "Proxy Group") {
+        case .absent:
+            return []
+        case .flow(let raw):
+            return splitTopLevel(unwrapBrackets(raw), separator: ",")
+                .map { parseFlowMapping($0) }
+                .filter { !$0.isEmpty }
+        case .lines(let lines):
+            return parseSequenceOfMappings(lines).filter { !$0.isEmpty }
+        }
+    }
+
+    /// 解析 `rules:` 块。规则是字符串列表，不是映射，返回原始行。
+    /// 行内可能带引号（如 `'DOMAIN-SUFFIX,example.com,DIRECT'`），解析时去引号。
+    static func parseRules(_ text: String) -> [String] {
+        switch extractBlock(text, key: "rules") {
+        case .absent:
+            return []
+        case .flow(let raw):
+            // rules: ["RULE1", "RULE2"] 单行列表
+            return splitTopLevel(unwrapBrackets(raw), separator: ",")
+                .map { scalar($0) }
+                .filter { !$0.isEmpty }
+        case .lines(let lines):
+            return lines.compactMap { line in
+                let trimmed = line.trimmingCharacters(in: .whitespaces)
+                guard trimmed.hasPrefix("- ") else { return nil }
+                let raw = String(trimmed.dropFirst(2))
+                return scalar(raw)
+            }
+        }
+    }
+
+    /// 通用顶层块提取。与 extractProxiesBlock 相同，但支持任意 key。
+    ///
+    /// `key` 是顶层 key 名（如 "proxy-groups"），只认顶层（缩进 0）。
+    /// 序列项允许与父 key 同列（YAML 合法写法），故块结束判定与 proxies 一致。
+    private static func extractBlock(_ text: String, key: String, alias: String? = nil) -> ProxiesBlock {
+        let keys = [key, alias].compactMap { $0 }
+        let lines = text.components(separatedBy: .newlines)
+            .map { $0.replacingOccurrences(of: "\t", with: "    ") }
+
+        var startIndex: Int?
+        for (i, line) in lines.enumerated() {
+            guard indent(of: line) == 0 else { continue }
+            let trimmed = line.trimmingCharacters(in: .whitespaces)
+            guard keys.contains(where: { trimmed.hasPrefix($0) }) else { continue }
+
+            let rest = trimmed.drop(while: { $0 != ":" }).dropFirst()
+                .trimmingCharacters(in: .whitespaces)
+            if rest == "[]" { return .absent }
+            if rest.hasPrefix("[") { return .flow(rest) }
+            startIndex = i
+            break
+        }
+
+        guard let start = startIndex else { return .absent }
+
+        var result: [String] = []
+        for line in lines.dropFirst(start + 1) {
+            let trimmed = line.trimmingCharacters(in: .whitespaces)
+            if trimmed.isEmpty || trimmed.hasPrefix("#") {
+                result.append(line)
+                continue
+            }
+            if indent(of: line) == 0, !trimmed.hasPrefix("- "), trimmed != "-" {
+                break
+            }
+            result.append(line)
+        }
+
+        return result.isEmpty ? .absent : .lines(result)
+    }
+
+
     /// 截出 proxies 块。
     ///
     /// 两个必须小心的地方（均为 2026-09-09 审查实测出的真实缺陷）：
